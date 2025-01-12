@@ -1,0 +1,63 @@
+= !BioRuby Topics =
+
+== Migration of BioRuby web resources ==
+ * rubyforge.org
+   * gem (already available)
+   * using BTS and Feature Requests in rubyforge.org ... Done
+   * RDoc is moved to bioruby.rubyforge.org ... Done
+   * Unused services should be disabled ... Done
+ * open-bio.org
+   * mailing list (already available)
+   * preparation of MediaWiki by OBF server administrators ... Done
+   * moving contents from wiki.bioruby.org to bioruby.open-bio.org/wiki/ ... in progress
+   * (future work) migration from CVS to SVN
+ * bioruby.org
+   * moving wiki to bioruby.open-bio.org/Wiki
+   * moving RDoc to bioruby.rubyforge.org ... Done
+   * moving toppage to Wiki ... in progress
+   * (future work) tar.gz should move to ???
+   * (future work) www.bioruby.org and bioruby.org should point bioruby.open-bio.org/wiki/Main_Page (redirection?)
+
+== !BioMoby client in Ruby ==
+
+ * ~~[wiki:MOBYRubyClient]~~ now working!
+
+== BioSQL on BioRuby ==
+
+ * rewritten by using !ActiveRecord
+
+== Bio::Sequence improvements for round trip ==
+
+=== Input (creation of Bio::Sequence object) ===
+   * Bio::Sequence#read(str ~~or file?~~~) ... Done
+     * (or Bio::Sequence#input(str or file?) ???)
+     * Bio::*#to_biosequence is automatically called ... Done
+   * Bio::*#to_biosequence implementation
+     * Bio::EMBL ... Done (jan)
+     * Bio::GenBank ... Done (ngoto)
+
+=== Output (formatting) ===
+   * Bio::Sequence#output(format = ''anything'')
+     * using ERB templates
+       * Bio::Sequence#output(format = :embl) ... in progress (jan)
+       * Bio::Sequence#output(format = :genbank) ... in progress (ngoto)
+
+=== Easy access to Bio::Sequence inside BioRuby ===
+   * (idea only) Bio::Sequence#embl, Bio::Sequence#gb
+     * (idea only) can access as if it is Bio::EMBL or Bio::GenBank objects
+     * (idea only) delegates to Bio::Sequence objects (or translation/conversion may be needed)
+     * (idea only) Bio::EMBL (and GenBank etc.) changed to Bio::Sequence delegation objects?
+       * jan's idea: BiorubyFormats
+       * problem with lazy evaluation?
+
+=== Internal structure of Bio::Sequence ===
+   * (future work?) generated from / compatible with XML Schema
+
+== NEXML parser in BioRuby ==
+   * (future work) generate parser code from XML schema
+
+== Which XML library is better in Ruby for BioRuby? ==
+   * REXML
+   * xmlparser
+   * ...
+

@@ -1,0 +1,601 @@
+Seq-entry ::= set {
+  level 1 ,
+  class nuc-prot ,
+  descr {
+    pub {
+      pub {
+        sub {
+          authors {
+            names
+              std {
+                {
+                  name
+                    name {
+                      last "Vittorioso" ,
+                      initials "P." } } } ,
+            affil
+              str "Vittorioso P., Dip. Genetica e Biologia Molecolare,
+ Universita di Roma La Sapienza, P.le Aldo Moro, 5; , 00185 Rome, ITALY" } ,
+          medium other ,
+          date
+            std {
+              year 1998 ,
+              month 2 ,
+              day 24 } } } ,
+      comment "revised by [3]" ,
+      reftype no-target } ,
+    pub {
+      pub {
+        pmid 8771779 ,
+        article {
+          title {
+            name "A rolB regulatory factor belongs to a new class of single
+ zinc finger plant proteins." } ,
+          authors {
+            names
+              std {
+                {
+                  name
+                    name {
+                      last "De Paolis" ,
+                      initials "A." } } ,
+                {
+                  name
+                    name {
+                      last "Sabatini" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "De Pascalis" ,
+                      initials "L." } } ,
+                {
+                  name
+                    name {
+                      last "Costantino" ,
+                      initials "P." } } ,
+                {
+                  name
+                    name {
+                      last "Capone" ,
+                      initials "I." } } } ,
+            affil
+              str "Istituto Pasteur Fondazione Cenci Bolognetti, Dip. Genetica
+ e Biologia Molecolare, Universita di Roma La Sapienza, Italy." } ,
+          from
+            journal {
+              title {
+                iso-jta "Plant J." ,
+                ml-jta "Plant J" ,
+                issn "0960-7412" ,
+                name "The Plant journal : for cell and molecular biology" } ,
+              imp {
+                date
+                  std {
+                    year 1996 ,
+                    month 8 } ,
+                volume "10" ,
+                issue "2" ,
+                pages "215-223" ,
+                language "eng" ,
+                pubstatus ppublish ,
+                history {
+                  {
+                    pubstatus pubmed ,
+                    date
+                      std {
+                        year 1996 ,
+                        month 8 ,
+                        day 1 } } ,
+                  {
+                    pubstatus medline ,
+                    date
+                      std {
+                        year 1996 ,
+                        month 8 ,
+                        day 1 ,
+                        hour 0 ,
+                        minute 1 } } } } } ,
+          ids {
+            pubmed 8771779 } } } ,
+      reftype no-target } ,
+    pub {
+      pub {
+        sub {
+          authors {
+            names
+              std {
+                {
+                  name
+                    name {
+                      last "Vittorioso" ,
+                      initials "P." } } } ,
+            affil
+              str "Vittorioso P., Dip. Genetica e Biologia Molecolare,
+ Universita di Roma La Sapienza, P.le Aldo Moro, 5; , 00185 Rome, ITALY" } ,
+          medium other ,
+          date
+            std {
+              year 1999 ,
+              month 2 ,
+              day 25 } } } ,
+      comment "revised by [4]" ,
+      reftype no-target } ,
+    pub {
+      pub {
+        sub {
+          authors {
+            names
+              std {
+                {
+                  name
+                    name {
+                      last "Vittorioso" ,
+                      initials "P." } } } ,
+            affil
+              str "Vittorioso P., Dip. Genetica e Biologia Molecolare,
+ Universita di Roma La Sapienza, P.le Aldo Moro, 5; , 00185 Rome, ITALY" } ,
+          medium other ,
+          date
+            std {
+              year 2001 ,
+              month 4 ,
+              day 12 } } } } ,
+    pub {
+      pub {
+        pmid 10640273 ,
+        article {
+          title {
+            name "Identification and disruption of an Arabidopsis zinc finger
+ gene controlling seed germination." } ,
+          authors {
+            names
+              std {
+                {
+                  name
+                    name {
+                      last "Papi" ,
+                      initials "M." } } ,
+                {
+                  name
+                    name {
+                      last "Sabatini" ,
+                      initials "S." } } ,
+                {
+                  name
+                    name {
+                      last "Bouchez" ,
+                      initials "D." } } ,
+                {
+                  name
+                    name {
+                      last "Camilleri" ,
+                      initials "C." } } ,
+                {
+                  name
+                    name {
+                      last "Costantino" ,
+                      initials "P." } } ,
+                {
+                  name
+                    name {
+                      last "Vittorioso" ,
+                      initials "P." } } } ,
+            affil
+              str "Istituto Pasteur Fondazione Cenci Bolognetti, Dipartimento
+ di Genetica e Biologia Molecolare, Universit inverted question marka ""La
+ Sapienza,"" 00185 Rome, Italy." } ,
+          from
+            journal {
+              title {
+                iso-jta "Genes Dev." ,
+                ml-jta "Genes Dev" ,
+                issn "0890-9369" ,
+                name "Genes & development" } ,
+              imp {
+                date
+                  std {
+                    year 2000 ,
+                    month 1 ,
+                    day 1 } ,
+                volume "14" ,
+                issue "1" ,
+                pages "28-33" ,
+                language "eng" ,
+                pubstatus ppublish ,
+                history {
+                  {
+                    pubstatus pubmed ,
+                    date
+                      std {
+                        year 2000 ,
+                        month 1 ,
+                        day 20 ,
+                        hour 9 ,
+                        minute 0 } } ,
+                  {
+                    pubstatus medline ,
+                    date
+                      std {
+                        year 2000 ,
+                        month 2 ,
+                        day 19 ,
+                        hour 9 ,
+                        minute 0 } } } } } ,
+          ids {
+            pubmed 10640273 } } } ,
+      reftype no-target } ,
+    update-date
+      std {
+        year 2006 ,
+        month 11 ,
+        day 14 } ,
+    source {
+      org {
+        taxname "Arabidopsis thaliana" ,
+        common "thale cress" ,
+        db {
+          {
+            db "taxon" ,
+            tag
+              id 3702 } } ,
+        orgname {
+          name
+            binomial {
+              genus "Arabidopsis" ,
+              species "thaliana" } ,
+          mod {
+            {
+              subtype cultivar ,
+              subname "Wassilewskija" } ,
+            {
+              subtype ecotype ,
+              subname "Wassilewskija" } ,
+            {
+              subtype old-name ,
+              subname "Arabidopsis thaliana" ,
+              attrib "(10)cultivar=Wassilewskija" } } ,
+          lineage "Eukaryota; Viridiplantae; Streptophyta; Embryophyta;
+ Tracheophyta; Spermatophyta; Magnoliophyta; eudicotyledons; core
+ eudicotyledons; rosids; eurosids II; Brassicales; Brassicaceae; Arabidopsis" ,
+          gcode 1 ,
+          mgcode 1 ,
+          div "PLN" } } ,
+      subtype {
+        {
+          subtype chromosome ,
+          name "3" } } } ,
+    create-date
+      std {
+        year 1998 ,
+        month 2 ,
+        day 27 } } ,
+  seq-set {
+    seq {
+      id {
+        embl {
+          accession "AJ224122" ,
+          version 3 } ,
+        gi 13938851 } ,
+      descr {
+        title "Arabidopsis thaliana DAG1 gene" ,
+        embl {
+          div pln ,
+          creation-date
+            std {
+              year 1998 ,
+              month 2 ,
+              day 27 } ,
+          update-date
+            std {
+              year 2006 ,
+              month 11 ,
+              day 14 } ,
+          keywords {
+            "BBFa gene" ,
+            "transcription factor" } } ,
+        molinfo {
+          biomol genomic } } ,
+      inst {
+        repr raw ,
+        mol dna ,
+        length 3827 ,
+        seq-data
+          ncbi2na '0F0065190A63DCA0340184603BAAEAEFEACA0212FB4134A8FE8F8340000
+B5F23F4C0270D197401EA97377DFFFB67D7B6B5F773F7DD41574FFE0CFC4C1016FF1FDFEB403C8
+5403DCCF2FC233BADEC3F3EFB3E33003CBCC263CCFFCE742C1EBBCBC1CCF5146305E3C4C0338FF
+0D3FCB014CD91BE8E3C3FC1AFC3046E3C0F3FF20E3CFC406802733B8443076E4B3EF2FE00BB3FA
+FDF33FA5D8FF4BF3B9FFC40BFCFF6F37BF06613FBECE9FC58FE20C034CF17F3B253BBAEC3330C3
+AD7DC6000923443E0302AE03FAED5FF7DB6030481C0C0202EF32CCF1B5820C3533D780C4B4133C
+CCFCB1FCCC0BCA0F034CEFF3614CF0B441FCD303C37B0F20F50BD94583F6C170DC4CC32300CCCC
+EC8B0F38CDCECECB4EB3383FE03E90AC13E1A36C15040C33C3C403ABA9A832CC41D30F51D1FFEC
+F3CA3380C22C3413930C08ECC3F7D37C00130713AFC3110FF17FCD000B3F443D1D903C6038E9CB
+9F41D40FD833FC0D18EEC817FCFC7A31C3472FCF894143CBC0C810D0CF325233FFD7F0033F008A
+A520081488A8A53884F3CD1CB40041015D7FE7FF4CC0F3CCFF3FE4AFDF77DF7DF7DF7DF7D77E9E
+7F7F4D35302E027064C88894CDB54000900B500001075004F777C9DFC77F2FDDDDDDDE5FDDFEF8
+2F4E8E7182E874AC6C008CDDDE7337BFBFB27DD561DD19DDDDDDDDDDDFEECDDDC744C0CCC4EEEE
+CE4EFCCECECE014B2EBCC48CB73322334338EEFF0FC87FF3335BF807D60BDD83A2F0A0BFEF7710
+BD0FFDFB4F0F300778C1C3A3000ACE7FBCBC5FFBDFAE74ADF14FFFD703FC3CB75FDFC3C3FCEF06
+47863F06F040005C8F7FF7FD0C8930F3C7D0FD3F37447015C37E980F5FF333303F0F0FFD4437E9
+A0F4A1DAFF9FBCFBDDDFF0FE13AF2A0C7C0B3B7C3FCCABFD080E301B0250E89038FDC914104111
+641041413D36514110A5019459350EBA75A280C50411A718E80720298A510880B03ED423907410
+1102F7BCF1041C4B746414231F7902BED82B3E8582BA777DB06D52DA2B274202042235DC45FC9F
+45F70D501F5237015163DFF742503570C2D03023741F9CDFD5AD3908D34D34EB3B74FFFD339508
+C8810431F4D743739F4D375EDD277E27DC2350E8B77D08A4E046F7E5EB40E3A3D01D2D7B1D37F2
+AFD410E5E3C4048B0C105FD3DD4F8D34D0A8FA130453412C14089D08C10E384E0E890B2AFFBD5F
+FD2138089FD0910542208B4EB0C3133E83A8EF4B0C4A28DF4EB8002BC0089D381CD27F7DDFFDEF
+FFDD73FCF32FFC7F8E37FEFFF744EA81FC7C0BED207CBF123EDFFCF5F7F7AFF5FFF5FFFCD2DFFC
+033B3F4C3EAFE34F4CFCF2CD00C8B73BD38A8BBC2ABB8AB20830B831AA958'H ,
+        hist {
+          replaces {
+            date
+              std {
+                year 2001 ,
+                month 5 ,
+                day 3 } ,
+            ids {
+              gi 4469119 } } } } ,
+      annot {
+        {
+          data
+            ftable {
+              {
+                data
+                  rna {
+                    type mRNA ,
+                    ext
+                      name "DNA-binding protein" } ,
+                location
+                  mix {
+                    int {
+                      from 1725 ,
+                      to 1862 ,
+                      id
+                        gi 13938851 } ,
+                    int {
+                      from 2547 ,
+                      to 3051 ,
+                      id
+                        gi 13938851 } ,
+                    int {
+                      from 3136 ,
+                      to 3826 ,
+                      id
+                        gi 13938851 } } ,
+                qual {
+                  {
+                    qual "experiment" ,
+                    val "experimental evidence, no additional details recorded" } ,
+                  {
+                    qual "function" ,
+                    val "transcription factor" } } ,
+                exp-ev experimental } ,
+              {
+                data
+                  imp {
+                    key "exon" } ,
+                location
+                  int {
+                    from 1725 ,
+                    to 1862 ,
+                    id
+                      gi 13938851 } ,
+                qual {
+                  {
+                    qual "number" ,
+                    val "1" } } } ,
+              {
+                data
+                  imp {
+                    key "intron" } ,
+                location
+                  int {
+                    from 1863 ,
+                    to 2546 ,
+                    id
+                      gi 13938851 } ,
+                qual {
+                  {
+                    qual "number" ,
+                    val "1" } } } ,
+              {
+                data
+                  imp {
+                    key "exon" } ,
+                location
+                  int {
+                    from 2547 ,
+                    to 3051 ,
+                    id
+                      gi 13938851 } ,
+                qual {
+                  {
+                    qual "number" ,
+                    val "2" } } } ,
+              {
+                data
+                  imp {
+                    key "intron" } ,
+                location
+                  int {
+                    from 3052 ,
+                    to 3135 ,
+                    id
+                      gi 13938851 } ,
+                qual {
+                  {
+                    qual "number" ,
+                    val "2" } } } ,
+              {
+                data
+                  imp {
+                    key "exon" } ,
+                location
+                  int {
+                    from 3136 ,
+                    to 3494 ,
+                    id
+                      gi 13938851 } ,
+                qual {
+                  {
+                    qual "number" ,
+                    val "3" } } } ,
+              {
+                data
+                  gene {
+                    locus "DAG1" } ,
+                location
+                  int {
+                    from 1725 ,
+                    to 3826 ,
+                    id
+                      gi 13938851 } } } } } } ,
+    seq {
+      id {
+        embl {
+          accession "CAB40190" ,
+          version 1 } ,
+        gi 4581965 } ,
+      descr {
+        title "DNA-binding protein [Arabidopsis thaliana]" ,
+        molinfo {
+          biomol peptide } } ,
+      inst {
+        repr raw ,
+        mol aa ,
+        length 296 ,
+        seq-data
+          ncbieaa "MDATKWTQGFQEMINVKPMEQMISSTNNNTPQQQPTFIATNTRPNATASNGGSGGNTNN
+TATMETRKARPQEKVNCPRCNSTNTKFCYYNNYSLTQPRYFCKGCRRYWTEGGSLRNVPVGGSSRKNKRSSTPLASPS
+NPKLPDLNPPILFSSQIPNKSNKDLNLLSFPVMQDHHHHALELLRSNGVSSRGMNTFLPGQMMDSNSVLYSSLGFPTM
+PDYKQSNNNLSFSIDHHQGIGHNTINSNQRAQDNNDDMNGASRVLFPFSDMKELSSTTQEKSHGNNTYWNGMFSNTGG
+SSW" } ,
+      annot {
+        {
+          data
+            ftable {
+              {
+                data
+                  prot {
+                    name {
+                      "DNA-binding protein" } ,
+                    activity {
+                      "transcription factor" } } ,
+                location
+                  int {
+                    from 0 ,
+                    to 295 ,
+                    id
+                      gi 4581965 } } } } ,
+        {
+          db other ,
+          name "Annot:CDD" ,
+          desc {
+            name "CDDSearch" ,
+            create-date
+              std {
+                year 2007 ,
+                month 10 ,
+                day 26 ,
+                hour 3 ,
+                minute 4 ,
+                second 27 } } ,
+          data
+            ftable {
+              {
+                data
+                  region "zf-Dof" ,
+                comment "Dof domain, zinc finger. The Dof domain is a zinc
+ finger DNA-binding domain, that shows resemblance to the Cys2 zinc finger." ,
+                location
+                  int {
+                    from 68 ,
+                    to 130 ,
+                    id
+                      gi 4581965 } ,
+                ext {
+                  type
+                    str "cddScoreData" ,
+                  data {
+                    {
+                      label
+                        str "definition" ,
+                      data
+                        str "pfam02701" } ,
+                    {
+                      label
+                        str "short_name" ,
+                      data
+                        str "zf-Dof" } ,
+                    {
+                      label
+                        str "score" ,
+                      data
+                        int 297 } ,
+                    {
+                      label
+                        str "evalue" ,
+                      data
+                        real { 148043, 10, -32 } } ,
+                    {
+                      label
+                        str "bit_score" ,
+                      data
+                        real { 118522, 10, -3 } } } } ,
+                dbxref {
+                  {
+                    db "CDD" ,
+                    tag
+                      id 66392 } } } } } } } } ,
+  annot {
+    {
+      data
+        ftable {
+          {
+            data
+              cdregion {
+                frame one ,
+                code {
+                  id 1 } } ,
+            product
+              whole
+                gi 4581965 ,
+            location
+              mix {
+                int {
+                  from 1839 ,
+                  to 1862 ,
+                  id
+                    gi 13938851 } ,
+                int {
+                  from 2547 ,
+                  to 3051 ,
+                  id
+                    gi 13938851 } ,
+                int {
+                  from 3136 ,
+                  to 3497 ,
+                  id
+                    gi 13938851 } } ,
+            qual {
+              {
+                qual "experiment" ,
+                val "experimental evidence, no additional details recorded" } ,
+              {
+                qual "standard_name" ,
+                val "BBFa" } } ,
+            exp-ev experimental ,
+            dbxref {
+              {
+                db "GOA" ,
+                tag
+                  str "Q43385" } ,
+              {
+                db "InterPro" ,
+                tag
+                  str "IPR003851" } ,
+              {
+                db "UniProtKB/Swiss-Prot" ,
+                tag
+                  str "Q43385" } } } } } } }
+

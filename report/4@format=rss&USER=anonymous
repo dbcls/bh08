@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  
+
+  <channel>
+    <title>Hackathon: {4} Assigned, Active Tickets by Owner</title>
+    <link>http://bl22-02.dbcls.jp:31081/report/4</link>
+    <description>Trac Report -
+List assigned tickets, group by ticket owner, sorted by priority.
+</description>
+    <language>en-us</language>
+    <image>
+      <title>Hackathon</title>
+      <url>http://bl22-02.dbcls.jp:31081/chrome/site/BioHackathon.png</url>
+      <link>http://bl22-02.dbcls.jp:31081/report/4</link>
+    </image>
+    <generator>Trac v0.11.6</generator>
+  </channel>
+</rss>

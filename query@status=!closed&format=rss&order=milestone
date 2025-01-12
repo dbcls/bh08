@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  
+
+  <channel>
+    <title>Hackathon: Ticket Query</title>
+    <link>http://bl22-02.dbcls.jp:31081/query?status=%21closed&amp;row=description</link>
+    <description>Hackathon</description>
+    <language>en-US</language>
+    <image>
+      <title>Hackathon</title>
+      <url>http://bl22-02.dbcls.jp:31081/chrome/site/BioHackathon.png</url>
+      <link>http://bl22-02.dbcls.jp:31081/query?status=%21closed&amp;row=description</link>
+    </image>
+    <generator>Trac 0.11.6</generator>
+    <item>
+        <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+        <guid isPermaLink="false">http://bl22-02.dbcls.jp:31081/ticket/1</guid>
+        <title>#1: Asynchronous models slides</title>
+        <pubDate>Mon, 11 Feb 2008 17:06:57 GMT</pubDate>
+          <dc:creator>jmfernandez</dc:creator>
+        <description>&lt;p&gt;
+These slides are from a meeting talk at Gent from &lt;a class="ext-link" href="http://mips.gsf.de/projects/plants/PlaNetPortal/index_html"&gt;&lt;span class="icon"&gt; &lt;/span&gt;PlaNet&lt;/a&gt; project at the end of 2004, and they show the a true asynchronous model and a polling one, applied to HTTP context. They were used during the first day for some explanations about asynchronous services.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://bl22-02.dbcls.jp:31081/ticket/1#changelog</comments>
+    </item>
+ </channel>
+</rss>

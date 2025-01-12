@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      WikiStart (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/WikiStart?action=history" title="Page history" />
+        <link rel="next" href="/wiki/WikiStart?action=diff&amp;version=14" title="Version 14" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/WikiStart?action=diff&amp;version=12" title="Version 12" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/WikiStart?action=diff&amp;version=12" title="Version 12">Previous Change</a></span></li><li><a href="/wiki/WikiStart?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/WikiStart?action=diff&amp;version=14" title="Version 14">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/WikiStart?version=12">Version 12</a> and
+        <a href="/wiki/WikiStart?version=13">Version 13</a> of
+        <a href="/wiki/WikiStart?version=13">WikiStart</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/WikiStart?version=13"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="13" />
+          <input type="hidden" name="old_version" value="12" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2007/11/21 00:53:12 (<a class="timeline" href="/timeline?from=2007-11-21T00%3A53%3A12%2B0900&amp;precision=second" title="2007-11-21T00:53:12+0900 in Timeline">17 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          ktym
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/WikiStart?version=13">WikiStart</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 12">
+                    <a href="/wiki/WikiStart?version=12#L9">
+                      v12</a>
+                  </th>
+                  <th title="Version 13">
+                    <a href="/wiki/WikiStart?version=13#L9">
+                      v13</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>10</th><th>10</th><td class="l"><span>&nbsp;* [wiki:CallForParticipation]</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>11</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>12</th><th> </th><td class="l"><del>Dear all,</del> </td>
+                  </tr><tr>
+                          <th>13</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>14</th><th> </th><td class="l"><del>Database Center for Life Science (DBCLS) is planning to have a !BioHackathon</del> </td>
+                  </tr><tr>
+                          <th>15</th><th> </th><td class="l"><del>for the Web Service in next January or February and hope to invite all of you to Japan</del> </td>
+                  </tr><tr>
+                          <th>16</th><th> </th><td class="l"><del>(currently considering upto 20 developers from abroad and other 20 developers</del> </td>
+                  </tr><tr>
+                          <th>17</th><th> </th><td class="l"><del>from Japan in total). We can offer your travel fare and accommodation fee</del> </td>
+                  </tr><tr>
+                          <th>18</th><th> </th><td class="l"><del>by the DBCLS budget.</del> </td>
+                  </tr><tr>
+                          <th>19</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>20</th><th> </th><td class="l"><del>DBCLS (http://dbcls.jp/en/) is a non-profit research institution funded by</del> </td>
+                  </tr><tr>
+                          <th>21</th><th> </th><td class="l"><del>MEXT (http://www.mext.go.jp/english/), established on the April 2007 and</del> </td>
+                  </tr><tr>
+                          <th>22</th><th> </th><td class="l"><del>will continue for the 4 years. One of our goals is to integrate bioinformatics</del> </td>
+                  </tr><tr>
+                          <th>23</th><th> </th><td class="l"><del>web services in a unified and convenient manner.</del> </td>
+                  </tr><tr>
+                          <th>24</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>25</th><th> </th><td class="l"><del>For this purpose, I'm planning to develop a proxy server which translate</del> </td>
+                  </tr><tr>
+                          <th>26</th><th> </th><td class="l"><del>user's query for appropriate web service provider (e.g. EBI, KEGG, BioMOBY etc.)</del> </td>
+                  </tr><tr>
+                          <th>27</th><th> </th><td class="l"><del>and formalize the returned data structures, so that user can easily build</del> </td>
+                  </tr><tr>
+                          <th>28</th><th> </th><td class="l"><del>their own workflow without bothered by the data format conversion.</del> </td>
+                  </tr><tr>
+                          <th>29</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>30</th><th> </th><td class="l"><del>This view is partly based on the comment by Tom Oinn in BOSC2007 - even a sequence</del> </td>
+                  </tr><tr>
+                          <th>31</th><th> </th><td class="l"><del>object in BioPerl is not compatible with other Bio* libraries - I strongly agree</del> </td>
+                  </tr><tr>
+                          <th>32</th><th> </th><td class="l"><del>with it. We should define "50 basic bioinformatics data types" and implement them</del> </td>
+                  </tr><tr>
+                          <th>33</th><th> </th><td class="l"><del>by refactoring current Bio* libraries, then use them in every web services.</del> </td>
+                  </tr><tr>
+                          <th>34</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>35</th><th> </th><td class="l"><del>BioMOBY has been served as a initial repository for various web services, however,</del> </td>
+                  </tr><tr>
+                          <th>36</th><th> </th><td class="l"><del>there are hundreds of data types are listed and many of them are very similar.</del> </td>
+                  </tr><tr>
+                          <th>37</th><th> </th><td class="l"><del>I think they need to be re-organized as the naming convention of the methods and</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del>data types currently used are extremely diverged. I suppose this situation restrict</del> </td>
+                  </tr><tr>
+                          <th>39</th><th> </th><td class="l"><del>the interoperability of the services, and to develop any bioinformatics workflow,</del> </td>
+                  </tr><tr>
+                          <th>40</th><th> </th><td class="l"><del>user needs to consult with (poor, in some cases) documentations.</del> </td>
+                  </tr><tr>
+                          <th>41</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>42</th><th> </th><td class="l"><del>So, I hope to gather as many developers as we can, from major web service providers,</del> </td>
+                  </tr><tr>
+                          <th>43</th><th> </th><td class="l"><del>from Bio* developers, and other integrated service providers like BioMOBY and Taverna,</del> </td>
+                  </tr><tr>
+                          <th>44</th><th> </th><td class="l"><del>to discuss and develop a new Open Bio* standard for the web-service-centric</del> </td>
+                  </tr><tr>
+                          <th>45</th><th> </th><td class="l"><del>bioinformatics-nation (TM).</del> </td>
+                  </tr><tr>
+                          <th>46</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>47</th><th> </th><td class="l"><del>I'm preferentially writing you to hear any input to finalize our objectives of</del> </td>
+                  </tr><tr>
+                          <th>48</th><th> </th><td class="l"><del>the web service hackathon, as my current knowledge on BioMOBY, myGrid, Taverna</del> </td>
+                  </tr><tr>
+                          <th>49</th><th> </th><td class="l"><del>and other web services are very limited.</del> </td>
+                  </tr><tr>
+                          <th>50</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>51</th><th> </th><td class="l"><del>From my experience as a developer of the BioRuby library and the KEGG API service,</del> </td>
+                  </tr><tr>
+                          <th>52</th><th> </th><td class="l"><del>I'm still stick on the SOAP/WSDL services even though the REST is the current trend.</del> </td>
+                  </tr><tr>
+                          <th>53</th><th> </th><td class="l"><del>Because,</del> </td>
+                  </tr><tr>
+                          <th>54</th><th> </th><td class="l"><del>&nbsp;* every SOAP server speaks the same language</del> </td>
+                  </tr><tr>
+                          <th>55</th><th> </th><td class="l"><del>&nbsp; * cost to develop a client code can be minimal</del> </td>
+                  </tr><tr>
+                          <th>56</th><th> </th><td class="l"><del>&nbsp; * user doesn't need any parser (cf. DAS spec etc.)</del> </td>
+                  </tr><tr>
+                          <th>57</th><th> </th><td class="l"><del>&nbsp; * user can easily pass any complex data structure (including &lt;ComplexType&gt;)</del> </td>
+                  </tr><tr>
+                          <th>58</th><th> </th><td class="l"><del>&nbsp;* we can also provide REST service if appropriate</del> </td>
+                  </tr><tr>
+                          <th>59</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>60</th><th> </th><td class="l"><del>On behalf of the DBCLS,</del> </td>
+                  </tr><tr class="last">
+                          <th>61</th><th> </th><td class="l"><del>Toshiaki Katayama</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>11</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>63</th><th>12</th><td class="l"><span>== Venue ==</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      ListOfAttendees – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/ListOfAttendees?version=50&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/ListOfAttendees" title="View latest version" />
+        <link rel="next" href="/wiki/ListOfAttendees?version=51" title="Version 51" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/ListOfAttendees?version=49" title="Version 49" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/ListOfAttendees?version=49" title="Version 49">Previous Version</a></span></li><li><a href="/wiki/ListOfAttendees" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/ListOfAttendees?version=51" title="Version 51">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/ListOfAttendees?action=diff&amp;version=50">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 50 (modified by ktym, <a class="timeline" href="/timeline?from=2007-12-20T11%3A35%3A14%2B0900&amp;precision=second" title="2007-12-20T11:35:14+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="ListofWebServiceHackathonattendees">List of Web Service Hackathon attendees</h1>
+<h2 id="Confirmed">Confirmed</h2>
+<ul><li>Organizers
+<ul><li>Toshiaki Katayama (<a class="ext-link" href="http://www.hgc.jp/"><span class="icon"> </span>Univ of Tokyo</a>, Japan; <a class="ext-link" href="http://bioruby.org/"><span class="icon"> </span>BioRuby</a>, <a class="ext-link" href="http://www.genome.jp/kegg/soap/"><span class="icon"> </span>KEGG API</a>, <a class="ext-link" href="http://das.hgc.jp/"><span class="icon"> </span>KEGG DAS</a>)
+</li><li>Yasunori Yamamoto (<a class="ext-link" href="http://dbcls.jp/en/"><span class="icon"> </span>DBCLS</a>, Japan; Text mining)
+</li><li>Atsuko Yamaguchi (DBCLS, Japan)
+</li><li>Tamotsu Noguchi (<a class="ext-link" href="http://cbrc.jp/"><span class="icon"> </span>CBRC</a>, Japan)
+</li><li>Kiyoshi Asai (CBRC, Japan)
+</li><li>Toshihisa Takagi (DBCLS, Japan)
+</li></ul></li></ul><ul><li>Web service providers
+<ul><li>DDBJ
+<ul><li>Hideaki Sugawara (<a class="ext-link" href="http://www.ddbj.nig.ac.jp/"><span class="icon"> </span>DDBJ</a>, Japan; <a class="ext-link" href="http://www.xml.nig.ac.jp/"><span class="icon"> </span>DDBJ XML</a>)
+</li><li>Yasumasa Shigemoto (DDBJ, Japan; DDBJ XML)
+</li></ul></li><li>KEGG
+<ul><li>Shuichi Kawashima (Univ of Tokyo, Japan; KEGG API)
+</li><li>Satoshi Miyazaki (Japan; KEGG)
+</li></ul></li><li>PDBj
+<ul><li>Akira Kinjo (Osaka Univ, Japan; PDBj)
+</li></ul></li><li>CBRC
+<ul><li>Tatsuya Nishizawa (IMS/DBCLS/CBRC, Japan; PDBj)
+</li><li>Hiroyuki Sato (IMS/DBCLS/CBRC, Japan)
+</li><li>Oto Maekawa (IMS/DBCLS/CBRC, Japan)
+</li></ul></li><li>EBI
+<ul><li>Richard Cote (EBI, UK; PICR and OLS web services)
+</li><li>Florian Reisinger (EBI, UK; ENVISION/ECORE, WS-I compliant services for Ensembl, UniProt-DAS, ArrayExpress, PRIDE , IntAct, and Reactome)
+</li><li>Arnaud Kerhornou (EBI, UK; ex-INB, IMIM)
+</li></ul></li><li>Other web service providers and standard exchange format developers
+<ul><li>Alberto Labarga (Integromics, Spain; ex-EBI)
+</li><li>Matthew Pocock (Newcastle, UK; Taverna, BioJava)
+</li><li>Osvaldo Trelles (INB, Spain; MOWServ)
+</li><li>Sophia Ananiadou (Manchester, UK; Text mining)
+</li><li>Jan Christian Bryne (Computational Biology Unit, Bergen; EMBRACE)
+</li><li>Evangelos Pafilis (European Molecular Biology Laboratory; SRS web services)
+</li><li>Bruno Aranda (EBI, UK; <a class="ext-link" href="http://www.ebi.ac.uk/intact"><span class="icon"> </span>IntAct</a>)
+</li><li>Lukasz Salwinski (US; <a class="ext-link" href="http://dip.doe-mbi.ucla.edu/dip/Main.cgi"><span class="icon"> </span>DIP</a>)
+</li><li>Kiyoko Kinoshita (Soka Univ, Japan; Glycoinformatics)
+</li><li>Ken Fukuda (CBRC, Japan; BioPAX, INOH)
+</li></ul></li></ul></li></ul><ul><li>Open Bio* developers
+<ul><li>BioRuby
+<ul><li>Mitsuteru Nakao (Kazusa DNA Res, Japan; BioRuby)
+</li><li>Naohisa Goto (Osaka Univ, Japan; BioRuby)
+</li><li>Jan Aerts (<a class="ext-link" href="http://www.bbsrc.ac.uk/"><span class="icon"> </span>BBSRC</a>, UK; BioRuby)
+</li><li>Pjotr Prins (BioRuby)
+</li><li>Alex Gutteridge (BioRuby)
+</li><li>Christian Zmasek (BioRuby)
+</li><li>Raoul Jean Pierre Bonnal (BioRuby, BioSQL)
+</li></ul></li><li>BioJava
+<ul><li>Mark Schreiber (BioJava)
+</li><li>Richard Holland (BioJava, BioMart)
+</li></ul></li><li>BioPerl
+<ul><li>Heikki Lehvaslaiho (BioPerl)
+</li><li>Hilmar Lapp (BioPerl)
+</li><li>Rutger Vos (BioPerl)
+</li></ul></li></ul></li></ul><ul><li>Workflow client developers
+<ul><li>Tom Oinn (EBI, UK; Taverna/myGrid)
+</li><li>Stuart Owen (EBI, UK; Taverna)
+</li><li>Kazuharu Arakawa (Keio Univ, Japan; E-Cell, G-language)
+</li><li>Hiroyuki Nakamura (Keio Univ, Japan; eXpanda)
+</li><li>Keiichiro Ohno (UCSD, US; Cytoscape)
+</li><li>Akira Funahashi (Keio Univ, Japan; SBML)
+</li></ul></li></ul><ul><li>BioMOBY project
+<ul><li>Mark Wilkinson (<a class="ext-link" href="http://bioinfo.icapture.ubc.ca/"><span class="icon"> </span>Univ of British Columbia</a>, Canada; BioMOBY)
+</li><li>Martin Senger (BioPerl, BioMOBY - CGIAR Generation Challenge Project)
+</li><li>Andreas Groscurth (the lead BioMOBY developer at the Max Planck Institute in Germany for the European Tomato Project)
+</li><li>Paul Gordon (the lead BioMOBY developer in the SUN Centre of Excellence for the Genome Canada Bioinformatics Platform)
+</li><li>Masaru Takeya (AFFRC, Japan; BioMOBY)
+</li><li>Lord Hendrix Barboza (IRRI; BioMOBY)
+</li><li>Richard Bruskiewich (IRRI; BioMOBY)
+</li></ul></li></ul><h2 id="Tobeconfirmed">To be confirmed</h2>
+<ul><li>Web service providers
+<ul><li>Interaction network/Pathway data standardization
+<ul><li>Gary Bader (<a class="ext-link" href="http://www.baderlab.org/"><span class="icon"> </span>http://www.baderlab.org/</a>) -&gt; NG
+</li><li>Emek Demir (SBML)
+</li><li>Lukasz Salwinski DIP (<a class="ext-link" href="http://dip.doe-mbi.ucla.edu/dip/Main.cgi"><span class="icon"> </span>http://dip.doe-mbi.ucla.edu/dip/Main.cgi</a>)
+</li><li>cPath/PathwayCommons (<a class="ext-link" href="http://cbio.mskcc.org/cpath/home.do"><span class="icon"> </span>http://cbio.mskcc.org/cpath/home.do</a> <a class="ext-link" href="http://www.pathwaycommons.org/pc/"><span class="icon"> </span>http://www.pathwaycommons.org/pc/</a>)
+</li><li>BioGRID
+</li><li>STRING
+</li></ul></li><li>Glyconinformatics
+<ul><li>Rene Ranziger (Germany)
+</li></ul></li><li>BioMart
+<ul><li>Arek Kasprzyk -&gt; NG
+</li></ul></li><li>Masayuki Kawashima (FQS, Japan; KEGG)
+</li><li>Teresa Miyar (EBI, UK; EBI web services - Blast, InterproScan, Dbfetch, EB-Eye, IPRservice, ELM/CS, etc.)
+</li><li>Robert D. Finn (Sanger Institute; PFAM)
+</li></ul></li></ul><ul><li>Open Bio* developers
+<ul><li>BioPerl
+<ul><li>Lincoln Stein (BioPerl, BioMOBY, BioDAS)
+</li><li>Jason Stajich (BioPerl)
+</li><li>Aaron J Mackey (BioPerl)
+</li><li>Ewan Birney (BioPerl, Ensembl)
+</li><li>Chiris Dagdigian (O|B|F)
+</li></ul></li><li>BioPython
+<ul><li>Andrew Dalke (BioPython)
+</li><li>Michael de Hoon (BioPython)
+</li></ul></li><li>BioRuby
+<ul><li>Andreas Biegert (Max-Planck-Institute; MPI toolkit)
+</li></ul></li><li>BioJava
+<ul><li>Andreas Prlic
+</li><li>Andy Yates
+</li></ul></li></ul></li></ul><ul><li>Workflow client development
+<ul><li>June Finch (Taverna)
+</li></ul></li></ul><ul><li>BioMOBY project
+<ul><li>Edward Kawas (the lead BioMOBY developer in Mark's lab)
+</li><li>Romina Royo (one of the lead BioMOBY developers for the Genome Espania Bioinformatics Platform)
+</li><li>Pieter Neerincx (the lead BioMOBY developer in the Netherlands)
+</li><li>Takeshi Itoh (AFFRC, Japan)
+</li><li>Akane Takezaki (AFFRC, Japan)
+</li></ul></li></ul>
+<p>
+and more...
+</p>
+<p>
+If you could recommend any appropriate persons from the following groups, please let me know:
+</p>
+<ul><li>NCBI web service developers
+</li><li>BioPython developers
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/ListOfAttendees?version=50&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

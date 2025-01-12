@@ -1,0 +1,311 @@
+LOCUS       NM_004393               5537 bp    mRNA    linear   PRI 11-FEB-2008
+DEFINITION  Homo sapiens dystroglycan 1 (dystrophin-associated glycoprotein 1)
+            (DAG1), mRNA.
+ACCESSION   NM_004393
+VERSION     NM_004393.2  GI:148539834
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 5537)
+  AUTHORS   Martin,L.T., Glass,M., Dosunmu,E. and Martin,P.T.
+  TITLE     Altered expression of natively glycosylated alpha dystroglycan in
+            pediatric solid tumors
+  JOURNAL   Hum. Pathol. 38 (11), 1657-1668 (2007)
+   PUBMED   17640712
+  REMARK    GeneRIF: alpha dystroglycan glycosylation & laminin binding to
+            alpha dystroglycan are altered in certain pediatric solid tumors
+            and suggest that aberrant dystroglycan glycosylation may contribute
+            to tumor cell biology in patients with RMS, medulloblastoma, & NBL.
+REFERENCE   2  (bases 1 to 5537)
+  AUTHORS   Sgambato,A., De Paola,B., Migaldi,M., Di Salvatore,M., Rettino,A.,
+            Rossi,G., Faraglia,B., Boninsegna,A., Maiorana,A. and Cittadini,A.
+  TITLE     Dystroglycan expression is reduced during prostate tumorigenesis
+            and is regulated by androgens in prostate cancer cells
+  JOURNAL   J. Cell. Physiol. 213 (2), 528-539 (2007)
+   PUBMED   17516554
+  REMARK    GeneRIF: Data suggest that disturbances in the function of the
+            dystroglycan complex might contribute to the definition of the
+            malignant behavior of prostate cancer cells and suggest that
+            androgens might regulate DG expression in these cells.
+REFERENCE   3  (bases 1 to 5537)
+  AUTHORS   Scotton,P., Bleckmann,D., Stebler,M., Sciandra,F., Brancaccio,A.,
+            Meier,T., Stetefeld,J. and Ruegg,M.A.
+  TITLE     Activation of muscle-specific receptor tyrosine kinase and binding
+            to dystroglycan are regulated by alternative mRNA splicing of agrin
+  JOURNAL   J. Biol. Chem. 281 (48), 36835-36845 (2006)
+   PUBMED   17012237
+  REMARK    GeneRIF: muscle-specific receptor tyrosine kinase activation and
+            binding to dystroglycan are regulated by alternative mRNA splicing
+            of agrin
+REFERENCE   4  (bases 1 to 5537)
+  AUTHORS   Yamamoto,T., Kawaguchi,M., Sakayori,N., Muramatsu,F., Morikawa,S.,
+            Kato,Y., Shibata,N. and Kobayashi,M.
+  TITLE     Intracellular binding of fukutin and alpha-dystroglycan: relation
+            to glycosylation of alpha-dystroglycan
+  JOURNAL   Neurosci. Res. 56 (4), 391-399 (2006)
+   PUBMED   17005282
+  REMARK    GeneRIF: Fukutin seems to bind to both the hypoglycosylated and
+            fully glycosylated form of alpha-dystroglycan, and seems bind to
+            the core area rather than the sugar chain of alpha-dystroglycan
+REFERENCE   5  (bases 1 to 5537)
+  AUTHORS   McDearmon,E.L., Combs,A.C., Sekiguchi,K., Fujiwara,H. and
+            Ervasti,J.M.
+  TITLE     Brain alpha-dystroglycan displays unique glycoepitopes and
+            preferential binding to laminin-10/11
+  JOURNAL   FEBS Lett. 580 (14), 3381-3385 (2006)
+   PUBMED   16709410
+REFERENCE   6  (bases 1 to 5537)
+  AUTHORS   Apel,E.D., Roberds,S.L., Campbell,K.P. and Merlie,J.P.
+  TITLE     Rapsyn may function as a link between the acetylcholine receptor
+            and the agrin-binding dystrophin-associated glycoprotein complex
+  JOURNAL   Neuron 15 (1), 115-126 (1995)
+   PUBMED   7619516
+REFERENCE   7  (bases 1 to 5537)
+  AUTHORS   Yang,B., Jung,D., Motto,D., Meyer,J., Koretzky,G. and Campbell,K.P.
+  TITLE     SH3 domain-mediated interaction of dystroglycan and Grb2
+  JOURNAL   J. Biol. Chem. 270 (20), 11711-11714 (1995)
+   PUBMED   7744812
+REFERENCE   8  (bases 1 to 5537)
+  AUTHORS   Skynner,M.J., Gangadharan,U., Coulton,G.R., Mason,R.M.,
+            Nikitopoulou,A., Brown,S.D. and Blanco,G.
+  TITLE     Genetic mapping of the mouse neuromuscular mutation kyphoscoliosis
+  JOURNAL   Genomics 25 (1), 207-213 (1995)
+   PUBMED   7774920
+REFERENCE   9  (bases 1 to 5537)
+  AUTHORS   Matsumura,K., Tome,F.M., Collin,H., Azibi,K., Chaouch,M.,
+            Kaplan,J.C., Fardeau,M. and Campbell,K.P.
+  TITLE     Deficiency of the 50K dystrophin-associated glycoprotein in severe
+            childhood autosomal recessive muscular dystrophy
+  JOURNAL   Nature 359 (6393), 320-322 (1992)
+   PUBMED   1406935
+REFERENCE   10 (bases 1 to 5537)
+  AUTHORS   Ibraghimov-Beskrovnaya,O., Ervasti,J.M., Leveille,C.J.,
+            Slaughter,C.A., Sernett,S.W. and Campbell,K.P.
+  TITLE     Primary structure of dystrophin-associated glycoproteins linking
+            dystrophin to the extracellular matrix
+  JOURNAL   Nature 355 (6362), 696-702 (1992)
+   PUBMED   1741056
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from DA851197.1, BC012740.2,
+            L19711.1, CX871468.1, BX402174.2, BF476692.1 and AW204012.1.
+            On Jun 2, 2007 this sequence version replaced gi:4758115.
+            
+            Summary: Dystroglycan is a laminin binding component of the
+            dystrophin-glycoprotein complex which provides a linkage between
+            the subsarcolemmal cytoskeleton and the extracellular matrix.
+            Dystroglycan 1 is a candidate gene for the site of the mutation in
+            autosomal recessive muscular dystrophies. The dramatic reduction of
+            dystroglycan 1 in Duchenne muscular dystrophy leads to a loss of
+            linkage between the sarcolemma and extracellular matrix, rendering
+            muscle fibers more susceptible to necrosis. Dystroglycan also
+            functions as dual receptor for agrin and laminin-2 in the Schwann
+            cell membrane. The muscle and nonmuscle isoforms of dystroglycan
+            differ by carbohydrate moieties but not protein sequence.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the
+            Entrez Gene record to access additional publications.
+            COMPLETENESS: complete on the 3' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-65                DA851197.1         1-65
+            66-2673             BC012740.2         1-2608
+            2674-2674           L19711.1           2650-2650
+            2675-4382           BC012740.2         2610-4317
+            4383-4873           CX871468.1         98-588
+            4874-5367           BX402174.2         200-693
+            5368-5519           BF476692.1         1-152               c
+            5520-5537           AW204012.1         1-18                c
+FEATURES             Location/Qualifiers
+     source          1..5537
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="3"
+                     /map="3p21"
+     gene            1..5537
+                     /gene="DAG1"
+                     /note="dystroglycan 1 (dystrophin-associated glycoprotein
+                     1); synonyms: A3a, DAG, AGRNR, 156DAG"
+                     /db_xref="GeneID:1605"
+                     /db_xref="HGNC:2666"
+                     /db_xref="HPRD:HPRD_00546"
+                     /db_xref="MIM:128239"
+     exon            1..302
+                     /gene="DAG1"
+                     /inference="alignment:Splign"
+                     /number=1
+     exon            303..703
+                     /gene="DAG1"
+                     /inference="alignment:Splign"
+                     /number=2
+     CDS             419..3106
+                     /gene="DAG1"
+                     /note="alpha-dystroglycan; dystrophin-associated
+                     glycoprotein-1; beta-dystroglycan"
+                     /codon_start=1
+                     /product="dystroglycan 1 preproprotein"
+                     /protein_id="NP_004384.2"
+                     /db_xref="GI:148539835"
+                     /db_xref="CCDS:CCDS2799.1"
+                     /db_xref="GeneID:1605"
+                     /db_xref="HGNC:2666"
+                     /db_xref="HPRD:HPRD_00546"
+                     /db_xref="MIM:128239"
+                     /translation="MRMSVGLSLLLPLWGRTFLLLLSVVMAQSHWPSEPSEAVRDWEN
+                     QLEASMHSVLSDLHEAVPTVVGIPDGTAVVGRSFRVTIPTDLIASSGDIIKVSAAGKE
+                     ALPSWLHWDSQSHTLEGLPLDTDKGVHYISVSATRLGANGSHIPQTSSVFSIEVYPED
+                     HSELQSVRTASPDPGEVVSSACAADEPVTVLTVILDADLTKMTPKQRIDLLHRMRSFS
+                     EVELHNMKLVPVVNNRLFDMSAFMAGPGNAKKVVENGALLSWKLGCSLNQNSVPDIHG
+                     VEAPAREGAMSAQLGYPVVGWHIANKKPPLPKRVRRQIHATPTPVTAIGPPTTAIQEP
+                     PSRIVPTPTSPAIAPPTETMAPPVRDPVPGKPTVTIRTRGAIIQTPTLGPIQPTRVSE
+                     AGTTVPGQIRPTMTIPGYVEPTAVATPPTTTTKKPRVSTPKPATPSTDSTTTTTRRPT
+                     KKPRTPRPVPRVTTKVSITRLETASPPTRIRTTTSGVPRGGEPNQRPELKNHIDRVDA
+                     WVGTYFEVKIPSDTFYDHEDTTTDKLKLTLKLREQQLVGEKSWVQFNSNSQLMYGLPD
+                     SSHVGKHEYFMHATDKGGLSAVDAFEIHVHRRPQGDRAPARFKAKFVGDPALVLNDIH
+                     KKIALVKKLAFAFGDRNCSTITLQNITRGSIVVEWTNNTLPLEPCPKEQIAGLSRRIA
+                     EDDGKPRPAFSNALEPDFKATSITVTGSGSCRHLQFIPVVPPRRVPSEAPPTEVPDRD
+                     PEKSSEDDVYLHTVIPAVVVAAILLIAGIIAMICYRKKRKGKLTLEDQATFIKKGVPI
+                     IFADELDDSKPPPSSSMPLILQEEKAPLPPPEYPNQSVPETTPLNQDTMGEYTPLRDE
+                     DPNAPPYQPPPPFTAPMEGKGSRPKNMTPYRSPPPYVPP"
+     sig_peptide     419..505
+                     /gene="DAG1"
+     proprotein      506..3103
+                     /gene="DAG1"
+                     /product="dystroglycan 1 proprotein"
+     mat_peptide     506..2377
+                     /gene="DAG1"
+                     /product="alpha-dystroglycan"
+     mat_peptide     2378..3103
+                     /gene="DAG1"
+                     /product="beta-dystroglycan"
+     exon            704..5522
+                     /gene="DAG1"
+                     /inference="alignment:Splign"
+                     /number=3
+     STS             1790..2668
+                     /gene="DAG1"
+                     /standard_name="PMC28400P1"
+                     /db_xref="UniSTS:272410"
+     STS             2631..2792
+                     /gene="DAG1"
+                     /standard_name="GDB:215839"
+                     /db_xref="UniSTS:156205"
+     STS             3430..3772
+                     /gene="DAG1"
+                     /standard_name="D3S3337"
+                     /db_xref="UniSTS:5975"
+     STS             4140..4266
+                     /gene="DAG1"
+                     /standard_name="Bdy62f05"
+                     /db_xref="UniSTS:36695"
+     polyA_signal    4348..4353
+                     /gene="DAG1"
+     polyA_site      4388
+                     /gene="DAG1"
+     STS             4554..4708
+                     /gene="DAG1"
+                     /standard_name="G54125"
+                     /db_xref="UniSTS:109362"
+     polyA_signal    5498..5503
+                     /gene="DAG1"
+     polyA_site      5522
+                     /gene="DAG1"
+ORIGIN      
+        1 aggcagaagc cggcggcgcg cggacagcca gtcggcgccg cgcggagctg gccgctggat
+       61 tggctgcaac actcgcgtgt caggcggttg ctaggctccg gccgcgcgcc ccgcccttgc
+      121 gctcagcgcc ctctcaccgc ccggtacgtg ctcgcgcgaa ggctgcggcg cggcgctcgc
+      181 gcctcttagg cttggcggtg gcggcggcgg cagcttcgcg ccgaatcccc ggggagcggc
+      241 ggtggcggcg tcctggggcc aggaggagcg aacacctgcc gcggtcctcc cgccggcgct
+      301 gggctctgtg tgctccggga tggagcaggt gtgcagaggg tgagaaccca gctctgggac
+      361 caagtcactt gcttccttac ttagcaagac tatcgacttg agcaaacttg gacctgggat
+      421 gaggatgtct gtgggcctct cgctgctgct gcccctctgg gggaggacct ttctcctcct
+      481 gctctctgtg gttatggctc agtcccactg gcccagtgaa ccctcagagg ctgtcaggga
+      541 ctgggaaaac cagcttgagg catccatgca ctcagtgctc tcagacctcc acgaggctgt
+      601 tcccacagtg gttggcattc ctgatggcac ggctgtcgtc gggcgctcat ttcgagtgac
+      661 cattccaaca gatttgattg cctccagtgg agatatcatc aaggtatcag cggcagggaa
+      721 ggaggctttg ccatcttggc tgcactggga ctcacagagc cacaccctgg agggcctccc
+      781 ccttgacact gataagggtg tgcattacat ttcagtgagc gctacacggc tgggggccaa
+      841 cgggagccac atcccccaga cctccagtgt gttctccatc gaggtctacc ctgaagacca
+      901 cagtgagctg cagtcggtga ggacagcctc cccagaccct ggtgaggtgg tatcatctgc
+      961 ctgtgctgcg gatgaacctg tgactgtttt gacggtgatt ttggatgccg acctcaccaa
+     1021 gatgacccca aagcaaagga ttgacctcct gcacaggatg cggagcttct cagaagtaga
+     1081 gcttcacaac atgaaattag tgccggtggt gaataacaga ctatttgaca tgtcggcctt
+     1141 catggctggc ccgggaaatg caaaaaaggt ggtggagaat ggggcccttc tctcctggaa
+     1201 gctgggctgc tccctgaacc agaacagtgt gcctgacatt catggtgtag aggcccctgc
+     1261 cagggagggc gcaatgtctg ctcagcttgg ctaccctgtg gtgggttggc acatcgccaa
+     1321 taagaagccc cctcttccca aacgcgtccg gaggcagatc catgctacac ccacacctgt
+     1381 cactgccatt gggcccccaa ccacggctat ccaggagccc ccatccagga tcgtgccaac
+     1441 ccccacatct ccagccattg ctcctccaac agagaccatg gctcctccag tcagggatcc
+     1501 tgttcctggg aaacccacgg tcaccatccg gactcgaggc gccattattc aaaccccaac
+     1561 cctaggcccc atccagccta ctcgggtgtc agaagctggc accacagttc ctggccagat
+     1621 tcgcccaacg atgaccattc ctggctatgt ggagcctact gcagttgcta cccctcccac
+     1681 aaccaccacc aagaagccac gagtatccac accaaaacca gcaacgcctt caactgactc
+     1741 caccaccacc acgactcgca ggccaaccaa gaaaccacgg acaccccggc cagtgccccg
+     1801 ggtcaccacc aaagtttcca tcaccagatt ggaaactgcc tcaccgccta ctcgtattcg
+     1861 caccaccacc agtggagtgc cccgtggcgg agaacccaac cagcgcccag agctcaagaa
+     1921 ccatattgac agggtagatg cctgggttgg cacctacttt gaggtgaaga tcccgtcaga
+     1981 cactttctat gaccatgagg acaccaccac tgacaagctg aagctgaccc tgaaactgcg
+     2041 ggagcagcag ctggtgggcg agaagtcctg ggtacagttc aacagcaaca gccagctcat
+     2101 gtatggcctt cccgacagca gccacgtggg caaacacgag tatttcatgc atgccacaga
+     2161 caaggggggc ctgtcggctg tggatgcctt cgagatccac gtccacaggc gcccccaagg
+     2221 ggatagggct cctgcaaggt tcaaggccaa gtttgtgggt gacccggcac tggtgttgaa
+     2281 tgacatccac aagaagattg ccttggtaaa gaaactggcc ttcgcctttg gagaccgaaa
+     2341 ctgtagcacc atcaccctgc agaatatcac ccggggctcc atcgtggtgg aatggaccaa
+     2401 caacacactg cccttggagc cctgccccaa ggagcagatc gctgggctga gccgccggat
+     2461 cgctgaggat gatggaaaac ctcggcctgc cttctccaac gccctagagc ctgactttaa
+     2521 ggccacaagc atcactgtga cgggctctgg cagttgtcgg cacctacagt ttatccctgt
+     2581 ggtaccaccc aggagagtgc cctcagaggc gccgcccaca gaagtgcctg acagggaccc
+     2641 tgagaagagc agtgaggatg atgtctacct gcacacagtc attccggccg tggtggtcgc
+     2701 agccatcctg ctcattgctg gcatcattgc catgatctgc taccgcaaga agcggaaggg
+     2761 caagcttacc cttgaggacc aggccacctt catcaagaag ggggtgccta tcatctttgc
+     2821 agacgaactg gacgactcca agcccccacc ctcctccagc atgccactca ttctgcagga
+     2881 ggagaaggct cccctacccc ctcctgagta ccccaaccag agtgtgcccg agaccactcc
+     2941 tctgaaccag gacaccatgg gagagtacac gcccctgcgg gatgaggatc ccaatgcgcc
+     3001 tccctaccag cccccaccgc ccttcacagc acccatggag ggcaagggct cccgtcccaa
+     3061 gaacatgacc ccataccggt cacctcctcc ctatgtccca ccttaacccg caagcgcctg
+     3121 ggtggaggca gggtagggca ggggcctgga gacgacatgg tgttgtctgt ggagaccggt
+     3181 ggcctgcaga ccattgccca ccgggagccg acacctgacc tagcacacac tgacacaggg
+     3241 gcctggacaa gcccgccctc tctggtcctc ccaaacccca aagcagctgg agagactttg
+     3301 gggacttttt tatttttatt ttttgcctaa cagcttttgg tttgttcata gagaattctt
+     3361 cgcttcattt ttgatggctg gctctgaaag caccatgtgg agtggaggtg gagggagcga
+     3421 ggaaccatga atgaactcgc aggcagtgcc gggcggcccc ctggctctct gcgttttgcc
+     3481 tttaacacta actgtactgt tttttctatt cacgtgtgtc tagctgcagg atgtaacatg
+     3541 gaaaacagta actaaagatt aaattcaaag gactttcaga agttaaggtt aagtttttac
+     3601 gtttaatctg ctgtttacct aaacttgtat gtataatttt tgggtgggta tggggaattg
+     3661 ctttgctaaa aataagctcc cagggtgttt caaacttaga gaagaccaag ggacagtatt
+     3721 ttttatcaaa ggaatactat tttttcacac tacgtcaact tggttgctct gataccccag
+     3781 agcctgattg ggggcctccc ggccctggct cacgccaagt ccctggtgct gggtttgctc
+     3841 tcccgctgtt gccaggggct ggaagctgga ggggtctctt gggccatgga catccccact
+     3901 tccagcccat gtacactagt ggcccacgac caaggggtct tcatttccat gaaaaaggga
+     3961 ctccaagagg cagtggtggc tgtggccccc aactttggtg ctccagggtg ggccagctgc
+     4021 ttgtgggggc acctgggagg tcaaaggtct ccaccacatc aacctatttt gttttaccct
+     4081 ttttctgtgc attgtttttt tttttcctcc taaaaggaat atcacggttt tttgaaacac
+     4141 tcagtggggg acattttggt gaagatgcaa tatttttatg tcatgtgatg ctctttcctc
+     4201 acttgacctt ggccgctttg tcctaacagt ccacagtcct gccccgaccc accccatccc
+     4261 ttttctctgg cactccagtc ccaggccttg ggcctgaact actggaaaag gtctggcggc
+     4321 tggggaggag tgccagcaat agttcataat aaaaatctgt tagctctcaa agctaatttt
+     4381 ttactaaagt ttttatacag cctcaaattg ttttattaaa aaaaagattt aaaatggtga
+     4441 tgcttacagc agtttgtacg agctcttaag tgttgattcc atggaactga cggctttgct
+     4501 tgttttgatt cttttccccc tacttttcct aatggtttaa attctggaat tacactgggg
+     4561 ttcttttgcc ttttttagca gaacatccgt ccgtccatct gcatctctgt cccatgactc
+     4621 aggggcgccc actctgcttc gattctcctc ctgtggaaga aaccattttg agcatgactt
+     4681 ttcttgatgt ctgaagcgtt attttgggta ctttttaggg aggaatgcct ttcgcaataa
+     4741 tgtatccatt ccctgattga gggtgggtgg gtggacccag gctccctttg cacacagagc
+     4801 agctacttct aagccatatc gactgttttg cagaggattt gtgtgtgctg cctcaggagg
+     4861 ggagggctgg taggaggggg ggagaggtct ctgtcctact gctctccaga gggcatttcc
+     4921 ccttgcgcct tctcccacag ggcccagccc ctctcccctg ccccagtccc cagggggtac
+     4981 tctggagtga gcagtgcccc tgtgggggag cctgtaaatg cgggctcagt ggaccactgg
+     5041 tgactgggct catgcctcca agtcagagtt tccctggtgc cccagagaca ggagcacaag
+     5101 tgggatctga cctggtgaga ttatttctga tgacctcatc aaaaaataaa caattcccaa
+     5161 tgttccaggt gagggctttg aaaggccttc caaacagctc cgtcgcccct agcaactcca
+     5221 ccattgggca ctgccatgca gagacgtggc tggcccagaa tggcctgttg ccatagcaac
+     5281 tggaggcgat ggggcagtga acagaataac aacagcaaca atgcctttgc aggcagcctg
+     5341 ctcccctgag cgctgggctg gtgatggtcg ttggactctg tgagatggag agccaatctc
+     5401 acattcaagt gttcaccaac cactgatgtg tttttatttc cttctatatg attttaagat
+     5461 gtgttttctg cattctgtaa agaaacatat caaactaaat aaaagcagtg tctttattac
+     5521 aaaaaaaaaa aaaaaaa
+//
+

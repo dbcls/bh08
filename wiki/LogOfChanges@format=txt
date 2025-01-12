@@ -1,0 +1,39 @@
+= !BioPerl post-Hachathon Changes Log =
+
+Bioperl-live SVN version numbers precede the time and description.
+
+== EMBL ==
+
+* 14514 (2008-02-19 01:57:11 -0500): Reindenting the code. Too many lines were slightly off making reading difficult. No code changes.
+
+* 14543 (2008-02-25 03:22:15 -0500): better roundtip when preventing line wrapping between author surname and initials
+
+* 14544 (2008-02-25 04:46:26 -0500) RC (reference comment) line was printed in wrong place. It belongs right after RN line.
+
+
+== Swiss ==
+
+* 14509 (2008-02-17 04:48:07 -0500): removed extra space chars and a full stop at the end of the  FT HELIX and STRAND lines. No more extra spaces at the end of the line. The line length in this format is 76, not 80. Changing that solved a lot of line differences
+
+* 14510 (2008-02-17 05:00:50 -0500): GN line output now follows the new format. BioPerl would need new objects to store all information so for now only the official name (Name=) and synonym categories are kept. ORFNames and OrderedLocusNames are treated as synonyms.
+
+* 14511 (2008-02-17 06:29:31 -0500): prevent line wrapping within author name (RA lines) and withing key frase (KW lines), but allow wrapping at hyphen in a title (RT lines) 
+
+* 14512 (2008-02-17 06:36:20 -0500): DOI can include semi colon (;) character. Allow that.
+
+* 14515 (2008-02-19 03:17:19 -0500): Reindenting the code. Too many lines were slightly off making reading difficult. No code changes.
+
+* 14516 (2008-02-19 03:51:36 -0500):  FTId is no longer treated a part of the description of an FT key but similarly to EMBL FT qualifiers. This allows for 100% roundtrip of the Feature Table.
+
+* 14534 (2008-02-22 03:09:01 -0500): Do not print out empty KW (keyword) lines.
+
+* 14538 (2008-02-23 09:48:23 -0500): GN (Gene Name) line parsing rewrite. Breaks backward compatibility. Can now deal with >1 gene per entry and four categories of names per gene. Parses old style syntax (...OR ... OR ... ) into one gene name and synonyms for each gene. Tests included. Docs to follow.
+
+* 14539 (2008-02-23 10:10:46 -0500): AC (accession) line now wraps if there are too many accessions to fit one line
+
+* 14541 (2008-02-25 01:10:48 -0500): documentation for the GN line parsing and management
+
+
+----
+
+Back to [/wiki/OpenBio* OpenBio*]

@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/WikiStart?version=39&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/WikiStart" title="View latest version" />
+        <link rel="next" href="/wiki/WikiStart?version=40" title="Version 40" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/WikiStart?version=38" title="Version 38" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/WikiStart?version=38" title="Version 38">Previous Version</a></span></li><li><a href="/wiki/WikiStart" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/WikiStart?version=40" title="Version 40">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/WikiStart?action=diff&amp;version=39">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 39 (modified by anonymous, <a class="timeline" href="/timeline?from=2007-12-10T23%3A59%3A48%2B0900&amp;precision=second" title="2007-12-10T23:59:48+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="BioHackathon2008">BioHackathon 2008</h1>
+<p>
+Towards integrated web service in life science with Open Bio* libraries.
+</p>
+<h2 id="Summary">Summary</h2>
+<p>
+The number of web service providers in bioinformatics field is increasing year by year.
+In theory, these services are interoperable and independent from computer langugages.
+However, each service uses their own definition of the data types and naming convensions for the methods.
+Moreover, these services are often not usable by specific languages
+(partly, due to the lack of compliance of the SOAP/WSDL specification in the langauge's library).
+</p>
+<p>
+This situation prevents these services to be popularized for and used in combination by end users as a infrastructure of the daily research.
+The <a class="ext-link" href="http://www.biomoby.org/"><span class="icon"> </span>BioMOBY</a> project has been tried to overcome the circumstances by defining ontologies for data types and methods used in the services.
+However, there are many major service providers are not yet participated in the BioMOBY framework.
+Especially, there are several web service providers in Japan such as <a class="ext-link" href="http://www.xml.nig.ac.jp/"><span class="icon"> </span>DDBJ</a>, <a class="ext-link" href="http://www.genome.jp/kegg/soap/"><span class="icon"> </span>KEGG</a>,
+<a class="ext-link" href="http://www.pdbj.org/"><span class="icon"> </span>PDBj</a> and <a class="ext-link" href="http://www.cbrc.jp/"><span class="icon"> </span>CBRC</a> but none of them are not integrated in any context.
+</p>
+<p>
+Thus, at <a class="ext-link" href="http://www.dbcls.jp/en/"><span class="icon"> </span>DBCLS</a>, we started to develop a new proxy server which translates user's request for the appropriate web service provider.
+If all <a class="ext-link" href="http://www.open-bio.org/"><span class="icon"> </span>Open Bio*</a> libraries support BioMOBY and other service providers, interoperability of these services can be significantly improved.
+Here, we need agreement for the future web services with every web service providers and client developers.
+</p>
+<p>
+We believe gathering all web service providers to disucuss about the standardization of objects and methods among web services,
+and Open Bio* library developers from different programming languages (<a class="ext-link" href="http://www.bioperl.org/"><span class="icon"> </span>BioPerl</a>, <a class="ext-link" href="http://www.biopython.org/"><span class="icon"> </span>BioPython</a>,
+<a class="ext-link" href="http://www.bioruby.org/"><span class="icon"> </span>BioRuby</a>, and <a class="ext-link" href="http://www.biojava.org/"><span class="icon"> </span>BioJava</a>) to discuss about the implementation of the common infrastructure,
+must benefit usability and interoperability for the life science in the next era.
+</p>
+<p>
+For this purpose, we hope to organize a BioHackathon specialized for the web services in 2008.
+</p>
+<ul><li>Encourage independent service providers to join the movement of integration and interoperability
+<ul><li>How to increase the number of SOAP compliant services (tools/databases)
+</li></ul></li><li>Utilizing every bioinformatics web services by 4 major computer languages (Perl, Python, Ruby, Java)
+<ul><li>Creating compatible classes for sequences, expressions, pathways etc. among Open Bio* libraries
+</li></ul></li><li>Providing various clients to create and execute bioinformatics workflows
+<ul><li>Connecting seamlessly: Web service - Grid, Remote - Local, SOAP/WSDL - REST, Async - Sync
+</li></ul></li><li>Standardizing the objects and methods in bioinformatics web services (BioMOBY)
+<ul><li>Discuss about the best solution of the framework and ontologies for the life science
+</li></ul></li></ul><h2 id="Topics">Topics</h2>
+<p>
+List of tentative meeting topics for the web service providers, the Open Bio* developers, the workflow client developers, and the BioMOBY project:
+</p>
+<ul><li><a class="wiki" href="/wiki/ServiceProvider_workgroup">ServiceProvider_workgroup</a>
+</li><li><a class="wiki" href="/wiki/OpenBio_workgroup">OpenBio_workgroup</a>
+</li><li><a class="wiki" href="/wiki/Workflow_workgroup">Workflow_workgroup</a>
+</li><li><a class="wiki" href="/wiki/BioMOBY_workgroup">BioMOBY_workgroup</a>
+</li></ul><h2 id="Venue">Venue</h2>
+<p>
+DBCLS and CBRC will provide ideal environment for discussions and developments.
+</p>
+<ul><li><a class="ext-link" href="http://www.academyhills.com/english/"><span class="icon"> </span>Roppongi Academy Hills</a> (Roppongi, Central Tokyo)
+</li><li><a class="ext-link" href="http://www.cbrc.jp/index.eng.html"><span class="icon"> </span>CBRC</a> Computatonal Biology Research Cener (Odaiba, Tokyo Bay Area)
+</li></ul><p>
+We will prepare KML file for Google Earth.
+</p>
+<h2 id="Schedule">Schedule</h2>
+<ul><li>2008/2/10 (Sun) - Arrival (<a class="ext-link" href="http://www.narita-airport.jp/en/"><span class="icon"> </span>Narita airport</a>, Japan)
+</li><li>2008/2/11 (Mon) - Presentations &amp; discussions (Roppongi Academy Hills)
+</li><li>2008/2/12 (Tue) - Hack, hack, hack (CBRC)
+</li><li>2008/2/13 (Wed) - Hack, hack, hack (CBRC)
+</li><li>2008/2/14 (Thr) - Hack, hack, hack (CBRC)
+</li><li>2008/2/15 (Fri) - Hack, hack, hack (CBRC)
+</li><li>2008/2/16 (Sat) - Depature
+</li></ul><h2 id="Housing">Housing</h2>
+<ul><li><a class="ext-link" href="http://www.hvf.jp/eng/shiodome.php"><span class="icon"> </span>Hotel Villa Fontaine Shiodome</a>
+</li></ul><h2 id="Attendees">Attendees</h2>
+<ul><li><a class="wiki" href="/wiki/ListOfAttendies">ListOfAttendies</a>
+</li></ul><p>
+If you could recommend any appropriate persons from the following groups, please let me know:
+</p>
+<ul><li>NCBI web service developers
+</li><li>BioPerl, BioPython, and BioJava developers
+</li></ul><h2 id="Initialdocumentsoutdated">Initial documents (outdated)</h2>
+<ul><li><a class="wiki" href="/wiki/CallForParticipation">CallForParticipation</a>
+</li><li><a class="wiki" href="/wiki/Objectives">Objectives</a>
+</li><li><a class="wiki" href="/wiki/Objectives_in_Japanese">Objectives_in_Japanese</a>
+</li></ul><h2 id="StartingPoints">Starting Points</h2>
+<ul><li><a class="wiki" href="/wiki/TracGuide">TracGuide</a> --  Built-in Documentation
+</li><li><a class="ext-link" href="http://trac.edgewall.org/"><span class="icon"> </span>The Trac project</a> -- Trac Open Source Project
+</li><li><a class="ext-link" href="http://trac.edgewall.org/wiki/TracFaq"><span class="icon"> </span>Trac FAQ</a> -- Frequently Asked Questions
+</li><li><a class="wiki" href="/wiki/TracSupport">TracSupport</a> --  Trac Support
+</li></ul><p>
+For a complete list of local wiki pages, see <a class="wiki" href="/wiki/TitleIndex">TitleIndex</a>.
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="/attachment/wiki/WikiStart/BioHackathon2008Tokyo.kmz" title="View attachment">BioHackathon2008Tokyo.kmz</a>
+      <a href="/raw-attachment/wiki/WikiStart/BioHackathon2008Tokyo.kmz" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="4206 bytes">4.1 KB</span>) - added by <em>anonymous</em>
+      <a class="timeline" href="/timeline?from=2007-12-11T00%3A54%3A20%2B0900&amp;precision=second" title="2007-12-11T00:54:20+0900 in Timeline">17 years</a> ago.
+              </li>
+              <li>
+      <a href="/attachment/wiki/WikiStart/CBRCMap.pdf" title="View attachment">CBRCMap.pdf</a>
+      <a href="/raw-attachment/wiki/WikiStart/CBRCMap.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="217097 bytes">212.0 KB</span>) - added by <em>yy</em>
+      <a class="timeline" href="/timeline?from=2008-01-31T20%3A11%3A32%2B0900&amp;precision=second" title="2008-01-31T20:11:32+0900 in Timeline">17 years</a> ago.
+                <q>Map of CBRC (venue after the 2nd day) and spots to visit nearby.</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/WikiStart/CBRCMap.ppt" title="View attachment">CBRCMap.ppt</a>
+      <a href="/raw-attachment/wiki/WikiStart/CBRCMap.ppt" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="369664 bytes">361.0 KB</span>) - added by <em>atsuko</em>
+      <a class="timeline" href="/timeline?from=2008-02-01T22%3A42%3A23%2B0900&amp;precision=second" title="2008-02-01T22:42:23+0900 in Timeline">17 years</a> ago.
+              </li>
+              <li>
+      <a href="/attachment/wiki/WikiStart/biohackathon-schedule.pdf" title="View attachment">biohackathon-schedule.pdf</a>
+      <a href="/raw-attachment/wiki/WikiStart/biohackathon-schedule.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="54204 bytes">52.9 KB</span>) - added by <em>atsuko</em>
+      <a class="timeline" href="/timeline?from=2008-02-08T14%3A59%3A56%2B0900&amp;precision=second" title="2008-02-08T14:59:56+0900 in Timeline">17 years</a> ago.
+                <q>Detailed schedule</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/WikiStart/pic_0055.jpg" title="View attachment">pic_0055.jpg</a>
+      <a href="/raw-attachment/wiki/WikiStart/pic_0055.jpg" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="8647 bytes">8.4 KB</span>) - added by <em>atsuko</em>
+      <a class="timeline" href="/timeline?from=2008-02-18T19%3A51%3A52%2B0900&amp;precision=second" title="2008-02-18T19:51:52+0900 in Timeline">17 years</a> ago.
+                <q>Adaptor plug left behind</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/WikiStart?version=39&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

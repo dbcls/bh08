@@ -1,0 +1,81 @@
+[[PageOutline(1-3)]]
+
+= Service provider Workgroup =
+
+Here, we gather the major web service providers including BioMOBY projects and Japanese providers such as DDBJ, KEGG, PDBj, CBRC and other foreign providers like EBI and NCBI.
+
+ * Discuss current problems existing in each services:
+  * Language dependencies
+  * Naming conventions
+  * Returned data type
+  * Returned data size
+  * Job managements
+  * WSDL syntax violations
+  * Timeouts
+  * Sync and async
+  * MIME attachments
+  * Not implemented yet
+
+ * How to integrate non-MOBY web service providers?
+  * What kind of effort is needed to compromise with BioMOBY framework?
+
+ * How to improve interoperability among the services?
+  * Do you need proxy server to translate objects among services?
+  * Object identity matching problem (LSID, BioMOBY)
+
+ * How to treat the needs for the REST services?
+  * PDBj's REST API (prototype): http://doc.pdbj.org/help.cgi?REST%20API
+  * DDBJ's REST API: http://www.xml.nig.ac.jp/tutorial/rest/index.html
+  * EBI's REST API http://www.ebi.ac.uk/Tools/webservices/tutorials/rest
+  * CIPRES's REST API http://www.phylo.org/rest/rest_api.php
+  * DAS/1 API http://biodas.org/documents/spec.html
+
+== Notes ==
+
+  * [wiki:AsynchronousServicesFirstDay Asynchronous services first day notes]
+  * [wiki:SecurityIssuesFirstDay Security issues and needs on web services first day notes]
+  * [wiki:"Interaction networks" Interaction networks]
+
+== Attending Service Providers ==
+
+ * STRING/STITCH, http://string.embl.de / http://stitch.embl.de (Michael Kuhn)
+  * scope of database: protein-protein and protein-chemical interaction networks 
+  * existing web-services: rudimentary/broken SOAP interface to retrieve network via PSI-MI
+  * plans for API: query for the network (return PSI-MI 2.5), query for protein by identifier, synonym or sequence, retrieve orthologs/homologs, retrieve synonyms for protein, retrieve abstracts mentioning a protein
+  * open questions: 
+   * Which ontologies should be used for the input (i.e., how to represent a protein or chemical so that other web services can deal with it)?
+
+ * Ontology Lookup Service http://www.ebi.ac.uk/ols (Richard Cote)
+  * scope of database: ontology and controlle vocab term queries
+  * existing web-services: AXIS 1.4 SOAP interface to query on term name, identifier, synonyms, relationships to other terms
+  * plans for API: port to JAX-WS 2.x
+  * open questions: since we're planning on porting it, what new functionality would be useful?
+
+ * Protein Identifier Cross Reference (PICR), http://www.ebi.ac.uk/Tools/picr (Richard Cote)
+  * scope of database: protein identifier cross reference queries by sequence and identifier across all databases and releases loaded into the UniProt Archive (UNIPARC)
+  * existing web-services: JAX-WS SOAP and REST interfaces
+  * plans for API: currently in maintenance mode
+  * open questions: what new functionality would be useful?
+
+ * GlycomeDB, http://www.glycome-db.org/ (René Ranzinger)
+  * scope of database: data integration of carbohydrate structures and their taxonomical annotations from all freely available carbohydrate structure databases (currently 8 databases)
+  * existing web-services: REST interfaces
+  * plans for API: enhancement of data retrieval functions (substructure search, composition search, search by mass, search by species)
+  * open questions: 
+    * what other functionalities would be useful ?
+    * how to make an standardized API to become compatible to other webservices (BioMoby) ?
+    * how to close the gap between protein and glycan databases ?
+
+ * CIPRES, http://www.phylo.org (Rutger Vos)
+  * scope of service: phylogenetic analysis, principally multiple sequence alignment and tree inference
+  * existing web-services: REST front end for service architecture ([http://www.phylo.org/rest/rest_api.php API])
+  * plans for API: implement more algorithms, support more data formats
+  * open questions:
+   * How to integrate with ontology-mediated service architectures?
+
+ * PDBj, http://www.pdbj.org (Akira Kinjo, Daron Standley)
+  * scope of database: Member of World Wide Protein Data Bank (WWPDB); serves as PDB data deposition and retrieval center for Asia and Oceania
+  * existing web-services: Text-based query of PDB content (xPSSS), sequence search engine (Sequence Navigator), pairwise structure alignment (ASH), structure-based search engine (Structure Navigator)
+  * plans for API: Improve for interoperability, at least with other nearby databases such as DDBJ, KEGG, and CBRC.
+  * open questions: Register web services with BioMoby?  Should we support REST and SOAP for all services? How to improve usability?
+  * [wiki:PDBj-DDBJ-KEGG]

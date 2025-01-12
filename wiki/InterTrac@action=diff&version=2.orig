@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      InterTrac (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/InterTrac?action=history" title="Page history" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/InterTrac?action=diff&amp;version=1" title="Version 1" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/InterTrac?action=diff&amp;version=1" title="Version 1">Previous Change</a></span></li><li><a href="/wiki/InterTrac?action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/InterTrac?version=1">Version 1</a> and
+        <a href="/wiki/InterTrac?version=2">Version 2</a> of
+        <a href="/wiki/InterTrac?version=2">InterTrac</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/InterTrac?version=2"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="2" />
+          <input type="hidden" name="old_version" value="1" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2009/12/27 07:40:50 (<a class="timeline" href="/timeline?from=2009-12-27T07%3A40%3A50%2B0900&amp;precision=second" title="2009-12-27T07:40:50+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          trac
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/InterTrac?version=2">InterTrac</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 1">
+                    <a href="/wiki/InterTrac?version=1#L30">
+                      v1</a>
+                  </th>
+                  <th title="Version 2">
+                    <a href="/wiki/InterTrac?version=2#L30">
+                      v2</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>30</th><td class="l"><span>The prefix is case insensitive.</span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>32</th><td class="r"><ins>When a TracLink is enclosed in brackets, the alias is expanded.&nbsp; That is, `[th:ticket:1]` is displayed as `trachacks:ticket:1`, since `th` is an alias for `trachacks`.&nbsp; If the TracLink is not enclosed in brackets, then the alias is displayed as it is typed.</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>33</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>34</th><td class="l"><span>For convenience, there's also some alternative short-hand form, </span> </td>
+                  </tr><tr>
+                          <th>33</th><th>35</th><td class="l"><span>where one can use an alias as an immediate prefix </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/InterTrac?version=1#L36">…</a></th>
+                  <th><a href="/wiki/InterTrac?version=2#L38">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>38</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>37</th><th>39</th><td class="l"><span>== Examples ==</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>38</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>39</th><th> </th><td class="l"><del>{{{</del> </td>
+                  </tr><tr>
+                          <th>40</th><th> </th><td class="l"><del>#!comment</del> </td>
+                  </tr><tr>
+                          <th>41</th><th> </th><td class="l"><del>&nbsp;Besides the other environments run by the same server process</del> </td>
+                  </tr><tr>
+                          <th>42</th><th> </th><td class="l"><del>&nbsp;(called ''sibling'' environments), which are automatically detected,</del> </td>
+                  </tr><tr>
+                          <th>43</th><th> </th><td class="l"><del>Support for sibling environments has been disabled.</del> </td>
+                  </tr><tr>
+                          <th>44</th><th> </th><td class="l"><del>See http://thread.gmane.org/gmane.comp.version-control.subversion.trac.devel/157</del> </td>
+                  </tr><tr class="last">
+                          <th>45</th><th> </th><td class="l"><del>}}}</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>40</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>47</th><th>41</th><td class="l"><span>It is necessary to setup a configuration for the InterTrac facility.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/InterTrac?version=1#L57">…</a></th>
+                  <th><a href="/wiki/InterTrac?version=2#L51">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>51</th><td class="l"><span># -- Link to an external Trac:</span> </td>
+                  </tr><tr>
+                          <th>58</th><th>52</th><td class="l"><span>trac.title = Edgewall's Trac for Trac</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>59</th><th> </th><td class="l"><span>trac.url = http://projects.edgewall.com/trac</span> </td>
+                      </tr><tr>
+                        <th>60</th><th> </th><td class="l"><span>trac.compat = false</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>53</th><td class="r"><span>trac.url = http://trac.edgewall.org</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>54</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>55</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/InterTrac?version=1#L69">…</a></th>
+                  <th><a href="/wiki/InterTrac?version=2#L62">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>62</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>70</th><th>63</th><td class="l"><span>Finally, the `.compat` option can be used to activate or disable</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>71</th><th> </th><td class="l"><span>a ''compat<del></del>bility'' mode:</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span>&nbsp;* If the targeted Trac is running a version below <del>milestone:0.10</del> </span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; &nbsp;(<del>r3526</del> to be precise), then it doesn't know how to dispatch an InterTrac </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>64</th><td class="r"><span>a ''compat<ins>i</ins>bility'' mode:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>&nbsp;* If the targeted Trac is running a version below <ins>[trac:milestone:0.10 0.10]</ins> </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp;(<ins>[trac:r3526 r3526]</ins> to be precise), then it doesn't know how to dispatch an InterTrac </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>67</th><td class="l"><span>&nbsp; &nbsp;link, and it's up to the local Trac to prepare the correct link. </span> </td>
+                  </tr><tr>
+                          <th>75</th><th>68</th><td class="l"><span>&nbsp; &nbsp;Not all links will work that way, but the most common do. </span> </td>
+                  </tr><tr>
+                          <th>76</th><th>69</th><td class="l"><span>&nbsp; &nbsp;This is called the compatibility mode, and is `true` by default. </span> </td>
+                  </tr><tr>
+                          <th>77</th><th>70</th><td class="l"><span>&nbsp;* If you know that the remote Trac knows how to dispatch InterTrac links, </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>78</th><th> </th><td class="l"><span>&nbsp; &nbsp;you can explicit<del>e</del>ly disable this compatibility mode and then ''any'' </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp;you can explicit<ins></ins>ly disable this compatibility mode and then ''any'' </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>79</th><th>72</th><td class="l"><span>&nbsp; &nbsp;TracLinks can become an InterTrac link.</span> </td>
+                  </tr><tr>
+                          <th>80</th><th>73</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/InterTrac?version=1#L94">…</a></th>
+                  <th><a href="/wiki/InterTrac?version=2#L87">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>94</th><th>87</th><td class="l"><span>&nbsp; &nbsp;* `trac:log:@3300:3330` trac:log:@3300:3330&nbsp; </span> </td>
+                  </tr><tr>
+                          <th>95</th><th>88</th><td class="l"><span>&nbsp; &nbsp;* `[trac 3300:3330]` [trac 3300:3330] </span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>89</th><td class="r"><ins>&nbsp;* finally, to link to the start page of a remote trac, simply use its prefix followed by ':', inside an explicit link. Example: `[th: Trac Hacks]` (''since 0.11; note that the ''remote'' Trac has to run 0.11 for this to work'')</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>96</th><th>90</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>97</th><th>91</th><td class="l"><span>The generic form `intertrac_prefix:module:id` is translated</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/InterTrac?version=1#L102">…</a></th>
+                  <th><a href="/wiki/InterTrac?version=2#L96">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>102</th><th>96</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>103</th><th>97</th><td class="l"><span>----</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>104</th><th> </th><td class="l"><del>=== Discussion ===</del> </td>
+                  </tr><tr>
+                          <th>105</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>106</th><th> </th><td class="l"><del>I think that the `trac` prefix could even be set as a default in the `[intertrac]` TracIni section. --CB</del> </td>
+                  </tr><tr>
+                          <th>107</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>108</th><th> </th><td class="l"><del>----</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>109</th><th>98</th><td class="l"><span>See also: TracLinks, InterWiki</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

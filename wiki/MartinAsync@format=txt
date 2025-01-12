@@ -1,0 +1,17 @@
+= Martin Async use-cases - SOAPLAB =
+
+SoapLab wraps business logic, described in ACD files. Often, the business logic is implemented as command-line applications. This includes those in Emboss. To support async access, SoapLab implements [http://www.omg.org/technology/documents/formal/lsae.htm lsae]. The implementation of this is documented at the [http://soaplab.sourceforge.net/soaplab2/API/index.html soaplab2 API], and in particular, the [http://soaplab.sourceforge.net/soaplab2/API/org/soaplab/share/Analysis.html Analysis] class.
+
+Asynchronous invocation is required by SoapLab as the underlying buisness logic may be long-running, and timeouts may occur in any layer of the transport between client and server.
+
+SoapLab is open-source (Apache license?).
+
+LSAE supports a full lifecycle for a job.
+
+ * jobID createJob(Map inputs)
+ * run(jobID)
+ * jobStatus getStatus(jobID)
+ * Map getResults(jobID)
+ * destroy(jobID)
+
+In the soaplab implementation, a SoaplabMap is used, which restricts the types of the map values to strings, numbers and binary data.

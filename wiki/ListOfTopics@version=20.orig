@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      ListOfTopics – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/ListOfTopics?version=20&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/ListOfTopics" title="View latest version" />
+        <link rel="next" href="/wiki/ListOfTopics?version=21" title="Version 21" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/ListOfTopics?version=19" title="Version 19" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/ListOfTopics?version=19" title="Version 19">Previous Version</a></span></li><li><a href="/wiki/ListOfTopics" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/ListOfTopics?version=21" title="Version 21">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/ListOfTopics?action=diff&amp;version=20">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 20 (modified by jmfernandez, <a class="timeline" href="/timeline?from=2008-02-12T11%3A17%3A17%2B0900&amp;precision=second" title="2008-02-12T11:17:17+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="BioHackathon2008meetingtopics">BioHackathon 2008 meeting topics</h1>
+<h2 id="Newversion">New version</h2>
+<ul><li>Ontology - Richard Bruskiewich
+<ul><li>data types, service types
+</li></ul></li><li>standardization
+<ul><li>Glycoinformatics  - Will York
+</li><li><a class="wiki" href="/wiki/Interaction%20networks">Interaction networks</a>, DAS - Bruno Aranda
+</li><li>Text mining - Kano
+</li><li>Phyloinformatics - Hilmar Lapp
+</li></ul></li><li><a class="wiki" href="/wiki/AsynchronousServicesFirstDay">Async services - José Mª Fernández</a>
+<ul><li>WSRF?
+</li></ul></li><li>Large data - Tom Oinn
+<ul><li>SOAP attachements
+</li></ul></li><li><a class="wiki" href="/wiki/SecurityIssuesFirstDay">Security - Oswaldo Trelles</a>
+</li><li><a class="wiki" href="/wiki/DescriptionDiscovery">Description &amp; Discovery</a> - Mark Wilkinson
+</li><li><a class="wiki" href="/wiki/OpenBio%2A">OpenBio*</a>
+<ul><li>BioSQL - Mark Schreiber
+</li></ul></li></ul><ul><li>Writing (creating) interoperable workflows - Tom Oinn, Stuart Owen
+</li><li>Writing the manifesto
+</li></ul><h2 id="Oldversion:Proposedbytheorganizers">Old version : Proposed by the organizers</h2>
+<p>
+List of tentative meeting topics for the web service providers, the Open Bio* developers, the workflow client developers, and the BioMOBY project:
+</p>
+<ul><li><a class="wiki" href="/wiki/ServiceProvider_workgroup">ServiceProvider_workgroup</a>
+</li><li><a class="wiki" href="/wiki/OpenBio_workgroup">OpenBio_workgroup</a>
+</li><li><a class="wiki" href="/wiki/Workflow_workgroup">Workflow_workgroup</a>
+</li><li><a class="wiki" href="/wiki/BioMOBY_workgroup">BioMOBY_workgroup</a>
+</li></ul><p>
+You can freely add your proposals here.
+</p>
+<ul><li>Exchangeformat_workgroup
+<ul><li>Bio* clients &lt;-&gt; WSDL or BioMOBY objects &lt;-&gt; BioSQL/OBO
+<ul><li>Sequences, Phyloinformatics, Glycoinformatics, Interaction network, DAS annotations, ...
+</li></ul></li></ul></li><li>Semanticweb_workgroup
+<ul><li>SSWAP, OWL-DL, ...
+</li></ul></li><li><a class="wiki" href="/wiki/PhyloWS_workgroup">PhyloWS_workgroup</a>
+<ul><li>Web-Services API for querying taxonomic databases and databases of phylogenetic trees
+</li><li>Using SOAP, REST, and/or BioMOBY
+</li></ul></li><li>Distributed storage - initiative (BIO.SLURP)
+</li><li>Distributed services - initiative (BIO.ORG.ANISM)
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/ListOfTopics?version=20&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

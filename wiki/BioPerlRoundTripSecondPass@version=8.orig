@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      BioPerlRoundTripSecondPass – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/BioPerlRoundTripSecondPass?version=8&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/BioPerlRoundTripSecondPass" title="View latest version" />
+        <link rel="next" href="/wiki/BioPerlRoundTripSecondPass?version=9" title="Version 9" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/BioPerlRoundTripSecondPass?version=7" title="Version 7" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/BioPerlRoundTripSecondPass?version=7" title="Version 7">Previous Version</a></span></li><li><a href="/wiki/BioPerlRoundTripSecondPass" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/BioPerlRoundTripSecondPass?version=9" title="Version 9">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/BioPerlRoundTripSecondPass?action=diff&amp;version=8">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 8 (modified by heikki, <a class="timeline" href="/timeline?from=2008-02-13T17%3A30%3A14%2B0900&amp;precision=second" title="2008-02-13T17:30:14+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="BioPerlRoundTripSecondPass">BioPerl Round Trip , Second Pass</h1>
+<p>
+Looking into problems identified in the first pass. Solving major problems when possible.
+Tag <strong>MAJOR</strong> means that this should be solved if possible. <strong>minor</strong> comments are for logging only.
+</p>
+<p>
+Based on bioperl-live SVN revision 14501.
+</p>
+<p>
+I noticed that it is not enough to read in a database entry and write it out. You also must be able to read the first output and finally write out the second output file and show that is identical (or near enough) to the original entry. The similarities of this process to <a class="ext-link" href="http://en.wikipedia.org/wiki/Koch's_postulates"><span class="icon"> </span>Koch's postulates</a> are clear. :)
+</p>
+<p>
+BioPerl does not have parsers for these formats:
+</p>
+<ul><li>ASN.1
+</li><li>genbank XML
+</li><li>INSD XML
+</li></ul><h2 id="fasta">fasta</h2>
+<ul><li>minor: the length of the sequence line can vary (settable using method Bio::SeqIO::fasta::width() )
+</li></ul><h2 id="embl">embl</h2>
+<ul><li><del>MAJOR: sequence name and accession lost in conversion</del>
+<ul><li>The downloaded sequence file was mysteriously mangled. New file uploaded. Parser works.
+</li><li><strong>Note:</strong> EMBL format does not have a separate name any more. The primary accession number is now the name on the ID line.
+</li></ul></li><li><del>MAJOR: OX line for TaxId is lost</del>
+<ul><li>An other error caused by the mangled entry
+</li><li>The FT key <strong>source</strong> contains qualifier db_xref to the taxon
+</li></ul></li><li>minor: only the actual date on the DT (date) line is kept, release information and document version is lost.
+<ul><li><strong>Note:</strong> We now track only the sequence version from the ID line, not the document version from the second DT line.
+</li><li><strong>Note:</strong> BioSQL can store both versions. Should we update the BioPerl Bio::Seq::RichSeqI API to have document version, too?
+<pre class="wiki">DT   27-FEB-1998 (Rel. 54, Created)
+DT   14-NOV-2006 (Rel. 89, Last updated, Version 6)
+-&gt;
+DT   27-FEB-1998
+DT   14-NOV-2006
+</pre></li></ul></li><li>minor: The RC (Reference Comment) lines in the Reference section are ignored.
+<pre class="wiki">RC   revised by [4]
+</pre></li><li>minor: Word wrapping differences if free text lines, especially in author lists
+</li><li>minor: the feature key/value pairs (FT) are not returned in order
+</li><li><del>minor: SQ line does not contain CRC32 value</del>
+<ul><li>the current EMBL format does not use CRC32 any more!
+</li><li>note: there is a method for CRC64 in Bio::SeqIO::swiss::_crc64
+</li></ul></li></ul><h2 id="genbank">genbank</h2>
+<ul><li><del>MAJOR: SOURCE line adds full stop to the end of the line (following old genbank convention?)</del>
+<ul><li>fixed: SVN revision 14502
+</li></ul></li><li><del>MAJOR: line BASE not present in recent genbank format, but it is still generated by BioPerl</del>
+<ul><li>This should be safe line to drop, because <a class="missing wiki">GenPept?</a> has never had it and all (most?) parsers can deal with both.
+</li><li>fixed: SVN revision 14503.
+</li></ul></li><li>minor: features are not returned in order
+</li></ul><h2 id="swiss-prot">swiss-prot</h2>
+<ul><li><del>MAJOR: No full stop at the end of the DT lines</del>
+<ul><li>This is actually important to have. The parser will not grab the sequence version without the stop character.
+</li><li>Changed the parser to work regardless of the end stop character
+</li><li>write_seq now writes out the stops
+</li><li>fixed: SVN revision 14504.
+</li></ul></li><li><del>MAJOR: PE (evidence) line returned between CC and DR lines when it should be between DR and KW lines</del>
+<ul><li>fixed: SVN revision 14505.
+</li></ul></li><li><del>MAJOR: RX line:DOI key/value pair lost</del>
+<ul><li>The parser rexerps depend on the order of references. It will be easier to maintain without this restriction.
+</li><li>The parser does not take into account that any of the refs can be missing
+</li><li>Rewrote RX line parsing and writing
+</li><li>fixed: SVN revision 14505.
+</li></ul></li><li>MAJOR: GN line returning only values from key/value pairs (e.g.
+<pre class="wiki">GN   Name=DOF3.7; Synonyms=BBFA, DAG1;...   
+-&gt;  
+GN   DOF3.7 OR BBFA OR DAG1 ...
+</pre></li><li>MAJOR: Extra spaces and a stop added to FT HELIX and STRAND lines:
+<pre class="wiki">FT   STRAND      910    913
+-&gt;
+FT   STRAND      910    913       .
+</pre></li><li>minor: OC line word wrapping differences
+</li><li>minor: extra spaces at the end of the first RT line when there are more than one of them
+</li><li>minor: extra space after first FT line
+</li><li>minor: FTid sometimes not written on its own line
+</li><li>minor: extra space written to the end of the sequence line
+<ul><li><strong>Note:</strong> All these extra spaces at the end of the line  come from _write_line_swissprot_regex(). Check if this can be fixed!
+</li></ul></li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/BioPerlRoundTripSecondPass?version=8&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

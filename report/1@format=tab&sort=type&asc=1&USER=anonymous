@@ -1,0 +1,2 @@
+__color__	ticket	summary	component	version	milestone	type	owner	status	created	_changetime	_description	_reporter
+3	1	Asynchronous models slides	component1			enhancement	somebody	new	2008-02-12T02:06:57+0900	2008-02-12T02:06:57+0900	These slides are from a meeting talk at Gent from [http://mips.gsf.de/projects/plants/PlaNetPortal/index_html PlaNet] project at the end of 2004, and they show the a true asynchronous model and a polling one, applied to HTTP context. They were used during the first day for some explanations about asynchronous services.	jmfernandez

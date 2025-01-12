@@ -1,0 +1,162 @@
+LOCUS       AJ224122                3827 bp    DNA     linear   PLN 14-NOV-2006
+DEFINITION  Arabidopsis thaliana DAG1 gene.
+ACCESSION   AJ224122
+VERSION     AJ224122.3  GI:13938851
+KEYWORDS    BBFa gene; transcription factor.
+SOURCE      Arabidopsis thaliana (thale cress)
+  ORGANISM  Arabidopsis thaliana
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; core eudicotyledons;
+            rosids; eurosids II; Brassicales; Brassicaceae; Arabidopsis.
+REFERENCE   1
+  AUTHORS   De Paolis,A., Sabatini,S., De Pascalis,L., Costantino,P. and
+            Capone,I.
+  TITLE     A rolB regulatory factor belongs to a new class of single zinc
+            finger plant proteins
+  JOURNAL   Plant J. 10 (2), 215-223 (1996)
+   PUBMED   8771779
+REFERENCE   2
+  AUTHORS   Papi,M., Sabatini,S., Bouchez,D., Camilleri,C., Costantino,P. and
+            Vittorioso,P.
+  TITLE     Identification and disruption of an Arabidopsis zinc finger gene
+            controlling seed germination
+  JOURNAL   Genes Dev. 14 (1), 28-33 (2000)
+   PUBMED   10640273
+REFERENCE   3
+  AUTHORS   Vittorioso,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-FEB-1998) Vittorioso P., Dip. Genetica e Biologia
+            Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5;,
+            00185 Rome, ITALY
+  REMARK    revised by [3]
+REFERENCE   4
+  AUTHORS   Vittorioso,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-FEB-1999) Vittorioso P., Dip. Genetica e Biologia
+            Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5;,
+            00185 Rome, ITALY
+  REMARK    revised by [4]
+REFERENCE   5  (bases 1 to 3827)
+  AUTHORS   Vittorioso,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-APR-2001) Vittorioso P., Dip. Genetica e Biologia
+            Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5;,
+            00185 Rome, ITALY
+COMMENT     On May 3, 2001 this sequence version replaced gi:4469119.
+FEATURES             Location/Qualifiers
+     source          1..3827
+                     /organism="Arabidopsis thaliana"
+                     /mol_type="genomic DNA"
+                     /cultivar="Wassilewskija"
+                     /db_xref="taxon:3702"
+                     /chromosome="3"
+                     /ecotype="Wassilewskija"
+     gene            1726..3827
+                     /gene="DAG1"
+     mRNA            join(1726..1863,2548..3052,3137..3827)
+                     /gene="DAG1"
+                     /product="DNA-binding protein"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /function="transcription factor"
+     exon            1726..1863
+                     /gene="DAG1"
+                     /number=1
+     CDS             join(1840..1863,2548..3052,3137..3498)
+                     /gene="DAG1"
+                     /function="transcription factor"
+                     /standard_name="BBFa"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /codon_start=1
+                     /product="DNA-binding protein"
+                     /protein_id="CAB40190.1"
+                     /db_xref="GI:4581965"
+                     /db_xref="GOA:Q43385"
+                     /db_xref="InterPro:IPR003851"
+                     /db_xref="UniProtKB/Swiss-Prot:Q43385"
+                     /translation="MDATKWTQGFQEMINVKPMEQMISSTNNNTPQQQPTFIATNTRP
+                     NATASNGGSGGNTNNTATMETRKARPQEKVNCPRCNSTNTKFCYYNNYSLTQPRYFCK
+                     GCRRYWTEGGSLRNVPVGGSSRKNKRSSTPLASPSNPKLPDLNPPILFSSQIPNKSNK
+                     DLNLLSFPVMQDHHHHALELLRSNGVSSRGMNTFLPGQMMDSNSVLYSSLGFPTMPDY
+                     KQSNNNLSFSIDHHQGIGHNTINSNQRAQDNNDDMNGASRVLFPFSDMKELSSTTQEK
+                     SHGNNTYWNGMFSNTGGSSW"
+     intron          1864..2547
+                     /gene="DAG1"
+                     /number=1
+     exon            2548..3052
+                     /gene="DAG1"
+                     /number=2
+     intron          3053..3136
+                     /gene="DAG1"
+                     /number=2
+     exon            3137..3495
+                     /gene="DAG1"
+                     /number=3
+ORIGIN      
+        1 aattaaaacg ccacgcaagg cgattctagg aaatcaaaac gacacgaaat gtggggtggg
+       61 tgtttgggta ggaaagacag ttgtcaacat cagggatttg gattgaatca aaaaaaaagt
+      121 ccttagattt cataaaagct aatcacgcct caaaactggg gcctatctct tcttttttgt
+      181 cgcttcctgt cggtccttct ctatttcttc tccaacccct catttttgaa tatttacata
+      241 acaaaccgtt ttactttctt tggtcaaaat tagacccaaa attctatatt agtttaagat
+      301 atgtggtctg taatttattg ttgtattgat ataaaaatta gttataagcg attatatttt
+      361 tatgctcaag taactggtgt tagttaacta tattccacca cgataacctg attacataaa
+      421 atatgatttt aatcatttta gtaaaccata tcgcacgttg gatgattaat tttaacggtt
+      481 taataacacg tgattaaatt atttttagaa tgattattta caaacggaaa agctatatgt
+      541 gacacaataa ctcgtgcagt attgttagtt tgaaaagtgt atttggtttc ttatatttgg
+      601 cctcgatttt cagtttatgt gctttttaca aagttttatt ttcgttatct gtttaacgcg
+      661 acatttgttg tatggcttta ccgatttgag aataaaatca tattaccttt atgtagccat
+      721 gtgtggtgta atatataata atggtccttc tacgaaaaaa gcagatcaca attgaaataa
+      781 agggtgaaat ttggtgtccc ttttcttcgt cgaaataaca gaactaaata aaagaaagtg
+      841 ttatagtata ttacgtccga agaataatcc atattcctga aatacagtca acatattata
+      901 tatttagtac tttatataaa gttaggaatt aaatcatatg ttttatcgac catattaagt
+      961 cacaacttta tcataaatta atctgtaatt agaattccaa gttcgccacc gaatttcgta
+     1021 acctaatcta catataatag ataaaatata tatatgtaga gtaattatga tatctatgta
+     1081 tgtagtcatg gtatatgaat tttgaaattg gcaaggtaac attgacggat cgtaacccaa
+     1141 caaataatat taattacaaa atgggtgggc gggaatagta tacaactcat aattccactc
+     1201 actttttgta ttattaggat atgaaataag agtaatcaac atgcataata aagatgtata
+     1261 atttcttcat cttaaaaaac ataactacat ggtttaatac acaattttac cttttatcaa
+     1321 aaaagtattt cacaattcac tcgcaaatta cgaaatgatg gctagtgctt caactccaaa
+     1381 tttcgaatat tttaaatcac gatgtgtaga accttttatt tactggatac taatcactag
+     1441 tttattgagc caaccaatta gttaaataga acaatcaata ttatagccag atattttttc
+     1501 ctttaaaaat atttaaaaga ggggccagaa aagaaccaga gagggaggcc atgagacatt
+     1561 attatcacta gtcaaaaaca acaaaccctc cttttgcttt ttcatataaa ttattatatt
+     1621 ttattttgca ggtttcttct cttcttcttc ttcttcttct tcttcttcct cttggctgct
+     1681 ttctttcatc atccataaag tgaaagctaa cgcatagaga gagccatatc gtcccaaaaa
+     1741 aagcaaaagt ccaaaaaaaa acaactccaa aacattctct cttagctctt tactctttag
+     1801 tttctctctc tctctctgcc tttctctttg ttgaagttca tggatgctac gaagtggact
+     1861 caggtacgta aaaagatatc tctctgctat atctgtttgt ttgtagcttc tccccgactc
+     1921 tcacgctctc tctctctctc tctctctctt tgtgtatctc tctactcaca taaatatata
+     1981 catgtgtgtg tatgcatgtt tatatgtatg tatgaaacca gtagtggtta tacagatagt
+     2041 ctatatagag atatcaatat gatgtgtttt aatttagact ttttatatat ccgtttgaaa
+     2101 cttccgaagt tctcgaatgg agttaaggaa gttttgttct ctacaagttc aatttttctt
+     2161 gtcattaatt ataaaactct gataactaat ggataaaaaa ggtatgcttt gttagttacc
+     2221 ttttgttctt ggtgctcagg tcttaccatt tttttcctaa attttaatta gtctcctttc
+     2281 tttaattaat tttatgttaa cgcactgacg atttaacgtt aacaaaaaaa cctagattct
+     2341 ttttcttttc aatagagcat aattattact tcaatttcat ttatctcaca ctaaacccta
+     2401 atcttggcga aattcctttt atatatataa atttaattaa tttttccaca atcttggcgg
+     2461 aattcaggac tcggttttgc ttgttattgt tctctctttt aatttgacat ggttagggaa
+     2521 tacttaaagt atgtcttaat tttatagggt tttcaagaaa tgataaacgt aaagccaatg
+     2581 gagcaaatga tttctagcac caacaacaac acaccgcaac aacaaccaac attcatcgcc
+     2641 accaacacaa ggccaaacgc caccgcatcc aatggtggct ccggaggaaa taccaacaac
+     2701 acggctacga tggaaactag aaaggcgagg ccacaagaga aagtaaattg tccaagatgc
+     2761 aactcaacaa acacaaagtt ctgttattac aacaactaca gtctcacgca accaagatac
+     2821 ttctgcaaag gttgtcgaag gtattggacc gaaggtggct ctcttcgtaa cgtcccagtc
+     2881 ggaggtagct caagaaagaa caagagatcc tctacacctt tagcttcacc ttctaatccc
+     2941 aaacttccag atctaaaccc accgattctt ttctcaagcc aaatccctaa taagtcaaat
+     3001 aaagatctca acttgctatc tttcccggtc atgcaagatc atcatcatca tggtatgtct
+     3061 catttttttc atatgcccaa gatagagaac aacaatactt catcctcaat ctatgcttca
+     3121 tcatctcctg tctcagctct tgagcttcta agatccaatg gagtctcttc aagaggcatg
+     3181 aacacgttct tgcctggtca aatgatggat tcaaactcag tcctgtactc atctttaggg
+     3241 tttccaacaa tgcctgatta caaacagagt aataacaacc tttcattctc cattgatcat
+     3301 catcaaggga ttggacataa caccatcaac agtaaccaaa gagctcaaga taacaatgat
+     3361 gacatgaatg gagcaagtag ggttttgttc cctttttcag acatgaaaga gctttcaagc
+     3421 acaacccaag agaagagtca tggtaataat acatattgga atgggatgtt cagtaataca
+     3481 ggaggatctt catggtgaaa aaaggttaaa aagagctcat gaactatcag ctttcttctc
+     3541 tttttctgtt tttttctcct attttattat agtttttact ttgatgatct tttgtttttt
+     3601 ctcacatggg gaactttact taaagttgtc agaacttagt ttacagattg tctttttatt
+     3661 ccttctttct ggttttcctt ttttcctttt tttatcagtc tttttaaaat atgtatttca
+     3721 taattgggtt tgatcattca tatttattag tatcaaaata gagtctatgt tcatgaggga
+     3781 gtgttaaggg gtgtgagggt agaagaataa gtgaatacgg gggcccg
+//
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Objectives – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/Objectives?version=2&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="Objectives.html" title="View latest version" />
+        <link rel="next" href="Objectives@version=3.html" title="Version 3" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="Objectives@version=1.html" title="Version 1" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="Objectives@version=1.html" title="Version 1">Previous Version</a></span></li><li><a href="Objectives.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="Objectives@version=3.html" title="Version 3">Next Version</a> &rarr;</span></li><li class="last"><a href="Objectives@action=diff&amp;version=2.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 2 (modified by ktym, <a class="timeline" href="../timeline@from=2007-11-21T01%253A31%253A59+0900&amp;precision=second.html" title="2007-11-21T01:31:59+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="ObjectivesfortheWebServiceHackathon">Objectives for the Web Service Hackathon</h1>
+<h2 id="Background">Background</h2>
+<p>
+Databases in lifescience area have enormous amount of data, still
+growing and becoming more multi-faceted. To provide integrated services
+, the way just centralising these databases, like by mirroring each
+databases, is insufficient but also the way using directly over
+distributed environments is strongly needed to be constructed at really
+serviceable state.
+</p>
+<p>
+This situation brought on SOAP/WSDL web services to be launched at
+institutes around bioinformatics like NCBI and EBI abroad, and DDBJ XML,
+KEGG API, PDBj, CBRI in Japan, providing respective services handling
+many tools and databases.
+</p>
+<p>
+Also, by myGrid project and BioMOBY project, efforts has already been
+made to provide foundation to use those web services in an unified way,
+which brings situation very practical to implement integration by web services
+technology around this field.
+</p>
+<p>
+Main problems are, the variety of each specification and
+naming convention, and unstandardised data structure to be passed.
+Additionally, handling for cases like temporal service down or whatever error
+occured while executing a job just rely on each provided servers which 
+tends to leave insufficient specification documentation.
+</p>
+<p>
+Existence of different usages among each services, or situation compelling
+user to exchange data types and to handle exceptions for their own
+is really inefficient. Furthermore, the number of serviced tools and
+databases providing web services are still few, which makes it quite
+severe to achieve constructions of workflows through these services for
+the moment.
+</p>
+<h2 id="EffortsinDBCLS">Efforts in DBCLS</h2>
+<p>
+Thus we at DBCLS have planned to search usage of existing web services and
+of those data structures to construct proxy-like server, which aim to provide
+unifed and consistent naming conventions and usages. 
+To make this, we would first consider;
+</p>
+<ul><li>Services be well documented.
+</li><li>Owe error handling at server side as much as possible.
+</li><li>Servers to be accessible by languages widely used like Perl, Ruby, Python,
+Java and more as many as possible.
+</li><li>Owe data exchange by server side to make communicate between many
+servers servicing web services.
+</li><li>Pipelines over several steps be done on server side to be effective enough.
+</li></ul><p>
+By conducting our proposal, not just providing environments exeeded in
+usability to many researchers, it can act as an infrastructure for
+constructing workflows which accordingly provide each centers a dramatical
+increase of internet access counts.
+</p>
+<p>
+At the same time, consideration is  needed over what categories of
+services to provide, those quantity and quality. Therefore it is
+desirable to parallelize working on providing service along with 
+developments of integrated databases and tools at DBCLS.
+</p>
+<h2 id="ObjectivesofthisHackathon">Objectives of this Hackathon</h2>
+<p>
+To lead to a standardisation of;
+</p>
+<ul><li>naming convention of methods
+</li><li>data structure passed among services
+</li><li>job controlling
+</li></ul><p>
+which at present differ within each providers.
+</p>
+<p>
+Therefore, we are going to held developer's meeting in January or
+February of 2008. There, core developers and key members at home and
+abroad related to each web service providers, including BioMOBY, 
+Open Bio*s (ie. like <a class="missing wiki">BioPerl?</a>), would be offered to attend 
+this meeting, staying for about a week in Japan.
+</p>
+<p>
+So far, data type (class design) for bioinformatics has been defined for
+each project of Open-bio (like <a class="missing wiki">BioPerl?</a>, <a class="missing wiki">BioPython?</a>, <a class="missing wiki">BioJava?</a>, <a class="wiki" href="BioRuby.html">BioRuby</a>)
+respectively.
+Though to benefit interoperability, it seems to be nice to define
+standard specification of objects based on web services' class, to 
+comply with it.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/Objectives?version=2&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

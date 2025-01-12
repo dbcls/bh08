@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      BioRuby – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/BioRuby?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="BioRuby.html" title="View latest version" />
+        <link rel="next" href="BioRuby@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="BioRuby.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="BioRuby@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon.dbcls.jp/wiki/BioRuby?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by ngoto, <a class="timeline" href="../timeline@from=2008-02-13T17%253A37%253A54+0900&amp;precision=second.html" title="2008-02-13T17:37:54+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="BioRubyTopics">BioRuby Topics</h1>
+<h2 id="MigrationofBioRubywebresources">Migration of <a class="wiki" href="BioRuby.html">BioRuby</a> web resources</h2>
+<ul><li>rubyforge.org
+<ul><li>gem (already available)
+</li><li>using BTS and Feature Requests in rubyforge.org ... Done
+</li><li>RDoc is moved to bioruby.rubyforge.org ... Done
+</li><li>Unused services should be disabled ... Done
+</li></ul></li><li>open-bio.org
+<ul><li>mailing list (already available)
+</li><li>preparation of <a class="missing wiki">MediaWiki?</a> by OBF server administrators ... Done
+</li><li>moving contents from wiki.bioruby.org to bioruby.open-bio.org/wiki/
+</li><li>migration from CVS to SVN
+</li></ul></li><li>bioruby.org
+<ul><li>moving wiki to bioruby.open-bio.org/Wiki
+</li><li>moving RDoc to bioruby.rubyforge.org ... Done
+</li><li>moving toppage to Wiki
+</li><li>tar.gz should move to ???
+</li><li>www.bioruby.org and bioruby.org should point bioruby.open-bio.org/wiki/Main_Page (redirection?)
+</li></ul></li></ul><h2 id="Bio::Sequenceimprovementsforroundtrip">Bio::Sequence improvements for round trip</h2>
+<h3 id="Outputformatting">Output (formatting)</h3>
+<ul><li>Bio::Sequence#output(format = <i>anything</i>)
+<ul><li>ERB templates
+<ul><li>Bio::Sequence#output(format = :embl)
+</li><li>Bio::Sequence#output(format = :genbank)
+</li></ul></li></ul></li></ul><h3 id="InputcreationofBio::Sequenceobject">Input (creation of Bio::Sequence object)</h3>
+<ul><li>Bio::Sequence#read(str or file?) or Bio::Sequence#input(str or file?)
+<ul><li>Bio::*#to_biosequence is automatically called
+</li></ul></li><li>Bio::*#to_biosequence
+</li></ul><h3 id="EasyaccesstoBio::SequenceinsideBioRuby">Easy access to Bio::Sequence inside <a class="wiki" href="BioRuby.html">BioRuby</a></h3>
+<ul><li>Bio::Sequence#embl, Bio::Sequence#gb
+<ul><li>returns a wrapper object that acts as if it is Bio::EMBL or Bio::<a class="missing wiki">GenBank?</a> objects
+</li><li>delegates to Bio::Sequence objects (or translation/conversion may be needed)
+</li></ul></li></ul><h3 id="InternalstructureofBio::Sequence">Internal structure of Bio::Sequence</h3>
+<ul><li>generated from / compatible with XML Schema?
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/BioRuby?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions  xmlns="http://schemas.xmlsoap.org/wsdl/" 
+    xmlns:apachesoap="http://xml.apache.org/xml-soap"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+
+    xmlns:psq = "http://psi.hupo.org/mi/psiquic"
+    targetNamespace="http://psi.hupo.org/mi/psiquic">
+
+    <types>
+<!--
+    <xsd:schema>
+      <xsd:import namespace="mif"
+                   schemaLocation="MIF25.xsd"/>
+    </xsd:schema>
+-->
+      <xsd:schema elementFormDefault = "qualified"
+	targetNamespace="http://psi.hupo.org/mi/psiquic" 
+        xmlns="http://www.w3.org/2001/XMLSchema">
+
+	<!-- types -->	
+
+       <xsd:complexType name="dbRefType">
+        <xsd:sequence>
+          <xsd:element name="db" type="xsd:string" default=""/>
+          <xsd:element name="ac" type="xsd:string" default=""/>
+        </xsd:sequence>
+       </xsd:complexType>
+
+       <xsd:complexType name="interactorRefListType">
+        <xsd:sequence>
+          <xsd:element name="interactorRef" type="psq:dbRefType" minOccurs="1" maxOccurs="ubounded"/>
+        </xsd:sequence>
+       </xsd:complexType>
+
+       <xsd:complexType name="interactionRefListType">
+        <xsd:sequence>
+          <xsd:element name="interactionRef" type="psq:dbRefType" minOccurs="1" maxOccurs="ubounded"/>
+        </xsd:sequence>
+       </xsd:complexType>
+
+        <!-- elements -->
+
+	<xsd:element name="getByInteractorRequest">
+	  <xsd:complexType>
+            <xsd:sequence>
+ 	      <xsd:element name="interactorRef" type="psq:dbRefType"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+	<xsd:element name="getByInteractorResponse">
+	  <xsd:complexType>	
+	    <xsd:sequence>	            
+             <xsd:element name="mif" type="xsd:string"/>
+	    </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+	
+	<xsd:element name="getByInteractionRequest">
+	  <xsd:complexType>
+            <xsd:sequence>
+ 	      <xsd:element name="inteactionRef" type="psq:dbRefType"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+	<xsd:element name="getByInteractionResponse">
+	  <xsd:complexType>	
+	    <xsd:sequence>	            
+             <xsd:element name="mif" type="xsd:string"/>
+	    </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>	
+
+	<xsd:element name="getByInteractorListRequest">
+	  <xsd:complexType>
+            <xsd:sequence>
+ 	      <xsd:element name="interactorRefList" type="psq:interactorRefListType"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+	<xsd:element name="getByInteractorListResponse">
+	  <xsd:complexType>	
+	    <xsd:sequence>	            
+             <xsd:element name="mif" type="xsd:string"/>
+	    </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>	
+
+	<xsd:element name="getBetweenListRequest">
+	  <xsd:complexType>
+            <xsd:sequence>
+ 	      <xsd:element name="interactorRefList" type="psq:interactorRefListType"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+	<xsd:element name="getBetweenListResponse">
+	  <xsd:complexType>	
+	    <xsd:sequence>	            
+             <xsd:element name="mif" type="xsd:string"/>
+	    </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>	
+
+	<xsd:element name="getByInteractionListRequest">
+	  <xsd:complexType>
+            <xsd:sequence>
+ 	      <xsd:element name="inteactionRefList" type="psq:interactionRefListType"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+	<xsd:element name="getByInteractionListResponse">
+	  <xsd:complexType>	
+	    <xsd:sequence>	            
+             <xsd:element name="mif" type="xsd:string"/>
+	    </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>	
+
+	<xsd:element name="getVersionResponse">
+	  <xsd:complexType>	
+	    <xsd:sequence>	            
+             <xsd:element name="version" type="xsd:string"/>
+	    </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>	
+
+       <!-- faults -->
+
+	<xsd:element name="psiquicFault">
+	  <xsd:complexType>
+	    <xsd:sequence>
+	      <xsd:element name="code" type="xsd:int"/>
+	      <xsd:element name="message" type="xsd:string"/>
+	    </xsd:sequence>
+	  </xsd:complexType>	
+        </xsd:element>	
+    
+      </xsd:schema>
+    </types>
+
+    <!-- MESSAGES -->
+    
+    <message name="getByInteractorRequestMessage">
+      <part name="input" element="psq:getByInteractorRequest"/>
+    </message>
+
+    <message name="getByInteractorResponseMessage">
+      <part name="output" element="psq:getByInteractorResponse"/>
+    </message>
+
+    <message name="getByInteractionRequestMessage">
+      <part name="input" element="psq:getByInteractionRequest"/>
+    </message>
+
+    <message name="getByInteractionResponseMessage">
+      <part name="output" element="psq:getByInteractionResponse"/>
+    </message>
+
+    <message name="getByInteractorListRequestMessage">
+      <part name="input" element="psq:getByInteractorListRequest"/>
+    </message>
+
+    <message name="getByInteractorListResponseMessage">
+      <part name="output" element="psq:getByInteractorListResponse"/>
+    </message>
+
+    <message name="getBetweenListRequestMessage">
+      <part name="input" element="psq:getBetweenListRequest"/>
+    </message>
+
+    <message name="getBetweenListResponseMessage">
+      <part name="output" element="psq:getBetweenListResponse"/>
+    </message>
+
+    <message name="getByInteractionListRequestMessage">
+      <part name="input" element="psq:getByInteractionListRequest"/>
+    </message>
+
+    <message name="getByInteractionListResponseMessage">
+      <part name="output" element="psq:getByInteractionListResponse"/>
+    </message>
+
+    <message name="getVersionResponseMessage">
+      <part name="fault" element="psq:getVersionResponse"/>
+    </message>
+
+    <message name="faultMessage">
+      <part name="fault" element="psq:psiquicFault"/>
+    </message>
+  
+    <!-- Port type (operations) -->
+
+    <portType name="psiquicPortType">
+ 
+      <!-- get interactions by interactor ref -->
+
+      <operation name="getByInteractor" parameterOrder="input">
+	<input  name="getByInteractorRequestMessage"    message="psq:getByInteractorRequestMessage"/>
+	<output name="getByInteractorResponseMessage"   message="psq:getByInteractorResponseMessage"/>
+        <fault  name="getByInteractorException"         message="psq:faultMessage"/>
+      </operation>
+        
+      <!-- get interactions by interaction ref -->
+	
+      <operation name="getByInteraction" parameterOrder="input">
+	<input  name="getByInteractionRequestMessage"    message="psq:getByInteractionRequestMessage"/>
+	<output name="getbyInteractionResponseMessage"   message="psq:getByInteractionResponseMessage"/>
+        <fault  name="getByInteractionException"         message="psq:faultMessage"/>
+      </operation>
+
+      <!-- get interactions by interactor ref list -->
+
+      <operation name="getByInteractorList" parameterOrder="input">
+	<input  name="getByInteractorListRequestMessage"    message="psq:getByInteractorListRequestMessage"/>
+	<output name="getByInteractorListResponseMessage"   message="psq:getByInteractorListResponseMessage"/>
+        <fault  name="getByInteractorListException"         message="psq:faultMessage"/>
+      </operation>
+        
+      <!-- get interactions between interactor ref list -->
+
+      <operation name="getBetweenList" parameterOrder="input">
+	<input  name="getBetweenListRequestMessage"    message="psq:getBetweenListRequestMessage"/>
+	<output name="getBetweenListResponseMessage"   message="psq:getBetweenListResponseMessage"/>
+        <fault  name="getBetweenListException"         message="psq:faultMessage"/>
+      </operation>
+        
+      <!-- get interactions by interaction ref list -->
+	
+      <operation name="getByInteractionList" parameterOrder="input">
+	<input  name="getByInteractionListRequestMessage"    message="psq:getByInteractionListRequestMessage"/>
+	<output name="getByInteractionListResponseMessage"   message="psq:getByInteractionListResponseMessage"/>
+        <fault  name="getByInteractionListException"         message="psq:faultMessage"/>
+      </operation>
+
+      <!-- get version -->
+
+      <operation name="getVersion" parameterOrder="input">
+	<output name="getVersionResponseMessage"   message="psq:getVersionResponseMessage"/>
+        <fault  name="getVersionException"         message="psq:faultMessage"/>
+      </operation>
+
+    </portType>
+
+    <!-- BINDING (bind operations) -->
+
+    <binding name="psiquicSoapBinding" type="psq:psiquicPortType">
+      <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+ 
+      <operation name="getByInteractor">
+        <soap:operation soapAction="getByInteractor"/>
+        <input>
+          <soap:body use="literal"/>
+        </input>  
+        <output>
+          <soap:body use="literal"/>
+        </output>
+	<fault name="getByInteractorException">    
+	  <soap:fault name="getByInteractorException" use="literal"/>
+        </fault>
+      </operation>       
+
+      <operation name="getByInteraction">
+        <soap:operation soapAction="getByInteraction"/>
+        <input>
+          <soap:body use="literal"/>
+        </input>  
+        <output>
+          <soap:body use="literal"/>
+        </output>
+        <fault name="getByInteractionException">    
+	  <soap:fault name="getByInteractionException" use="literal"/>
+        </fault>
+      </operation>       
+         
+      <operation name="getByInteractorList">
+        <soap:operation soapAction="getByInteractorList"/>
+        <input>
+          <soap:body use="literal"/>
+        </input>  
+        <output>
+          <soap:body use="literal"/>
+        </output>
+	<fault name="getByInteractorListException">    
+	  <soap:fault name="getByInteractorListException" use="literal"/>
+        </fault>
+      </operation>
+
+      <operation name="getBetweenList">
+        <soap:operation soapAction="getBetweenList"/>
+        <input>
+          <soap:body use="literal"/>
+        </input>  
+        <output>
+          <soap:body use="literal"/>
+        </output>
+	<fault name="getBetweenListException">    
+	  <soap:fault name="getBetweenListException" use="literal"/>
+        </fault>
+      </operation>
+       
+      <operation name="getByInteractionList">
+        <soap:operation soapAction="getByInteractionList"/>
+        <input>
+          <soap:body use="literal"/>
+        </input>  
+        <output>
+          <soap:body use="literal"/>
+        </output>
+	<fault name="getByInteractionListException">    
+	  <soap:fault name="getByInteractionListException" use="literal"/>
+        </fault>
+      </operation>
+
+      <operation name="getVersion">
+        <soap:operation soapAction="getVersion"/>
+        <output>
+          <soap:body use="literal"/>
+        </output>
+	<fault name="getVersionException">    
+	  <soap:fault name="getVersionException" use="literal"/>
+        </fault>
+      </operation>
+
+    </binding>
+
+    <!-- SERVICE -->
+    <service name="psiquic">
+      <port name="psiquic" binding="psq:psiquicSoapBinding">
+	      <soap:address location="http://psi.hupo.org/mi/services/psiquic"/>
+      </port>
+    </service>
+</definitions>

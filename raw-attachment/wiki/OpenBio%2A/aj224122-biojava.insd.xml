@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE INSDSeq PUBLIC "-//EMBL-EBI//INSD INSDSeq/EN" "http://www.ebi.ac.uk/dtd/INSD_INSDSeq.dtd">
+<INSDSet>
+  <INSDSeq>
+    <INSDSeq_locus>AJ224122</INSDSeq_locus>
+    <INSDSeq_length>3827</INSDSeq_length>
+    <INSDSeq_strandedness>double</INSDSeq_strandedness>
+    <INSDSeq_moltype>DNA</INSDSeq_moltype>
+    <INSDSeq_topology>linear</INSDSeq_topology>
+    <INSDSeq_division>PLN</INSDSeq_division>
+    <INSDSeq_update-date>14-NOV-2006</INSDSeq_update-date>
+    <INSDSeq_create-date>27-FEB-1998</INSDSeq_create-date>
+    <INSDSeq_definition>Arabidopsis thaliana DAG1 gene</INSDSeq_definition>
+    <INSDSeq_accession-version>AJ224122.3</INSDSeq_accession-version>
+    <INSDSeq_other-seqids>
+      <INSDSeqid>emb|AJ224122.3|</INSDSeqid>
+      <INSDSeqid>gi|13938851</INSDSeqid>
+    </INSDSeq_other-seqids>
+    <INSDSeq_keywords>
+      <INSDKeyword>BBFa gene</INSDKeyword>
+      <INSDKeyword>transcription factor</INSDKeyword>
+    </INSDSeq_keywords>
+    <INSDSeq_source>Arabidopsis thaliana (mouse-ear cress)</INSDSeq_source>
+    <INSDSeq_organism>Arabidopsis thaliana</INSDSeq_organism>
+    <INSDSeq_taxonomy>Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta; Spermatophyta; Magnoliophyta; eudicotyledons; core eudicotyledons; rosids; eurosids II; Brassicales; Brassicaceae; Arabidopsis</INSDSeq_taxonomy>
+    <INSDSeq_references>
+      <INSDReference>
+        <INSDReference_reference>1</INSDReference_reference>
+        <INSDReference_position>1..1</INSDReference_position>
+        <INSDReference_authors>
+          <INSDAuthor>De Paolis,A.</INSDAuthor>
+          <INSDAuthor>Sabatini,S.</INSDAuthor>
+          <INSDAuthor>De Pascalis,L.</INSDAuthor>
+          <INSDAuthor>Costantino,P.</INSDAuthor>
+          <INSDAuthor>Capone,I.</INSDAuthor>
+        </INSDReference_authors>
+        <INSDReference_title>A rolB regulatory factor belongs to a new class of single zinc finger plant proteins</INSDReference_title>
+        <INSDReference_journal>Plant J. 10 (2), 215-223 (1996)</INSDReference_journal>
+        <INSDReference_pubmed>8771779</INSDReference_pubmed>
+      </INSDReference>
+      <INSDReference>
+        <INSDReference_reference>2</INSDReference_reference>
+        <INSDReference_position>1..1</INSDReference_position>
+        <INSDReference_authors>
+          <INSDAuthor>Papi,M.</INSDAuthor>
+          <INSDAuthor>Sabatini,S.</INSDAuthor>
+          <INSDAuthor>Bouchez,D.</INSDAuthor>
+          <INSDAuthor>Camilleri,C.</INSDAuthor>
+          <INSDAuthor>Costantino,P.</INSDAuthor>
+          <INSDAuthor>Vittorioso,P.</INSDAuthor>
+        </INSDReference_authors>
+        <INSDReference_title>Identification and disruption of an Arabidopsis zinc finger gene controlling seed germination</INSDReference_title>
+        <INSDReference_journal>Genes Dev. 14 (1), 28-33 (2000)</INSDReference_journal>
+        <INSDReference_pubmed>10640273</INSDReference_pubmed>
+      </INSDReference>
+      <INSDReference>
+        <INSDReference_reference>3</INSDReference_reference>
+        <INSDReference_position>1..1</INSDReference_position>
+        <INSDReference_authors>
+          <INSDAuthor>Vittorioso,P.</INSDAuthor>
+        </INSDReference_authors>
+        <INSDReference_title>Direct Submission</INSDReference_title>
+        <INSDReference_journal>Submitted (24-FEB-1998) Vittorioso P., Dip. Genetica e Biologia Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5;, 00185 Rome, ITALY</INSDReference_journal>
+        <INSDReference_remark>revised by [3]</INSDReference_remark>
+      </INSDReference>
+      <INSDReference>
+        <INSDReference_reference>4</INSDReference_reference>
+        <INSDReference_position>1..1</INSDReference_position>
+        <INSDReference_authors>
+          <INSDAuthor>Vittorioso,P.</INSDAuthor>
+        </INSDReference_authors>
+        <INSDReference_title>Direct Submission</INSDReference_title>
+        <INSDReference_journal>Submitted (25-FEB-1999) Vittorioso P., Dip. Genetica e Biologia Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5;, 00185 Rome, ITALY</INSDReference_journal>
+        <INSDReference_remark>revised by [4]</INSDReference_remark>
+      </INSDReference>
+      <INSDReference>
+        <INSDReference_reference>5</INSDReference_reference>
+        <INSDReference_position>1..3827</INSDReference_position>
+        <INSDReference_authors>
+          <INSDAuthor>Vittorioso,P.</INSDAuthor>
+        </INSDReference_authors>
+        <INSDReference_title>Direct Submission</INSDReference_title>
+        <INSDReference_journal>Submitted (12-APR-2001) Vittorioso P., Dip. Genetica e Biologia Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5;, 00185 Rome, ITALY</INSDReference_journal>
+      </INSDReference>
+    </INSDSeq_references>
+    <INSDSeq_comment>
+On May 3, 2001 this sequence version replaced gi:4469119.
+    </INSDSeq_comment>
+    <INSDSeq_feature-table>
+      <INSDFeature>
+        <INSDFeature_key>source</INSDFeature_key>
+        <INSDFeature_location>1..3827</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>1</INSDInterval_from>
+            <INSDInterval_to>3827</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>mol_type</INSDQualifier_name>
+            <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>cultivar</INSDQualifier_name>
+            <INSDQualifier_value>Wassilewskija</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>chromosome</INSDQualifier_name>
+            <INSDQualifier_value>3</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>ecotype</INSDQualifier_name>
+            <INSDQualifier_value>Wassilewskija</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>db_xref</INSDQualifier_name>
+            <INSDQualifier_value>taxon:3702</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>organism</INSDQualifier_name>
+            <INSDQualifier_value>Arabidopsis thaliana</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>gene</INSDFeature_key>
+        <INSDFeature_location>1726..3827</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>1726</INSDInterval_from>
+            <INSDInterval_to>3827</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>mRNA</INSDFeature_key>
+        <INSDFeature_location>join(1726..1863,2548..3052,3137..3827)</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>1726</INSDInterval_from>
+            <INSDInterval_to>1863</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDInterval>
+            <INSDInterval_from>2548</INSDInterval_from>
+            <INSDInterval_to>3052</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDInterval>
+            <INSDInterval_from>3137</INSDInterval_from>
+            <INSDInterval_to>3827</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_operator>join</INSDFeature_operator>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>product</INSDQualifier_name>
+            <INSDQualifier_value>DNA-binding protein</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>experiment</INSDQualifier_name>
+            <INSDQualifier_value>experimental evidence, no additional details recorded</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>function</INSDQualifier_name>
+            <INSDQualifier_value>transcription factor</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>exon</INSDFeature_key>
+        <INSDFeature_location>1726..1863</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>1726</INSDInterval_from>
+            <INSDInterval_to>1863</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>number</INSDQualifier_name>
+            <INSDQualifier_value>1</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>CDS</INSDFeature_key>
+        <INSDFeature_location>join(1840..1863,2548..3052,3137..3498)</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>1840</INSDInterval_from>
+            <INSDInterval_to>1863</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDInterval>
+            <INSDInterval_from>2548</INSDInterval_from>
+            <INSDInterval_to>3052</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDInterval>
+            <INSDInterval_from>3137</INSDInterval_from>
+            <INSDInterval_to>3498</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_operator>join</INSDFeature_operator>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>function</INSDQualifier_name>
+            <INSDQualifier_value>transcription factor</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>standard_name</INSDQualifier_name>
+            <INSDQualifier_value>BBFa</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>experiment</INSDQualifier_name>
+            <INSDQualifier_value>experimental evidence, no additional details recorded</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>codon_start</INSDQualifier_name>
+            <INSDQualifier_value>1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>transl_table</INSDQualifier_name>
+            <INSDQualifier_value>1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>product</INSDQualifier_name>
+            <INSDQualifier_value>DNA-binding protein</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>protein_id</INSDQualifier_name>
+            <INSDQualifier_value>CAB40190.1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>translation</INSDQualifier_name>
+            <INSDQualifier_value>
+MDATKWTQGFQEMINVKPMEQMISSTNNNTPQQQPTFIATNTRPNATASNGGSGGNTNNTATMETRKARPQEKVNCPRCN
+STNTKFCYYNNYSLTQPRYFCKGCRRYWTEGGSLRNVPVGGSSRKNKRSSTPLASPSNPKLPDLNPPILFSSQIPNKSNK
+DLNLLSFPVMQDHHHHALELLRSNGVSSRGMNTFLPGQMMDSNSVLYSSLGFPTMPDYKQSNNNLSFSIDHHQGIGHNTI
+NSNQRAQDNNDDMNGASRVLFPFSDMKELSSTTQEKSHGNNTYWNGMFSNTGGSSW
+            </INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>db_xref</INSDQualifier_name>
+            <INSDQualifier_value>GI:4581965</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>db_xref</INSDQualifier_name>
+            <INSDQualifier_value>GOA:Q43385</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>db_xref</INSDQualifier_name>
+            <INSDQualifier_value>InterPro:IPR003851</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>db_xref</INSDQualifier_name>
+            <INSDQualifier_value>UniProtKB/Swiss-Prot:Q43385</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>intron</INSDFeature_key>
+        <INSDFeature_location>1864..2547</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>1864</INSDInterval_from>
+            <INSDInterval_to>2547</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>number</INSDQualifier_name>
+            <INSDQualifier_value>1</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>exon</INSDFeature_key>
+        <INSDFeature_location>2548..3052</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>2548</INSDInterval_from>
+            <INSDInterval_to>3052</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>number</INSDQualifier_name>
+            <INSDQualifier_value>2</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>intron</INSDFeature_key>
+        <INSDFeature_location>3053..3136</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>3053</INSDInterval_from>
+            <INSDInterval_to>3136</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>number</INSDQualifier_name>
+            <INSDQualifier_value>2</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+      <INSDFeature>
+        <INSDFeature_key>exon</INSDFeature_key>
+        <INSDFeature_location>3137..3495</INSDFeature_location>
+        <INSDFeature_intervals>
+          <INSDInterval>
+            <INSDInterval_from>3137</INSDInterval_from>
+            <INSDInterval_to>3495</INSDInterval_to>
+            <INSDInterval_iscomp>false</INSDInterval_iscomp>
+            <INSDInterval_interbp>false</INSDInterval_interbp>
+            <INSDInterval_accession>AJ224122</INSDInterval_accession>
+          </INSDInterval>
+          <INSDFeature_partial5>false</INSDFeature_partial5>
+          <INSDFeature_partial3>false</INSDFeature_partial3>
+        </INSDFeature_intervals>
+        <INSDFeature_quals>
+          <INSDQualifier>
+            <INSDQualifier_name>gene</INSDQualifier_name>
+            <INSDQualifier_value>DAG1</INSDQualifier_value>
+          </INSDQualifier>
+          <INSDQualifier>
+            <INSDQualifier_name>number</INSDQualifier_name>
+            <INSDQualifier_value>3</INSDQualifier_value>
+          </INSDQualifier>
+        </INSDFeature_quals>
+      </INSDFeature>
+    </INSDSeq_feature-table>
+    <INSDSeq_sequence>
+aattaaaacgccacgcaaggcgattctaggaaatcaaaacgacacgaaatgtggggtgggtgtttgggtaggaaagacag
+ttgtcaacatcagggatttggattgaatcaaaaaaaaagtccttagatttcataaaagctaatcacgcctcaaaactggg
+gcctatctcttcttttttgtcgcttcctgtcggtccttctctatttcttctccaacccctcatttttgaatatttacata
+acaaaccgttttactttctttggtcaaaattagacccaaaattctatattagtttaagatatgtggtctgtaatttattg
+ttgtattgatataaaaattagttataagcgattatatttttatgctcaagtaactggtgttagttaactatattccacca
+cgataacctgattacataaaatatgattttaatcattttagtaaaccatatcgcacgttggatgattaattttaacggtt
+taataacacgtgattaaattatttttagaatgattatttacaaacggaaaagctatatgtgacacaataactcgtgcagt
+attgttagtttgaaaagtgtatttggtttcttatatttggcctcgattttcagtttatgtgctttttacaaagttttatt
+ttcgttatctgtttaacgcgacatttgttgtatggctttaccgatttgagaataaaatcatattacctttatgtagccat
+gtgtggtgtaatatataataatggtccttctacgaaaaaagcagatcacaattgaaataaagggtgaaatttggtgtccc
+ttttcttcgtcgaaataacagaactaaataaaagaaagtgttatagtatattacgtccgaagaataatccatattcctga
+aatacagtcaacatattatatatttagtactttatataaagttaggaattaaatcatatgttttatcgaccatattaagt
+cacaactttatcataaattaatctgtaattagaattccaagttcgccaccgaatttcgtaacctaatctacatataatag
+ataaaatatatatatgtagagtaattatgatatctatgtatgtagtcatggtatatgaattttgaaattggcaaggtaac
+attgacggatcgtaacccaacaaataatattaattacaaaatgggtgggcgggaatagtatacaactcataattccactc
+actttttgtattattaggatatgaaataagagtaatcaacatgcataataaagatgtataatttcttcatcttaaaaaac
+ataactacatggtttaatacacaattttaccttttatcaaaaaagtatttcacaattcactcgcaaattacgaaatgatg
+gctagtgcttcaactccaaatttcgaatattttaaatcacgatgtgtagaaccttttatttactggatactaatcactag
+tttattgagccaaccaattagttaaatagaacaatcaatattatagccagatattttttcctttaaaaatatttaaaaga
+ggggccagaaaagaaccagagagggaggccatgagacattattatcactagtcaaaaacaacaaaccctccttttgcttt
+ttcatataaattattatattttattttgcaggtttcttctcttcttcttcttcttcttcttcttcttcctcttggctgct
+ttctttcatcatccataaagtgaaagctaacgcatagagagagccatatcgtcccaaaaaaagcaaaagtccaaaaaaaa
+acaactccaaaacattctctcttagctctttactctttagtttctctctctctctctgcctttctctttgttgaagttca
+tggatgctacgaagtggactcaggtacgtaaaaagatatctctctgctatatctgtttgtttgtagcttctccccgactc
+tcacgctctctctctctctctctctctctttgtgtatctctctactcacataaatatatacatgtgtgtgtatgcatgtt
+tatatgtatgtatgaaaccagtagtggttatacagatagtctatatagagatatcaatatgatgtgttttaatttagact
+ttttatatatccgtttgaaacttccgaagttctcgaatggagttaaggaagttttgttctctacaagttcaatttttctt
+gtcattaattataaaactctgataactaatggataaaaaaggtatgctttgttagttaccttttgttcttggtgctcagg
+tcttaccatttttttcctaaattttaattagtctcctttctttaattaattttatgttaacgcactgacgatttaacgtt
+aacaaaaaaacctagattctttttcttttcaatagagcataattattacttcaatttcatttatctcacactaaacccta
+atcttggcgaaattccttttatatatataaatttaattaatttttccacaatcttggcggaattcaggactcggttttgc
+ttgttattgttctctcttttaatttgacatggttagggaatacttaaagtatgtcttaattttatagggttttcaagaaa
+tgataaacgtaaagccaatggagcaaatgatttctagcaccaacaacaacacaccgcaacaacaaccaacattcatcgcc
+accaacacaaggccaaacgccaccgcatccaatggtggctccggaggaaataccaacaacacggctacgatggaaactag
+aaaggcgaggccacaagagaaagtaaattgtccaagatgcaactcaacaaacacaaagttctgttattacaacaactaca
+gtctcacgcaaccaagatacttctgcaaaggttgtcgaaggtattggaccgaaggtggctctcttcgtaacgtcccagtc
+ggaggtagctcaagaaagaacaagagatcctctacacctttagcttcaccttctaatcccaaacttccagatctaaaccc
+accgattcttttctcaagccaaatccctaataagtcaaataaagatctcaacttgctatctttcccggtcatgcaagatc
+atcatcatcatggtatgtctcatttttttcatatgcccaagatagagaacaacaatacttcatcctcaatctatgcttca
+tcatctcctgtctcagctcttgagcttctaagatccaatggagtctcttcaagaggcatgaacacgttcttgcctggtca
+aatgatggattcaaactcagtcctgtactcatctttagggtttccaacaatgcctgattacaaacagagtaataacaacc
+tttcattctccattgatcatcatcaagggattggacataacaccatcaacagtaaccaaagagctcaagataacaatgat
+gacatgaatggagcaagtagggttttgttccctttttcagacatgaaagagctttcaagcacaacccaagagaagagtca
+tggtaataatacatattggaatgggatgttcagtaatacaggaggatcttcatggtgaaaaaaggttaaaaagagctcat
+gaactatcagctttcttctctttttctgtttttttctcctattttattatagtttttactttgatgatcttttgtttttt
+ctcacatggggaactttacttaaagttgtcagaacttagtttacagattgtctttttattccttctttctggttttcctt
+ttttcctttttttatcagtctttttaaaatatgtatttcataattgggtttgatcattcatatttattagtatcaaaata
+gagtctatgttcatgagggagtgttaaggggtgtgagggtagaagaataagtgaatacgggggcccg
+    </INSDSeq_sequence>
+  </INSDSeq>
+</INSDSet>

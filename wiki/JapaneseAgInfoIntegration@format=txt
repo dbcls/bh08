@@ -1,0 +1,36 @@
+= Overview =
+
+This is just a brief summary of ontology and web service integration discussions in Tsukuba, Japan in the afternoon of Wednesday, 13 February 2008, between R. Bruskiewich ([http://www.irri.org International Rice Research Institute (IRRI), Philippines]), [http://www.nias.affrc.go.jp/index_e.html National Institute for Agrobiological Sciences (NIAS)], [http://www.maffin.ad.jp/ Ministry of Agriculture, Forestry and Fisheries (MAFF) Information Network (MAFFIN)], the Agriculture, Forestry and Fisheries Research Information Center (AFFRIC) and National Agricultural Research Center (NARC). Note that NIAS is a partner of the [http://www.generationcp.org Generation Challenge Programme (GCP)] which is developing semantic and web service integration standards for crop science (see the [http://pantheon.generationcp.org GCP Pantheon Platform].
+
+== Participants ==
+
+ * Hostess for visit: Akane F. Takezaki, Research Coordinator for International Information, AFFRIC (email '''akane at affrc dot go dot jp''')
+ * Koichi Ohashi, Director, MAFFIN
+ * Katsuya Okubo, Networking Manager, MAFFIN
+ * Takuji Kiura, Research, Data Mining and GRID Research Team, National Agricultural Research Center
+ * Takashi Itoh, NIAS & Rice Annotation Project (RAP)
+ * Tsuyoshi Tanaka, NIAS & Rice Annotation Project (RAP)
+ * Shoshi Kikuchi, NIAS and Generation Challenge Programme
+ * Masaru Takeya, NIAS (Genetic Resources)
+ * Koji Doi, NIAS and Generation Challenge Programme
+ * Richard Bruskiewich, IRRI
+
+== Ontology Collaboration ==
+
+ * Japanese contributions to [http://www.fao.org Food and Agricultural Organiation (FAO)] [http://www.fao.org/aims/ag_intro.htm Agrovoc Agricultural Thesaurus] (controlled vocabulary) with Japanese language bindings.
+   * How to facilitate usage of ontology?
+   * Share [http://ontology.generationcp.org GCP platform support for ontology] + multilingual support with Japanese researchers in this area (could be a collaboration through NIAS)? 
+
+== Web services Wrapping of Japanese Agriculture (mostly Rice) Databases ==
+
+ * For connection to the [http://irfgc.irri.org International Rice Functional Genomics Consortium (IRFGC)] rice web services network.
+ * Answers will be required to the following technical issues:
+  * what data (types) will be shared from which databases? 
+  * what some of the research "use cases" will be (i.e. services to be implemented)?
+  * who will specifically be able to contribute technically to the implementation?
+  * what preferred languages (Perl, Java) will be used to create the web service providers? 
+  * what preferred database access technologies might be used (e.g. for Java (JDBC, Hibernate, or ????)?
+  * practical issues relating to web service architecture: will there be dedicated server? proxies, firewalls?
+
+ * Action: Martin Senger to return to Japan for web services “implementation” visit based on web service use cases to be documented over coming month.
+

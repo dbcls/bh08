@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      InterMapTxt (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/InterMapTxt?action=history" title="Page history" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Change</span></li><li><a href="/wiki/InterMapTxt?action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/InterMapTxt?version=0">Initial Version</a> and
+        <a href="/wiki/InterMapTxt?version=1">Version 1</a> of
+        <a href="/wiki/InterMapTxt?version=1">InterMapTxt</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/InterMapTxt?version=1"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="1" />
+          <input type="hidden" name="old_version" value="0" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2007/11/13 12:11:40 (<a class="timeline" href="/timeline?from=2007-11-13T12%3A11%3A40%2B0900&amp;precision=second" title="2007-11-13T12:11:40+0900 in Timeline">17 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          trac
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/InterMapTxt?version=1">InterMapTxt</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version currently edited">
+                    <a href="#L1">
+                      v1</a>
+                  </th>
+                  <th title="Version 1">
+                    <a href="/wiki/InterMapTxt?version=1#L1">
+                      v1</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1</th><td class="r"><ins>= InterMapTxt =</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>3</th><td class="r"><ins>== This is the place for defining InterWiki prefixes ==</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>4</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>5</th><td class="r"><ins>This page was modelled after the MeatBall:InterMapTxt page.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>6</th><td class="r"><ins>In addition, an optional comment is allowed after the mapping.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>7</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>8</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>9</th><td class="r"><ins>This page is interpreted in a special way by Trac, in order to support</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>10</th><td class="r"><ins>!InterWiki links in a flexible and dynamic way.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins>The code block after the first line separator in this page</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>will be interpreted as a list of !InterWiki specifications:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>14</th><td class="r"><ins>{{{</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>15</th><td class="r"><ins>prefix &lt;space&gt; URL [&lt;space&gt; # comment]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>16</th><td class="r"><ins>}}}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>17</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>18</th><td class="r"><ins>By using `$1`, `$2`, etc. within the URL, it is possible to create </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>19</th><td class="r"><ins>InterWiki links which support multiple arguments, e.g. Trac:ticket:40.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>20</th><td class="r"><ins>The URL itself can be optionally followed by a comment, </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>21</th><td class="r"><ins>which will subsequently be used for decorating the links </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>22</th><td class="r"><ins>using that prefix.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>New !InterWiki links can be created by adding to that list, in real time.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>Note however that ''deletions'' are also taken into account immediately,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>so it may be better to use comments for disabling prefixes.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins>Also note that !InterWiki prefixes are case insensitive.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>== List of Active Prefixes ==</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>33</th><td class="r"><ins>[[InterWiki]]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>34</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins>----</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins>== Prefix Definitions ==</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>{{{</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>PEP&nbsp; &nbsp; &nbsp;http://www.python.org/peps/pep-$1.html&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# Python Enhancement Proposal </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>Trac-ML&nbsp; http://thread.gmane.org/gmane.comp.version-control.subversion.trac.general/ # Message $1 in Trac Mailing List</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins>trac-dev http://thread.gmane.org/gmane.comp.version-control.subversion.trac.devel/&nbsp; &nbsp;# Message $1 in Trac Development Mailing List</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>Mercurial http://www.selenic.com/mercurial/wiki/index.cgi/ # the wiki for the Mercurial distributed SCM</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>RFC&nbsp; &nbsp; &nbsp; &nbsp;http://rfc.net/rfc$1.html # IETF's RFC $1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>#</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins># A arbitrary pick of InterWiki prefixes...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>#</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>Acronym&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://www.acronymfinder.com/af-query.asp?String=exact&amp;Acronym=</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>C2find&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://c2.com/cgi/wiki?FindPage&amp;value=</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>Cache&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://www.google.com/search?q=cache:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>CPAN&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://search.cpan.org/perldoc?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>DebianBug&nbsp; &nbsp; &nbsp; &nbsp; http://bugs.debian.org/</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>DebianPackage&nbsp; &nbsp; http://packages.debian.org/</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>Dictionary&nbsp; &nbsp; &nbsp; &nbsp;http://www.dict.org/bin/Dict?Database=*&amp;Form=Dict1&amp;Strategy=*&amp;Query=</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>Google&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://www.google.com/search?q=</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>GoogleGroups&nbsp; &nbsp; &nbsp;http://groups.google.com/group/$1/msg/$2&nbsp; &nbsp; &nbsp; &nbsp; # Message $2 in $1 Google Group</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>JargonFile&nbsp; &nbsp; &nbsp; &nbsp;http://downlode.org/perl/jargon-redirect.cgi?term=</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>MeatBall&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://www.usemod.com/cgi-bin/mb.pl?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>MetaWiki&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://sunir.org/apps/meta.pl?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>MetaWikiPedia&nbsp; &nbsp; http://meta.wikipedia.org/wiki/</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>MoinMoin&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://moinmoin.wikiwikiweb.de/</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>WhoIs&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://www.whois.sc/</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>Why&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://clublet.com/c/c/why?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins>c2Wiki&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://c2.com/cgi/wiki?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins>WikiPedia&nbsp; &nbsp; &nbsp; &nbsp; http://en.wikipedia.org/wiki/</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>69</th><td class="r"><ins>}}}</ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+= !BioJava =
+ * Working with BioJava-live SVN version 4723.
+== Fasta Format ==
+=== Major Issues ===
+ * None
+=== Minor Issues ===
+ * Sequence case is not preserved. --not really a bug. It is preserved if you pass in a masked alphabet instead of the default DNA alphabet.
+ * Line length varies (default is 80 cpl).
+===Read-Write-Read===
+ * Succeeds!
+
+
+== Genbank format ==
+=== Major Issues ===
+ * None.
+=== Minor Issues ===
+ * Feature qualifier order is not preserved. --it is, but xrefs and organism are moved to end of list as they are not stored internally as qualifiers.
+ * Because NCBI Taxonomy is referenced from memory or database if the version used
+doesn't match the version that was used to construct the record then minor 
+differences appear. For example the common name of Arabidopsis changed from thale cress
+to mouse ear cress.
+===Read-Write-Read===
+ * Success!
+
+== GenbankXML format ==
+== Major Issues ==
+ * Not supported (INSD is).
+
+== INSD Format ==
+== Major Issues ==
+ * None.
+== Minor Issues ==
+ * BioJava inlcudes the Reference_position tag. NCBI doesn't unless it is not 1..1
+{{{
+<INSDReference_position>1..1</INSDReference_position>
+}}}
+ * There are other examples of this redundancy. I think if this doesn't break the
+dtd then it doesn't matter.
+ * Qualifiers order is not preserved. I don't think this matters. --see Genbank
+===Read-Write-Read===
+ * Success!
+
+== EMBL Format ==
+=== Major Issues ===
+ * No major issues
+=== Minor Issues ===
+ * Version in date is not correct on output. --fixed
+ * Two XX lines after references. -- fixed
+ * Feature qualifiers out of order. --see Genbank
+===Read-Write-Read===
+ * Succeeds!
+
+== SwissProt/ Uniprot ==
+=== Major Issues ===
+=== Minor Issues ===
+ * BioSQL cannot store more than one database reference for a single publication,
+eg Pubmed and medline Id and DOI.
+ * We are putting 'and' before the last author. --fixed
+ * We loose the copyright statement. -- fixed
+===Read-Write-Read===
+ * Cannot read back in: -- fixed
+
+<code>
+Format_object=org.biojavax.bio.seq.io.UniProtFormat
+Accession=Q43385
+Id=
+Comments=
+Parse_block=OS   Arabidopsis thaliana (Mouse-ear cress) (Arabidopsis thaliana (L.) Heynh.).OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;OS   Spermatophyta; Magnoliophyta; eudicotyledons; core eudicotyledons; rosids;
+eurosids II; Brassicales; Brassicaceae; Arabidopsis.OX   NCBI_TaxID=3702;
+Stack trace follows ....
+
+
+        at org.biojavax.bio.seq.io.UniProtFormat.readRichSequence(UniProtFormat.java:615)
+        at org.biojavax.bio.seq.io.RichStreamReader.nextRichSequence(RichStreamReader.java:110)
+        ... 3 more
+Caused by: java.lang.IllegalArgumentException: NCBI taxonomy names cannot embed new lines - at:74, in name: <Spermatophyta; Magnoliophyta; eudicotyledons; core eudicotyledons; rosids;
+eurosids II; Brassicales; Brassicaceae; Arabidopsis>
+        at org.biojavax.bio.taxa.SimpleNCBITaxonName.<init>(SimpleNCBITaxonName.java:47)
+        at org.biojavax.bio.taxa.SimpleNCBITaxon.addName(SimpleNCBITaxon.java:148)
+        at org.biojavax.bio.seq.io.UniProtFormat.readRichSequence(UniProtFormat.java:339)
+        ... 4 more
+</code>
+
+== UniprotXML ==
+=== Major Issues ===
+ * Missing the namespace and the version from entry tag -- fixed
+ * Don't write editor list if there are no editors -- fixed
+ * Reference tag not correctly constructed. -- fixed
+ * When writing Uniprot XML it would be illegal to use anything other than
+    Swiss-Prot or TrEMBL as the Namespace -- fixed but only if record originally had correct NS
+
+ ** NEW ISSUES
+
+ * Missing 'proteinExistence' tag before first keyword. --fixed
+ * Missing 'version' attribute on sequence tag. This is distinct from entry version - entry version needs to be moved to an annotation. --fixed
+
+=== Minor Issues ===
+===Read-Write-Read===
+
+== EMBLxml ==
+=== Major Issues ===
+ * none
+=== Minor Issues ===
+===Read-Write-Read===
+ *  Success!

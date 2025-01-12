@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  
+
+  <channel>
+    <title>Hackathon: Ticket Query</title>
+    <link>http://bl22-02.dbcls.jp:31081/query?status=closed&amp;row=description</link>
+    <description>Hackathon</description>
+    <language>en-US</language>
+    <image>
+      <title>Hackathon</title>
+      <url>http://bl22-02.dbcls.jp:31081/chrome/site/BioHackathon.png</url>
+      <link>http://bl22-02.dbcls.jp:31081/query?status=closed&amp;row=description</link>
+    </image>
+    <generator>Trac 0.11.6</generator>
+ </channel>
+</rss>

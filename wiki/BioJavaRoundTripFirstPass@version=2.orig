@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      BioJavaRoundTripFirstPass – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/BioJavaRoundTripFirstPass?version=2&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/BioJavaRoundTripFirstPass" title="View latest version" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/BioJavaRoundTripFirstPass?version=1" title="Version 1" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/BioJavaRoundTripFirstPass?version=1" title="Version 1">Previous Version</a></span></li><li><a href="/wiki/BioJavaRoundTripFirstPass" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="/wiki/BioJavaRoundTripFirstPass?action=diff&amp;version=2">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 2 (modified by markjschreiber, <a class="timeline" href="/timeline?from=2008-02-12T17%3A16%3A50%2B0900&amp;precision=second" title="2008-02-12T17:16:50+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="BioJava">BioJava</h1>
+<p>
+Working with BioJava-live SVN build 4716
+</p>
+<h2 id="FastaFormat">Fasta Format</h2>
+<h3 id="MajorIssues">Major Issues</h3>
+<p>
+None
+</p>
+<h3 id="MinorIssues">Minor Issues</h3>
+<p>
+Sequence case is not preserved. Line length varies (default is 80 cpl).
+</p>
+<h2 id="Genbankformat">Genbank format</h2>
+<h3 id="MajorIssues1">Major Issues</h3>
+<p>
+None.
+</p>
+<h3 id="MinorIssues1">Minor Issues</h3>
+<p>
+Feature qualifier order is not preserved.
+Because NCBI Taxonomy is referenced from memory or database if the version used
+doesn't match the version that was used to construct the record then minor 
+differences appear. For example the common name of Arabidopsis changed from thale cress
+to mouse ear cress.
+</p>
+<h2 id="GenbankXMLformat">GenbankXML format</h2>
+<h2 id="MajorIssues2">Major Issues</h2>
+<p>
+Not supported (INSD is).
+</p>
+<h2 id="INSDFormat">INSD Format</h2>
+<h2 id="MajorIssues3">Major Issues</h2>
+<p>
+None.
+</p>
+<h2 id="MinorIssues2">Minor Issues</h2>
+<p>
+Biojava doesn't add the XML header and INSDSet tags, starts with INSDSeq.
+</p>
+<pre class="wiki">&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE INSDSet PUBLIC "-//NCBI//INSD INSDSeq/EN" "http://www.ncbi.nlm.nih.gov/dtd/INSD_INSDSeq.dtd"&gt;
+&lt;INSDSet&gt;
+&lt;INSDSeq&gt;
+...
+</pre><p>
+* BioJava inlcudes the Reference_position tag. NCBI doesn't unless it is not 1..1
+</p>
+<pre class="wiki">&lt;INSDReference_position&gt;1..1&lt;/INSDReference_position&gt;
+</pre><p>
+* There are other examples of this redundancy. I think if this doesn't break the
+dtd then it doesn't matter.
+</p>
+<p>
+* Qualifiers order is not preserved. I don't think this matters.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/BioJavaRoundTripFirstPass?version=2&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<uniprot xmlns="http://uniprot.org/uniprot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd">
+  <entry version="60" dataset="Swiss-Prot" created="2002-10-19" modified="2007-12-04">
+    <accession>Q9SAF9</accession>
+    <name>DOF37_ARATH</name>
+    <protein>
+      <name>Dof zinc finger protein DOF3.7</name>
+      <name>AtDOF3.7</name>
+      <name>Dof affecting germination 1</name>
+      <name>Transcription factor BBFa</name>
+      <name>AtBBFa</name>
+      <name>RolB domain B factor a</name>
+    </protein>
+    <gene>
+      <name type="primary">DOF3.7</name>
+      <name type="synonym">BBFA</name>
+      <name type="synonym">DAG1</name>
+      <name type="ordered locus">BBFA</name>
+      <name type="ordered locus">DAG1</name>
+      <name type="ORF">BBFA</name>
+      <name type="ORF">DAG1</name>
+    </gene>
+    <organism key="1">
+      <name type="common">Mouse-ear cress</name>
+      <name type="common">mouse-ear cress</name>
+      <name type="common">thale-cress</name>
+      <name type="common">thale cress</name>
+      <name type="common">Arabidopsis thaliana (thale cress)</name>
+      <name type="common">Arbisopsis thaliana</name>
+      <name type="common">Arabidopsis thaliana</name>
+      <name type="synonym">Arabidopsis thaliana (L.) Heynh.</name>
+      <dbReference key="2" type="NCBI Taxonomy" id="3702" />
+      <lineage>
+        <taxon>Eukaryota</taxon>
+        <taxon>Viridiplantae</taxon>
+        <taxon>Streptophyta</taxon>
+        <taxon>Embryophyta</taxon>
+        <taxon>Tracheophyta</taxon>
+        <taxon>Spermatophyta</taxon>
+        <taxon>Magnoliophyta</taxon>
+        <taxon>eudicotyledons</taxon>
+        <taxon>core eudicotyledons</taxon>
+        <taxon>rosids</taxon>
+        <taxon>eurosids II</taxon>
+        <taxon>Brassicales</taxon>
+        <taxon>Brassicaceae</taxon>
+        <taxon>Arabidopsis</taxon>
+      </lineage>
+    </organism>
+    <reference key="3">
+      <citation type="journal article">
+        <title>A rolB regulatory factor belongs to a new class of single zinc finger plant proteins.</title>
+        <authorList>
+          <person name="de Paolis A." />
+          <person name="Sabatini S." />
+          <person name="de Pascalis L." />
+          <person name="Costantino P." />
+          <person name="Capone I." />
+        </authorList>
+        <locator>10 Plant J. 223 215 1996</locator>
+        <dbReference type="MEDLINE" id="96367665" key="4" />
+      </citation>
+      <scope>NUCLEOTIDE SEQUENCE [GENOMIC DNA / MRNA] (ISOFORM 1)</scope>
+    </reference>
+    <reference key="5">
+      <citation type="journal article">
+        <title>Identification and disruption of an Arabidopsis zinc finger gene controlling seed germination.</title>
+        <authorList>
+          <person name="Papi M." />
+          <person name="Sabatini S." />
+          <person name="Bouchez D." />
+          <person name="Camilleri C." />
+          <person name="Costantino P." />
+          <person name="Vittorioso P." />
+        </authorList>
+        <locator>14 Genes Dev. 33 28 2000</locator>
+        <dbReference type="MEDLINE" id="20107030" key="6" />
+      </citation>
+      <scope>NUCLEOTIDE SEQUENCE [GENOMIC DNA] (ISOFORM 1)</scope>
+    </reference>
+    <reference key="7">
+      <citation type="journal article">
+        <title>Sequence and analysis of chromosome 3 of the plant Arabidopsis thaliana.</title>
+        <authorList>
+          <person name="Salanoubat M." />
+          <person name="Lemcke K." />
+          <person name="Rieger M." />
+          <person name="Ansorge W." />
+          <person name="Unseld M." />
+          <person name="Fartmann B." />
+          <person name="Valle G." />
+          <person name="Bloecker H." />
+          <person name="Perez-Alonso M." />
+          <person name="Obermaier B." />
+          <person name="Delseny M." />
+          <person name="Boutry M." />
+          <person name="Grivell L.A." />
+          <person name="Mache R." />
+          <person name="Puigdomenech P." />
+          <person name="De Simone V." />
+          <person name="Choisne N." />
+          <person name="Artiguenave F." />
+          <person name="Robert C." />
+          <person name="Brottier P." />
+          <person name="Wincker P." />
+          <person name="Cattolico L." />
+          <person name="Weissenbach J." />
+          <person name="Saurin W." />
+          <person name="Quetier F." />
+          <person name="Schaefer M." />
+          <person name="Mueller-Auer S." />
+          <person name="Gabel C." />
+          <person name="Fuchs M." />
+          <person name="Benes V." />
+          <person name="Wurmbach E." />
+          <person name="Drzonek H." />
+          <person name="Erfle H." />
+          <person name="Jordan N." />
+          <person name="Bangert S." />
+          <person name="Wiedelmann R." />
+          <person name="Kranz H." />
+          <person name="Voss H." />
+          <person name="Holland R." />
+          <person name="Brandt P." />
+          <person name="Nyakatura G." />
+          <person name="Vezzi A." />
+          <person name="D'Angelo M." />
+          <person name="Pallavicini A." />
+          <person name="Toppo S." />
+          <person name="Simionati B." />
+          <person name="Conrad A." />
+          <person name="Hornischer K." />
+          <person name="Kauer G." />
+          <person name="Loehnert T.-H." />
+          <person name="Nordsiek G." />
+          <person name="Reichelt J." />
+          <person name="Scharfe M." />
+          <person name="Schoen O." />
+          <person name="Bargues M." />
+          <person name="Terol J." />
+          <person name="Climent J." />
+          <person name="Navarro P." />
+          <person name="Collado C." />
+          <person name="Perez-Perez A." />
+          <person name="Ottenwaelder B." />
+          <person name="Duchemin D." />
+          <person name="Cooke R." />
+          <person name="Laudie M." />
+          <person name="Berger-Llauro C." />
+          <person name="Purnelle B." />
+          <person name="Masuy D." />
+          <person name="de Haan M." />
+          <person name="Maarse A.C." />
+          <person name="Alcaraz J.-P." />
+          <person name="Cottet A." />
+          <person name="Casacuberta E." />
+          <person name="Monfort A." />
+          <person name="Argiriou A." />
+          <person name="Flores M." />
+          <person name="Liguori R." />
+          <person name="Vitale D." />
+          <person name="Mannhaupt G." />
+          <person name="Haase D." />
+          <person name="Schoof H." />
+          <person name="Rudd S." />
+          <person name="Zaccaria P." />
+          <person name="Mewes H.-W." />
+          <person name="Mayer K.F.X." />
+          <person name="Kaul S." />
+          <person name="Town C.D." />
+          <person name="Koo H.L." />
+          <person name="Tallon L.J." />
+          <person name="Jenkins J." />
+          <person name="Rooney T." />
+          <person name="Rizzo M." />
+          <person name="Walts A." />
+          <person name="Utterback T." />
+          <person name="Fujii C.Y." />
+          <person name="Shea T.P." />
+          <person name="Creasy T.H." />
+          <person name="Haas B." />
+          <person name="Maiti R." />
+          <person name="Wu D." />
+          <person name="Peterson J." />
+          <person name="Van Aken S." />
+          <person name="Pai G." />
+          <person name="Militscher J." />
+          <person name="Sellers P." />
+          <person name="Gill J.E." />
+          <person name="Feldblyum T.V." />
+          <person name="Preuss D." />
+          <person name="Lin X." />
+          <person name="Nierman W.C." />
+          <person name="Salzberg S.L." />
+          <person name="White O." />
+          <person name="Venter J.C." />
+          <person name="Fraser C.M." />
+          <person name="Kaneko T." />
+          <person name="Nakamura Y." />
+          <person name="Sato S." />
+          <person name="Kato T." />
+          <person name="Asamizu E." />
+          <person name="Sasamoto S." />
+          <person name="Kimura T." />
+          <person name="Idesawa K." />
+          <person name="Kawashima K." />
+          <person name="Kishida Y." />
+          <person name="Kiyokawa C." />
+          <person name="Kohara M." />
+          <person name="Matsumoto M." />
+          <person name="Matsuno A." />
+          <person name="Muraki A." />
+          <person name="Nakayama S." />
+          <person name="Nakazaki N." />
+          <person name="Shinpo S." />
+          <person name="Takeuchi C." />
+          <person name="Wada T." />
+          <person name="Watanabe A." />
+          <person name="Yamada M." />
+          <person name="Yasuda M." />
+          <person name="Tabata S." />
+        </authorList>
+        <locator>408 Nature 822 820 2000</locator>
+        <dbReference type="MEDLINE" id="21016720" key="8" />
+      </citation>
+      <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]</scope>
+    </reference>
+    <reference key="9">
+      <citation type="journal article">
+        <title>Functional annotation of a full-length Arabidopsis cDNA collection.</title>
+        <authorList>
+          <person name="Seki M." />
+          <person name="Narusaka M." />
+          <person name="Kamiya A." />
+          <person name="Ishida J." />
+          <person name="Satou M." />
+          <person name="Sakurai T." />
+          <person name="Nakajima M." />
+          <person name="Enju A." />
+          <person name="Akiyama K." />
+          <person name="Oono Y." />
+          <person name="Muramatsu M." />
+          <person name="Hayashizaki Y." />
+          <person name="Kawai J." />
+          <person name="Carninci P." />
+          <person name="Itoh M." />
+          <person name="Ishii Y." />
+          <person name="Arakawa T." />
+          <person name="Shibata K." />
+          <person name="Shinagawa A." />
+          <person name="Shinozaki K." />
+        </authorList>
+        <locator>296 Science 145 141 2002</locator>
+        <dbReference type="MEDLINE" id="21932900" key="10" />
+      </citation>
+      <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 2)</scope>
+    </reference>
+    <reference key="11">
+      <citation type="journal article">
+        <title>Inactivation of the phloem-specific Dof zinc finger gene DAG1 affects response to light and integrity of the testa of Arabidopsis seeds.</title>
+        <authorList>
+          <person name="Papi M." />
+          <person name="Sabatini S." />
+          <person name="Altamura M.M." />
+          <person name="Hennig L." />
+          <person name="Schaefer E." />
+          <person name="Costantino P." />
+          <person name="Vittorioso P." />
+        </authorList>
+        <locator>128 Plant Physiol. 417 411 2002</locator>
+        <dbReference type="MEDLINE" id="21831160" key="12" />
+      </citation>
+      <scope>CHARACTERIZATION</scope>
+    </reference>
+    <reference key="13">
+      <citation type="journal article">
+        <title>The Dof family of plant transcription factors.</title>
+        <authorList>
+          <person name="Yanagisawa S." />
+        </authorList>
+        <locator>7 Trends Plant Sci. 560 555 2002</locator>
+        <dbReference type="MEDLINE" id="22364319" key="14" />
+      </citation>
+      <scope>GENE FAMILY</scope>
+    </reference>
+    <comment type="function">
+      <text> Transcription factor specifically involved in the maternal control of seed germination. Regulates transcription by binding to a 5'-AA[AG]G-3' consensus core sequence. May ensure the inactivity of a component that would be activated to trigger germination as a consequence of red light perception</text>
+    </comment>
+    <comment type="subcellular location">
+      <text> Nucleus</text>
+    </comment>
+    <comment type="alternative products">
+      <event type="alternative splicing" />
+      <isoform>
+        <id>Q43385-1</id>
+        <name>1</name>
+        <sequence type="displayed" />
+        <note>null</note>
+      </isoform>
+      <isoform>
+        <id>Q43385-2</id>
+        <name>2</name>
+        <sequence type="described" ref="VSP_008898" />
+        <note>null</note>
+      </isoform>
+    </comment>
+    <comment type="tissue specificity">
+      <text> Expressed in the phloem of the mother plant, including in roots, stem, leaves and flowers, but not present in the seed and embryo. In maturing siliques, found all through the funiculus connecting the placenta to the ovule, but not in the ovule</text>
+    </comment>
+    <comment type="developmental stage">
+      <text> Turned off in siliques when they reached full maturation. Not expressed in developing or mature embryos</text>
+    </comment>
+    <comment type="miscellaneous">
+      <text> The regulatory role of DOF3.7/DAG1 appears to be opposite to that of DOF2.5/DAG2. Both zinc finger proteins may act on a maternal switch that controls seed germination, possibly by regulating the same gene(s)</text>
+    </comment>
+    <comment type="similarity">
+      <text> Contains 1 Dof-type zinc finger</text>
+    </comment>
+    <dbReference type="MEDLINE" id="96367665" key="15" />
+    <dbReference type="PubMed" id="8771779" key="16" />
+    <dbReference type="MEDLINE" id="20107030" key="17" />
+    <dbReference type="PubMed" id="10640273" key="18" />
+    <dbReference type="DOI" id="10.1038/35048706" key="19" />
+    <dbReference type="MEDLINE" id="21016720" key="20" />
+    <dbReference type="PubMed" id="11130713" key="21" />
+    <dbReference type="DOI" id="10.1126/science.1071006" key="22" />
+    <dbReference type="MEDLINE" id="21932900" key="23" />
+    <dbReference type="PubMed" id="11910074" key="24" />
+    <dbReference type="DOI" id="10.1104/pp.010488" key="25" />
+    <dbReference type="MEDLINE" id="21831160" key="26" />
+    <dbReference type="PubMed" id="11842145" key="27" />
+    <dbReference type="DOI" id="10.1016/S1360-1385(02)02362-2" key="28" />
+    <dbReference type="MEDLINE" id="22364319" key="29" />
+    <dbReference type="PubMed" id="12475498" key="30" />
+    <dbReference type="EMBL" id="X97941" key="31">
+      <property type="protein id" value="CAA66600.2" />
+    </dbReference>
+    <dbReference type="EMBL" id="AJ224122" key="32">
+      <property type="protein id" value="CAB40190.1" />
+    </dbReference>
+    <dbReference type="EMBL" id="AL138642" key="33">
+      <property type="protein id" value="CAB71892.1" />
+    </dbReference>
+    <dbReference type="EMBL" id="AK117352" key="34">
+      <property type="protein id" value="BAC42022.1" />
+    </dbReference>
+    <dbReference type="PIR" id="T47977" key="35">
+      <property type="entry name" value="T47977" />
+    </dbReference>
+    <dbReference type="RefSeq" id=" NP_191744.1" key="36" />
+    <dbReference type="UniGene" id="At.989" key="37" />
+    <dbReference type="TRANSFAC" id="T02699" key="38" />
+    <dbReference type="GeneId" id=" 825358" key="39" />
+    <dbReference type="GenomeReviews" id="BA000014_GR" key="40">
+      <property type="acc" value="AT3G61850" />
+    </dbReference>
+    <dbReference type="KEGG" id="ath:AT3G61850" key="41" />
+    <dbReference type="GeneFarm" id="4410" key="42">
+      <property type="gene family" value="446" />
+    </dbReference>
+    <dbReference type="TAIR" id="At3g61850" key="43" />
+    <dbReference type="ArrayExpress" id="Q43385" key="44" />
+    <dbReference type="GermOnline" id="AT3G61850" key="45">
+      <property type="acc" value="Arabidopsis thaliana" />
+    </dbReference>
+    <dbReference type="InterPro" id="IPR003851" key="46">
+      <property type="entry name" value="Znf_Dof" />
+    </dbReference>
+    <dbReference type="Pfam" id="PF02701" key="47">
+      <property type="entry name" value="zf-Dof" />
+    </dbReference>
+    <dbReference type="PROSITE" id="PS01361" key="48">
+      <property type="entry name" value="ZF_DOF_1" />
+    </dbReference>
+    <dbReference type="PROSITE" id="PS50884" key="49">
+      <property type="entry name" value="ZF_DOF_2" />
+    </dbReference>
+    <proteinExistence type="Evidence at protein level" />
+    <keyword id="KW-0025">Alternative splicing</keyword>
+    <keyword id="KW-0181">Complete proteome</keyword>
+    <keyword id="KW-0238">DNA-binding</keyword>
+    <keyword id="KW-0309">Germination</keyword>
+    <keyword id="KW-0479">Metal-binding</keyword>
+    <keyword id="KW-0539">Nucleus</keyword>
+    <keyword id="KW-0804">Transcription</keyword>
+    <keyword id="KW-0805">Transcription regulation</keyword>
+    <keyword id="KW-0862">Zinc</keyword>
+    <keyword id="KW-0863">Zinc-finger</keyword>
+    <feature type="chain" id="PRO_0000074283" description="Dof zinc finger protein DOF3.7">
+      <location>
+        <begin position="1" />
+        <end position="296" />
+      </location>
+    </feature>
+    <feature type="zinc finger region" description="Dof-type">
+      <location>
+        <begin position="74" />
+        <end position="128" />
+      </location>
+    </feature>
+    <feature type="compositionally biased region" description="Poly-His">
+      <location>
+        <begin position="173" />
+        <end position="176" />
+      </location>
+    </feature>
+    <feature type="splice variant" id="VSP_008898" description="(in isoform 2)">
+      <location>
+        <begin position="1" />
+        <end position="12" />
+      </location>
+    </feature>
+    <sequence version="2" length="296" mass="32966" checksum="0D733352776272EB" modified="2001-06-01">
+MDATKWTQGFQEMINVKPMEQMISSTNNNTPQQQPTFIATNTRPNATASNGGSGGNTNNTATMETRKARPQEKVNCPRCN
+STNTKFCYYNNYSLTQPRYFCKGCRRYWTEGGSLRNVPVGGSSRKNKRSSTPLASPSNPKLPDLNPPILFSSQIPNKSNK
+DLNLLSFPVMQDHHHHALELLRSNGVSSRGMNTFLPGQMMDSNSVLYSSLGFPTMPDYKQSNNNLSFSIDHHQGIGHNTI
+NSNQRAQDNNDDMNGASRVLFPFSDMKELSSTTQEKSHGNNTYWNGMFSNTGGSSW
+    </sequence>
+  </entry>
+  <copyright>
+Copyrighted by the UniProt Consortium, see
+http://www.uniprot.org/terms.
+Distributed under the Creative Commons Attribution-NoDerivs License.
+  </copyright>
+</uniprot>

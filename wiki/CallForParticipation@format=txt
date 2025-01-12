@@ -1,0 +1,50 @@
+= Call for participation for the Web Service Hackathon =
+
+Dear all,
+
+I would like to invite you to Japan for the !BioHackathon specialized for the web services.
+
+ Place: Tokyo, Japan
+
+ Dates: 2008/Feb/10(Sun) - 16(Sat)
+
+ Details: http://hackathon.dbcls.jp/
+
+Database Center for Life Science (DBCLS; http://dbcls.jp/en/) is planning to have a !BioHackathon for the web service in next February and hope to invite you to Japan (currently considering upto 20 developers from abroad and other 20 developers from Japan in total). We can offer your travel fare and accommodation fee by the DBCLS budget.
+
+DBCLS is a non-profit research institution funded by MEXT (http://www.mext.go.jp/english/), established on the April 2007 and will continue for the 4 years. Our main goal is to integrate life science resources especially in Japan, and web service is one of the key technology to accomplish this purpose.
+
+We have learned that the BioMOBY project have actively been developed a integrated framework for this purpose, however, most of the Japanese and some of major foreign web service providers not yet follow the movement.
+
+From my experience as a developer of the !BioRuby library and the KEGG API service, I think there still are several problems to create integrated and interoperable environment:
+
+ * How to integrate non-BioMOBY service providers for the future of life science?
+ * What kind of effort can be made for Open Bio* libraries (!BioPerl, !BioPython, !BioRuby, !BioJava) to be interoperable?
+ * What kind of problems and bottlenecks exist to develop bioinformatics workflows?
+ * Does every provider agree that the current BioMOBY implementation is the best solution to migrate?
+
+So, in this opportunity, I hope to gather as many developers as we can, from major web service providers, from Open Bio* developers, from workflow client developers, and from the BioMOBY project, to discuss and develop a new Open Bio* standard for the web-service-centric bioinformatics-nation (TM).
+
+Regards,
+
+Toshiaki Katayama, on behalf of the DBCLS.
+
+--
+
+Human Genome Center, Institute of Medical Science, University of Tokyo
+
+4-6-1 Shirokanedai, Minato-ku, Tokyo 108-0071, Japan
+
+tel://+81-3-5449-5614
+
+fax://+81-3-5449-5434
+
+http://www.hgc.jp/ (Human Genome Center)
+
+http://bioruby.org/ (!BioRuby project)
+
+http://das.hgc.jp/ (KEGG DAS)
+
+http://www.genome.jp/kegg/soap/ (KEGG API)
+
+

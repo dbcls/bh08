@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  
+
+  <channel>
+    <title>Hackathon: Ticket #1: Asynchronous models slides</title>
+    <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+    <description>&lt;p&gt;
+These slides are from a meeting talk at Gent from &lt;a class="ext-link" href="http://mips.gsf.de/projects/plants/PlaNetPortal/index_html"&gt;&lt;span class="icon"&gt; &lt;/span&gt;PlaNet&lt;/a&gt; project at the end of 2004, and they show the a true asynchronous model and a polling one, applied to HTTP context. They were used during the first day for some explanations about asynchronous services.
+&lt;/p&gt;
+</description>
+    <language>en-us</language>
+    <image>
+      <title>Hackathon</title>
+      <url>http://bl22-02.dbcls.jp:31081/chrome/site/BioHackathon.png</url>
+      <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+    </image>
+    <generator>Trac 0.11.6</generator>
+    <item>
+          <dc:creator>jmfernandez</dc:creator>
+      <pubDate>Mon, 11 Feb 2008 17:07:51 GMT</pubDate>
+      <title>comment added; attachment set</title>
+      <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+      <guid isPermaLink="false">http://bl22-02.dbcls.jp:31081/ticket/1</guid>
+      <description>
+          &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;attachment&lt;/strong&gt;
+                set to &lt;em&gt;Asynchronous-Roles-from-Gent.png&lt;/em&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;p&gt;
+Roles in asynchronous models applied to HTTP context
+&lt;/p&gt;
+      </description>
+      <category>Ticket</category>
+    </item><item>
+          <dc:creator>jmfernandez</dc:creator>
+      <pubDate>Mon, 11 Feb 2008 17:09:15 GMT</pubDate>
+      <title>comment added; attachment set</title>
+      <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+      <guid isPermaLink="false">http://bl22-02.dbcls.jp:31081/ticket/1</guid>
+      <description>
+          &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;attachment&lt;/strong&gt;
+                set to &lt;em&gt;True-Asynchronous-Model-from-Gent.png&lt;/em&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;p&gt;
+True asynchronous model
+&lt;/p&gt;
+      </description>
+      <category>Ticket</category>
+    </item><item>
+          <dc:creator>jmfernandez</dc:creator>
+      <pubDate>Mon, 11 Feb 2008 17:09:46 GMT</pubDate>
+      <title>comment added; attachment set</title>
+      <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+      <guid isPermaLink="false">http://bl22-02.dbcls.jp:31081/ticket/1</guid>
+      <description>
+          &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;attachment&lt;/strong&gt;
+                set to &lt;em&gt;Polling-Asynchronous-Model-from-Gent.png&lt;/em&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;p&gt;
+Polling asynchronous model
+&lt;/p&gt;
+      </description>
+      <category>Ticket</category>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      DescriptionDiscovery – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/DescriptionDiscovery?version=2&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="DescriptionDiscovery.html" title="View latest version" />
+        <link rel="next" href="DescriptionDiscovery@version=3.html" title="Version 3" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="DescriptionDiscovery@version=1.html" title="Version 1" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="DescriptionDiscovery@version=1.html" title="Version 1">Previous Version</a></span></li><li><a href="DescriptionDiscovery.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="DescriptionDiscovery@version=3.html" title="Version 3">Next Version</a> &rarr;</span></li><li class="last"><a href="DescriptionDiscovery@action=diff&amp;version=2.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 2 (modified by markw, <a class="timeline" href="../timeline@from=2008-02-12T10%253A09%253A42+0900&amp;precision=second.html" title="2008-02-12T10:09:42+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="WEBSERVICES">WEB SERVICES</h1>
+<h2 id="Whatmetadataisrequiredtoadequatelydescribeaservice">What metadata is required to adequately describe a service?</h2>
+<ul><li>service version
+</li><li>software title
+<ul><li>nature of algorithm (likely = myGrid Task ontology)
+</li></ul></li><li>software version
+</li><li>bandwidth and/or # requests per minute
+</li><li>example input
+</li><li>example output and/or REGEXP to test output
+</li><li>some description of error-handling capacity
+</li><li>sync/async
+</li><li>nature of underlying data
+<ul><li>organism
+</li><li>biological nature of data
+<ul><li>DNA/RNA/Protein
+</li><li>SAGE
+</li><li>Microarray
+<ul><li>platform, etc.
+</li></ul></li></ul></li></ul></li><li>input parameters and purpose of each
+</li><li>output parameters and purpose of each
+</li><li>usage/license restrictions
+</li><li>authentication (is needed or not?)
+</li><li>usage statistics (as per service provider)
+</li><li>usage statistics (as per third party commentary)
+</li><li>protocol (moby, soap, GET, POST, etc.)
+</li><li>mirrors?
+</li></ul><h2 id="Whatontologiesexistthatcouldprovidethismetadata">What ontologies exist that could provide this metadata?</h2>
+<ul><li>myGrid - provides many of the annotation information 
+</li><li>myGrid - provides an ontology for bioinformatics tasks
+</li><li>Moby Object - an ontology of data-types
+</li><li>Moby Service - similar to myGrid
+</li></ul><h2 id="DoweneedadditionalontologiesWhoshouldmakethem">Do we need additional ontologies?  Who should make them?</h2>
+<ul><li>TBD
+</li></ul><h2 id="Whatwouldaservicediscoveryrequestlooklike">What would a service discovery request look like?</h2>
+<ul><li>TBD
+</li></ul><p>
+<br />
+<br />
+<br />
+<br />
+</p>
+<h1 id="RECORDIDENTITY">RECORD IDENTITY</h1>
+<h2 id="W3CHCLSWGhassomerecommendations">W3C HCLSWG has some recommendations</h2>
+<ul><li>these are largely URL-based + various HTTP protocol redirects etc for discovery of metadata
+</li></ul><h2 id="LifeSciencesIdentifiers">Life Sciences Identifiers</h2>
+<ul><li>LSIDs have formal spec for retrieval of both data and metadata
+<ul><li>LSIDs do not support "REST" access
+</li></ul></li></ul><h2 id="DOIorotherredirect">DOI or other redirect</h2>
+<ul><li>???
+</li></ul><h2 id="Bio2RDFprojectBanffManifesto"><a class="ext-link" href="http://bio2rdf.org"><span class="icon"> </span>Bio2RDF</a> project &amp; Banff Manifesto</h2>
+<ul><li>proposed URI format:  bm:namespace:id 
+<ul><li>for example bm:pdb:122345
+</li></ul></li><li>Freebase database of data providers and their namespaces
+<ul><li>Freebase is editable by end-users
+</li><li>could be automated v.v. lookup
+</li></ul></li><li>Somehow map bm:pdb:122345  to its equivalent URL
+</li><li>can we convince NAR to do this, since it has a list of all databases?
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/DescriptionDiscovery?version=2&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

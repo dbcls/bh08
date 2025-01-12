@@ -1,0 +1,101 @@
+Go to [wiki:PDBj-DDBJ-KEGG/Summary] for the outcome.
+
+= Description of services =
+ * DDBJ
+ * PDBj
+ * KEGG
+ * CBRC
+
+= DDBJ =
+
+http://www.xml.nig.ac.jp/index.html
+
+ * data retrieve 
+ * sequence search and analysis
+ * derived DBs
+ * other DBs
+
+= PDBj =
+
+= KEGG =
+
+http://www.genome.jp/kegg/soap/doc/keggapi_manual.html
+
+= first concentrate on sequence + alignment =
+
+= functional annotations =
+a given structure with unknown function -> BLAST at DDBJ / KEGG -> no homologs then -> struct-navi 
+
+ * accession number -> fasta 
+
+ * PDB ID <-> KEGG GENES ID ''get_linkdb_between_databases(string:from_db, string:to_db, int:offset, int:limit)''
+
+ * PDB ID  <-> DDDBJ ID
+
+= proposed workflow(s) =
+functional (or structural) annotation of a protein sequence.
+
+Let's call this "funcanot" workflow.
+
+let hits = BLAST_DAD(fasta) @DDBJ
+  if func_known(hits) then
+    send_to_KEGG( hits ) ;; annotation obtained from KEGG
+  else
+    let new_hits = BLAST_PDBj(fasta): @DDBJ
+       if exists(new_hits) then 
+         foreach hit in new_hits do
+            let shits = struct_navi(hit) :@PDBj
+              if exists(shits) then 
+                send_to_KEGG( shits );; annotation obtained from KEGG
+
+
+||input|| amino acid sequence with unknown function||
+||output||functionally annotated homologs||
+
+
+= SOAP vs. REST =
+ * SOAP isn't good at huge data (e.g., big XML file) <-> No problem with REST.
+ * REST requires more coding on the client side. User must handle output data (XML or flat text...) <-> SOAP can give you the object right away.
+ * REST cannot do complicated stuffs? (no datatypes, only 4 verbs, etc.)
+ * No language supports the full SOAP spec.
+ * Only a few languages have SOAP libraries.
+
+= Prototyping funcanot =
+finally got to real work.... (14:00; 2008-02-12)
+Prototyping using Taverna.
+ * Taverna can be used with REST-based WS? -> YES!
+
+
+= Continuing funcanot 2008-02-13 =
+
+ * Taverna cannot really handle conditional branches: workflow just flows but not fork.
+ * added simple list format option to strnavi REST API.
+ * Have a Moby lecture?
+
+= Continuing funcanot 2008-02-14 =
+ * strange behavior: http://rest.pdbj.org/strnavi?pdbid=2onk&chain=I  (when no hits found).
+
+Actually, 2onkI has no structural homologs but for some reason, 2onkI domains 1 and 2 have hits. Why?
+
+ * (12:33) One taverna WF done. DDBJ -> PDBj (No KEGG yet) : see attachment.
+   * Mostly works, but....
+   * Fails with PDB:101m sequence at BLAST_PDB_Parser ( http://rest.pdbj.org/fasta/101m )
+ * called help as to how to deal with KO SOAP API (Complex Type) -> resolved.
+ * (14:30) KEGG integrated. So the goal has been achieved!
+   * some more debugging required. especially exception handling.
+ * Debugged.
+
+== Sample inputs ==
+ * http://rest.pdbj.org/fasta/1a00/A
+ * http://rest.pdbj.org/fasta/101m
+ * http://rest.pdbj.org/fasta/1gof
+ * http://rest.pdbj.org/fasta/2onk/I
+ * http://rest.pdbj.org/fasta/1b54  (hypothetical protein; a good example of structure-based functional (?) annotation)
+
+=== remarks ===
+Taverna is not so easy to use. required much bean-shell scripting. 
+ * Maybe we should make web services so as to minimize scripting?
+ * Or prepare a lot of small widgets to handle in/out data formats?
+
+= Summarize 2008-02-15 =
+See [wiki:PDBj-DDBJ-KEGG/Summary]

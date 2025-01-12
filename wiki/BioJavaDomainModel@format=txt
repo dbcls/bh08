@@ -1,0 +1,43 @@
+Back to [OpenBioSemantics Open Bio Semantics Topic Page]
+
+= !BioJava Domain Model =
+
+[[PageOutline]]
+
+== Overview ==
+
+Richard Holland and Richard Bruskiewich attempted to capture the !BioJava object model in UML diagrams. These diagrams are presented on this page (a simply UML tool called [http://horstmann.com/violet/ VioletUML] was used...).
+
+The end result is only a semi-compliant UML diagram for general discussion and comparison to other such diagrams (e.g. for BioPerl and BioSQL) but is not computable (no XMI...)... Sorry :-)
+
+== UML Models ==
+
+=== org.biojavax ===
+
+[[Image(org.biojavax.png)]]
+
+=== org.biojavax.ontology ===
+
+[[Image(org.biojavax.ontology.png)]]
+
+=== org.biojavax.bio ===
+
+[[Image(org.biojavax.bio.png)]]
+
+=== org.biojavax.bio.taxa ===
+
+[[Image(org.biojavax.bio.taxa.png)]]
+
+=== org.biojavax.bio.seq ===
+
+[[Image(org.biojavax.bio.seq.png)]]
+
+=== org.biojavax.bio.seq.location ===
+
+[[Image(org.biojavax.bio.seq.location.png)]]
+
+=== org.biojavax.bio.seq.sequence ===
+
+[[Image(org.biojavax.bio.seq.sequence.png)]]
+
+[[Timestamp]]

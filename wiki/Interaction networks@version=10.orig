@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Interaction networks – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/Interaction%20networks?version=10&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/Interaction%20networks" title="View latest version" />
+        <link rel="next" href="/wiki/Interaction%20networks?version=11" title="Version 11" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/Interaction%20networks?version=9" title="Version 9" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Interaction%20networks?version=9" title="Version 9">Previous Version</a></span></li><li><a href="/wiki/Interaction%20networks" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/Interaction%20networks?version=11" title="Version 11">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/Interaction%20networks?action=diff&amp;version=10">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 10 (modified by baranda, <a class="timeline" href="/timeline?from=2008-02-14T12%3A55%3A46%2B0900&amp;precision=second" title="2008-02-14T12:55:46+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="Overview">Overview</h1>
+<h2 id="Exchangeformat">Exchange format</h2>
+<p>
+It already exists an standard exchange format: PSI-MI. Two possibilities:
+</p>
+<ul><li><a class="ext-link" href="http://www.psidev.info/index.php?q=node/60"><span class="icon"> </span>PSI-MI XML</a>
+</li><li>PSI-MI TAB  (tabulated)
+<ul><li><a class="ext-link" href="ftp://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/README"><span class="icon"> </span>Standard</a>
+</li><li>Expanded (IntAct) - Additional columns to the standard, containing information like bait-prey, types, cross-references...
+</li></ul></li></ul><h2 id="ServiceProviders">Service Providers</h2>
+<p>
+Service providers at the Hackathon
+</p>
+<ul><li><a class="ext-link" href="http://www.ebi.ac.uk/intact"><span class="icon"> </span>IntAct</a> (Bruno Aranda, EBI)
+</li><li><a class="ext-link" href="http://dip.doe-mbi.ucla.edu/"><span class="icon"> </span>DIP</a> (Lukasz Salwinski, UCLA)
+</li><li><a class="ext-link" href="http://string.embl.de"><span class="icon"> </span>STRING</a> (Michael Kuhn)
+</li><li>... (please add yourself)
+</li></ul><h2 id="Serviceconsumers">Service consumers</h2>
+<ul><li><a class="ext-link" href="http://www.cytoscape.org"><span class="icon"> </span>Cytoscape</a> (Keichiro Ono)
+</li><li><a class="ext-link" href="http://celldesigner.org"><span class="icon"> </span>CellDesigner</a> (Akira Funahashi, Keio Univ. &amp; SBI)
+</li><li>... (please add yourself)
+</li></ul><h1 id="ExistingWebServices">Existing Web Services</h1>
+<h2 id="IntActWebservice">IntAct Web service</h2>
+<ul><li>IntAct already provides a very simple SOAP based web service (<a class="ext-link" href="http://www.ebi.ac.uk/~intact/devsite/remote/binarysearch_ws.html"><span class="icon"> </span>http://www.ebi.ac.uk/~intact/devsite/remote/binarysearch_ws.html</a>)
+</li></ul><ul><li>NCBI Entrez Gene has meta-database of interactions (MINT, BioGrid, and BIND), but access to these dataset is hard due to API design.
+</li></ul><h1 id="ExistingClients">Existing Clients</h1>
+<ul><li>Please visit <a class="ext-link" href="http://www.cytoscape.org/cgi-bin/moin.cgi/SampleWebServiceClients"><span class="icon"> </span>this</a> page for Cytoscape clients and its visualizations.
+</li></ul><h1 id="Objectives">Objectives</h1>
+<h3 id="ImprovetheexistingIntActwebservice">Improve the existing IntAct web service</h3>
+<p>
+Note: the IntAct web service is in fact a web service that searches on a PSI-MI TAB file that contains all the interactions present at IntAct. All the (java) code 
+generated at IntAct is open-source and licensed under the Apache Commons License 2.0. It means that this web service implementation could be used over any PSI-MI TAB file (not just the IntAct ones).
+</p>
+<ul><li>Taverna client
+</li><li>BioMoby
+</li><li>Check use-cases:
+<ul><li>Get interaction or partners not only using Uniprot IDs (the primary identifiers for interactors used in IntAct)
+</li></ul></li></ul><p>
+ 
+Note: during the week, a common WSDL for interaction web services has been defined, so this section will be accomplish by implementing such a service.
+</p>
+<h3 id="DefineacommonInteractionQueryLanguage">Define a common Interaction Query Language</h3>
+<p>
+It would be useful to have a common query language for interactions. Options:
+</p>
+<ul><li><a class="wiki" href="/wiki/PSICQUIC">PSICQUIC</a> - attempt to create a REST-based query language.
+<ul><li>A common WSDL, based on the original ideas of PSICQUIC and new requirements, will be defined in the <a class="missing wiki">BioHackathon?</a>
+</li></ul></li><li><a class="ext-link" href="http://lucene.apache.org"><span class="icon"> </span>Lucene</a> based searches over PSI-MI tab files - this is what is currently used in IntAct.
+<ul><li>This option is really powerful. A method allowing queries will be part of the common WSDL. However, it is not clear if all providers will implement this method (IntAct will, well, it is actually using it :) )
+</li></ul></li></ul><h3 id="Definespecificuse-cases">Define specific use-cases</h3>
+<p>
+Cytoscape, as active consumer, has a bunch of use cases that can be a starting point to discuss how interaction data could be mined/queried.
+</p>
+<h3 id="InteractionDASServer">Interaction DAS Server</h3>
+<p>
+Possibility: <a class="ext-link" href="http://www.dasregistry.org/extension_interaction.jsp"><span class="icon"> </span>http://www.dasregistry.org/extension_interaction.jsp</a>
+</p>
+<p>
+Problems: it does not comply neither with the PSI-MI specification nor with the DAS one.
+</p>
+<p>
+Due to time constraints, no effort will be dedicated in the <a class="missing wiki">BioHackathon?</a> to this.
+</p>
+<h1 id="OtherResources">Other Resources</h1>
+<p>
+<a class="ext-link" href="http://www.nature.com/nbt/journal/v25/n8/abs/nbt1324.html"><span class="icon"> </span>The minimum information required for reporting a molecular interaction experiment (MIMIx)</a>
+</p>
+<h1 id="Importantreminder">Important reminder</h1>
+<p>
+This is a wiki. Please, participate with your thoughts/additions/comments! :)
+</p>
+<h1 id="Progress">Progress</h1>
+<h2 id="Day2">Day 2</h2>
+<ul><li>Trying to define a web service with common interface for all the Interaction Service Providers.
+<ul><li>The methods should be in the default exchange format (PSI-MI XML). 
+</li><li>Problem: This means dealing with potentially huge files (about 30 Mb for 2000 interactions, and databases such as <a class="missing wiki">IntAct?</a> contain 100000+ and increasing exponentially).
+<ul><li>Solution: unknown <del>(using URIs?)</del> (comment from Day 4: pagination of the results will be implemented in the first version)
+</li></ul></li></ul></li></ul><h2 id="Day3">Day 3</h2>
+<h3 id="ClientSideTopics">Client Side Topics</h3>
+<ul><li>Client (Cytoscape) code modifed to accept PSI-MI <strong>EntrySet</strong> object.  This is based on existing PSI-MI reader in Cytoscape.
+</li><li>PSI-MI Reader should be modifed to read more details in the object.  (Currently, some of the details are skipped.)
+</li><li>Need to add a switch to import minimal dataset (graph information only.  No attributes) or full detail.
+</li></ul><h2 id="Day4">Day 4</h2>
+<h3 id="PSICQUIC-CommonWebServiceinterfaceforallInteractionproviders">PSICQUIC - Common Web Service interface for all Interaction providers</h3>
+<p>
+A initial set of methods have been defined and can be seen in the latest WSDL attachments.
+Basically, the result of the search methods will return EntrySet (MIF) or MITAB format, dependending on the return type format parameter passed to the method. Some metadata about the query will be returned too (e.g. total results, first result index, block size, expirationDate...).
+The PSIMITAB format will be output by the methods wrapped in very simple XML (mitab-1.0.xml schema attached), that defines rows and columns instead of returning just plain strings that need to be parsed.
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="/attachment/wiki/Interaction%20networks/mitab-1.0.xsd" title="View attachment">mitab-1.0.xsd</a>
+      <a href="/raw-attachment/wiki/Interaction%20networks/mitab-1.0.xsd" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="1173 bytes">1.1 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T12%3A57%3A17%2B0900&amp;precision=second" title="2008-02-14T12:57:17+0900 in Timeline">17 years</a> ago.
+                <q>schema that defines how a PSIMTAB file is mapped to XML in the response</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/Interaction%20networks/PSIMI_Style1.png" title="View attachment">PSIMI_Style1.png</a>
+      <a href="/raw-attachment/wiki/Interaction%20networks/PSIMI_Style1.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="326060 bytes">318.4 KB</span>) - added by <em>kono</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T18%3A09%3A29%2B0900&amp;precision=second" title="2008-02-14T18:09:29+0900 in Timeline">17 years</a> ago.
+                <q>Sample Style for PSI-MI interaction data</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/Interaction%20networks/PSIMI_OLS_COMBO.png" title="View attachment">PSIMI_OLS_COMBO.png</a>
+      <a href="/raw-attachment/wiki/Interaction%20networks/PSIMI_OLS_COMBO.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="360988 bytes">352.5 KB</span>) - added by <em>kono</em>
+      <a class="timeline" href="/timeline?from=2008-02-15T15%3A28%3A08%2B0900&amp;precision=second" title="2008-02-15T15:28:08+0900 in Timeline">17 years</a> ago.
+                <q>Visualization of PSI-MI data with metadata from OLS</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/Interaction%20networks/BioHackathon%20-%20summary.ppt" title="View attachment">BioHackathon - summary.ppt</a>
+      <a href="/raw-attachment/wiki/Interaction%20networks/BioHackathon%20-%20summary.ppt" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="93696 bytes">91.5 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="/timeline?from=2008-02-15T17%3A09%3A24%2B0900&amp;precision=second" title="2008-02-15T17:09:24+0900 in Timeline">17 years</a> ago.
+                <q>Summary and outcomes of the group</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/Interaction%20networks/BioHackathon%20-%20Interaction%20Networks.pdf" title="View attachment">BioHackathon - Interaction Networks.pdf</a>
+      <a href="/raw-attachment/wiki/Interaction%20networks/BioHackathon%20-%20Interaction%20Networks.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="210197 bytes">205.3 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="/timeline?from=2008-02-15T17%3A45%3A07%2B0900&amp;precision=second" title="2008-02-15T17:45:07+0900 in Timeline">17 years</a> ago.
+                <q>Outcome in pdf format</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Interaction%20networks?version=10&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

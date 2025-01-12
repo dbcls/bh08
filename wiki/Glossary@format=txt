@@ -1,0 +1,123 @@
+= Glossary =
+
+Please feel free to add/fill your knowledge :)
+
+[[PageOutline(1-3)]]
+
+== DOI/LSID/PURL ==
+
+ * http://wiki.tdwg.org/twiki/bin/view/GUID/TechnologyComparison
+
+ * DOI (the Digital Object Identifier system)
+  * http://www.doi.org/
+  * http://en.wikipedia.org/wiki/Digital_object_identifier
+  * http://ja.wikipedia.org/wiki/デジタルオブジェクト識別子
+    * http://dx.doi.org/10.1021/jo0349227
+ * LSID (Life Science Identifier)
+  * http://lsids.sourceforge.net/
+  * http://lsidauthority.org/
+  * http://lsid.tdwg.org/
+  * Bio2RDF
+   * http://bio2rdf.org/
+ * PURL (Persistent URL)
+  * http://purl.org/
+
+== SOAP ==
+
+Service Oriented Architecture Protocol (Simple Object Access Protocol)
+
+ * http://en.wikipedia.org/wiki/SOAP
+
+== WSDL ==
+
+Web Service Description Language
+
+ * http://en.wikipedia.org/wiki/WSDL
+
+== REST ==
+
+Representational State Transfer
+
+ * http://en.wikipedia.org/wiki/REST
+ * [http://www.oreilly.com/catalog/9780596529260/ O'Reilly Media | RESTful Web Services]
+
+== WADL ==
+
+Web Application Description Language
+
+ * http://en.wikipedia.org/wiki/Web_Application_Description_Language
+
+== XML ==
+
+Extensible Markup Language
+
+ * http://en.wikipedia.org/wiki/XML
+ * http://ja.wikipedia.org/wiki/Extensible_Markup_Language
+
+ * XSD (XML Schema)
+  * http://en.wikipedia.org/wiki/XML_Schema
+  * http://ja.wikipedia.org/wiki/XSD
+
+== YAML ==
+
+YAML Ain't a Markup Language (recursive acronym)
+
+ * http://en.wikipedia.org/wiki/YAML
+ * http://ja.wikipedia.org/wiki/YAML
+
+== Semantic Web ==
+
+ * http://en.wikipedia.org/wiki/Semantic_Web
+ * http://ja.wikipedia.org/wiki/Semantic_Web
+
+== OWL ==
+
+Web Ontology Language
+
+ * http://en.wikipedia.org/wiki/Web_Ontology_Language
+
+ * OWL Light
+ * OWL DL (Web Ontology Language Description Logic)
+  * http://en.wikipedia.org/wiki/Description_Logic
+  * http://www.kanzaki.com/docs/sw/webont-owl.html
+ * OWL Full
+
+== RDF ==
+
+Resource Description Framework
+
+ * http://en.wikipedia.org/wiki/Resource_Description_Framework
+ * http://ja.wikipedia.org/wiki/Resource_Description_Framework
+
+ * RDF schema
+  * http://en.wikipedia.org/wiki/RDF_Schema
+
+ * RSS
+  * RDF Site Summary（RSS 0.9とRSS 1.0）
+  * Rich Site Summary（RSS 0.91）
+  * Really Simple Syndication（RSS 2.0）
+  * http://ja.wikipedia.org/wiki/RSS
+
+== DAML+OIL ==
+
+DARPA Agent Markup Language + Ontology Inference Layer or Ontology Interchange Language
+
+ * http://en.wikipedia.org/wiki/DAMLplusOIL
+
+== WS-I ==
+
+Web Services Interoperability
+
+ * http://www.ws-i.org/
+
+== !AtomPub ==
+
+ * http://en.wikipedia.org/wiki/AtomPub
+
+== Microfotmats ==
+
+ * http://en.wikipedia.org/wiki/Microformats
+
+
+
+

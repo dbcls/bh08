@@ -1,0 +1,46 @@
+= Security or rights management information =
+
+== Objective ==
+Minimal information that should be provided by the client to allow the service to known who is trying to use it to ensure '''the protection of shared resources'''.
+
+''This document is not concerned with Transport security level (TSL)''
+
+ 
+== Motivation ==
+
+Security services enforce access control policies at all levels to provide secure authentication and communication over an open network.
+
+  * '''Resources protection:''' software (services, WFs, …) availability, computational resources (CPU, storage, …); data access restrictions
+  * '''Protection / Sharing of proprietary data''' (in a persistence system).
+  * '''Scheduling''': priority based system.
+
+Scenary: Dynamic access control & secure management over federated resources.
+   [attachment:wiki:SecurityIssuesFirstDay:Fig-S1.JPG General security architecture]
+
+
+
+== State of the art ==
+  * Systems: Kerberos / GAS ...
+  [attachment:wiki:SecurityIssuesFirstDay:image002.gif Security roles graph]
+
+Simplified use case:
+·	After registration the user connects to the portal and creates delegated credentials on a MyProxy repository. Delegation is achieved by the use of so called proxy credentials. 
+·	Through the portal the end user uses the different services (including WFs). When a service is called, the user is authenticated through the proxy certificates managed by the MyProxy service.
+·	Services can depend on a central authorisation service to determine whether or not the user is allowed to perform a certain operation or whether he is allowed to see specific data. 
+·	Services offering access to sensitive data should do additional authorisation decision requests to some Authorization Service that implements the Data Protection policies and governs the flow of private datasets.
+
+   [attachment:wiki:SecurityIssuesFirstDay:Fig-S2.JPG MyProxy delegation example]
+
+== Discussion space ==
+  * Authorization levels (unix-like permissions + roles)
+  * Interchanging protocols (formats)
+  * Authentication & delegation: Authentication, both of end-user and of infrastructure components, could based on X509 digital certificates. This proven technology is commonly used, for example when connecting to a secure website (https). Certificates are managed through a Public Key Infrastructure (PKI), which deals with the secure creation, validation and revocation of certificates.
+
+  * WFs concerns (what happen if not all the services involved in a WF are available for a specific user)
+  * Profiling offer deployment (based on the user rights or roles)
+  * Data needed for authentication (minimal)
+    - User
+    - group
+    - Name (affiliation)
+    - Roles (more specific than groups (?)
+  * Services should be able either to use rights or not.

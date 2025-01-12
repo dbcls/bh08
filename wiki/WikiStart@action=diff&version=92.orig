@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      WikiStart (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/WikiStart?action=history" title="Page history" />
+        <link rel="next" href="/wiki/WikiStart?action=diff&amp;version=93" title="Version 93" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/WikiStart?action=diff&amp;version=91" title="Version 91" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/WikiStart?action=diff&amp;version=91" title="Version 91">Previous Change</a></span></li><li><a href="/wiki/WikiStart?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/WikiStart?action=diff&amp;version=93" title="Version 93">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/WikiStart?version=91">Version 91</a> and
+        <a href="/wiki/WikiStart?version=92">Version 92</a> of
+        <a href="/wiki/WikiStart?version=92">WikiStart</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/WikiStart?version=92"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="92" />
+          <input type="hidden" name="old_version" value="91" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2008/02/07 19:59:34 (<a class="timeline" href="/timeline?from=2008-02-07T19%3A59%3A34%2B0900&amp;precision=second" title="2008-02-07T19:59:34+0900 in Timeline">17 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          pjotr2007
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+minor grammar fixes
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/WikiStart?version=92">WikiStart</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 91">
+                    <a href="/wiki/WikiStart?version=91#L9">
+                      v91</a>
+                  </th>
+                  <th title="Version 92">
+                    <a href="/wiki/WikiStart?version=92#L9">
+                      v92</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>9</th><td class="l"><span>The number of web service providers in the field of bioinformatics is increasing every year.</span> </td>
+                  </tr><tr>
+                          <th>10</th><th>10</th><td class="l"><span>In theory, these services are interoperable and independent of specific computer languages.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>11</th><th> </th><td class="l"><span>However, each service uses their own definition of the data types and naming conventions for the methods.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>11</th><td class="r"><span>However, each service uses its own definition of data types and</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>method naming conventions.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>13</th><td class="l"><span>Moreover, these services are often not usable by specific languages</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>14</th><td class="l"><span>(partly, due to the lack of compliance of the SOAP/WSDL specification in the language's library).</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>15</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>15</th><th> </th><td class="l"><span>This situation prevents these services from becoming popular among and used by end users and developers alike as an infrastructure of their daily research.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>16</th><td class="r"><span>This lack of interoperability prevents these services from becoming</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>popular among end users and developers alike and they are under</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>utilised as an infrastructure of their daily research.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>19</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>20</th><td class="l"><span>The [http://www.biomoby.org/ BioMOBY] project has tried to overcome these problems by defining ontologies for data types and methods used in the services.</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>21</th><td class="l"><span>However, there are many major service providers which are not yet participating in the BioMOBY framework.</span> </td>
+                  </tr><tr>
+                          <th>18</th><th>22</th><td class="l"><span>For example, there are several web service providers in Japan such as [http://www.xml.nig.ac.jp/ DDBJ], [http://www.genome.jp/kegg/soap/ KEGG],</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>19</th><th> </th><td class="l"><span>[http://www.pdbj.org/ PDBj] and [http://www.cbrc.jp/ CBRC] but none of the<del>m</del> are integrated in any way.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>[http://www.pdbj.org/ PDBj] and [http://www.cbrc.jp/ CBRC] but none of the<ins>se</ins> are integrated in any way.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>24</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>21</th><th> </th><td class="l"><span>Thus, at [http://www.dbcls.jp/en/ DBCLS], we started to develop a new proxy server which translates user's request for the appropriate web service providers.</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>If all [http://www.open-bio.org/ Open Bio*] libraries support BioMOBY and other service providers, interoperability among these services can be significantly improved.</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>Here, we need agreement about the future direction of web services by every web service provider and by client developers.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>25</th><td class="r"><span>For this reason, at [http://www.dbcls.jp/en/ DBCLS], we started to</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>develop a new proxy server which translates user requests for the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>appropriate web service providers.&nbsp; If all [http://www.open-bio.org/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>Open Bio*] libraries were to support BioMOBY and other service providers,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>interoperability among these services are significantly improved.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span>To achieve this we need agreement about the future direction of web services by</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>31</th><td class="r"><span>every web service provider and by client developers.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>32</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>25</th><th> </th><td class="l"><span>We believe gathering all web service providers to discuss the standardization of objects and methods among web services,</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>and Open Bio* library developers from different programming languages ([http://www.bioperl.org/ BioPerl], [http://www.biopython.org/ BioPython],</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>[http://www.bioruby.org/ BioRuby], and [http://www.biojava.org/ BioJava]) to discuss the implementation of the common infrastructure,</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>must benefit usability and interoperability for the life science in the next era.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>33</th><td class="r"><span>We believe that getting all web service providers together, to discuss the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>34</th><td class="r"><span>standardization of objects and methods among web services, with Open</span> </td>
+                      </tr><tr>
+                        <th> </th><th>35</th><td class="r"><span>Bio* library developers from different programming languages</span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span>([http://www.bioperl.org/ BioPerl], [http://www.biopython.org/ BioPython], [http://www.bioruby.org/ BioRuby], and</span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>[http://www.biojava.org/ BioJava]) will benefit usability and</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>38</th><td class="r"><span>interoperability of services for the life sciences in the next era.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>39</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>For this purpose, we <del>hope to </del>organize a !BioHackathon focusing on web services from four different domains.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>40</th><td class="r"><span>For this purpose, we <ins></ins>organize a !BioHackathon focusing on web services from four different domains.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>41</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>42</th><td class="l"><span>&nbsp;* Web service providers</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>43</th><td class="l"><span>&nbsp; * Encourage independent service providers to join the movement of integration and interoperability</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp;* Increas<del>ing</del> the number of SOAP compliant services (tools/databases)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; &nbsp;* Increas<ins>e</ins> the number of SOAP compliant services (tools/databases)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>45</th><td class="l"><span>&nbsp;* Open Bio* developers</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; * Utiliz<del>ing</del> every bioinformatics web service by 4 major computer languages (Perl, Python, Ruby, Java)</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; &nbsp;* Creat<del>ing</del> compatible classes for sequences, expressions, pathways etc. among Open Bio* libraries</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; * Utiliz<ins>e</ins> every bioinformatics web service by 4 major computer languages (Perl, Python, Ruby, Java)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp;* Creat<ins>e</ins> compatible classes for sequences, expressions, pathways etc. among Open Bio* libraries</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>48</th><td class="l"><span>&nbsp;* Workflow client developers</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; * Provid<del>ing</del> various clients to create and execute bioinformatics workflows</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>&nbsp; &nbsp;* Connect<del>ing</del> seamlessly: Web service - Grid, Remote - Local, SOAP/WSDL - REST, Sync - Async</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>49</th><td class="r"><span>&nbsp; * Provid<ins>e</ins> various clients to create and execute bioinformatics workflows</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>50</th><td class="r"><span>&nbsp; &nbsp;* Connect<ins></ins> seamlessly: Web service - Grid, Remote - Local, SOAP/WSDL - REST, Sync - Async</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>51</th><td class="l"><span>&nbsp;* BioMOBY project developers</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; * Standardiz<del>ing</del> the objects and methods in bioinformatics web services via BioMOBY</span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp;* Discuss<del>ing the best solution of the framework and the ontologies for life science</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; * Standardiz<ins>e</ins> the objects and methods in bioinformatics web services via BioMOBY</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>53</th><td class="r"><span>&nbsp; &nbsp;* Discuss<ins>&nbsp;the best solution of the framework and the ontologies for the life sciences</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>54</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>45</th><th>55</th><td class="l"><span>== Presentations and Open Space topics ==</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

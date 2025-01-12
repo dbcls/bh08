@@ -1,0 +1,17 @@
+This is what I understood from our discussions about data formats (I'll just talk about Bio::EMBL, but the same applies to Bio:GenBank, ...):
+
+= Creating Bio::Sequence objects from an EMBL file =
+
+ * The Bio::EMBL object should basically just create a rich Bio::Sequence object and _not_ store any information in a Bio::EMBL object.
+ * To make it possible that a researcher can call methods in an EMBL-specific way (e.g. saying ''my_seq.cc'' instead of ''my_seq.comments''), we will try to do the following: If a user types ''my_seq.embl.cc'', a Bio::Embl object is created that holds a reference to the original Bio::Sequence object and the ''cc'' method of which is redirected to the Bio::Sequence's ''comments'' method.
+
+= Creating an EMBL file (well, the string) from a Bio::Sequence =
+
+ * To write an EMBL-formatted sequence, the Bio::Sequence#output method is rewritten to use an ERB template that is stored in the /lib/bio/sequence/formats/ directory. The existing Bio::Format object is bypassed completely and we have to check if it can be removed. The new Bio::Sequence#output method now looks like this:
+{{{
+  def output(format = :fasta)
+    record_template = ERB.new(File.read("./sequence/formats/#{format.to_s}.erb"))
+    record_template.result(binding)
+  end
+}}}
+   This means that we will also have to write this template for the FASTA format.

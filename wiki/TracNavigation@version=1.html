@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TracNavigation – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/TracNavigation?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="TracNavigation.html" title="View latest version" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="TracNavigation.html" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="TracNavigation@action=diff&amp;version=1.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by trac, <a class="timeline" href="../timeline@from=2009-12-27T07%253A40%253A50+0900&amp;precision=second.html" title="2009-12-27T07:40:50+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="TracNavigation">Trac Navigation</h1>
+<p>
+Starting with Trac 0.11, it is now possible to customize the main and meta navigation entries in some basic ways.
+</p>
+<p>
+The new <tt>[mainnav]</tt> and <tt>[metanav]</tt> configuration sections can now be used to customize the text and link used for the navigation items, or even to disable them.
+</p>
+<p>
+<tt>[mainnav]</tt> corresponds to the <strong>main navigation bar</strong>, the one containing entries such as <i>Wiki</i>, <i>Timeline</i>, <i>Roadmap</i>, <i>Browse Source</i> and so on. This navigation bar is meant to access the default page of the main modules enabled in Trac and accessible for the current user.
+</p>
+<p>
+<tt>[metanav]</tt> corresponds to the <strong>meta navigation bar</strong>, by default positioned above the main navigation bar and below the <i>Search</i> box. It contains the <i>Log in</i>, <i>Logout</i>, <i>Help/Guide</i> etc. entries. This navigation bar is meant to access some global information about the Trac project and the current user.
+</p>
+<p>
+Note that it is still not possible to customize the <strong>contextual navigation bar</strong>, i.e. the one usually placed below the main navigation bar.
+</p>
+<h3 id="Example">Example</h3>
+<p>
+In the following example, we rename the link to the Wiki start "Home", and hide the "Help/Guide" link. 
+We also make the "View Tickets" entry link to a specific report.
+</p>
+<p>
+Relevant excerpt from the <a class="wiki" href="TracIni.html">TracIni</a>:
+</p>
+<pre class="wiki">[mainnav]
+wiki.label = Home
+tickets.href = /report/24
+
+[metanav]
+help = disabled
+</pre><hr />
+<p>
+See also: <a class="wiki" href="TracInterfaceCustomization.html">TracInterfaceCustomization</a>, and the <a class="ext-link" href="http://trac-hacks.org/wiki/NavAddPlugin"><span class="icon"> </span>TracHacks:NavAddPlugin</a> or <a class="ext-link" href="http://trac-hacks.org/wiki/MenusPlugin"><span class="icon"> </span>TracHacks:MenusPlugin</a> (still needed for adding entries)
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/TracNavigation?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

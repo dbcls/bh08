@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      PSICQUIC – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/PSICQUIC?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="PSICQUIC.html" title="View latest version" />
+        <link rel="next" href="PSICQUIC@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="PSICQUIC.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="PSICQUIC@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon.dbcls.jp/wiki/PSICQUIC?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by baranda, <a class="timeline" href="../timeline@from=2008-02-11T19%253A48%253A24+0900&amp;precision=second.html" title="2008-02-11T19:48:24+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+Some notes that I have about this:
+</p>
+<blockquote>
+<p>
+PSICQUIC is planned as a common web service API for all
+participating databases. Matthias Oesterheld demonstrated an initial
+schema for this tool, based on the HOBIT experience of document
+style web services. As previously discussed, this will be a leveled
+service with Level 1 supporting simple queries such as get all
+interactions by organism (TaxID), by interaction property, by
+experiment property or by protein list. All attending databases
+would be capable of supporting a cpath implementation of this model,
+others may need a wrapper web service. It was decided to change
+protein list to interactor properties and extend the search to
+encompass short name, aliases and cross-reference. Searching by
+TaxID would encompass all children of the term used. Negative
+interactions would not be searched in initial implementations. Level
+2 could incorporate more complex queries and feature properties
+searched by both InterPro cross-reference or MI type.
+</p>
+</blockquote>
+<blockquote>
+<p>
+Returns would be in a document, the maximum length of section
+returned could be set by the operator, by generating a start index
+and length. An additional method on the web server could then
+retrieve the desired number of interactions in batches. A test
+procedure could pick out specified entry numbers allowing the user
+to skip large datasets. The possibility of adding a flag to the
+query to give the option of a URL at which a compressed complete
+file could be accessed was also discussed.  
+</p>
+</blockquote>
+<blockquote>
+<p>
+Complex queries would not be too difficult to establish, however
+may prove too great a server load.  It was decided that both levels
+would be published simultaneously, with Level 2 being completely
+backwards compatible. Implementers may then decide which level to
+install. The first query will send a user query. The return will
+include a query ID and the number of results. A retrieval function
+will detail query ID, count, start index and length. Query send may
+be adjusted to size of client server. Standard error messages will
+be incorporated. An initial implantation should be available late 2005.
+</p>
+</blockquote>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psimi.xml.html" title="View attachment">psimi.xml</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psimi.xml" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="35772 bytes">34.9 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T10%253A41%253A43+0900&amp;precision=second.html" title="2008-02-12T10:41:43+0900 in Timeline">17 years</a> ago.
+                <q>original psimi wsdl file by Matthias</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic.wsdl.html" title="View attachment">psiquic.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="10550 bytes">10.3 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T07%253A39%253A26+0900&amp;precision=second.html" title="2008-02-13T07:39:26+0900 in Timeline">17 years</a> ago.
+                <q>initial draft</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic0.02.wsdl.html" title="View attachment">psiquic0.02.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic0.02.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="11585 bytes">11.3 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T10%253A26%253A25+0900&amp;precision=second.html" title="2008-02-13T10:26:25+0900 in Timeline">17 years</a> ago.
+                <q>update: getBetweenList added, fault code added to psiquicFault</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic0.03.wsdl.html" title="View attachment">psiquic0.03.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic0.03.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="13137 bytes">12.8 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T10%253A50%253A46+0900&amp;precision=second.html" title="2008-02-13T10:50:46+0900 in Timeline">17 years</a> ago.
+                <q>getByQuery added</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic0.04.wsdl.html" title="View attachment">psiquic0.04.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic0.04.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="15019 bytes">14.7 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T11%253A03%253A30+0900&amp;precision=second.html" title="2008-02-13T11:03:30+0900 in Timeline">17 years</a> ago.
+                <q>Fixed typos and added input to getVersion method</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic0.05.wsdl.html" title="View attachment">psiquic0.05.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic0.05.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="12753 bytes">12.5 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T15%253A46%253A05+0900&amp;precision=second.html" title="2008-02-13T15:46:05+0900 in Timeline">17 years</a> ago.
+                <q>Several changes and cleanup. Autogeneration working except for the getVersion</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/MIF254.xsd.html" title="View attachment">MIF254.xsd</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/MIF254.xsd" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="53644 bytes">52.4 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T15%253A47%253A22+0900&amp;precision=second.html" title="2008-02-13T15:47:22+0900 in Timeline">17 years</a> ago.
+                <q>Schema with correct namespace</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psicquic0.06.wsdl.html" title="View attachment">psicquic0.06.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psicquic0.06.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="12841 bytes">12.5 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T18%253A14%253A55+0900&amp;precision=second.html" title="2008-02-13T18:14:55+0900 in Timeline">17 years</a> ago.
+                <q>getVersion return type fix</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic0.07.wsdl.html" title="View attachment">psiquic0.07.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic0.07.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="11708 bytes">11.4 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T22%253A23%253A15+0900&amp;precision=second.html" title="2008-02-13T22:23:15+0900 in Timeline">17 years</a> ago.
+                <q>Names for the attributes. <a class="missing wiki">GetVersion?</a> method not accepting params</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic0.08.wsdl.html" title="View attachment">psiquic0.08.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic0.08.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="14093 bytes">13.8 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T13%253A03%253A21+0900&amp;precision=second.html" title="2008-02-14T13:03:21+0900 in Timeline">17 years</a> ago.
+                <q>data type choice added</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/MIF254.2.xsd.html" title="View attachment">MIF254.2.xsd</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/MIF254.2.xsd" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="55040 bytes">53.8 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T16%253A39%253A09+0900&amp;precision=second.html" title="2008-02-14T16:39:09+0900 in Timeline">17 years</a> ago.
+                <q>mif254 update</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/mitab-1.0.xsd.html" title="View attachment">mitab-1.0.xsd</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/mitab-1.0.xsd" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="1356 bytes">1.3 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T17%253A17%253A18+0900&amp;precision=second.html" title="2008-02-14T17:17:18+0900 in Timeline">17 years</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psiquic0.09.wsdl.html" title="View attachment">psiquic0.09.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psiquic0.09.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="10253 bytes">10.0 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T19%253A04%253A51+0900&amp;precision=second.html" title="2008-02-14T19:04:51+0900 in Timeline">17 years</a> ago.
+                <q>Types move to its own schema</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psicquic.xsd.html" title="View attachment">psicquic.xsd</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psicquic.xsd" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="4581 bytes">4.5 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T19%253A05%253A59+0900&amp;precision=second.html" title="2008-02-14T19:05:59+0900 in Timeline">17 years</a> ago.
+                <q>schema for the types of the web service</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psicquic0.10.wsdl.html" title="View attachment">psicquic0.10.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psicquic0.10.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="10561 bytes">10.3 KB</span>) - added by <em>lukasz</em>
+      <a class="timeline" href="../timeline@from=2008-02-15T07%253A29%253A05+0900&amp;precision=second.html" title="2008-02-15T07:29:05+0900 in Timeline">17 years</a> ago.
+                <q>missing fault bindings for getVer.. and getSupport... added, filename spelling corrected</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psicquic0.11.wsdl.html" title="View attachment">psicquic0.11.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psicquic0.11.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="18971 bytes">18.5 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-15T11%253A04%253A27+0900&amp;precision=second.html" title="2008-02-15T11:04:27+0900 in Timeline">17 years</a> ago.
+                <q>schema inside the file again</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/PSICQUIC/psicquic0.12.wsdl.html" title="View attachment">psicquic0.12.wsdl</a>
+      <a href="../raw-attachment/wiki/PSICQUIC/psicquic0.12.wsdl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="18978 bytes">18.5 KB</span>) - added by <em>baranda</em>
+      <a class="timeline" href="../timeline@from=2008-02-15T17%253A51%253A05+0900&amp;precision=second.html" title="2008-02-15T17:51:05+0900 in Timeline">17 years</a> ago.
+                <q>Final version at the <a class="missing wiki">BioHackathon?</a></q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/PSICQUIC?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

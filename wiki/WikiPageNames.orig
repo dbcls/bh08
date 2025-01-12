@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      WikiPageNames – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/WikiPageNames?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li><a href="/wiki/WikiPageNames?action=history">History</a></li><li class="last"><a href="/wiki/WikiPageNames?action=diff&amp;version=2">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <h1 id="WikiPageNames">Wiki Page Names</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="False"><a class="False" href="/wiki/TracGuide">Index</a></li><li class="False"><a class="False" href="/wiki/TracInstall">Installation</a></li><li class="False"><a class="False" href="/wiki/TracInterfaceCustomization">Customization</a></li><li class="False"><a class="False" href="/wiki/TracPlugins">Plugins</a></li><li class="False"><a class="False" href="/wiki/TracUpgrade">Upgrading</a></li><li class="False"><a class="False" href="/wiki/TracIni">Configuration</a></li><li class="False"><a class="False" href="/wiki/TracAdmin">Administration</a></li><li class="False"><a class="False" href="/wiki/TracBackup">Backup</a></li><li class="False"><a class="False" href="/wiki/TracLogging">Logging</a></li><li class="False"><a class="False" href="/wiki/TracPermissions">Permissions</a></li><li class="False"><a class="False" href="/wiki/TracWiki">The Wiki</a></li><li class="False"><a class="False" href="/wiki/WikiFormatting">Wiki Formatting</a></li><li class="False"><a class="False" href="/wiki/TracTimeline">Timeline</a></li><li class="False"><a class="False" href="/wiki/TracBrowser">Repository Browser</a></li><li class="False"><a class="False" href="/wiki/TracRevisionLog">Revision Log</a></li><li class="False"><a class="False" href="/wiki/TracChangeset">Changesets</a></li><li class="False"><a class="False" href="/wiki/TracTickets">Tickets</a></li><li class="False"><a class="False" href="/wiki/TracWorkflow">Workflow</a></li><li class="False"><a class="False" href="/wiki/TracRoadmap">Roadmap</a></li><li class="False"><a class="False" href="/wiki/TracQuery">Ticket Queries</a></li><li class="False"><a class="False" href="/wiki/TracReports">Reports</a></li><li class="False"><a class="False" href="/wiki/TracRss">RSS Support</a></li><li class="False"><a class="False" href="/wiki/TracNotification">Notification</a></li></ul></div><p>
+</p>
+<p>
+Wiki page names commonly use the <a class="wiki" href="/wiki/CamelCase">CamelCase</a> convention. Within wiki text, any word in <a class="wiki" href="/wiki/CamelCase">CamelCase</a> automatically becomes a hyperlink to the wiki page with that name.
+</p>
+<p>
+<a class="wiki" href="/wiki/CamelCase">CamelCase</a> page names must follow these rules:
+</p>
+<ol><li>The name must consist of <strong>alphabetic characters only</strong>. No digits, spaces, punctuation, or underscores are allowed.
+</li><li>A name must have at least two capital letters.
+</li><li>The first character must be capitalized.
+</li><li>Every capital letter must be followed by one or more lower-case letters. 
+</li><li>The use of slash ( / ) is permitted in page names (possibly representing a hierarchy).
+</li></ol><p>
+If you want to create a wiki page that doesn't follow <a class="wiki" href="/wiki/CamelCase">CamelCase</a> rules you can use the following syntax:
+</p>
+<pre class="wiki"> * [wiki:Wiki_page], [wiki:ISO9000]
+ * [wiki:"Space Matters"] that page name embeds space characters
+ * or simply: ["WikiPageName"]s (!MoinMoin's internal free links style)
+</pre><p>
+This will be rendered as:
+</p>
+<ul><li><a class="missing wiki">Wiki_page?</a>, <a class="missing wiki">ISO9000?</a>
+</li><li><a class="missing wiki">Space Matters?</a> that page name embeds space characters
+</li><li>or simply: <a class="missing wiki">WikiPageName?</a>s (MoinMoin's internal free links style)
+</li></ul><p>
+Starting with Trac 0.11, it's also possible to link to a specific <i>version</i> of a Wiki page, as you would do for a specific version of a file, for example: <a class="wiki" href="/wiki/WikiStart?version=1">WikiStart@1</a>.
+</p>
+<p>
+See also <a class="wiki" href="/wiki/TracLinks#QuotingspaceinTracLinks">TracLinks#QuotingspaceinTracLinks</a>.
+</p>
+<p>
+Finally, and as exemplified in the line above, one can also append an anchor to a Wiki page name, in order to link to a specific section within that page. The anchor can easily be seen by hovering the mouse over a section heading, then clicking on the ¶ sign that appears at its end. The anchor is usually generated automatically, but it's also possible to specify it explicitly: see <a class="wiki" href="/wiki/WikiFormatting#using-explicit-id-in-heading">WikiFormatting#using-explicit-id-in-heading</a>.
+</p>
+<hr />
+<p>
+See also: <a class="wiki" href="/wiki/WikiNewPage">WikiNewPage</a>, <a class="wiki" href="/wiki/WikiFormatting">WikiFormatting</a>, <a class="wiki" href="/wiki/TracWiki">TracWiki</a>, <a class="wiki" href="/wiki/TracLinks">TracLinks</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/WikiPageNames?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

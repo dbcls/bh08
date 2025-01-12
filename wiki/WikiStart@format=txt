@@ -1,0 +1,177 @@
+= !BioHackathon 2008 =
+
+Towards integrated web service in life science with Open Bio* libraries.
+
+[[PageOutline(1-3)]]
+
+== Summary ==
+
+The number of web service providers in the field of bioinformatics is increasing every year.
+In theory, these services are interoperable and independent of specific computer languages.
+However, each service uses its own definition of data types and
+method naming conventions.
+Moreover, these services are often not usable by specific languages
+(partly, due to the lack of compliance of the SOAP/WSDL specification in the language's library).
+
+This lack of interoperability prevents these services from becoming
+popular among end users and developers alike and they are under
+utilised as an infrastructure of their daily research.
+
+The [http://www.biomoby.org/ BioMOBY] project has tried to overcome these problems by defining ontologies for data types and methods used in the services.
+However, there are many major service providers which are not yet participating in the BioMOBY framework.
+For example, there are several web service providers in Japan such as [http://www.xml.nig.ac.jp/ DDBJ], [http://www.genome.jp/kegg/soap/ KEGG],
+[http://www.pdbj.org/ PDBj] and [http://www.cbrc.jp/ CBRC] but none of these are integrated in any way.
+
+For this reason, at [http://www.dbcls.jp/en/ DBCLS], we started to
+develop a new proxy server which translates user requests for the
+appropriate web service providers.  If all [http://www.open-bio.org/
+Open Bio*] libraries were to support BioMOBY and other service providers,
+interoperability among these services are significantly improved.
+To achieve this we need agreement about the future direction of web services by
+every web service provider and by client developers.
+
+We believe that getting all web service providers together, to discuss the
+standardization of objects and methods among web services, with Open
+Bio* library developers from different programming languages
+([http://www.bioperl.org/ BioPerl], [http://www.biopython.org/ BioPython], [http://www.bioruby.org/ BioRuby], and
+[http://www.biojava.org/ BioJava]) will benefit usability and
+interoperability of services for the life sciences in the next era.
+
+For this purpose, we organize a !BioHackathon focusing on web services from four different domains.
+
+ * Web service providers
+  * Encourage independent service providers to join the movement of integration and interoperability
+   * Increase the number of SOAP compliant services (tools/databases)
+ * Open Bio* developers
+  * Utilize every bioinformatics web service by 4 major computer languages (Perl, Python, Ruby, Java)
+   * Create compatible classes for sequences, expressions, pathways etc. among Open Bio* libraries
+ * Workflow client developers
+  * Provide various clients to create and execute bioinformatics workflows
+   * Connect seamlessly: Web service - Grid, Remote - Local, SOAP/WSDL - REST, Sync - [wiki:AsyncGroup Async]
+ * BioMOBY project developers
+  * Standardize the objects and methods in bioinformatics web services via BioMOBY
+   * Discuss the best solution of the framework and the ontologies for the life sciences
+
+== Presentations and Open Space topics ==
+
+ * [wiki:ListOfPresentations List Of Presentations]
+ * [wiki:ListOfTopics List Of Topics]
+ * [wiki:Glossary]
+
+== Participants ==
+
+ * [wiki:ListOfAttendees List Of Attendees]
+
+== Schedule ==
+
+Detailed program:
+
+ * [wiki:ListOfActivities List Of Activities]
+
+At a glance:
+
+ * 2008-2-10 (Sun) - Arrival ([http://www.narita-airport.jp/en/ Narita airport], Japan)
+ * 2008-2-11 (Mon) - Presentations & discussions ([http://www.academyhills.com/english/ Roppongi Academy Hills])
+ * 2008-2-12 (Tue) - Hack, hack, hack on the 8th floor & Banquet on the 11th floor ([http://www.cbrc.jp/index.eng.html CBRC])
+ * 2008-2-13 (Wed) - Hack, hack, hack (CBRC)
+ * 2008-2-14 (Thr) - Hack, hack, hack (CBRC)
+ * 2008-2-15 (Fri) - Hack, hack, hack (CBRC)
+ * 2008-2-16 (Sat) - Departure
+
+== Sponsors ==
+
+ * [http://dbcls.rois.ac.jp/en/ DBCLS] (Database Center for Life Science)
+ * [http://www.cbrc.jp/index.eng.html CBRC] (Computational Biology Research Center)
+
+== Venue ==
+
+DBCLS and CBRC will provide ideal environment for discussions and developments.
+
+ * [http://www.academyhills.com/english/ Roppongi Academy Hills] (Roppongi, Central Tokyo)
+  * Access from the hotel: Shiodome to Roppongi station - Ooedo subway line (JPY 210, 12min)
+ * [http://www.cbrc.jp/index.eng.html CBRC] Computational Biology Research Cener (Odaiba, Tokyo Bay Area)
+  * Access from the hotel: Shiodome to Telecom center station - Yurikamome line (JPY 370, 17min)
+  * One day pass (JPY 800) is recommend, so that you can go out for lunch to the restaurants at the stations nearby
+
+Check out the [http://hackathon.dbcls.jp/attachment/wiki/WikiStart/BioHackathon2008Tokyo.kmz KML file] for the [http://earth.google.com/ Google Earth].
+
+== Housing ==
+
+ * [http://www.hvf.jp/eng/shiodome.php Hotel Villa Fontaine Shiodome]
+  * Free broadband Internet connection
+  * Free coffee and bread for breakfast
+  * You can find convenience stores and the Starbucks coffee nearby
+  * Good access to the Ginza shopping street and the Tsukiji market (famous for Sushi restaurants)
+
+== Access ==
+
+How to get from [http://www.narita-airport.jp/ Tokyo Narita International Airport]?
+
+ * By bus (JPY 3,000, 90min - easiest, recommended if you bring a heavy suitcase)
+  * [http://www.limousinebus.co.jp/en/timetable/narita/ginza_h.html Airport Limousine] is available to Conrad Tokyo hotel (next to our hotel Villa Fontaine Shiodome)
+
+ * By train
+  * By JR line (JPY 3,110, 75min - fastest)
+   * Narita to Tokyo station - Narita express
+   * Tokyo to Shimbashi station - Yamanote line
+  * By Keisei and JR line (JPY 910, 90min - economical)
+   * Keisei Narita to Nippori station - Keisei express
+   * Nippori to Shimbashi JR station - JR Yamanote or Keihin Tohoku line
+  * By Keisei and Asakusa subway line (JPY 960, 90min - economical)
+   * Keisei Narita to Keisei Takasago or Aoto station - Keisei express
+   * Keisei Takasago or Aoto to Shimbashi subway station - Asakusa line
+
+From Shimbashi (JR or subway) station, you can take Yurikamome line for 1 station (JPY 180) to Shiodome station (in front of our hotel Villa Fontaine Shiodome) or walk (5min).
+
+ * [http://www.japanesebooks.jp/tokyo-transit.html Tokyo subway transit map]
+ * [http://www.tcvb.or.jp/en/guide/img/02subwaymap.pdf Tokyo Railway Map]
+Currency
+
+ * 1 USD (US dollar) is about 105-110 JPY (Japanese yen)
+
+== Mailing List ==
+
+ * [http://kml.dbcls.jp/mailman/listinfo/biohack Biohack Subscription]
+ * [http://kml.dbcls.jp/pipermail/biohack/ Biohack Archives]
+
+== SVN repository ==
+You can access SVN repository using your ID and password:
+ * http://hackathon.dbcls.jp/svn/
+
+== Misc ==
+
+What you should bring with you?
+
+ * Laptop computer
+ * Conversion plug for your AC adaptor (identical to US type; 100 volt)
+ * Warm coat (T-shirt is not recommended for February in Japan)
+ * Bottle of local liquor to share :)
+
+=== Photo Album ===
+
+ * [http://kml.dbcls.jp/BioHack/photo/080211/ Feb 11th, 2008 (1)]
+ * [http://kml.dbcls.jp/BioHack/photo/080211-2/ Feb 11th, 2008 (2)]
+ * [http://kml.dbcls.jp/BioHack/photo/080212/ Feb 12th, 2008]
+ * [http://kml.dbcls.jp/BioHack/photo/080213/ Feb 13th, 2008]
+ * [http://kml.dbcls.jp/BioHack/photo/080215/ Feb 15th, 2008]
+
+=== Streaming ... done ===
+
+ * http://ustream.tv/channel/biohackathon-2008-tokyo
+ * http://ustream.tv/channel/biohackathon2008
+
+=== Initial documents (outdated) ===
+
+ * [wiki:CallForParticipation]
+ * [wiki:CallForParticipation_in_Japanese]
+ * [wiki:Objectives]
+ * [wiki:Objectives_in_Japanese]
+
+=== Starting Points ===
+
+ * TracGuide --  Built-in Documentation
+ * [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project
+ * [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions
+ * TracSupport --  Trac Support
+
+For a complete list of local wiki pages, see TitleIndex.

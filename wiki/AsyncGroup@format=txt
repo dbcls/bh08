@@ -1,0 +1,26 @@
+= Asynchronous Web Service Invocation =
+
+Web service transactions can potentially be very long-running, exceeding the time-out thresholds of intermediate communication transports such as HTTP. To overcome this, it is necessary to use an asynchronous invocation model, where a single logical transaction is implemented as multiple, short-lived transport-level transactions.
+
+This group is investigating the requirements in the domain of bioinformatics services for asynchronous invocations, current solutions and current best practice. It will seek to propose what functionality a service claiming to support asynchronous invocation MUST expose, and will, where possible, describe language-specific bindings best-practice for clients to invoke logical transactions implemented asynchronously.
+
+== Guiding Principles ==
+
+  * We shall identify the scope of this recommendations.
+    * What kinds of applications
+    * The environment(s) within which servers are provided
+    * The environment(s) within which clients are provided
+  * The recommendations produced SHOULD be as simple as possible.
+  * The recommendations SHOULD re-use existing standards and language-bindings where possible.
+
+== Outcomes ==
+
+We WILL produce a document describing the scope, requirements, and brief survey of asynchronous service interaction. It will additionally make recommendations about technologies and best-practice. We SHALL discuss with service providers how practical it is for them to adopt these recommendations. We SHALL ensure that these recommendations are practical and useful for those maintaining workflow/pipeline/orchestration applications.
+
+== Progress ==
+
+  * [wiki:AsynchronousServicesFirstDay day 1]
+  * [wiki:AsynchronousServicesSeccondDay day 2]
+  * [wiki:AsynchronousServicesThirdDay day 3]
+  * [wiki:AsynchronousServicesFourthDay day 4]
+  * [wiki:AsynchronousServicesFifth day 5]

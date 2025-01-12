@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_04" class="java.beans.XMLDecoder"> 
+ <object class="com.horstmann.violet.ClassDiagramGraph"> 
+  <void method="addNode"> 
+   <object class="com.horstmann.violet.InterfaceNode"> 
+    <void property="bounds"> 
+     <object class="java.awt.geom.Rectangle2D$Double"> 
+      <void method="setRect"> 
+       <double>50.0</double> 
+       <double>40.0</double> 
+       <double>220.0</double> 
+       <double>340.0</double> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="methods"> 
+     <void property="text"> 
+      <string>getNameClasses():Set&lt;String&gt;
+getNames(String class):Set&lt;String&gt;
+getParentNCBITaxID():int
+setParentNCBITaxID(int taxID)
+getNCBITaxID():int
+setNCBITaxID(int taxID)
+getNodeRank():String
+setNodeRank(String rank)
+getGeneticCode():int
+setGeneticCode(int code)
+getMitoGeneticCode():int
+setMitoGeneticCode(int code)
+getLeftValue():int
+setLeftValue(int value)
+getRightValue():int
+setRightValue(int value)
+isTaxonHidden():boolean
+setTaxonHiddent(boolean hidden)</string> 
+     </void> 
+    </void> 
+    <void property="name"> 
+     <void property="text"> 
+      <string>«interface»
+NCBITaxon</string> 
+     </void> 
+    </void> 
+   </object> 
+   <object class="java.awt.geom.Point2D$Double"> 
+    <void method="setLocation"> 
+     <double>50.0</double> 
+     <double>40.0</double> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

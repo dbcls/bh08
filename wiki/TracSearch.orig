@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TracSearch – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/TracSearch?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li><a href="/wiki/TracSearch?action=history">History</a></li><li class="last"><a href="/wiki/TracSearch?action=diff&amp;version=2">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <h1 id="UsingSearch">Using Search</h1>
+<p>
+Trac has a built-in search engine to allow finding occurrences of keywords and substrings in wiki pages, tickets and changeset descriptions.
+</p>
+<p>
+Using the Trac search facility is straightforward and its interface should be familiar to most users.
+</p>
+<p>
+Apart from the <a class="search" href="/search?q=">Search module</a>, you will also find a small search field above the navigation bar at all time. It provides convenient access to the search module from all pages.
+</p>
+<h2 id="Quickjumpsearches">"Quickjump" searches</h2>
+<p>
+For quick access to various project resources, the quick-search field at the top of every page can be used to enter a <a class="wiki" href="/wiki/TracLinks">wiki link</a>, which will take you directly to the resource identified by that link.
+</p>
+<p>
+For example:
+</p>
+<ul><li>[42] -- Opens change set 42
+</li><li>#42 -- Opens ticket number 42
+</li><li>{1} -- Opens report 1
+</li><li>/trunk -- Opens the browser for the <tt>trunk</tt> directory
+</li></ul><h2 id="Advanced">Advanced</h2>
+<h3 id="DisablingQuickjumps">Disabling Quickjumps</h3>
+<p>
+To disable the quickjump feature for a search keyword - for example when searching for occurences of the literal word TracGuide - begin the query with an exclamation mark (!).
+</p>
+<h3 id="SearchLinks">Search Links</h3>
+<p>
+From the Wiki, it is possible to link to a specific search, using
+<tt>search:</tt> links:
+</p>
+<ul><li><tt>search:?q=crash</tt> will search for the string "crash" 
+</li><li><tt>search:?q=trac+link&amp;wiki=on</tt> will search for "trac" and "link" 
+in wiki pages only
+</li></ul><hr />
+<p>
+See also: <a class="wiki" href="/wiki/TracGuide">TracGuide</a>, <a class="wiki" href="/wiki/TracLinks">TracLinks</a>, <a class="wiki" href="/wiki/TracQuery">TracQuery</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/TracSearch?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

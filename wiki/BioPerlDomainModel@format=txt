@@ -1,0 +1,14 @@
+Back to [OpenBioSemantics Open Bio Semantics Topic Page]
+
+= !BioMoby Domain Model =
+
+[[PageOutline]]
+
+== Overview ==
+
+The domain model for !BioPerl comes from Chad Matsalla (chad at dieselwurks.com) who is not at this workshop but who has kindly agreed to contribute his work to this page.
+
+== Models ==
+
+ * [http://www.dieselwurks.com/bioinformatics/Bioperltoplevel.pdf Bioperl top level model]
+ * [http://www.dieselwurks.com/bioinformatics/SequenceClassDiagram.pdf Sequence model]

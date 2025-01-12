@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      LargeData – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/LargeData?version=5&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="LargeData.html" title="View latest version" />
+        <link rel="next" href="LargeData@version=6.html" title="Version 6" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="LargeData@version=4.html" title="Version 4" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="LargeData@version=4.html" title="Version 4">Previous Version</a></span></li><li><a href="LargeData.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="LargeData@version=6.html" title="Version 6">Next Version</a> &rarr;</span></li><li class="last"><a href="LargeData@action=diff&amp;version=5.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 5 (modified by tmo, <a class="timeline" href="../timeline@from=2008-02-15T15%253A05%253A40+0900&amp;precision=second.html" title="2008-02-15T15:05:40+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="LargeSOAPAttachments">Large SOAP Attachments</h2>
+<p>
+One problem of webservices is sending large data chunks around - something you want to minimise. Not only for performance, but also because long transmissions may break. SOAP attachments are not ideal. One way to avoid sending data through SOAP is to send by reference, e.g. through the use of a URI (<a href="../search@q=lsid&amp;wiki=on&amp;changeset=on&amp;ticket=on.html">LSID</a>) referral - which will delay fetching data until the last moment and may be optimised, e.g. through a bittorrent download (as discussed on <a class="wiki" href="BioShare.html">Bio.share/Bio.slurp</a>).
+</p>
+<p>
+Biomoby has proposed a mechanism to allow parts of the moby data to be referenced to achieve this in their framework. The reference types can be advertised in the moby central metadata registry and therefore made available to clients such as Taverna.
+</p>
+<p>
+We note that creating a service which accepts or creates references is not actually that hard - the hard part is to advertise this capability, specifically that technologies such as WSDL have no way to say 'this input has schema type XXX' when the input is a reference rather than a value. The challenges that any system must solve to support reference passing are therefore :
+</p>
+<ol><li>Allow input data to be passed to the service as a reference type.
+<ol class="loweralpha"><li>Do this without breaking any existing typing system such as Moby data types, XML schema - this implies that the description of the service must seperate the transport and data content descriptions in some way. The service at a conceptual level consumes the data type independently of the transport type the service container uses to supply this.
+</li></ol></li><li>When the call to the service is made the service should allow the client to specify the delivery type for any results.
+<ol class="loweralpha"><li>Delivery types can be specified as references - there are already systems out there such as the OGSA-DAI system that define a delivery block (such as 'put data on this ftp server and return a URL to it'
+</li><li>Some level of negotiation would be good - client requests a set of plausible references and the service negotiates one it can provide.
+</li><li>The default delivery would presumably be pass by value.
+</li></ol></li><li>Ideally a naive (non reference aware) client should be able to use the service exactly as it would without any of this work - this implies either back compatibility at the client API layer (Moby) or back compatibility in the description (i.e. WSDL)
+</li><li>Allow some level of lifecycle management for results held in a delivery location
+<ol class="loweralpha"><li>Allow the client to request specific characteristics i.e. 'hold this data for at least five minutes'
+</li><li>Generate policies based on authentication where present?
+</li></ol></li></ol>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/LargeData?version=5&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

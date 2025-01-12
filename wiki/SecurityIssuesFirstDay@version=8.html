@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      SecurityIssuesFirstDay – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/SecurityIssuesFirstDay?version=8&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="SecurityIssuesFirstDay.html" title="View latest version" />
+        <link rel="next" href="SecurityIssuesFirstDay@version=9.html" title="Version 9" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="SecurityIssuesFirstDay@version=7.html" title="Version 7" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="SecurityIssuesFirstDay@version=7.html" title="Version 7">Previous Version</a></span></li><li><a href="SecurityIssuesFirstDay.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="SecurityIssuesFirstDay@version=9.html" title="Version 9">Next Version</a> &rarr;</span></li><li class="last"><a href="SecurityIssuesFirstDay@action=diff&amp;version=8.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 8 (modified by ots, <a class="timeline" href="../timeline@from=2008-02-12T12%253A20%253A11+0900&amp;precision=second.html" title="2008-02-12T12:20:11+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="Securityorrightsmanagementinformation">Security or rights management information</h1>
+<h2 id="Objective">Objective</h2>
+<p>
+Minimal information that should be provided by the client to allow the service to known who is trying to use it to ensure <strong>the protection of shared resources</strong>.
+ 
+</p>
+<h2 id="Motivation">Motivation</h2>
+<p>
+Scenary: Dynamic access control &amp; secure management over federated resources.
+</p>
+<blockquote>
+<p>
+<a class="missing attachment">General security architecture</a>
+</p>
+</blockquote>
+<p>
+Simplified use case:
+·        After registration the user connects to the portal and creates delegated credentials on a <a class="missing wiki">MyProxy?</a> repository. Delegation is achieved by the use of so called proxy credentials. 
+·        Through the portal the end user uses the different services (including WFs). When a service is called, the user is authenticated through the proxy certificates managed by the <a class="missing wiki">MyProxy?</a> service.
+·        Services can depend on a central authorisation service to determine whether or not the user is allowed to perform a certain operation or whether he is allowed to see specific data. 
+·        Services offering access to sensitive data should do additional authorisation decision requests to some Authorization Service that implements the Data Protection policies and governs the flow of private datasets.
+</p>
+<ul><li><strong>Resources protection:</strong> software (services, WFs, …) availability, computational resources (CPU, storage, …); data access restrictions
+</li><li><strong>Protection / Sharing of proprietary data</strong> (in a persistence system).
+</li><li><strong>Scheduling</strong>: priority based system.
+</li></ul><p>
+Security services enforce access control policies at all levels to provide secure authentication and communication over an open network.
+</p>
+<h2 id="Stateoftheart">State of the art</h2>
+<ul><li>Systems: Kerberos / GAS ...
+<a class="attachment" href="../attachment/wiki/SecurityIssuesFirstDay/image002.gif.html" title="Attachment 'image002.gif' in SecurityIssuesFirstDay">Security roles graph</a><span class="noprint"> <a class="trac-rawlink" href="../raw-attachment/wiki/SecurityIssuesFirstDay/image002.gif" title="Download"><img src="../chrome/common/download.png" alt="Download"/></a></span>
+</li></ul><h2 id="Discussionspace">Discussion space</h2>
+<ul><li>Authorization levels
+</li><li>Interchanging protocols (formats)
+</li><li>Authentication &amp; delegation: Authentication, both of end-user and of infrastructure components, could based on X509 digital certificates. This proven technology is commonly used, for example when connecting to a secure website (https). Certificates are managed through a Public Key Infrastructure (PKI), which deals with the secure creation, validation and revocation of certificates.
+</li></ul><blockquote>
+<blockquote>
+<p>
+<a class="missing attachment">MyProxy delegation example</a>
+</p>
+</blockquote>
+</blockquote>
+<ul><li>WFs concerns
+</li><li>Profiling offer deployment (specific to the user rights)
+</li></ul>
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/SecurityIssuesFirstDay/image002.gif.html" title="View attachment">image002.gif</a>
+      <a href="../raw-attachment/wiki/SecurityIssuesFirstDay/image002.gif" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="10866 bytes">10.6 KB</span>) - added by <em>ots</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T10%253A29%253A41+0900&amp;precision=second.html" title="2008-02-12T10:29:41+0900 in Timeline">17 years</a> ago.
+                <q>Security graph</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/SecurityIssuesFirstDay/Fig-S1.JPG.html" title="View attachment">Fig-S1.JPG</a>
+      <a href="../raw-attachment/wiki/SecurityIssuesFirstDay/Fig-S1.JPG" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="17461 bytes">17.1 KB</span>) - added by <em>ots</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T12%253A17%253A02+0900&amp;precision=second.html" title="2008-02-12T12:17:02+0900 in Timeline">17 years</a> ago.
+                <q>General security architecture</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/SecurityIssuesFirstDay/Fig-S2.JPG.html" title="View attachment">Fig-S2.JPG</a>
+      <a href="../raw-attachment/wiki/SecurityIssuesFirstDay/Fig-S2.JPG" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="25451 bytes">24.9 KB</span>) - added by <em>ots</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T12%253A17%253A18+0900&amp;precision=second.html" title="2008-02-12T12:17:18+0900 in Timeline">17 years</a> ago.
+                <q><a class="missing wiki">MyProxy?</a> delegation</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/SecurityIssuesFirstDay?version=8&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

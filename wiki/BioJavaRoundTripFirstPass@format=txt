@@ -1,0 +1,46 @@
+= !BioJava =
+Working with !BioJava-live SVN build 4716
+
+== Fasta Format ==
+=== Major Issues ===
+None
+=== Minor Issues ===
+Sequence case is not preserved. Line length varies (default is 80 cpl).
+
+
+== Genbank format ==
+=== Major Issues ===
+None.
+=== Minor Issues ===
+Feature qualifier order is not preserved.
+Because NCBI Taxonomy is referenced from memory or database if the version used
+doesn't match the version that was used to construct the record then minor 
+differences appear. For example the common name of Arabidopsis changed from thale cress
+to mouse ear cress.
+
+== GenbankXML format ==
+== Major Issues ==
+Not supported (INSD is).
+
+== INSD Format ==
+== Major Issues ==
+None.
+== Minor Issues ==
+Biojava doesn't add the XML header and INSDSet tags, starts with INSDSeq.
+{{{
+<?xml version="1.0"?>
+<!DOCTYPE INSDSet PUBLIC "-//NCBI//INSD INSDSeq/EN" "http://www.ncbi.nlm.nih.gov/dtd/INSD_INSDSeq.dtd">
+<INSDSet>
+<INSDSeq>
+...
+}}}
+
+* !BioJava inlcudes the Reference_position tag. NCBI doesn't unless it is not 1..1
+{{{
+<INSDReference_position>1..1</INSDReference_position>
+}}}
+
+* There are other examples of this redundancy. I think if this doesn't break the
+dtd then it doesn't matter.
+
+* Qualifiers order is not preserved. I don't think this matters.

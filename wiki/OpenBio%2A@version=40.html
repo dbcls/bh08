@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      OpenBio* – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/OpenBio%2A?version=40&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="http://hackathon.dbcls.jp/wiki/OpenBio%2A" title="View latest version" />
+        <link rel="next" href="OpenBio%252A@version=41.html" title="Version 41" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="OpenBio%252A@version=39.html" title="Version 39" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="OpenBio%252A@version=39.html" title="Version 39">Previous Version</a></span></li><li><a href="http://hackathon.dbcls.jp/wiki/OpenBio%2A" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="OpenBio%252A@version=41.html" title="Version 41">Next Version</a> &rarr;</span></li><li class="last"><a href="OpenBio%252A@action=diff&amp;version=40.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 40 (modified by markjschreiber, <a class="timeline" href="../timeline@from=2008-02-15T11%253A28%253A37+0900&amp;precision=second.html" title="2008-02-15T11:28:37+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="TheProblem">The Problem</h1>
+<p>
+One of the goals of BioSQL was to provide an interchange platform for the Bio* objects. This has not yet succeeded due to differences in the way the Bio* projects interpret an individual sequence record and how they persist it to the database.
+</p>
+<p>
+Common sequence semantics and object/ format handling would probably be of great benefit to many other WS providers and consumers. If Bio* can agree on semantics it would be a good reference for many other projects.
+</p>
+<h1 id="PossibleTasks">Possible Tasks</h1>
+<ul><li>Choose some 'reference' sequences to see how the Bio* projects 'round-trip' them. 
+<ul><li>Where are the differences and why are there differences?
+</li></ul></li><li>Find out where each Bio* project persists it's data into BioSQL during ORM. 
+<ul><li>Why are there differences?
+</li></ul></li><li>Establish guidelines for where things should go in BioSQL, eg given a Genbank file, what bits should go where.
+<ul><li><a class="wiki" href="OpenBioSemantics.html">UML diagrams</a>?
+</li></ul></li><li>Define an interchange format for the Bio* projects. Probably XML, probably borrow something already existing (XEMBL etc).
+</li><li>Decide on a restricted vocab for annotations and feature types. Probably use SO.
+</li><li>Define a middleware API for uniform I/O access to sequence database.
+<ul><li>Intially backed by BioSQL.
+</li><li>Could be backed by any DB.
+</li></ul></li><li>Derby version of the BioSQL schema (Derby is the Java reference database).
+</li><li>A BioSQL release.
+</li></ul><h1 id="Participants">Participants</h1>
+<ul><li>Mark Schreiber
+</li><li>Jan Aerts
+</li><li>Richard Holland
+</li><li>Hilmar Lapp
+</li><li>Heikki Lehvaslaiho
+</li><li>Richard Bruskiewich
+</li><li>Jan Byrne
+</li><li>Raoul J.P. Bonnal
+</li></ul><h1 id="References">References</h1>
+<h2 id="Formats">Formats</h2>
+<ul><li><a class="ext-link" href="http://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html"><span class="icon"> </span>GenBank sample </a>
+</li></ul><h1 id="RandomideasfromJanAerts">Random ideas from Jan Aerts</h1>
+<p>
+Mind that this is *very* incomplete. Just to help my really bad memory.
+As the issue is interoperability of the Bio* toolkits, we don't have to synchronize the toolkits at the object level, but rather at the interface level.
+</p>
+<p>
+First thing to check: what types of objects do we want to synchronize? Of course sequence objects; but what else? The results of a BLAST parsing?
+</p>
+<h2 id="Forsequences">For sequences</h2>
+<p>
+Check if each toolkit reads and writes a GenBank/Fasta/... serialization in the same way. Input can either be an original GenBank/Fasta/... file or a dbfetch from any database.
+</p>
+<ul><li>What should be conserved:
+<ul><li>Tags
+</li><li>for a sequence: lower/uppercase
+<ul><li>Within a project it is desirable to mask an alphabet, for transfer between bio* projects this is not a good idea.
+</li></ul></li></ul></li></ul><ul><li>What not necessarily should be conserved:
+<ul><li>for a sequence over multiple lines: length of each line
+<ul><li>Proposal for a common default value, 60bp ?
+</li></ul></li></ul></li></ul><h1 id="Taskachieved">Task achieved</h1>
+<h2 id="Tuesday">Tuesday</h2>
+<ul><li>Initial planning.
+</li><li>Approved a BioSQL logo.
+</li><li>Hilmar initiated BioSQL release discussion
+</li><li>Selected sequence files to roundtrip
+</li><li>BioRuby has no way of exporting Bio::Sequence objects to GenBank, EMBL, ...
+</li><li>Began roundtrips
+<ul><li><a class="wiki" href="BioPerlRoundTripFirstPass.html">BioPerlRoundTripFirstPass</a>
+</li><li><a class="wiki" href="BioJavaRoundTripFirstPass.html">BioJavaRoundTripFirstPass</a>
+</li></ul></li><li>Started UML diagram to describe object model with Richard Bruskiewich.
+</li></ul><h2 id="Wednesday">Wednesday</h2>
+<ul><li>Continue roundtrips
+<ul><li><a class="wiki" href="BioPerlRoundTripSecondPass.html">BioPerlRoundTripSecondPass</a>
+</li><li><a class="wiki" href="BioJavaRoundTripSecondPass.html">BioJavaRoundTripSecondPass</a>
+</li></ul></li><li>BioRuby: started work on creating export filters to <a class="missing wiki">GenBank?</a> and EMBL
+</li><li>BioJava: Fixing issues with UniprotXML format and updating EMBLxml to new xsd.
+</li><li>Adding BioSQL schema documentation to BioSQL wiki page.
+</li></ul><h2 id="Thursday">Thursday</h2>
+<ul><li>Continue roundtrips
+<ul><li><a class="wiki" href="BioJavaRoundTripThirdPass.html">BioJavaRoundTripThirdPass</a>
+</li></ul></li><li>Translation of BioSQL to Derby RDBMS.
+</li><li>-- Would like to know why BioSQL can't add multi dbxrefs to one docref.
+</li><li>-- Would like to work out how best to store EMBL AS lines (EMBLxml 'assemblyElement') in BioSQL beyond simply storing as unparsed qualifier values. Hard also because in some records some columns are missing meaning that XML representation is not possible as XML does not allow for missing values (e.g. primary begin/end).
+</li><li>-- Would like to work out how best to represent EMBL CO (EMBLxml 'contig') lines in BioSQL. These are extra hard as they are in place of actual sequence data - sequences that have CO lines have NO SQ lines - meaning that sequence length has to be computed as a function of the CO lines rather than being provided. CO lines look like <a class="missing wiki">GenBank?</a> locations but have a simpler syntax plus one extra keyword for gaps, which is either numeric or a string 'unk100' indicating unknown gap size.
+</li><li>Generation of EJB entity beans for BioSQL schema.
+<ul><li>EJB's must be manually generated for BIOENTRY_PATH (done), BIOENTRY_QUALIFIER_VALUE (done), SEQFEATURE_PATH (done) and TAXON_NAME
+</li></ul></li><li>Discussion about consistent use of Unique Keys rather than Primary Keys for compound but mutable instances.
+</li></ul><h2 id="Friday">Friday</h2>
+<ul><li>Manually generate TAXON_NAME entity bean.
+</li><li>Began generation of session facades to entities.
+</li><li>Discussion on lazy loading and appropriate proxy/ call back implementations for clients (WS versus RPC clients).
+</li></ul><p>
+Back to <a class="wiki" href="ListOfTopics.html">ListOfTopics</a>
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/dag1.fa.html" title="View attachment">dag1.fa</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/dag1.fa" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="5729 bytes">5.6 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T11%253A19%253A50+0900&amp;precision=second.html" title="2008-02-12T11:19:50+0900 in Timeline">17 years</a> ago.
+                <q>DAG1 gene: FASTA formatted sequence</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/dag1.gb.html" title="View attachment">dag1.gb</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/dag1.gb" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="18321 bytes">17.9 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T11%253A21%253A03+0900&amp;precision=second.html" title="2008-02-12T11:21:03+0900 in Timeline">17 years</a> ago.
+                <q>DAG1 gene: genbank formatted file exported from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/dag1.insd.html" title="View attachment">dag1.insd</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/dag1.insd" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="39552 bytes">38.6 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T11%253A21%253A32+0900&amp;precision=second.html" title="2008-02-12T11:21:32+0900 in Timeline">17 years</a> ago.
+                <q>DAG1 gene: INSD XML formatted file exported from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/dag1.asn1.html" title="View attachment">dag1.asn1</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/dag1.asn1" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="59380 bytes">58.0 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T11%253A22%253A35+0900&amp;precision=second.html" title="2008-02-12T11:22:35+0900 in Timeline">17 years</a> ago.
+                <q>DAG1 gene: ASN.1 formatted file exported from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/dag1.gb_xml.html" title="View attachment">dag1.gb_xml</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/dag1.gb_xml" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="233405 bytes">227.9 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T11%253A31%253A29+0900&amp;precision=second.html" title="2008-02-12T11:31:29+0900 in Timeline">17 years</a> ago.
+                <q>DAG1 gene: genbank XML formatted file exported from NCBI (probably?)</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.asn1.html" title="View attachment">aj224122.asn1</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.asn1" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="18334 bytes">17.9 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T14%253A34%253A06+0900&amp;precision=second.html" title="2008-02-12T14:34:06+0900 in Timeline">17 years</a> ago.
+                <q>AJ224122 in ASN1 format as downloaded from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.fa.html" title="View attachment">aj224122.fa</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.fa" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="3943 bytes">3.9 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T14%253A55%253A56+0900&amp;precision=second.html" title="2008-02-12T14:55:56+0900 in Timeline">17 years</a> ago.
+                <q>AJ224122 in FASTA format as downloaded from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.gb.html" title="View attachment">aj224122.gb</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.gb" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="9164 bytes">8.9 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T14%253A56%253A15+0900&amp;precision=second.html" title="2008-02-12T14:56:15+0900 in Timeline">17 years</a> ago.
+                <q>AJ224122 in genbank format as downloaded from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.gb_xml.html" title="View attachment">aj224122.gb_xml</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.gb_xml" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="69939 bytes">68.3 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T14%253A56%253A41+0900&amp;precision=second.html" title="2008-02-12T14:56:41+0900 in Timeline">17 years</a> ago.
+                <q>AJ224122 in genbank XML format as downloaded from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.insd.html" title="View attachment">aj224122.insd</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.insd" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="20006 bytes">19.5 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T14%253A56%253A58+0900&amp;precision=second.html" title="2008-02-12T14:56:58+0900 in Timeline">17 years</a> ago.
+                <q>AJ224122 in INSD format as downloaded from NCBI</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.swiss.html" title="View attachment">aj224122.swiss</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.swiss" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="7990 bytes">7.8 KB</span>) - added by <em>heikki</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T15%253A10%253A29+0900&amp;precision=second.html" title="2008-02-12T15:10:29+0900 in Timeline">17 years</a> ago.
+                <q>AJ224122 translation (DOF37_ARATH/Q43385) in swiss-prot  format as downloaded from <a class="missing wiki">UniProt?</a></q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/dag1-biojava.fa.html" title="View attachment">dag1-biojava.fa</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/dag1-biojava.fa" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="5790 bytes">5.7 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T15%253A21%253A27+0900&amp;precision=second.html" title="2008-02-12T15:21:27+0900 in Timeline">17 years</a> ago.
+                <q>biojava roundtrip of fasta</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-biojava.fa.html" title="View attachment">aj224122-biojava.fa</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-biojava.fa" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="3984 bytes">3.9 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T15%253A27%253A22+0900&amp;precision=second.html" title="2008-02-12T15:27:22+0900 in Timeline">17 years</a> ago.
+                <q>biojava roundtrip of fasta</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-biojava.gb.html" title="View attachment">aj224122-biojava.gb</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-biojava.gb" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="9322 bytes">9.1 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T16%253A41%253A49+0900&amp;precision=second.html" title="2008-02-12T16:41:49+0900 in Timeline">17 years</a> ago.
+                <q>biojava roundtrip of genbank</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-biojava.insd.html" title="View attachment">aj224122-biojava.insd</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-biojava.insd" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="23169 bytes">22.6 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T17%253A10%253A51+0900&amp;precision=second.html" title="2008-02-12T17:10:51+0900 in Timeline">17 years</a> ago.
+                <q>biojava roundtrip of ISNDseq</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.embl.html" title="View attachment">aj224122.embl</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.embl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="9288 bytes">9.1 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T10%253A16%253A40+0900&amp;precision=second.html" title="2008-02-13T10:16:40+0900 in Timeline">17 years</a> ago.
+                <q>Correct version of EMBL file</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.EMBL.xml.html" title="View attachment">aj224122.EMBL.xml</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.EMBL.xml" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="15230 bytes">14.9 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T11%253A34%253A29+0900&amp;precision=second.html" title="2008-02-13T11:34:29+0900 in Timeline">17 years</a> ago.
+                <q>EMBLxml format</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122.uniprot.xml.html" title="View attachment">aj224122.uniprot.xml</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122.uniprot.xml" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="17600 bytes">17.2 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T11%253A42%253A08+0900&amp;precision=second.html" title="2008-02-13T11:42:08+0900 in Timeline">17 years</a> ago.
+                <q>uniprot xml</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-biojava.insd.xml.html" title="View attachment">aj224122-biojava.insd.xml</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-biojava.insd.xml" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="24153 bytes">23.6 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-13T14%253A25%253A06+0900&amp;precision=second.html" title="2008-02-13T14:25:06+0900 in Timeline">17 years</a> ago.
+                <q>biojava round trip of INSDseq</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/Main.java.html" title="View attachment">Main.java</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/Main.java" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="4785 bytes">4.7 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T11%253A16%253A48+0900&amp;precision=second.html" title="2008-02-14T11:16:48+0900 in Timeline">17 years</a> ago.
+                <q>Roundtrip program for biojava</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/derby-biosql.sql.html" title="View attachment">derby-biosql.sql</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/derby-biosql.sql" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="28333 bytes">27.7 KB</span>) - added by <em>markjschreiber</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T16%253A26%253A21+0900&amp;precision=second.html" title="2008-02-14T16:26:21+0900 in Timeline">17 years</a> ago.
+                <q>DERBY schema for BioSQL</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-biojava.embl.html" title="View attachment">aj224122-biojava.embl</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-biojava.embl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="9397 bytes">9.2 KB</span>) - added by <em>holland</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T17%253A21%253A50+0900&amp;precision=second.html" title="2008-02-14T17:21:50+0900 in Timeline">17 years</a> ago.
+                <q>biojava embl round-trip</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-biojava.swiss.html" title="View attachment">aj224122-biojava.swiss</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-biojava.swiss" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="7941 bytes">7.8 KB</span>) - added by <em>holland</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T17%253A22%253A01+0900&amp;precision=second.html" title="2008-02-14T17:22:01+0900 in Timeline">17 years</a> ago.
+                <q>biojava uniprot round-trip</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-biojava.uniprot.xml.html" title="View attachment">aj224122-biojava.uniprot.xml</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-biojava.uniprot.xml" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="18453 bytes">18.0 KB</span>) - added by <em>holland</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T18%253A18%253A53+0900&amp;precision=second.html" title="2008-02-14T18:18:53+0900 in Timeline">17 years</a> ago.
+                <q>biojava uniprotxml round trip</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-bioruby.embl.html" title="View attachment">aj224122-bioruby.embl</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-bioruby.embl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="9103 bytes">8.9 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-20T22%253A39%253A21+0900&amp;precision=second.html" title="2008-02-20T22:39:21+0900 in Timeline">17 years</a> ago.
+                <q>bioruby roundtrip for EMBL format</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/roundtrip_bioruby.rb.html" title="View attachment">roundtrip_bioruby.rb</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/roundtrip_bioruby.rb" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="161 bytes">161 bytes</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-20T22%253A40%253A53+0900&amp;precision=second.html" title="2008-02-20T22:40:53+0900 in Timeline">17 years</a> ago.
+                <q>Ruby script for roundtrip (i.c. EMBL)</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/bioruby_aav50056_fasta_annotated.png.html" title="View attachment">bioruby_aav50056_fasta_annotated.png</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/bioruby_aav50056_fasta_annotated.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="110869 bytes">108.3 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-21T22%253A05%253A39+0900&amp;precision=second.html" title="2008-02-21T22:05:39+0900 in Timeline">17 years</a> ago.
+                <q>Annotated picture of a FASTA entry</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/bioruby_ab09071_embl_annotated.png.html" title="View attachment">bioruby_ab09071_embl_annotated.png</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/bioruby_ab09071_embl_annotated.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="94217 bytes">92.0 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-21T22%253A06%253A04+0900&amp;precision=second.html" title="2008-02-21T22:06:04+0900 in Timeline">17 years</a> ago.
+                <q>Annotated picture of an EMBL entry</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/bioruby_ab09071_gb_annotated.png.html" title="View attachment">bioruby_ab09071_gb_annotated.png</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/bioruby_ab09071_gb_annotated.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="127937 bytes">124.9 KB</span>) - added by <em>jan.aerts</em>
+      <a class="timeline" href="../timeline@from=2008-02-21T22%253A06%253A24+0900&amp;precision=second.html" title="2008-02-21T22:06:24+0900 in Timeline">17 years</a> ago.
+                <q>Annotated picture of a <a class="missing wiki">GenBank?</a> entry</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/bioperl_convert.pl.html" title="View attachment">bioperl_convert.pl</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/bioperl_convert.pl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="1679 bytes">1.6 KB</span>) - added by <em>heikki</em>
+      <a class="timeline" href="../timeline@from=2008-02-25T16%253A45%253A32+0900&amp;precision=second.html" title="2008-02-25T16:45:32+0900 in Timeline">17 years</a> ago.
+                <q>Bioperl script fr roundtriping EMBL, <a class="missing wiki">GenBank?</a> and Swiss-Prot files</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-bioperl.fa.html" title="View attachment">aj224122-bioperl.fa</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-bioperl.fa" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="3951 bytes">3.9 KB</span>) - added by <em>heikki</em>
+      <a class="timeline" href="../timeline@from=2008-02-25T16%253A50%253A56+0900&amp;precision=second.html" title="2008-02-25T16:50:56+0900 in Timeline">17 years</a> ago.
+                <q>bioperl processed fasta file</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-bioperl.gb.html" title="View attachment">aj224122-bioperl.gb</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-bioperl.gb" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="9163 bytes">8.9 KB</span>) - added by <em>heikki</em>
+      <a class="timeline" href="../timeline@from=2008-02-25T16%253A51%253A58+0900&amp;precision=second.html" title="2008-02-25T16:51:58+0900 in Timeline">17 years</a> ago.
+                <q>bioperl processed Genbank file</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-bioperl.swiss.html" title="View attachment">aj224122-bioperl.swiss</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-bioperl.swiss" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="7989 bytes">7.8 KB</span>) - added by <em>heikki</em>
+      <a class="timeline" href="../timeline@from=2008-02-25T16%253A53%253A33+0900&amp;precision=second.html" title="2008-02-25T16:53:33+0900 in Timeline">17 years</a> ago.
+                <q>bioperl processed swissprot file</q>
+              </li>
+              <li>
+      <a href="../attachment/wiki/OpenBio%252A/aj224122-bioperl.embl.html" title="View attachment">aj224122-bioperl.embl</a>
+      <a href="../raw-attachment/wiki/OpenBio%252A/aj224122-bioperl.embl" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="9066 bytes">8.9 KB</span>) - added by <em>heikki</em>
+      <a class="timeline" href="../timeline@from=2008-02-25T17%253A23%253A26+0900&amp;precision=second.html" title="2008-02-25T17:23:26+0900 in Timeline">17 years</a> ago.
+                <q>bioperl processed EMBL file</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/OpenBio%2A?version=40&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

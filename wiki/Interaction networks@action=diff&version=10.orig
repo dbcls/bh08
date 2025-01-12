@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Interaction networks (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/Interaction%20networks?action=history" title="Page history" />
+        <link rel="next" href="/wiki/Interaction%20networks?action=diff&amp;version=11" title="Version 11" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/Interaction%20networks?action=diff&amp;version=9" title="Version 9" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Interaction%20networks?action=diff&amp;version=9" title="Version 9">Previous Change</a></span></li><li><a href="/wiki/Interaction%20networks?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/Interaction%20networks?action=diff&amp;version=11" title="Version 11">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/Interaction%20networks?version=9">Version 9</a> and
+        <a href="/wiki/Interaction%20networks?version=10">Version 10</a> of
+        <a href="/wiki/Interaction%20networks?version=10">Interaction networks</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/Interaction%20networks?version=10"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="10" />
+          <input type="hidden" name="old_version" value="9" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2008/02/14 12:55:46 (<a class="timeline" href="/timeline?from=2008-02-14T12%3A55%3A46%2B0900&amp;precision=second" title="2008-02-14T12:55:46+0900 in Timeline">17 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          baranda
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/Interaction%20networks?version=10">Interaction networks</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 9">
+                    <a href="/wiki/Interaction%20networks?version=9#L30">
+                      v9</a>
+                  </th>
+                  <th title="Version 10">
+                    <a href="/wiki/Interaction%20networks?version=10#L30">
+                      v10</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>30</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp;* !IntAct already provides a very simple SOAP based web service (http://www.ebi.ac.uk/~intact/devsite/remote/binarysearch_ws.html)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>32</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>33</th><td class="l"><span>&nbsp;* NCBI Entrez Gene has meta-database of interactions (MINT, !BioGrid, and BIND), but access to these dataset is hard due to API design.</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>34</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Interaction%20networks?version=9#L48">…</a></th>
+                  <th><a href="/wiki/Interaction%20networks?version=10#L49">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>49</th><td class="l"><span>&nbsp; &nbsp;* Get interaction or partners not only using Uniprot IDs (the primary identifiers for interactors used in !IntAct)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>50</th><td class="l"><span>&nbsp;</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>51</th><td class="r"><ins>Note: during the week, a common WSDL for interaction web services has been defined, so this section will be accomplish by implementing such a service.</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>52</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>53</th><td class="l"><span>=== Define a common Interaction Query Language ===</span> </td>
+                  </tr><tr>
+                          <th>51</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Interaction%20networks?version=9#L53">…</a></th>
+                  <th><a href="/wiki/Interaction%20networks?version=10#L56">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>54</th><th>57</th><td class="l"><span>&nbsp;* [wiki:PSICQUIC] - attempt to create a REST-based query language.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>55</th><th> </th><td class="l"><span>&nbsp;* [http://lucene.apache.org] Lucene based searches over PSI-MI tab files - this is what is currently used in !IntAct.</span> </td>
+                      </tr><tr>
+                        <th>56</th><th> </th><td class="l"><span>&nbsp; &nbsp;* This option seems to be the simplest according to the participants in the group, and could be a starting point.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; &nbsp;* A common WSDL, based on the original ideas of PSICQUIC and new requirements, will be defined in the BioHackathon</span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>&nbsp;* [http://lucene.apache.org Lucene] based searches over PSI-MI tab files - this is what is currently used in !IntAct.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp;* This option is really powerful. A method allowing queries will be part of the common WSDL. However, it is not clear if all providers will implement this method (!IntAct will, well, it is actually using it :) )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>61</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>58</th><th>62</th><td class="l"><span>=== Define specific use-cases ===</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Interaction%20networks?version=9#L65">…</a></th>
+                  <th><a href="/wiki/Interaction%20networks?version=10#L69">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>69</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>66</th><th>70</th><td class="l"><span>Problems: it does not comply neither with the PSI-MI specification nor with the DAS one.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>71</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>72</th><td class="r"><ins>Due to time constraints, no effort will be dedicated in the BioHackathon to this.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>73</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>68</th><th>74</th><td class="l"><span>= Other Resources =</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Interaction%20networks?version=9#L82">…</a></th>
+                  <th><a href="/wiki/Interaction%20networks?version=10#L88">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>82</th><th>88</th><td class="l"><span>&nbsp; &nbsp;* The methods should be in the default exchange format (PSI-MI XML). </span> </td>
+                  </tr><tr>
+                          <th>83</th><th>89</th><td class="l"><span>&nbsp; &nbsp;* Problem: This means dealing with potentially huge files (about 30 Mb for 2000 interactions, and databases such as IntAct contain 100000+ and increasing exponentially).</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>84</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; * Solution: unknown <del>(using URIs?) </del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>90</th><td class="r"><span>&nbsp; &nbsp; &nbsp; * Solution: unknown <ins>~~(using URIs?)~~ (comment from Day 4: pagination of the results will be implemented in the first version)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>85</th><th>91</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>86</th><th>92</th><td class="l"><span>== Day 3 ==</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Interaction%20networks?version=9#L89">…</a></th>
+                  <th><a href="/wiki/Interaction%20networks?version=10#L95">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>95</th><td class="l"><span>&nbsp;* PSI-MI Reader should be modifed to read more details in the object.&nbsp; (Currently, some of the details are skipped.)</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>96</th><td class="l"><span>&nbsp;* Need to add a switch to import minimal dataset (graph information only.&nbsp; No attributes) or full detail.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>97</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins>== Day 4 ==</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>99</th><td class="r"><ins>=== PSICQUIC - Common Web Service interface for all Interaction providers ===</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>100</th><td class="r"><ins>A initial set of methods have been defined and can be seen in the latest WSDL attachments.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>101</th><td class="r"><ins>Basically, the result of the search methods will return !EntrySet (MIF) or MITAB format, dependending on the return type format parameter passed to the method. Some metadata about the query will be returned too (e.g. total results, first result index, block size, expirationDate...).</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>102</th><td class="r"><ins>The PSIMITAB format will be output by the methods wrapped in very simple XML (mitab-1.0.xml schema attached), that defines rows and columns instead of returning just plain strings that need to be parsed.</ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

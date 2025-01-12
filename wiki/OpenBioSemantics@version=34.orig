@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      OpenBioSemantics – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/OpenBioSemantics?version=34&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/OpenBioSemantics" title="View latest version" />
+        <link rel="next" href="/wiki/OpenBioSemantics?version=35" title="Version 35" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/OpenBioSemantics?version=33" title="Version 33" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/OpenBioSemantics?version=33" title="Version 33">Previous Version</a></span></li><li><a href="/wiki/OpenBioSemantics" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/OpenBioSemantics?version=35" title="Version 35">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/OpenBioSemantics?action=diff&amp;version=34">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 34 (modified by r.bruskiewich, <a class="timeline" href="/timeline?from=2008-02-15T11%3A57%3A55%2B0900&amp;precision=second" title="2008-02-15T11:57:55+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="GeneralSemanticsandOntologyforOpenBioandWebServices">General Semantics and Ontology for OpenBio* and Web Services</h1>
+<p>
+Back to <a class="wiki" href="/wiki/ListOfTopics">Hackathon List of Topics</a>
+</p>
+<h2 id="Overview">Overview</h2>
+<p>
+Most of the discussions at this hackathon deal with technology issues relating to interoperability. A few of the discussions are discuss <a class="ext-link" href="http://www.open-bio.org/wiki/Main_Page"><span class="icon"> </span>OpenBio*</a> "platform specific implementations" - language APIs (BioRuby, BioJava, BioPerl, etc.), web service protocols (BioMoby <i>et. al.</i>) and database implementations (i.e. !BioSQL).  A general issue relating to harmonization of community semantics or, at least, establishing a community process for semantics management, is recognized. This OpenSpace discussion is targeting this issue for further progress.
+</p>
+<p>
+The broader scope of this discussion is titled <strong>OpenBioSemantics</strong> rather than simply <strong>Ontology</strong>.
+</p>
+<p>
+<strong> Convenor/faciltator: </strong> Richard Bruskiewich
+</p>
+<p>
+<strong> Discussion Contributors: </strong>
+</p>
+<ul><li>Paul Gordon
+</li><li>Richard Holland
+</li><li>Will York
+</li><li>Martin Senger
+</li><li>Mark Wilkinson
+</li><li>Hilmar Lapp
+</li><li>Chad Matsalla (from afar)
+</li><li><i>please add your name if you were there! I apologize if I missed recording you....</i>
+</li></ul><h2 id="QuickLinkstoWorkshopOutputs">Quick Links to Workshop Outputs</h2>
+<h3 id="OpenBioDomainModelsforComparison">OpenBio* Domain Models for Comparison</h3>
+<p>
+ 
+</p>
+<ul><li><a class="wiki" href="/wiki/BioJavaDomainModel">(Simplified) Model of BioJava semantics</a> (new: constructed at workshop)
+</li><li><a class="wiki" href="/wiki/BioPerlDomainModel">(Simplified) Model of BioPerl semantics</a> (not a new work - recovered from Chad Matsalla (<strong>chad <i>at</i> dieselwurks.com</strong>))
+</li><li><a class="ext-link" href="http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biosql-ERD.pdf"><span class="icon"> </span>(Simplified) Model of BioSQL semantics</a> (not a new piece of work - just identified for inclusion in this page, from the BioSQL team)
+</li></ul><h3 id="OtherOntologyWork">Other Ontology Work</h3>
+<ul><li><a class="ext-link" href="http://www.mygrid.org.uk/mygrid-moby-service/"><span class="icon"> </span>joint myGrid-Moby service ontology</a>
+</li></ul><h2 id="Proceedings">Proceedings</h2>
+<h2 id="SummaryofDay1Discussions11thFeb.AfternoonAcademyHills">Summary of Day 1 Discussions (11th Feb. Afternoon AcademyHills)</h2>
+<h3 id="Observations:FramingtheProblem">Observations: Framing the Problem</h3>
+<p>
+Cathedral versus the Bazaar: the global community of bioinformatics are struggling with the issue of semantics, and various formalisms are currently being used to capture such semantics, i.e.
+</p>
+<ul><li><strong>Formal Code Implementations:</strong> implied semantics expressed as an API and body of computer code (e.g. <a class="ext-link" href="http://www.open-bio.org/wiki/Main_Page"><span class="icon"> </span>OpenBio*</a> initiatives)
+</li><li><strong>Data Formats:</strong> expressed as standard, human readable semi-structured text (e.g. sequence formats: FASTA, Genbank, EMBL)
+</li><li><strong>Object models:</strong> expressed in Unified Modeling Language (UML) (e.g. <a class="ext-link" href="http://fuge.sourceforge.net/"><span class="icon"> </span>Functional Genomics Experiment model</a> and <a class="ext-link" href="http://pantheon.generationcp.org/demeter"><span class="icon"> </span>Generation Challenge Programme domain model</a>)
+</li><li><strong>Ontology initiatives:</strong>
+<ul><li><strong>OBO format driven:</strong> e.g. <a class="ext-link" href="http://www.geneontology.org"><span class="icon"> </span>Gene Ontology (GO)</a>, <a class="ext-link" href="http://www.sequenceontology.org/"><span class="icon"> </span>Sequence Ontology (SO)</a>, etc.
+</li><li><strong>OWL format initiatives:</strong> <a class="ext-link" href="http://obi.sourceforge.net/"><span class="icon"> </span>Ontology for Biomedical Investigations</a>
+</li></ul></li><li><strong>XML Schema driven languages:</strong> <a class="ext-link" href="http://www.tdwg.org"><span class="icon"> </span>TDWG ABCD schema in !BioCase+Tapir</a>, etc.
+</li><li><strong>Common Database Schemata and Queries:</strong> BioSQL, <a class="ext-link" href="http://www.gmod.org"><span class="icon"> </span>Generic Model Organism (GMOD) Chado</a>, <a class="ext-link" href="http://www.icis.cgiar.org"><span class="icon"> </span>International Crop Information System</a>, etc.
+</li><li><strong>Web Service Protocol Data Types:</strong> e.g. <a class="ext-link" href="http://www.ws-i.org/Profiles/BasicProfile-1_2(WGAD).html"><span class="icon"> </span>EMBRACE WS-I</a>, <a class="ext-link" href="http://biomoby.org"><span class="icon"> </span>BioMoby data type object hierarchy</a>
+</li></ul><p>
+At this meeting, a general desire is being expressed to achieve some level of interoperability, at least, between <a class="ext-link" href="http://www.open-bio.org/wiki/Main_Page"><span class="icon"> </span>OpenBio*</a> initiatives generally, and more specifically, between <a class="ext-link" href="http://www.open-bio.org/wiki/Main_Page"><span class="icon"> </span>OpenBio*</a> and web services protocols like <a class="ext-link" href="http://biomoby.org"><span class="icon"> </span>BioMoby</a> and <a class="ext-link" href="http://www.embracegrid.info/page.php?page=home"><span class="icon"> </span>EMBRACE</a>.
+</p>
+<p>
+An addition targeted need is simply to harmonize specific ontology pertinent to key interoperability technology. A specific example of such a need (from M. Wilkinson) is the harmonization of <a class="ext-link" href="http://www.biomoby.org"><span class="icon"> </span>BioMoby</a> and <a class="ext-link" href="http://www.mygrid.ac.uk"><span class="icon"> </span>myGrid</a> <a class="ext-link" href="http://www.mygrid.org.uk/mygrid-moby-service/"><span class="icon"> </span>service ontology</a>.
+</p>
+<p>
+It is generally agreed that semantics is a hard community problem ("herding the cats") but can be made tractable by "divide and conquer" (witness the relative success of GO and other similar ontology development communities).  Efforts should and generally are, driven by a specific set of practical tasks in the community, on an "as needed" basis. The expectation to create a consensual "mother-of-all-biological-data-models" is most likely unrealistic, but can some agreement on the general principles, process and tools of semantic collaboration be achieved?
+</p>
+<h3 id="PreliminaryQuestions">Preliminary Questions</h3>
+<ol><li>Can a formal community strategy (akin to that in successful ontology consortia) for the specification and evolution of open bio semantics be specified and endorsed?
+</li><li>Would the objective of interoperability between OpenBio*, web services protocols and related initiatives be well served by the specification of a common consensual "platform independent" domain model (or set of domain models)? 
+<ul><li>If so, how should this best be specified? Can an intersection set of OpenBio* semantics be extracted and formalized (i.e. in UML or OWL)?
+</li><li>How might it be used directly as a focal point for harmonization of OpenBio* API's, web service protocols, etc.
+</li><li>Can the task be partitioned down to size to make it tractable, yet large enough to be useful (achieve "buy-in")? Can guidelines for modular (community specific) code/data type modules be stipulated? e.g. glycoinformatics
+</li></ul></li></ol><p>
+  
+</p>
+<h2 id="SummaryofDay212thFeb.AISTCBRC">Summary of Day 2 (12th Feb. AIST/CBRC)</h2>
+<ul><li>Group facilitator caught up with capturing day 1 proceedings (above) from poster notes.
+</li><li>It was decided to use UML (rather than OWL/RDF) to initially document object models in OpenBio* projects for further community discussion on shared semantics, given that these models are coming from reverse engineered "object oriented" software (which UML is well suited to describe). Such a model could, in the future, be expressed as an OWL/RDF platform specific implementation, for more general computability (i.e. in Moby 2.0?).
+</li><li>Moving forward this idea that a shared domain model might facilitate interoperability in OpenBio* projects and web services, Richard Holland and Richard Bruskiewich spent part of the afternoon of day 2 drawing <a class="wiki" href="/wiki/BioJavaDomainModel">UML diagrams reflecting the BioJava object data types</a>, and started tracking down (over email) a BioPerl UML model that is rumoured to be available.
+</li></ul><h2 id="SummaryofDay3">Summary of Day 3</h2>
+<ul><li>No specific ontology team discussions convened but theme specific discussions underway (e.g. with Glycoinformatics team).
+</li></ul><h2 id="SummaryofDay4">Summary of Day 4</h2>
+<ul><li>GCP domain model and BioMoby data types:
+<ul><li>Mark Wilkinson, Martin Senger and Richard Bruskiewich jointly reviewed <a class="ext-link" href="http://pantheon.generationcp.org/demeter"><span class="icon"> </span>Generation Challenge Program domain model</a> and corresponding <a class="ext-link" href="http://pantheon.generationcp.org/moby"><span class="icon"> </span>GCP model driven !BioMoby data types</a>. GCP Moby data types generally passed muster and are generally compliant with the BioMoby philosophy and usable "as is". A few key technical issues highlighted (again) for future resolution, perhaps as part of the Moby 2.0 release. These are:
+<ul><li><i>Martin and Mark, please add</i>
+</li></ul></li><li>The need for "shim services" to expand connectivity of GCP services with outside (non-GCP) services and data types was identified.
+</li></ul></li><li>Harmonization of BioMoby and myGrid service ontology underway by myGrid community (with the collusion of Mark W.). See <a class="ext-link" href="http://www.mygrid.org.uk/mygrid-moby-service/"><span class="icon"> </span>joint myGrid-Moby service ontology</a>.
+</li></ul><p>
+ 
+</p>
+<h2 id="SummaryofDay5">Summary of Day 5</h2>
+<ul><li>Included links to <a class="wiki" href="/wiki/BioPerlDomainModel">BioPerl models</a>
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/OpenBioSemantics?version=34&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

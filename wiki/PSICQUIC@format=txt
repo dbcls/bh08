@@ -1,0 +1,42 @@
+Some notes that I have about this:
+
+   PSICQUIC is planned as a common web service API for all
+   participating databases. Matthias Oesterheld demonstrated an initial
+   schema for this tool, based on the HOBIT experience of document
+   style web services. As previously discussed, this will be a leveled
+   service with Level 1 supporting simple queries such as get all
+   interactions by organism (TaxID), by interaction property, by
+   experiment property or by protein list. All attending databases
+   would be capable of supporting a cpath implementation of this model,
+   others may need a wrapper web service. It was decided to change
+   protein list to interactor properties and extend the search to
+   encompass short name, aliases and cross-reference. Searching by
+   TaxID would encompass all children of the term used. Negative
+   interactions would not be searched in initial implementations. Level
+   2 could incorporate more complex queries and feature properties
+   searched by both !InterPro cross-reference or MI type.
+
+   Returns would be in a document, the maximum length of section
+   returned could be set by the operator, by generating a start index
+   and length. An additional method on the web server could then
+   retrieve the desired number of interactions in batches. A test
+   procedure could pick out specified entry numbers allowing the user
+   to skip large datasets. The possibility of adding a flag to the
+   query to give the option of a URL at which a compressed complete
+   file could be accessed was also discussed.  
+
+   Complex queries would not be too difficult to establish, however
+   may prove too great a server load.  It was decided that both levels
+   would be published simultaneously, with Level 2 being completely
+   backwards compatible. Implementers may then decide which level to
+   install. The first query will send a user query. The return will
+   include a query ID and the number of results. A retrieval function
+   will detail query ID, count, start index and length. Query send may
+   be adjusted to size of client server. Standard error messages will
+   be incorporated. An initial implantation should be available late 2005.
+
+= Comments =
+
+== First Draft by Lukasz ==
+
+Michael: STRING and also IntAct may have many, many interactions for any given query, so a "give me ''all'' interactions" query isn't feasible. STRING has the notion of confidence levels that could be used as a cut-off, but I think this is too specific for a common query interface. So perhaps it would make sense to add two parameters: limit and offset, with defaults set to something reasonable (e.g. 25 and 0).

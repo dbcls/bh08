@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      PhyloWS_workgroup – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/PhyloWS_workgroup?version=11&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="PhyloWS_workgroup.html" title="View latest version" />
+        <link rel="next" href="PhyloWS_workgroup@version=12.html" title="Version 12" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="PhyloWS_workgroup@version=10.html" title="Version 10" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="PhyloWS_workgroup@version=10.html" title="Version 10">Previous Version</a></span></li><li><a href="PhyloWS_workgroup.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="PhyloWS_workgroup@version=12.html" title="Version 12">Next Version</a> &rarr;</span></li><li class="last"><a href="PhyloWS_workgroup@action=diff&amp;version=11.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 11 (modified by czmasek, <a class="timeline" href="../timeline@from=2008-02-12T12%253A21%253A03+0900&amp;precision=second.html" title="2008-02-12T12:21:03+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+At present there is no standard web-service API for phylogenetic data that would allow integration of phylogenetic data and service providers into the programmable web. Hence, current approaches to integrate data and services into workflows are highly specific to the integration platform (CIPRES, Bioperl, Bio::Phylo, Kepler), and nearly unusable in other environments.
+</p>
+<p>
+Here are several ideas for tasks we can work on at the hackathon:
+</p>
+<ul><li>Defining scope 
+<ul><li>Issue of identifiers and OTUs
+</li></ul></li><li>Accumulating use-cases 
+<ul><li>OTU-oriented queries:
+<ul><li>Need ability to obtain sequence(s) and taxon (taxa) for a leaf (or generally, a node)
+</li><li>Finding trees by sequence (rather than the OTU name) 
+</li></ul></li></ul></li><li>Formulating a task-oriented API requirements description
+</li><li>Identify "method signatures" for API (e.g. input: a tree, output: a number for methods that return tree scores)
+</li><li>Proposing a concrete REST<del> or SOAP-</del>based API
+</li><li>Propose input/output formats (e.g. <a class="ext-link" href="http://$resource?view=$format"><span class="icon"> </span>http://$resource?view=$format</a> where $resource is an opaque url to some data resource (matrix, tree, etc) and $format something like nexus, phylip, nexml, phyloxml, json, etc.)
+</li><li>Start a reference implementation, for example based on data in BioSQL
+</li></ul><p>
+Gathering of use-cases and task-oriented requirements has started at <a class="ext-link" href="http://evoinfo.nescent.org/PhyloWS"><span class="icon"> </span>http://evoinfo.nescent.org/PhyloWS</a>.
+</p>
+<p>
+The Open Space discussion centered on the following issues:
+</p>
+<ul><li>The OTU (Operational Taxonomic Unit) perspective is an important use-case. 
+<ul><li>Gene tree analysis: splitting a given a set of trees into subsets of trees as a function of compatibility to a given (set of) species tree(s).  
+</li><li>Gene tree analysis: similar to the Zmasek et al (2007) paper, one may want to build alignments and phylogenetic trees for all ortholog families of a  gene family, or a pathway. After loading the trees into a database, one could then query the database for those gene trees that support a certain species phylogeny, for example the Ecdysizoan hypothesis.
+<ul><li>Problem: the query topology will be given with either gene name labels, or species name labels, but the labels of the trees will be OTUs.
+</li><li>Hence, each OTU needs to be linked to the gene name(s) and taxon names, and it needs to be possible to specify that matching tree nodes use the linked taxon or gene names. 
+</li></ul></li><li>In molecular and comparative genomics applications, one may want to find all trees that have been built for a certain sequence.
+<ul><li>Problem: As above, querying by sequence will give the gene name or the sequence accession number to match by, but tree nodes will have OTUs as labels. 
+</li></ul></li></ul></li><li>We discussed whether we need identifiers for OTUs.
+<ul><li>Pros: Rather than many individual idiosyncratic schemes for encoding sequence ID and taxon (and possibly additional information) into an OTU label, a single identifier could be resolved to the metadata using a common mechanism (such as LSID). Alternatively, one could standardize on a common encoding mechanism, that could then be parsed by a common mechanism.
+</li><li>Cons: If using an (presumably opaque) identifier for OTUs, one ought to be able to expect that the same combination of sequence ID, taxon name (where one often implies the other, unless sequence ID is really an ambiguous gene name), and additional metadata (such as allele, population sample, etc) results in the same identifier, in essence necessitating an OTU identifier registry, or a common algorithm for constructing the identifier (which would then no longer be opaque). A standardized encoding mechanism would need to be widely supported and adopted.
+</li></ul></li></ul>
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/PhyloWS_workgroup/P1070128.JPG.html" title="View attachment">P1070128.JPG</a>
+      <a href="../raw-attachment/wiki/PhyloWS_workgroup/P1070128.JPG" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="2318161 bytes">2.2 MB</span>) - added by <em>rvos</em>
+      <a class="timeline" href="../timeline@from=2008-02-14T10%253A33%253A43+0900&amp;precision=second.html" title="2008-02-14T10:33:43+0900 in Timeline">17 years</a> ago.
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/PhyloWS_workgroup?version=11&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

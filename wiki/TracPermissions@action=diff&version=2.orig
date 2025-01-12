@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TracPermissions (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/TracPermissions?action=history" title="Page history" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/TracPermissions?action=diff&amp;version=1" title="Version 1" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/TracPermissions?action=diff&amp;version=1" title="Version 1">Previous Change</a></span></li><li><a href="/wiki/TracPermissions?action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/TracPermissions?version=1">Version 1</a> and
+        <a href="/wiki/TracPermissions?version=2">Version 2</a> of
+        <a href="/wiki/TracPermissions?version=2">TracPermissions</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/TracPermissions?version=2"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="2" />
+          <input type="hidden" name="old_version" value="1" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2009/12/27 07:40:50 (<a class="timeline" href="/timeline?from=2009-12-27T07%3A40%3A50%2B0900&amp;precision=second" title="2009-12-27T07:40:50+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          trac
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/TracPermissions?version=2">TracPermissions</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 1">
+                    <a href="/wiki/TracPermissions?version=1#L2">
+                      v1</a>
+                  </th>
+                  <th title="Version 2">
+                    <a href="/wiki/TracPermissions?version=2#L2">
+                      v2</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>[[TracGuideToc]]</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>4</th><th> </th><td class="l"><span>Trac uses a simple<del></del> permission system to control what users can and can't access.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>4</th><td class="r"><span>Trac uses a simple<ins>, case sensitive,</ins> permission system to control what users can and can't access.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>Permission privileges are managed using the [wiki:TracAdmin trac-admin] tool.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>6</th><td class="r"><span>Permission privileges are managed using the [TracAdmin trac-admin] tool or (new in version 0.11) the ''General / Permissions'' panel in the ''Admin'' tab of the web interface.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>In addition to the default permission policy described in this page, it is possible to activate additional permission policies by enabling plugins and listing them in the `[trac] permission_policies` configuration entry in the TracIni. See TracFineGrainedPermissions for more details.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>8</th><th>10</th><td class="l"><span>Non-authenticated users accessing the system are assigned the name "anonymous". Assign permissions to the "anonymous" user to set privileges for anonymous/guest users. The parts of Trac that a user does not have the privileges for will not be displayed in the navigation.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>11</th><td class="r"><ins>In addition to these privileges, users can be granted additional individual rights in effect when authenticated and logged into the system. All logged in users belong to the virtual group "authenticated", which inherits permissions from "anonymous".</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>12</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>10</th><th> </th><td class="l"><span>In addition to these privileges, users can be granted additional individual rights in effect when authenticated and logged into the system. All logged in users belong to the virtual group "authenticated", which inherits permissions from "anonymous".</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>13</th><td class="r"><span>== Graphical Admin Tab ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>''This feature is new in version 0.11.''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span>To access this tab, a user must have `TRAC_ADMIN privileges`. This can be performed as follows (more on the trac-admin script below):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp; $ trac-admin /path/to/projenv permission add bob TRAC_ADMIN</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>}}}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>Then, the user `bob` will be able to see the Admin tab, and can then access the permissions menu. This menu will allow you to perform all the following actions, but from the browser without requiring root access to the server (just the correct permissions for your user account).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>24</th><td class="r"><span>An easy way to quickly secure a new Trac install is to run the above command on the anonymous user, install the [http://trac-hacks.org/wiki/AccountManagerPlugin AccountManagerPlugin], create a new admin account graphically and then remove the TRAC_ADMIN permission from the anonymous user.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>12</th><th>26</th><td class="l"><span>== Available Privileges ==</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>14</th><th> </th><td class="l"><span>To enable all privileges for a user, use the `TRAC_ADMIN` permission. Having `TRAC_ADMIN` is like being `root` on a *NIX system<del>, it will allow you</del> perform any operation.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>To enable all privileges for a user, use the `TRAC_ADMIN` permission. Having `TRAC_ADMIN` is like being `root` on a *NIX system<ins>: it will allow you to</ins> perform any operation.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>29</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>16</th><th> </th><td class="l"><span>Otherwise, individual privileges can be assigned to users for the various different functional areas of Trac (<del>note that the privilege names are case-sensitive</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>Otherwise, individual privileges can be assigned to users for the various different functional areas of Trac (<ins>'''note that the privilege names are case-sensitive'''</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>31</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>18</th><th>32</th><td class="l"><span>=== Repository Browser ===</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/TracPermissions?version=1#L28">…</a></th>
+                  <th><a href="/wiki/TracPermissions?version=2#L42">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>42</th><td class="l"><span>|| `TICKET_CREATE` || Create new [wiki:TracTickets tickets] ||</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>43</th><td class="l"><span>|| `TICKET_APPEND` || Add comments or attachments to [wiki:TracTickets tickets] ||</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>|| `TICKET_CHGPROP` || Modify [wiki:TracTickets ticket] properties (priority, assignment, keywords, etc.) except description field ||</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>|| `TICKET_MODIFY` || Includes both `TICKET_APPEND` and `TICKET_CHGPROP`, and in addition allows resolving [wiki:TracTickets tickets] ||</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>|| `TICKET_ADMIN` || All `TICKET_*` permissions, plus the deletion of ticket attachments and modification of the description field ||</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>44</th><td class="r"><span>|| `TICKET_CHGPROP` || Modify [wiki:TracTickets ticket] properties (priority, assignment, keywords, etc.) with the following exceptions: edit description field, add/remove other users from cc field when logged in, and set email to pref ||</span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>|| `TICKET_MODIFY` || Includes both `TICKET_APPEND` and `TICKET_CHGPROP`, and in addition allows resolving [wiki:TracTickets tickets]. Tickets can be assigned to users through a [TracTickets#Assign-toasDrop-DownList drop-down list] when the list of possible owners has been restricted. ||</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>|| `TICKET_EDIT_CC` || Full modify cc field ||</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>|| `TICKET_EDIT_DESCRIPTION` || Modify description field ||</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>|| `TICKET_ADMIN` || All `TICKET_*` permissions, plus the deletion of ticket attachments and modification of the reporter and description fields. It also allows managing ticket properties in the WebAdmin panel. ||</span> </td>
+                      </tr><tr>
+                        <th> </th><th>49</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>50</th><td class="r"><span>Attention: the "view tickets" button appears with the `REPORT_VIEW` permission.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>34</th><th>52</th><td class="l"><span>=== Roadmap ===</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>53</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span>|| `MILESTONE_VIEW` || View <del>a milestone</del> ||</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>54</th><td class="r"><span>|| `MILESTONE_VIEW` || View <ins>milestones and assign tickets to milestones.</ins> ||</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>55</th><td class="l"><span>|| `MILESTONE_CREATE` || Create a new milestone ||</span> </td>
+                  </tr><tr>
+                          <th>38</th><th>56</th><td class="l"><span>|| `MILESTONE_MODIFY` || Modify existing milestones ||</span> </td>
+                  </tr><tr>
+                          <th>39</th><th>57</th><td class="l"><span>|| `MILESTONE_DELETE` || Delete milestones ||</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>58</th><td class="l"><span>|| `MILESTONE_ADMIN` || All `MILESTONE_*` permissions ||</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>41</th><th> </th><td class="l"><span>|| `ROADMAP_VIEW` || View the [wiki:TracRoadmap roadmap] page ||</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>59</th><td class="r"><span>|| `ROADMAP_VIEW` || View the [wiki:TracRoadmap roadmap] page, is not (yet) the same as MILESTONE_VIEW, see [trac:#4292 #4292] ||</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>60</th><td class="r"><span>|| `ROADMAP_ADMIN` || to be removed with [trac:#3022 #3022], replaced by MILESTONE_ADMIN ||</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>61</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>43</th><th>62</th><td class="l"><span>=== Reports ===</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>63</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>45</th><th> </th><td class="l"><span>|| `REPORT_VIEW` || View [wiki:TracReports reports]<del></del> ||</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>64</th><td class="r"><span>|| `REPORT_VIEW` || View [wiki:TracReports reports]<ins>, i.e. the "view tickets" link.</ins> ||</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>65</th><td class="l"><span>|| `REPORT_SQL_VIEW` || View the underlying SQL query of a [wiki:TracReports report] ||</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>66</th><td class="l"><span>|| `REPORT_CREATE` || Create new [wiki:TracReports reports] ||</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/TracPermissions?version=1#L58">…</a></th>
+                  <th><a href="/wiki/TracPermissions?version=2#L77">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>77</th><td class="l"><span>|| `WIKI_ADMIN` || All `WIKI_*` permissions, plus the management of ''readonly'' pages. ||</span> </td>
+                  </tr><tr>
+                          <th>59</th><th>78</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>79</th><td class="r"><ins>=== Permissions ===</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>80</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>81</th><td class="r"><ins>|| `PERMISSION_GRANT` || add/grant a permission ||</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>82</th><td class="r"><ins>|| `PERMISSION_REVOKE` || remove/revoke a permission ||</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins>|| `PERMISSION_ADMIN` || All `PERMISSION_*` permissions ||</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>84</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>85</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>86</th><td class="l"><span>=== Others ===</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>87</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/TracPermissions?version=1#L63">…</a></th>
+                  <th><a href="/wiki/TracPermissions?version=2#L89">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>63</th><th>89</th><td class="l"><span>|| `SEARCH_VIEW` || View and execute [wiki:TracSearch search] queries ||</span> </td>
+                  </tr><tr>
+                          <th>64</th><th>90</th><td class="l"><span>|| `CONFIG_VIEW` || Enables additional pages on ''About Trac'' that show the current configuration or the list of installed plugins ||</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>91</th><td class="r"><ins>|| `EMAIL_VIEW` || Shows email addresses even if [trac:wiki:0.11/TracIni trac show_email_addresses configuration option is false] ||</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>92</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>66</th><th>93</th><td class="l"><span>== Granting Privileges ==</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/TracPermissions?version=1#L81">…</a></th>
+                  <th><a href="/wiki/TracPermissions?version=2#L108">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>81</th><th>108</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>82</th><th>109</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>110</th><td class="r"><ins>Or add all privileges:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>111</th><td class="r"><ins>{{{</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>112</th><td class="r"><ins>&nbsp; $ trac-admin /path/to/projenv permission add bob TRAC_ADMIN</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>113</th><td class="r"><ins>}}}</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>114</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>83</th><th>115</th><td class="l"><span>== Permission Groups ==</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>116</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>117</th><td class="r"><ins>There are two built-in groups, "authenticated" and "anonymous".[[BR]]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>118</th><td class="r"><ins>Any user who has not logged in is automatically in the "anonymous" group.[[BR]]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>119</th><td class="r"><ins>Any user who has logged in is also in the "authenticated" group.[[BR]]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>120</th><td class="r"><ins>The "authenticated" group inherits permissions from the "anonymous" group.[[BR]]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>121</th><td class="r"><ins>eg. if the "anonymous" group has permission WIKI_MODIFY, it's not necessary to add the WIKI_MODIFY permisison to the "authenticated" group as well.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>122</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>123</th><td class="r"><ins>Custom groups may be defined that inherit permissions from the two built-in groups.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>124</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>85</th><th>125</th><td class="l"><span>Permissions can be grouped together to form roles such as ''developer'', ''admin'', etc.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/TracPermissions?version=1#L92">…</a></th>
+                  <th><a href="/wiki/TracPermissions?version=2#L132">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>132</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>93</th><th>133</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>94</th><th> </th><td class="l"><span>Group membership can be checked by doing a {{{permission list}}} with no further arguments; the resulting output will include group memberships. Use lowercase for group names, as uppercase is reserved for permissions.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>134</th><td class="r"><span>Group membership can be checked by doing a {{{permission list}}} with no further arguments; the resulting output will include group memberships. '''Use lowercase for group names, as uppercase is reserved for permissions'''.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>135</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>136</th><td class="r"><span>== Adding a New Group and Permissions ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>137</th><td class="r"><span>Permission groups can be created by assigning a user to a group you wish to create, then assign permissions to that group.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>138</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>139</th><td class="r"><span>The following will add ''bob'' to the new group called ''beta_testers'' and then will assign WIKI_ADMIN permissions to that group. (Thus, ''bob'' will inherit the WIKI_ADMIN permission)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>140</th><td class="r"><span>{{{ </span> </td>
+                      </tr><tr>
+                        <th> </th><th>141</th><td class="r"><span>&nbsp; &nbsp;$ trac-admin /path/to/projenv permission add bob beta_testers</span> </td>
+                      </tr><tr>
+                        <th> </th><th>142</th><td class="r"><span>&nbsp; &nbsp;$ trac-admin /path/to/projenv permission add beta_testers WIKI_ADMIN</span> </td>
+                      </tr><tr>
+                        <th> </th><th>143</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>144</th><td class="r"><span>}}}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>95</th><th>145</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>96</th><th>146</th><td class="l"><span>== Removing Permissions ==</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/TracPermissions?version=1#L107">…</a></th>
+                  <th><a href="/wiki/TracPermissions?version=2#L157">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>157</th><td class="l"><span>You can also remove all privileges for a specific user:</span> </td>
+                  </tr><tr>
+                          <th>108</th><th>158</th><td class="l"><span>{{{</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; $ trac-admin /path/to/projenv permission remove bob <del>*</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; $ trac-admin /path/to/projenv permission remove bob <ins>'*'</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>160</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>161</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>112</th><th>162</th><td class="l"><span>Or one privilege for all users:</span> </td>
+                  </tr><tr>
+                          <th>113</th><th>163</th><td class="l"><span>{{{</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>114</th><th> </th><td class="l"><span>&nbsp; $ trac-admin /path/to/projenv permission remove <del>*</del> REPORT_ADMIN</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>164</th><td class="r"><span>&nbsp; $ trac-admin /path/to/projenv permission remove <ins>'*'</ins> REPORT_ADMIN</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>115</th><th>165</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>116</th><th>166</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>117</th><th>167</th><td class="l"><span>== Default Permissions ==</span> </td>
+                  </tr><tr>
+                          <th>118</th><th>168</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>119</th><th> </th><td class="l"><span>Granting privileges to the special user ''anonymous'' can be used to control what an anonymous user can do before they have logged in.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>169</th><td class="r"><span>By default on a new Trac installation, the `anonymous` user will have ''view'' access to everything in Trac, but will not be able to create or modify anything.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>170</th><td class="r"><span>On the other hand, the `authenticated` users will have the permissions to ''create and modify tickets and wiki pages''.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>120</th><th>171</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>121</th><th> </th><td class="l"><span>In the same way, privileges granted to the special user ''authenticated'' will apply to any authenticated (logged in) user.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>172</th><td class="r"><span>'''anonymous'''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>173</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>174</th><td class="r"><span>&nbsp;BROWSER_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>175</th><td class="r"><span>&nbsp;CHANGESET_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>176</th><td class="r"><span>&nbsp;FILE_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>177</th><td class="r"><span>&nbsp;LOG_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>178</th><td class="r"><span>&nbsp;MILESTONE_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>179</th><td class="r"><span>&nbsp;REPORT_SQL_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>180</th><td class="r"><span>&nbsp;REPORT_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>181</th><td class="r"><span>&nbsp;ROADMAP_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>182</th><td class="r"><span>&nbsp;SEARCH_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>183</th><td class="r"><span>&nbsp;TICKET_VIEW </span> </td>
+                      </tr><tr>
+                        <th> </th><th>184</th><td class="r"><span>&nbsp;TIMELINE_VIEW</span> </td>
+                      </tr><tr>
+                        <th> </th><th>185</th><td class="r"><span>&nbsp;WIKI_VIEW</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>186</th><td class="r"><span>}}}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>122</th><th>187</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>188</th><td class="r"><ins>'''authenticated'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>189</th><td class="r"><ins>{{{</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>190</th><td class="r"><ins>&nbsp;TICKET_CREATE </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>191</th><td class="r"><ins>&nbsp;TICKET_MODIFY </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>192</th><td class="r"><ins>&nbsp;WIKI_CREATE </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>193</th><td class="r"><ins>&nbsp;WIKI_MODIFY&nbsp; </ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>194</th><td class="r"><ins>}}}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>123</th><th>195</th><td class="l"><span>----</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>124</th><th> </th><td class="l"><span>See also: TracAdmin, TracGuide and <del>[http://trac.edgewall.org/wiki/FineGrainedPermissions FineGrainedPermissions]</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>196</th><td class="r"><span>See also: TracAdmin, TracGuide and <ins>TracFineGrainedPermissions</ins></span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

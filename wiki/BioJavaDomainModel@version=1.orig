@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      BioJavaDomainModel – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/BioJavaDomainModel?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/BioJavaDomainModel" title="View latest version" />
+        <link rel="next" href="/wiki/BioJavaDomainModel?version=2" title="Version 2" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="/wiki/BioJavaDomainModel" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/BioJavaDomainModel?version=2" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/BioJavaDomainModel?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by r.bruskiewich, <a class="timeline" href="/timeline?from=2008-02-13T11%3A37%3A17%2B0900&amp;precision=second" title="2008-02-13T11:37:17+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="Overview">Overview</h1>
+<p>
+Richard Holland and Richard Bruskiewich attempted to capture the BioJava object model in UML diagrams. These diagrams are presented on this page (a simply UML tool called <a class="ext-link" href="http://horstmann.com/violet/"><span class="icon"> </span>VioletUML</a> was used... The end result is only a semi-compliant UML diagram which is not computable (no XMI...)... Sorry :-)
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.png" title="View attachment">org.biojavax.png</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="28122 bytes">27.5 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A18%3A21%2B0900&amp;precision=second" title="2008-02-14T11:18:21+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax UML diagram</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.png" title="View attachment">org.biojavax.bio.png</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="18486 bytes">18.1 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A25%3A00%2B0900&amp;precision=second" title="2008-02-14T11:25:00+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio UML diagram</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.png" title="View attachment">org.biojavax.bio.seq.png</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="11829 bytes">11.6 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A25%3A36%2B0900&amp;precision=second" title="2008-02-14T11:25:36+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.seq UML diagram</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.location.png" title="View attachment">org.biojavax.bio.seq.location.png</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.location.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="14187 bytes">13.9 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A26%3A13%2B0900&amp;precision=second" title="2008-02-14T11:26:13+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.seq.location UML diagram</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.sequence.png" title="View attachment">org.biojavax.bio.seq.sequence.png</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.sequence.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="6987 bytes">6.8 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A26%3A45%2B0900&amp;precision=second" title="2008-02-14T11:26:45+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.seq.sequence UML diagram</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.taxa.png" title="View attachment">org.biojavax.bio.taxa.png</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.taxa.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="4967 bytes">4.9 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A27%3A24%2B0900&amp;precision=second" title="2008-02-14T11:27:24+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.taxa UML diagram</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.ontology.png" title="View attachment">org.biojavax.ontology.png</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.ontology.png" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="8424 bytes">8.2 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A29%3A10%2B0900&amp;precision=second" title="2008-02-14T11:29:10+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.ontology UML diagram</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.class.violet" title="View attachment">org.biojavax.bio.class.violet</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.class.violet" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="13330 bytes">13.0 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A32%3A33%2B0900&amp;precision=second" title="2008-02-14T11:32:33+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio Violet UML file</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.class.violet" title="View attachment">org.biojavax.bio.seq.class.violet</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.class.violet" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="8767 bytes">8.6 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A33%3A24%2B0900&amp;precision=second" title="2008-02-14T11:33:24+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.seq Violet UML file</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.ontology.class.violet" title="View attachment">org.biojavax.ontology.class.violet</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.ontology.class.violet" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="4197 bytes">4.1 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A34%3A11%2B0900&amp;precision=second" title="2008-02-14T11:34:11+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.ontology Violet UML file</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.location.class.violet" title="View attachment">org.biojavax.bio.seq.location.class.violet</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.location.class.violet" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="7304 bytes">7.1 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A35%3A33%2B0900&amp;precision=second" title="2008-02-14T11:35:33+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.seq.location Violet UML file</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.sequence.class.violet" title="View attachment">org.biojavax.bio.seq.sequence.class.violet</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.seq.sequence.class.violet" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="3657 bytes">3.6 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A36%3A10%2B0900&amp;precision=second" title="2008-02-14T11:36:10+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.seq.sequence Violet UML file</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.bio.taxa.class.violet" title="View attachment">org.biojavax.bio.taxa.class.violet</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.taxa.class.violet" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="1440 bytes">1.4 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A36%3A39%2B0900&amp;precision=second" title="2008-02-14T11:36:39+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax.bio.taxa Violet UML file</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/BioJavaDomainModel/org.biojavax.class.violet" title="View attachment">org.biojavax.class.violet</a>
+      <a href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.class.violet" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="15230 bytes">14.9 KB</span>) - added by <em>r.bruskiewich</em>
+      <a class="timeline" href="/timeline?from=2008-02-14T11%3A38%3A03%2B0900&amp;precision=second" title="2008-02-14T11:38:03+0900 in Timeline">17 years</a> ago.
+                <q>org.biojavax Violet UML file</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/BioJavaDomainModel?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

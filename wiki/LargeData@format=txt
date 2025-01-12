@@ -1,0 +1,21 @@
+== Large data management in service APIs ==
+
+One problem of webservices is sending large data chunks around - something you want to minimise. Not only for performance, but also because long transmissions may break. SOAP attachments are not ideal. One way to avoid sending data through SOAP is to send by reference, e.g. through the use of a URI ([http://hackathon.dbcls.jp/search?q=lsid&wiki=on&changeset=on&ticket=on LSID]) referral - which will delay fetching data until the last moment and may be optimised, e.g. through a bittorrent download (as discussed on [wiki:BioShare Bio.share/Bio.slurp]).
+
+We do not recommend passing large data through SOAP attachments in web services or as large SOAP body elements - any such approach is highly inefficient (Base64 encoding causes an expansion of binary data) and existing web service client stacks behave badly on large documents. In addition the advertisment of such mechanisms is poorly supported (there are standards to declare attachment input and output types but we've never seen anyone use them so in effect it is a hidden behaviour - as all behaviours of a good service should be exposed in the service metadata this is a bad thing).
+
+Biomoby has proposed a mechanism to allow parts of the moby data to be referenced to achieve this in their framework. The reference types can be advertised in the moby central metadata registry and therefore made available to clients such as Taverna.
+
+We note that creating a service which accepts or creates references is not actually that hard - the hard part is to advertise this capability, specifically that technologies such as WSDL have no way to say 'this input has schema type XXX' when the input is a reference rather than a value. The challenges that any system must solve to support reference passing are therefore :
+
+ 1. Allow input data to be passed to the service as a reference type.
+   a. Do this without breaking any existing typing system such as Moby data types, XML schema - this implies that the description of the service must seperate the transport and data content descriptions in some way. The service at a conceptual level consumes the data type independently of the transport type the service container uses to supply this.
+ 2. When the call to the service is made the service should allow the client to specify the delivery type for any results.
+   a. Delivery types can be specified as references - there are already systems out there such as the OGSA-DAI system that define a delivery block (such as 'put data on this ftp server and return a URL to it'
+   b. Some level of negotiation would be good - client requests a set of plausible references and the service negotiates one it can provide.
+   c. The default delivery would presumably be pass by value.
+ 3. Ideally a naive (non reference aware) client should be able to use the service exactly as it would without any of this work - this implies either back compatibility at the client API layer (Moby) or back compatibility in the description (i.e. WSDL)
+ 4. Allow some level of lifecycle management for results held in a delivery location
+   a. Allow the client to request specific characteristics i.e. 'hold this data for at least five minutes'
+   b. Generate policies based on authentication where present?
+

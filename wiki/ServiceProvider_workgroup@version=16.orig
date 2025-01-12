@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      ServiceProvider_workgroup – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/ServiceProvider_workgroup?version=16&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/ServiceProvider_workgroup" title="View latest version" />
+        <link rel="next" href="/wiki/ServiceProvider_workgroup?version=17" title="Version 17" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/ServiceProvider_workgroup?version=15" title="Version 15" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/ServiceProvider_workgroup?version=15" title="Version 15">Previous Version</a></span></li><li><a href="/wiki/ServiceProvider_workgroup" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/ServiceProvider_workgroup?version=17" title="Version 17">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/ServiceProvider_workgroup?action=diff&amp;version=16">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 16 (modified by jmfernandez, <a class="timeline" href="/timeline?from=2008-02-12T01%3A22%3A03%2B0900&amp;precision=second" title="2008-02-12T01:22:03+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#ServiceproviderWorkgroup">Service provider Workgroup</a><ol><li><a href="#Notes">Notes</a></li><li>
+<a href="#AttendingServiceProviders">Attending Service Providers</a></li></ol></li></ol></div><p>
+</p>
+<h1 id="ServiceproviderWorkgroup">Service provider Workgroup</h1>
+<p>
+Here, we gather the major web service providers including BioMOBY projects and Japanese providers such as DDBJ, KEGG, PDBj, CBRC and other foreign providers like EBI and NCBI.
+</p>
+<ul><li>Discuss current problems existing in each services:
+<ul><li>Language dependencies
+</li><li>Naming conventions
+</li><li>Returned data type
+</li><li>Returned data size
+</li><li>Job managements
+</li><li>WSDL syntax violations
+</li><li>Timeouts
+</li><li>Sync and async
+</li><li>MIME attachments
+</li><li>Not implemented yet
+</li></ul></li></ul><ul><li>How to integrate non-MOBY web service providers?
+<ul><li>What kind of effort is needed to compromise with BioMOBY framework?
+</li></ul></li></ul><ul><li>How to improve interoperability among the services?
+<ul><li>Do you need proxy server to translate objects among services?
+</li><li>Object identity matching problem (LSID, BioMOBY)
+</li></ul></li></ul><ul><li>How to treat the needs for the REST services?
+<ul><li>PDBj's REST API (prototype): <a class="ext-link" href="http://doc.pdbj.org/help.cgi?REST%20API"><span class="icon"> </span>http://doc.pdbj.org/help.cgi?REST%20API</a>
+</li><li>DDBJ's REST API: <a class="ext-link" href="http://www.xml.nig.ac.jp/tutorial/rest/index.html"><span class="icon"> </span>http://www.xml.nig.ac.jp/tutorial/rest/index.html</a>
+</li><li>EBI's REST API <a class="ext-link" href="http://www.ebi.ac.uk/Tools/webservices/tutorials/rest"><span class="icon"> </span>http://www.ebi.ac.uk/Tools/webservices/tutorials/rest</a>
+</li><li>CIPRES's REST API <a class="ext-link" href="http://www.phylo.org/rest/rest_api.php"><span class="icon"> </span>http://www.phylo.org/rest/rest_api.php</a>
+</li><li>DAS/1 API <a class="ext-link" href="http://biodas.org/documents/spec.html"><span class="icon"> </span>http://biodas.org/documents/spec.html</a>
+</li></ul></li></ul><h2 id="Notes">Notes</h2>
+<ul><li><a class="wiki" href="/wiki/AsynchronousServicesFirstDay">Asynchronous services first day notes</a>
+</li></ul><h2 id="AttendingServiceProviders">Attending Service Providers</h2>
+<ul><li>STRING/STITCH, <a class="ext-link" href="http://string.embl.de"><span class="icon"> </span>http://string.embl.de</a> / <a class="ext-link" href="http://stitch.embl.de"><span class="icon"> </span>http://stitch.embl.de</a> (Michael Kuhn)
+<ul><li>scope of database: protein-protein and protein-chemical interaction networks 
+</li><li>existing web-services: rudimentary/broken SOAP interface to retrieve network via PSI-MI
+</li><li>plans for API: query for the network (return PSI-MI 2.5), query for protein by identifier, synonym or sequence, retrieve orthologs/homologs, retrieve synonyms for protein, retrieve abstracts mentioning a protein
+</li><li>open questions: 
+<ul><li>Which ontologies should be used for the input (i.e., how to represent a protein or chemical so that other web services can deal with it)?
+</li></ul></li></ul></li></ul><ul><li>Ontology Lookup Service <a class="ext-link" href="http://www.ebi.ac.uk/ols"><span class="icon"> </span>http://www.ebi.ac.uk/ols</a> (Richard Cote)
+<ul><li>scope of database: ontology and controlle vocab term queries
+</li><li>existing web-services: AXIS 1.4 SOAP interface to query on term name, identifier, synonyms, relationships to other terms
+</li><li>plans for API: port to JAX-WS 2.x
+</li><li>open questions: since we're planning on porting it, what new functionality would be useful?
+</li></ul></li></ul><ul><li>Protein Identifier Cross Reference (PICR), <a class="ext-link" href="http://www.ebi.ac.uk/Tools/picr"><span class="icon"> </span>http://www.ebi.ac.uk/Tools/picr</a> (Richard Cote)
+<ul><li>scope of database: protein identifier cross reference queries by sequence and identifier across all databases and releases loaded into the <a class="missing wiki">UniProt?</a> Archive (UNIPARC)
+</li><li>existing web-services: JAX-WS SOAP and REST interfaces
+</li><li>plans for API: currently in maintenance mode
+</li><li>open questions: what new functionality would be useful?
+</li></ul></li></ul><ul><li>GlycomeDB, <a class="ext-link" href="http://www.glycome-db.org/"><span class="icon"> </span>http://www.glycome-db.org/</a> (René Ranzinger)
+<ul><li>scope of database: data integration of carbohydrate structures and their taxonomical annotations from all freely available carbohydrate structure databases (currently 8 databases)
+</li><li>existing web-services: REST interfaces
+</li><li>plans for API: enhancement of data retrieval functions (substructure search, composition search, search by mass, search by species)
+</li><li>open questions: 
+<ul><li>what other functionalities would be useful ?
+</li><li>how to make an standardized API to become compatible to other webservices (<a class="missing wiki">BioMoby?</a>) ?
+</li><li>how to close the gap between protein and glycan databases ?
+</li></ul></li></ul></li></ul><ul><li>CIPRES, <a class="ext-link" href="http://www.phylo.org"><span class="icon"> </span>http://www.phylo.org</a> (Rutger Vos)
+<ul><li>scope of service: phylogenetic analysis, principally multiple sequence alignment and tree inference
+</li><li>existing web-services: REST front end for service architecture (<a class="ext-link" href="http://www.phylo.org/rest/rest_api.php"><span class="icon"> </span>API</a>)
+</li><li>plans for API: implement more algorithms, support more data formats
+</li><li>open questions:
+<ul><li>How to integrate with ontology-mediated service architectures?
+</li></ul></li></ul></li></ul><ul><li>PDBj, <a class="ext-link" href="http://www.pdbj.org"><span class="icon"> </span>http://www.pdbj.org</a> (Akira Kinjo, Daron Standley)
+<ul><li>scope of database: Member of World Wide Protein Data Bank (WWPDB); serves as PDB data deposition and retrieval center for Asia and Oceania
+</li><li>existing web-services: Text-based query of PDB content (xPSSS), sequence search engine (Sequence Navigator), pairwise structure alignment (ASH), structure-based search engine (Structure Navigator)
+</li><li>plans for API: Improve for interoperability, at least with other nearby databases such as DDBJ, KEGG, and CBRC.
+</li><li>open questions: Register web services with <a class="missing wiki">BioMoby?</a>?  Should we support REST and SOAP for all services? How to improve usability?
+</li></ul></li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/ServiceProvider_workgroup?version=16&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

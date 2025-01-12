@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      BioPerlRoundTripFirstPass – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/BioPerlRoundTripFirstPass?version=3&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/BioPerlRoundTripFirstPass" title="View latest version" />
+        <link rel="next" href="/wiki/BioPerlRoundTripFirstPass?version=4" title="Version 4" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/BioPerlRoundTripFirstPass?version=2" title="Version 2" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/BioPerlRoundTripFirstPass?version=2" title="Version 2">Previous Version</a></span></li><li><a href="/wiki/BioPerlRoundTripFirstPass" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/BioPerlRoundTripFirstPass?version=4" title="Version 4">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/BioPerlRoundTripFirstPass?action=diff&amp;version=3">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 3 (modified by heikki, <a class="timeline" href="/timeline?from=2008-02-12T17%3A05%3A04%2B0900&amp;precision=second" title="2008-02-12T17:05:04+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="BioPerlRoundTripFirstPass">BioPerl Round Trip , First Pass</h1>
+<p>
+Initial evaluation of sequence format roundtrips: flat file -&gt; BioPerl object -&gt; same flat file format
+</p>
+<p>
+Based on bioperl-live SVN revision 14501.
+</p>
+<p>
+BioPerl does not have parsers for these formats:
+</p>
+<ul><li>ASN.1
+</li><li>genbank XML
+</li><li>INSD XML
+</li></ul><h2 id="fasta">fasta</h2>
+<ul><li>minor: the length of the sequence line can vary (settable within Bio::SeqIO::fasta object)
+</li></ul><h2 id="embl">embl</h2>
+<ul><li>MAJOR: sequence name and accession lost in conversion
+</li><li>MAJOR: OX line for TaxId is lost
+</li><li>minor: the feature key/value pairs (FT) are not returned in order
+</li><li>minor: SQ line does not contain CRC32 value
+</li></ul><h2 id="genbank">genbank</h2>
+<ul><li>MAJOR: SOURCE line adds full stop to the end of the line (following old genbank conversion?)
+</li><li>minor: line BASE not present in recent genbank file, still generated by bioperl
+</li><li>minor: features are not returned in order
+</li></ul><h2 id="swiss-prot">swiss-prot</h2>
+<ul><li>minor: No full stop at the end of the DT lines
+</li><li>MAJOR: GN line returning only value from key/value pairs (e.g.
+<pre class="wiki">GN   Name=DOF3.7; Synonyms=BBFA, DAG1;...   
+-&gt;  
+GN   DOF3.7 OR BBFA OR DAG1 ...
+</pre></li><li>minor: OC line word wrapping differences
+</li><li>minor: extra spaces at the end of the first RT line when there are more than one of them
+</li><li>MAJOR: RX line:DOI key/value pair lost
+</li><li>MAJOR: PE (evidence) line returned between CC and DR lines when it should be between DR and KW lines
+</li><li>minor: extra space after first FT line
+</li><li>minor: FTid sometimes not written on its own line
+</li><li>minor: extra space written to the end of the sequence line
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/BioPerlRoundTripFirstPass?version=3&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

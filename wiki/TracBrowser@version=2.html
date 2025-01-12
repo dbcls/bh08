@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TracBrowser – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/TracBrowser?version=2&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="TracBrowser.html" title="View latest version" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="TracBrowser@version=1.html" title="Version 1" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="TracBrowser@version=1.html" title="Version 1">Previous Version</a></span></li><li><a href="TracBrowser.html" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="TracBrowser@action=diff&amp;version=2.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 2 (modified by trac, <a class="timeline" href="../timeline@from=2009-12-27T07%253A40%253A50+0900&amp;precision=second.html" title="2009-12-27T07:40:50+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="TheTracRepositoryBrowser">The Trac Repository Browser</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="False"><a class="False" href="TracGuide.html">Index</a></li><li class="False"><a class="False" href="TracInstall.html">Installation</a></li><li class="False"><a class="False" href="TracInterfaceCustomization.html">Customization</a></li><li class="False"><a class="False" href="TracPlugins.html">Plugins</a></li><li class="False"><a class="False" href="TracUpgrade.html">Upgrading</a></li><li class="False"><a class="False" href="TracIni.html">Configuration</a></li><li class="False"><a class="False" href="TracAdmin.html">Administration</a></li><li class="False"><a class="False" href="TracBackup.html">Backup</a></li><li class="False"><a class="False" href="TracLogging.html">Logging</a></li><li class="False"><a class="False" href="TracPermissions.html">Permissions</a></li><li class="False"><a class="False" href="TracWiki.html">The Wiki</a></li><li class="False"><a class="False" href="WikiFormatting.html">Wiki Formatting</a></li><li class="False"><a class="False" href="TracTimeline.html">Timeline</a></li><li class="active"><a class="False" href="TracBrowser.html">Repository Browser</a></li><li class="False"><a class="False" href="TracRevisionLog.html">Revision Log</a></li><li class="False"><a class="False" href="TracChangeset.html">Changesets</a></li><li class="False"><a class="False" href="TracTickets.html">Tickets</a></li><li class="False"><a class="False" href="TracWorkflow.html">Workflow</a></li><li class="False"><a class="False" href="TracRoadmap.html">Roadmap</a></li><li class="False"><a class="False" href="TracQuery.html">Ticket Queries</a></li><li class="False"><a class="False" href="TracReports.html">Reports</a></li><li class="False"><a class="False" href="TracRss.html">RSS Support</a></li><li class="False"><a class="False" href="TracNotification.html">Notification</a></li></ul></div><p>
+</p>
+<p>
+The Trac repository browser can be used to browse specific revisions of directories 
+and files stored in the repository of the configured version control system.
+</p>
+<p>
+Directory entries are displayed in a list with sortable columns. The list 
+entries can be sorted by <i>name</i>, <i>size</i> or <i>age</i> by clicking on the column
+headers. The sort order can be reversed by clicking on a given column
+header again.
+</p>
+<p>
+The browser can be used to navigate through the directory structure 
+by clicking on the directory names. Clicking on a file name will show
+the contents of the file. Clicking on the revision number of a file or
+directory will take you to the <a class="wiki" href="TracRevisionLog.html">TracRevisionLog</a> for that file.
+Note that there's also a <i>Revision Log</i> navigation link that will do
+the same for the path currently being examined.
+</p>
+<p>
+It's also possible to browse directories or files as they were in history,
+at any given repository revision. The default behavior is to display the
+latest revision but another revision number can easily be selected using
+the <i>View revision</i> input field at the top of the page.
+</p>
+<p>
+<i>(since 0.11)</i>:
+</p>
+<p>
+The color bar next to the Age column gives a visual indication of the age
+of the last change to a file or directory. In the default configuration,
+blue is older and red is newer, but this can be <a class="wiki" href="TracIni.html#browser-section">configured</a>.
+</p>
+<p>
+At the top of the browser page, there's a drop-down menu which you can use 
+to select some interesting places in the repository, for example branches or tags. 
+This is sometimes referred to as the <i>browser quickjump</i> facility.
+The precise meaning and content of this menu depends on your backend.
+For Subversion, this list contains by default the top-level trunk directory and sub-directories of the top-level branches and tags directories (<tt>/trunk</tt>, <tt>/branches/*</tt>, and <tt>/tags/*</tt>).  This can be <a class="wiki" href="TracIni.html#svn-section">configured</a> for more advanced cases.
+</p>
+<p>
+If you're using a Javascript enabled browser, you'll be able to expand and collapse folders in-place by clicking on the arrow head at the right side of a folder. Alternatively, the <a class="ext-link" href="http://trac.edgewall.org/intertrac/TracKeys" title="TracKeys in Trac project trac"><span class="icon"> </span>keyboard</a> can also be used for this: use 'j' and 'k' to go to the next or previous entry, and 'o' (or 'Enter') to toggle between expanded and collapsed state of the selected folder or for visiting the selected file.
+</p>
+<p>
+For the Subversion backend, some additional features are available:
+</p>
+<ul><li>Displays the <tt>svn:needs-lock</tt> property
+</li><li>Support for the <tt>svn:externals</tt> property (which can be <a class="wiki" href="TracIni.html#svn:externals-section">configured</a>)
+</li><li>The <tt>svn:mime-type</tt> property is used to select the syntax highlighter for rendering the file. For example, setting <tt>svn:mime-type</tt> to <tt>text/html</tt> will ensure the file is highlighted as HTML, regardless of the file extension. It also allows selecting the character encoding used in the file content. For example, if the file content is encoded in UTF-8, set <tt>svn:mime-type</tt> to <tt>text/html;charset=utf-8</tt>. The <tt>charset=</tt> specification overrides the default encoding defined in the <tt>default_charset</tt> option of the <tt>[trac]</tt> section of <a class="wiki" href="TracIni.html#trac-section">trac.ini</a>.
+</li></ul><hr />
+<p>
+See also: <a class="wiki" href="TracGuide.html">TracGuide</a>, <a class="wiki" href="TracChangeset.html">TracChangeset</a>, <a class="wiki" href="TracFineGrainedPermissions.html">TracFineGrainedPermissions</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/TracBrowser?version=2&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

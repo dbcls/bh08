@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  
+
+  <channel>
+    <title>Hackathon: {8} Active Tickets, Mine first</title>
+    <link>http://bl22-02.dbcls.jp:31081/report/8</link>
+    <description>Trac Report -
+ * List all active tickets by priority.
+ * Show all tickets owned by the logged in user in a group first.
+</description>
+    <language>en-us</language>
+    <image>
+      <title>Hackathon</title>
+      <url>http://bl22-02.dbcls.jp:31081/chrome/site/BioHackathon.png</url>
+      <link>http://bl22-02.dbcls.jp:31081/report/8</link>
+    </image>
+    <generator>Trac v0.11.6</generator>
+      <item>
+                  <title>#1: Asynchronous models slides</title>
+                  <!-- FIXME: we end up with multiple pubDate -->
+                  <pubDate>Mon, 11 Feb 2008 17:06:57 GMT</pubDate>
+                  <!-- FIXME: we end up with multiple pubDate -->
+                  <pubDate>Mon, 11 Feb 2008 17:06:57 GMT</pubDate>
+                  <description>&lt;p&gt;
+These slides are from a meeting talk at Gent from &lt;a class="ext-link" href="http://mips.gsf.de/projects/plants/PlaNetPortal/index_html"&gt;&lt;span class="icon"&gt; &lt;/span&gt;PlaNet&lt;/a&gt; project at the end of 2004, and they show the a true asynchronous model and a polling one, applied to HTTP context. They were used during the first day for some explanations about asynchronous services.
+&lt;/p&gt;
+</description>
+        <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+        <guid isPermaLink="false">http://bl22-02.dbcls.jp:31081/ticket/1</guid>
+        <category>Report</category>
+      </item>
+  </channel>
+</rss>

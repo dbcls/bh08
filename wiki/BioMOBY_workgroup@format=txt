@@ -1,0 +1,39 @@
+= BioMOBY Workgroup =
+
+== Understanding BioMOBY project ==
+
+Presentation by Mark Wilkinson and others
+
+ * to make every web service providers understand what does the BioMOBY is
+ * current status of the BioMOBY project and how the sites integrated by BioMOBY works
+ * current status of the [http://sswap.info/ semantic MOBY] and its practical usages or goals
+
+Read the following article before the hackathon will be of your help
+
+ * Interoperability With Moby 1.0 – It’s Better Than Sharing Your Toothbrush!
+  * Preprint at Briefings in Bioinformatics http://bib.oxfordjournals.org/cgi/reprint/bbn003v1
+   * Alternative site http://precedings.nature.com/documents/1486/version/1
+   * PDF version http://precedings.nature.com/documents/1486/version/1/files/npre20081486-1.pdf
+
+== Discussion Items ==
+
+ * What is the best solution for integration of the web services?
+  * Why BioMOBY uses the original XML format (BioMOBY triple) instead of SOAP's complexType?
+   * If only XML is exchanged among services, there is no need for SOAP. Should we start BioREST?
+  * Is there no redundancy in the current ontology of the BioMOBY objects and its inheritance?
+  * How to integrate arising new data structures such as pathways, metabolomics, and proteomics?
+  * Is there any performance bottleneck in the current system of the BioMOBY?
+
+ * What kind of efforts have been made to popularize BioMOBY
+  * Why all web services are not compatible with BioMOBY yet?
+  * What is the strength of BioMOBY compared with non-BioMOBY web services?
+  * What kind of improvements can be made from now?
+  * Which languages can be used to create BioMOBY clients (only Perl and Java for now?)
+    * [wiki:MOBYRubyClient]
+    * Is there a need for refinemet of the current ontologies for data types and methods?
+    * Is it possible to implement BioMOBY client library in every Open Bio* projects?
+    * Is it a best way to utilize BioMOBY to integrate NCBI, EBI, KEGG, DDBJ etc. (or is it reasonable to create a proxy server which converts these services compatible with BioMOBY)?
+
+ * What kind of alternative approach have been made?
+  * EMBRACE
+

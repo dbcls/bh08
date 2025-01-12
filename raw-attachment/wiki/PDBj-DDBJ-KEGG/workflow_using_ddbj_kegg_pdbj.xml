@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:scufl xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha" version="0.2" log="0">
+  <s:workflowdescription lsid="urn:lsid:net.sf.taverna:wfDefinition:e1e41621-d605-4abd-990e-217bf1c7dbe8" author="" title="hackathon" />
+  <s:processor name="PDB_strnavi">
+    <s:defaults>
+      <s:default name="base">http://rest.pdbj.org/strnavi?</s:default>
+    </s:defaults>
+    <s:local>org.embl.ebi.escience.scuflworkers.java.WebPageFetcher</s:local>
+  </s:processor>
+  <s:processor name="to_list">
+    <s:defaults>
+      <s:default name="regex">\n</s:default>
+    </s:defaults>
+    <s:local>org.embl.ebi.escience.scuflworkers.java.SplitByRegex</s:local>
+  </s:processor>
+  <s:processor name="Concatenate2">
+    <s:defaults>
+      <s:default name="string2">'</s:default>
+    </s:defaults>
+    <s:local>org.embl.ebi.escience.scuflworkers.java.StringConcat</s:local>
+  </s:processor>
+  <s:processor name="Concatenate">
+    <s:defaults>
+      <s:default name="string1">/ENTRY/DAD/primary-accession = '</s:default>
+    </s:defaults>
+    <s:local>org.embl.ebi.escience.scuflworkers.java.StringConcat</s:local>
+  </s:processor>
+  <s:processor name="Concatenate4">
+    <s:defaults>
+      <s:default name="string2">'</s:default>
+    </s:defaults>
+    <s:local>org.embl.ebi.escience.scuflworkers.java.StringConcat</s:local>
+  </s:processor>
+  <s:processor name="Concatenate3">
+    <s:defaults>
+      <s:default name="string1">/ENTRY/PDB/header/idcode = '</s:default>
+    </s:defaults>
+    <s:local>org.embl.ebi.escience.scuflworkers.java.StringConcat</s:local>
+  </s:processor>
+  <s:processor name="Concatenate5">
+    <s:defaults>
+      <s:default name="string1">pdb:</s:default>
+    </s:defaults>
+    <s:local>org.embl.ebi.escience.scuflworkers.java.StringConcat</s:local>
+  </s:processor>
+  <s:processor name="returnXML">
+    <s:local>
+      org.embl.ebi.escience.scuflworkers.java.XMLOutputSplitter
+      <s:extensions>
+        <s:arraytype optional="false" unbounded="false" wrapped="true" typename="ArrayOfLinkDBRelation" name="return" qname="{SOAP/KEGG}ArrayOfLinkDBRelation">
+          <s:elementtype>
+            <s:complextype optional="false" unbounded="false" typename="LinkDBRelation" name="" qname="{SOAP/KEGG}LinkDBRelation">
+              <s:elements>
+                <s:basetype optional="false" unbounded="false" typename="string" name="entry_id1" qname="{http://www.w3.org/2001/XMLSchema}string" />
+                <s:basetype optional="false" unbounded="false" typename="string" name="entry_id2" qname="{http://www.w3.org/2001/XMLSchema}string" />
+                <s:basetype optional="false" unbounded="false" typename="string" name="type" qname="{http://www.w3.org/2001/XMLSchema}string" />
+                <s:basetype optional="false" unbounded="false" typename="string" name="path" qname="{http://www.w3.org/2001/XMLSchema}string" />
+              </s:elements>
+            </s:complextype>
+          </s:elementtype>
+        </s:arraytype>
+      </s:extensions>
+    </s:local>
+  </s:processor>
+  <s:processor name="returnXML1">
+    <s:local>
+      org.embl.ebi.escience.scuflworkers.java.XMLOutputSplitter
+      <s:extensions>
+        <s:complextype optional="false" unbounded="false" typename="LinkDBRelation" name="" qname="{SOAP/KEGG}LinkDBRelation">
+          <s:elements>
+            <s:basetype optional="false" unbounded="false" typename="string" name="entry_id1" qname="{http://www.w3.org/2001/XMLSchema}string" />
+            <s:basetype optional="false" unbounded="false" typename="string" name="entry_id2" qname="{http://www.w3.org/2001/XMLSchema}string" />
+            <s:basetype optional="false" unbounded="false" typename="string" name="type" qname="{http://www.w3.org/2001/XMLSchema}string" />
+            <s:basetype optional="false" unbounded="false" typename="string" name="path" qname="{http://www.w3.org/2001/XMLSchema}string" />
+          </s:elements>
+        </s:complextype>
+      </s:extensions>
+    </s:local>
+  </s:processor>
+  <s:processor name="ARSA_parser2">
+    <s:beanshell>
+      <s:scriptvalue>String definition = "hypothetical protein";
+BufferedReader br = new BufferedReader(new StringReader(output));
+br.readLine();
+br.readLine();
+String l = br.readLine(); 
+if(l.indexOf("hypothetical") == -1 &amp;&amp; l.indexOf("unidentified") == -1) {
+	definition = l;
+	break;
+}</s:scriptvalue>
+      <s:beanshellinputlist>
+        <s:beanshellinput s:syntactictype="'text/plain'">output</s:beanshellinput>
+      </s:beanshellinputlist>
+      <s:beanshelloutputlist>
+        <s:beanshelloutput s:syntactictype="'text/plain'">definition</s:beanshelloutput>
+      </s:beanshelloutputlist>
+      <s:dependencies s:classloader="iteration" />
+    </s:beanshell>
+  </s:processor>
+  <s:processor name="BLAST_PDB_parser">
+    <s:beanshell>
+      <s:scriptvalue>String pdbid = "";
+String chain = "";
+String url = "";
+boolean hasHit = false;
+
+for(Iterator it = blastResult.iterator(); it.hasNext(); ) {
+	String l = (String)it.next();
+	BufferedReader br = new BufferedReader(new StringReader(l));
+	String ll;
+	while((ll = br.readLine()) != null) {
+		String[] lll = ll.split("\t");
+		if(lll[1].indexOf("|") == -1) {
+			continue;
+		}
+		String s = lll[1].substring(0, lll[1].indexOf("|"));
+		pdbid = s.substring(0, 4);
+		chain = s.substring(5);
+		if(!pdbid.equals("")) {
+			hasHit = true;
+			break;
+		}
+	}
+	br.close();
+	if(hasHit) {
+		break;
+	}
+}
+url = "/strnavi?pdbid=" + pdbid + "&amp;chain=" + chain + "&amp;fmt=simple";</s:scriptvalue>
+      <s:beanshellinputlist>
+        <s:beanshellinput s:syntactictype="l('text/plain')">blastResult</s:beanshellinput>
+      </s:beanshellinputlist>
+      <s:beanshelloutputlist>
+        <s:beanshelloutput s:syntactictype="'text/plain'">url</s:beanshelloutput>
+      </s:beanshelloutputlist>
+      <s:dependencies s:classloader="iteration" />
+    </s:beanshell>
+  </s:processor>
+  <s:processor name="ARSA_parser">
+    <s:beanshell>
+      <s:scriptvalue>String definition = "hypothetical protein";
+for(Iterator it = definitionList.iterator(); it.hasNext();) {
+	String s = (String)it.next();
+	BufferedReader br = new BufferedReader(new StringReader(s));
+	br.readLine();
+	br.readLine();
+	String l = br.readLine(); 
+	if(l.indexOf("hypothetical") == -1 &amp;&amp; l.indexOf("unidentified") == -1) {
+		definition = l;
+		break;
+	}
+}</s:scriptvalue>
+      <s:beanshellinputlist>
+        <s:beanshellinput s:syntactictype="l('text/plain')">definitionList</s:beanshellinput>
+      </s:beanshellinputlist>
+      <s:beanshelloutputlist>
+        <s:beanshelloutput s:syntactictype="'text/plain'">definition</s:beanshelloutput>
+      </s:beanshelloutputlist>
+      <s:dependencies s:classloader="iteration" />
+    </s:beanshell>
+  </s:processor>
+  <s:processor name="BLAST_DAD_parser">
+    <s:beanshell>
+      <s:scriptvalue>List accession = new ArrayList();
+BufferedReader br = new BufferedReader(new StringReader(blastResult));
+String l;
+while((l = br.readLine()) != null) {
+	String[] ll = l.split("\t");
+	String ddbj = ll[1].substring(0, ll[1].indexOf("|"));
+	accession.add(ddbj);
+}</s:scriptvalue>
+      <s:beanshellinputlist>
+        <s:beanshellinput s:syntactictype="'text/plain'">blastResult</s:beanshellinput>
+      </s:beanshellinputlist>
+      <s:beanshelloutputlist>
+        <s:beanshelloutput s:syntactictype="l('text/plain')">accession</s:beanshelloutput>
+      </s:beanshelloutputlist>
+      <s:dependencies s:classloader="iteration" />
+    </s:beanshell>
+  </s:processor>
+  <s:processor name="Get_pdbid">
+    <s:beanshell>
+      <s:scriptvalue>String pdbid = "";
+for(Iterator it = pdbidlist.iterator(); it.hasNext();) {
+	String l = (String)it.next();
+	pdbid = l.substring(0, 4);
+	break;
+}</s:scriptvalue>
+      <s:beanshellinputlist>
+        <s:beanshellinput s:syntactictype="l('text/plain')">pdbidlist</s:beanshellinput>
+      </s:beanshellinputlist>
+      <s:beanshelloutputlist>
+        <s:beanshelloutput s:syntactictype="'text/plain'">pdbid</s:beanshelloutput>
+      </s:beanshelloutputlist>
+      <s:dependencies s:classloader="iteration" />
+    </s:beanshell>
+  </s:processor>
+  <s:processor name="BLAST_against_PDB">
+    <s:description>Execute Blast with parameter</s:description>
+    <s:defaults>
+      <s:default name="program">blastp</s:default>
+      <s:default name="database">PDB</s:default>
+      <s:default name="param">-e 1 -m 8</s:default>
+    </s:defaults>
+    <s:arbitrarywsdl>
+      <s:wsdl>http://xml.nig.ac.jp/wsdl/Blast.wsdl</s:wsdl>
+      <s:operation>searchParam</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:processor name="BLAST_against_DAD">
+    <s:description>Execute Blast with parameter</s:description>
+    <s:defaults>
+      <s:default name="program">blastp</s:default>
+      <s:default name="database">DAD</s:default>
+      <s:default name="param">-m 8 -e 0.00000000001 -v 10</s:default>
+    </s:defaults>
+    <s:arbitrarywsdl>
+      <s:wsdl>http://xml.nig.ac.jp/wsdl/Blast.wsdl</s:wsdl>
+      <s:operation>searchParam</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:processor name="Get_DAD_FASTA">
+    <s:description>Get DAD entry of FASTA Format by Accession Number</s:description>
+    <s:arbitrarywsdl>
+      <s:wsdl>http://xml.nig.ac.jp/wsdl/GetEntry.wsdl</s:wsdl>
+      <s:operation>getFASTA_DADEntry</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:processor name="btit">
+    <s:arbitrarywsdl>
+      <s:wsdl>http://soap.genome.jp/KEGG.wsdl</s:wsdl>
+      <s:operation>btit</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:processor name="Get_DAD_definition">
+    <s:defaults>
+      <s:default name="returnPath">/ENTRY/DAD/definition</s:default>
+      <s:default name="offset">1</s:default>
+      <s:default name="count">1</s:default>
+    </s:defaults>
+    <s:arbitrarywsdl>
+      <s:wsdl>http://xml.nig.ac.jp/wsdl/ARSA.wsdl</s:wsdl>
+      <s:operation>searchByXMLPath</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:processor name="Get_PDB_definition">
+    <s:defaults>
+      <s:default name="returnPath">/ENTRY/PDB/title</s:default>
+      <s:default name="offset">1</s:default>
+      <s:default name="count">1</s:default>
+    </s:defaults>
+    <s:arbitrarywsdl critical="true">
+      <s:wsdl>http://xml.nig.ac.jp/wsdl/ARSA.wsdl</s:wsdl>
+      <s:operation>searchByXMLPath</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:processor name="get_linkdb_by_entry">
+    <s:defaults>
+      <s:default name="db">genes</s:default>
+      <s:default name="offset">1</s:default>
+      <s:default name="limit">10</s:default>
+    </s:defaults>
+    <s:arbitrarywsdl>
+      <s:wsdl>http://soap.genome.jp/KEGG.wsdl</s:wsdl>
+      <s:operation>get_linkdb_by_entry</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:link source="query" sink="BLAST_against_DAD:query" />
+  <s:link source="BLAST_DAD_parser:accession" sink="Concatenate:string2" />
+  <s:link source="BLAST_DAD_parser:accession" sink="Get_DAD_FASTA:accession" />
+  <s:link source="BLAST_PDB_parser:url" sink="PDB_strnavi:url" />
+  <s:link source="BLAST_against_DAD:Result" sink="BLAST_DAD_parser:blastResult" />
+  <s:link source="BLAST_against_PDB:Result" sink="BLAST_PDB_parser:blastResult" />
+  <s:link source="Concatenate2:output" sink="Get_DAD_definition:queryPath" />
+  <s:link source="Concatenate3:output" sink="Concatenate4:string1" />
+  <s:link source="Concatenate4:output" sink="Get_PDB_definition:queryPath" />
+  <s:link source="Concatenate5:output" sink="get_linkdb_by_entry:entry_id" />
+  <s:link source="Concatenate:output" sink="Concatenate2:string1" />
+  <s:link source="Get_DAD_FASTA:Result" sink="BLAST_against_PDB:query" />
+  <s:link source="Get_DAD_definition:Result" sink="ARSA_parser:definitionList" />
+  <s:link source="Get_PDB_definition:Result" sink="ARSA_parser2:output" />
+  <s:link source="Get_pdbid:pdbid" sink="Concatenate3:string2" />
+  <s:link source="Get_pdbid:pdbid" sink="Concatenate5:string2" />
+  <s:link source="PDB_strnavi:contents" sink="to_list:string" />
+  <s:link source="get_linkdb_by_entry:return" sink="returnXML:input" />
+  <s:link source="returnXML1:entry_id2" sink="btit:string" />
+  <s:link source="returnXML:return" sink="returnXML1:input" />
+  <s:link source="to_list:split" sink="Get_pdbid:pdbidlist" />
+  <s:link source="ARSA_parser2:definition" sink="annotation_from_PDBj" />
+  <s:link source="ARSA_parser:definition" sink="annotation_from_DDBJ" />
+  <s:link source="btit:return" sink="annotation_from_KEGG" />
+  <s:source name="query" />
+  <s:sink name="annotation_from_DDBJ" />
+  <s:sink name="annotation_from_PDBj">
+    <s:metadata>
+      <s:mimeTypes>
+        <s:mimeType>text/html</s:mimeType>
+      </s:mimeTypes>
+    </s:metadata>
+  </s:sink>
+  <s:sink name="annotation_from_KEGG">
+    <s:metadata>
+      <s:mimeTypes>
+        <s:mimeType>text/xml</s:mimeType>
+      </s:mimeTypes>
+    </s:metadata>
+  </s:sink>
+</s:scufl>
+

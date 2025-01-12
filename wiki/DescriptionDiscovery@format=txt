@@ -1,0 +1,77 @@
+= WEB SERVICES =
+
+== What metadata is required to adequately describe a service? ==
+
+ * author contact
+ * authority identification
+ * service version
+ * software title
+    * nature of algorithm (likely = myGrid Task ontology)
+ * software version
+ * bandwidth and/or # requests per minute
+ * example input
+ * example output and/or REGEXP to test output
+ * some description of error-handling capacity
+ * sync/async
+ * nature of underlying data
+   * organism
+   * biological nature of data
+     * DNA/RNA/Protein
+     * SAGE
+     * Microarray
+        * platform, etc.
+ * input parameters and purpose of each
+ * output parameters and purpose of each
+ * usage/license restrictions
+ * authentication (is needed or not?)
+ * usage statistics (as per service provider)
+ * usage statistics (as per third party commentary)
+ * protocol (moby, soap, GET, POST, etc.)
+ * mirrors?
+
+
+== What ontologies exist that could provide this metadata? ==
+
+ * [http://www.mygrid.org.uk/mygrid-moby-service/ myGrid Ontology] - provides many of the annotation information elements we claim to need.  e.g. Model Organism Databases; types/formats of flatfile records
+ * myGrid ontology also provides an ontology for bioinformatics tasks
+ * Moby Object - an ontology of data-types
+ * Moby Service - similar to myGrid's bioinformatics_task branch of the myGrid Ontology
+
+== Do we need additional ontologies?  Who should make them? ==
+
+ * TBD
+
+== What would a service discovery request look like? ==
+
+ * TBD
+
+
+[[BR]]
+[[BR]]
+[[BR]]
+[[BR]]
+
+= RECORD IDENTITY =
+
+== W3C HCLSWG has some recommendations ==
+
+ * these are largely URL-based + various HTTP protocol redirects etc for discovery of metadata
+
+== Life Sciences Identifiers ==
+
+ * LSIDs have formal spec for retrieval of both data and metadata
+   * LSIDs do not support "REST" access
+
+== DOI or other redirect ==
+
+ * ???
+
+== [http://bio2rdf.org Bio2RDF] project & Banff Manifesto ==
+
+ * proposed URI format:  bm:namespace:id 
+   * for example bm:pdb:122345
+ * Freebase database of data providers and their namespaces
+   * Freebase is editable by end-users
+   * could be automated v.v. lookup
+ * Somehow map bm:pdb:122345  to its equivalent URL
+ * can we convince NAR to do this, since it has a list of all databases?

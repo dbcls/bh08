@@ -1,0 +1,14 @@
+''([wiki:AsynchronousServicesThirdDay go to day 3]) ([wiki:AsynchronousServicesFourthDay go to day 4]) ([wiki:AsyncGroup go to async page])''
+
+Proposed solution for WS-I Web Services:
+
+The default solution for asynchronous services in the WS stack is to use [attachment:ticket:1:True-Asynchronous-Model-from-Gent.png callback operations]. In the bioinformatics domain we can not assume that  client would have the possibility to expose an external service interface, this does not seem like a viable solution for now.    
+
+[attachment:ticket:1:Polling-Asynchronous-Model-from-Gent.png A solution based on polling] is more light-weight since it does not assume that a client exposes a service interface. 
+As there are no available generalized standards for such an interface, we are free to define one. One solution is to use the [http://www.omg.org/technology/documents/formal/lsae.htm SoapLab async. interface], which is from LSAE and it is [http://soaplab.sourceforge.net/soaplab1/images/soaplab-api.jpg described in the soaplab documentation]. For WSDL-described services it would be useful if it were defined in a WSDL file, which should be reused as much as possible, and then imported into the WSDL of the service you wish to provide a async interface to ([attachment:wiki:AsynchronousServicesFifth:sayHello.wsdl see example below]). WSDL 2.0 helps a lot in this area, since it extends WSDL WS description capabilities to [http://en.wikipedia.org/wiki/REST REST] world.
+
+  * [http://www.omg.org/technology/documents/formal/lsae.htm LSAE, which describes SoapLab asynchronous services]
+  * [http://www.omg.org/cgi-bin/doc?dtc/2005-04-08 Page pointing to the zip archive with WSDL files from LSAE (used by SoapLab), describing asynchronous protocol]
+  * [http://www.ibm.com/developerworks/webservices/library/ws-rest1/ REST and Web Services in WSDL 2.0]
+
+''([wiki:AsynchronousServicesThirdDay go to day 3]) ([wiki:AsynchronousServicesFourthDay go to day 4]) ([wiki:AsyncGroup go to async page])''

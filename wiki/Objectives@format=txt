@@ -1,0 +1,56 @@
+= Objectives for the Web Service Hackathon =
+
+== Background ==
+
+As the databases in life science are keep growing and daily updated, integration of these databases by mirroring them in one organization is not feasible.
+Instead, it is required to develop the way to utilize variety of databases directly over the distributed environments.
+
+This situation brought on web services to be launched at the major database centers around the world including NCBI and EBI.
+In the same way, DDBJ, KEGG, PDBj, and CBRC have released relevant web services in Japan.
+
+Several projects like BioMOBY and myGrid/Taverna projects have been started to utilize these services in an unified way,
+and it is strongly believed that this kind of integration should be accomplished by the SOAP/WSDL based web service technology in this field.
+
+However, inconsistent specifications of the data structures and the naming conventions among these services prevent the interoperability.
+Besides, the insufficient documentation of each services is one of the bottle necks to popularize these services.
+Additionally, the web service is originally designed to be utilized by every programming languages which have support for SOAP/WSDL,
+but there are several services which can't be used with some languages.
+It is also hard to handle the cases like temporal service down or whatever error occurred while executing a job for end users.
+
+== Efforts in DBCLS ==
+
+Thus, we at DBCLS are planning to construct a proxy-like server, which aim to provide unified and consistent usages of the existing services.
+For this purpose, we would firstly consider:
+
+ * provide sufficient documentation for the usage of each services
+ * ensure every operations to be accessible by the widely used languages like Perl, Ruby, Python and Java
+ * translate data structure exchanged among servers to create seamless workflows
+ * concatenate pipelines over several steps to be done on the server side in typical cases for the effecitivity
+ * handle various errors returned by external services at the server side as much as possible
+
+By conducting our proposal, not just providing user friendly environments to many researchers,
+the server can act as an infrastructure for constructing practical workflows effectively utilizing existing services.
+At the same time, we will also provide new web services for tools and databases to be developed at DBCLS. 
+
+== Objectives of this Hackathon ==
+
+Discussing and implementing towards a standardization of:
+
+ * data structures exchanged among services
+ * naming convention of the methods (operations)
+ * techniques of the job management for the time consuming query
+
+which at present differ within each providers.
+
+Therefore, we are going to held developer's meeting in February of 2008.
+There, key members related to each web service providers around the world
+and core developers from BioMOBY and Open Bio* (!BioPerl, !BioRuby, !BioPython, and !BioJava), 
+would be offered to attend this meeting, staying for about a week in Japan.
+
+Historically, the class design, which represents bioinformatics data types,
+has been defined by each Open Bio* project, independently.
+In this opportunity, to create the standard specification for the biological objects
+through the web service will also benefit interoperability among these libraries.
+Seamless integration of the remote (web services) and local (installed tools) environment is
+an another challenge for those projects.
+

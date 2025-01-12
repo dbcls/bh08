@@ -1,0 +1,26 @@
+= Open Bio* Workgroup =
+
+I would like to get an overview about current support and implementations of web services in every Open Bio* libraries (!BioPerl, !BioPython, !BioRuby and !BioJava) and hope to discuss the following:
+
+ * What can be done with the Open Bio* projects to support interoperability?
+  * Is it worth trying to mapping BioMOBY data objects (BioMOBY triplets) to Bio* library specific data strucuture?
+  * Why not use complexType in SOAP to automate object creation?
+  * Could a webservice be defined to allow Bio* interoperability? This would require a common exchange format. Possibly one of the XML formats used by NCBI or EBI or [http://www.nexml.org nexml]. Could a webservice backed with BioSQL provide and persistent objects in this format?
+
+ * What part should be done on the web service provider's side and what is the part left best to be addressed in Open Bio* libraries?
+  * Format exchange, job management, sequence manipulation ...
+
+ * What fraction of the bioinfomatics field is covered by current Open Bio* library and what subset of those is covered by web services?
+
+|| Category || Perl/BioPerl || Java/BioJava || Ruby/BioRuby || Python/BioPython ||
+|| BioMOBY || o || o || x || x ||
+|| WSRF        || o || o || x || x ||
+|| EBI SOAP || ? || ? || o || ? ||
+|| NCBI SOAP || ? || ? || x || ? ||
+|| KEGG API || ? || ? || o || ? ||
+|| DDBJ XML || ? || ? || o || ? ||
+|| PDBj || ? || ? || x || ? ||
+|| BioSQL || o || ? || o || ? ||
+
+
+

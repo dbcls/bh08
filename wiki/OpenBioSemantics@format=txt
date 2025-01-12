@@ -1,0 +1,111 @@
+= General Semantics and Ontology for !OpenBio* and Web Services =
+
+Back to [ListOfTopics Hackathon List of Topics]
+
+[[PageOutline]]
+
+== Overview ==
+
+Most of the discussions at this hackathon deal with technology issues relating to interoperability. A few of the discussions are discuss [http://www.open-bio.org/wiki/Main_Page OpenBio*] "platform specific implementations" - language APIs (!BioRuby, !BioJava, !BioPerl, etc.), web service protocols (!BioMoby ''et. al.'') and database implementations (i.e. !BioSQL).  A general issue relating to harmonization of community semantics or, at least, establishing a community process for semantics management, is recognized. This !OpenSpace discussion is targeting this issue for further progress.
+
+The broader scope of this discussion is titled '''!OpenBioSemantics''' rather than simply '''Ontology'''.
+
+''' Convenor/faciltator: ''' Richard Bruskiewich
+
+''' Discussion Contributors: '''
+
+ * Paul Gordon
+ * Richard Holland
+ * Will York
+ * Martin Senger
+ * Mark Wilkinson
+ * Hilmar Lapp
+ * Chad Matsalla (from afar)
+ * ''please add your name if you were there! I apologize if I missed recording you....''
+
+== Related Workshop Topics ==
+
+  * [wiki:Glycoinformatics]  - Will York
+  * [wiki:"Interaction networks"] - Bruno Aranda
+  * [wiki:PhyloWS_workgroup Phyloinformatics] - Hilmar Lapp
+
+== Quick Links to Workshop Outputs ==
+
+=== !OpenBio* (& related) Domain Models for Comparison ===
+ 
+ * [BioJavaDomainModel (Simplified) Model of BioJava semantics] (new: constructed at workshop)
+ * [BioPerlDomainModel (Simplified) Model of BioPerl semantics] (not a new work - recovered from Chad Matsalla ('''chad ''at'' dieselwurks.com'''))
+ * [http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biosql-ERD.pdf (Simplified) Model of BioSQL semantics] (not a new piece of work - just identified for inclusion in this page, from the BioSQL team)
+ * [http://pantheon.generationcp.org/demeter/Data.html Related models in Generation Challenge Programme]
+ * [http://www.biouml.org/ BioUML]
+
+=== Other Ontology Work ===
+
+ * [http://www.mygrid.org.uk/mygrid-moby-service/ joint myGrid-Moby service ontology]
+
+== Proceedings ==
+
+== Summary of Day 1 Discussions (11th Feb. Afternoon !AcademyHills) == 
+
+=== Observations: Framing the Problem ===
+
+Cathedral versus the Bazaar: the global community of bioinformatics are struggling with the issue of semantics, and various formalisms are currently being used to capture such semantics, i.e.
+
+ * '''Formal Code Implementations:''' implied semantics expressed as an API and body of computer code (e.g. [http://www.open-bio.org/wiki/Main_Page OpenBio*] initiatives)
+ * '''Data Formats:''' expressed as standard, human readable semi-structured text (e.g. sequence formats: FASTA, Genbank, EMBL)
+ * '''Object models:''' expressed in Unified Modeling Language (UML) (e.g. [http://www.biouml.org/ BioUML], [http://fuge.sourceforge.net/ Functional Genomics Experiment model] and [http://pantheon.generationcp.org/demeter Generation Challenge Programme domain model])
+ * '''Ontology initiatives:'''
+   * '''OBO format driven:''' e.g. [http://www.geneontology.org Gene Ontology (GO)], [http://www.sequenceontology.org/ Sequence Ontology (SO)], etc.
+   * '''OWL format initiatives:''' [http://obi.sourceforge.net/ Ontology for Biomedical Investigations]
+ * '''XML Schema driven languages:''' [http://www.tdwg.org TDWG ABCD schema in !BioCase+Tapir], etc.
+ * '''Common Database Schemata and Queries:''' BioSQL, [http://www.gmod.org Generic Model Organism (GMOD) Chado], [http://www.icis.cgiar.org International Crop Information System], etc.
+ * '''Web Service Protocol Data Types:''' e.g. [http://www.ws-i.org/Profiles/BasicProfile-1_2(WGAD).html EMBRACE WS-I], [http://biomoby.org BioMoby data type object hierarchy]
+
+At this meeting, a general desire is being expressed to achieve some level of interoperability, at least, between [http://www.open-bio.org/wiki/Main_Page OpenBio*] initiatives generally, and more specifically, between [http://www.open-bio.org/wiki/Main_Page OpenBio*] and web services protocols like [http://biomoby.org BioMoby] and [http://www.embracegrid.info/page.php?page=home EMBRACE].
+
+An addition targeted need is simply to harmonize specific ontology pertinent to key interoperability technology. A specific example of such a need (from M. Wilkinson) is the harmonization of [http://www.biomoby.org BioMoby] and [http://www.mygrid.ac.uk myGrid] [http://www.mygrid.org.uk/mygrid-moby-service/ service ontology].
+
+It is generally agreed that semantics is a hard community problem ("herding the cats") but can be made tractable by "divide and conquer" (witness the relative success of GO and other similar ontology development communities).  Efforts should and generally are, driven by a specific set of practical tasks in the community, on an "as needed" basis. The expectation to create a consensual "mother-of-all-biological-data-models" is most likely unrealistic, but can some agreement on the general principles, process and tools of semantic collaboration be achieved?
+
+=== Preliminary Questions ===
+
+ 1. Can a formal community strategy (akin to that in successful ontology consortia) for the specification and evolution of open bio semantics be specified and endorsed?
+ 2. Would the objective of interoperability between !OpenBio*, web services protocols and related initiatives be well served by the specification of a common consensual "platform independent" domain model (or set of domain models)? 
+   * If so, how should this best be specified? Can an intersection set of !OpenBio* semantics be extracted and formalized (i.e. in UML or OWL)?
+   * How might it be used directly as a focal point for harmonization of !OpenBio* API's, web service protocols, etc.
+   * Can the task be partitioned down to size to make it tractable, yet large enough to be useful (achieve "buy-in")? 
+   * Can guidelines for modular (community specific) code/data type modules be stipulated? e.g. glycoinformatics
+  
+== Summary of Day 2 (12th Feb. AIST/CBRC) == 
+
+ * Group facilitator caught up with capturing day 1 proceedings (above) from poster notes.
+ * It was decided to use UML (rather than OWL/RDF) to initially document object models in !OpenBio* projects for further community discussion on shared semantics, given that these models are coming from reverse engineered "object oriented" software (which UML is well suited to describe). Such a model could, in the future, be expressed as an OWL/RDF platform specific implementation, for more general computability (i.e. in Moby 2.0?).
+ * Moving forward this idea that a shared domain model might facilitate interoperability in !OpenBio* projects and web services, Richard Holland and Richard Bruskiewich spent part of the afternoon of day 2 drawing [BioJavaDomainModel UML diagrams reflecting the BioJava object data types], and started tracking down (over email) a !BioPerl UML model that is rumoured to be available.
+
+== Summary of Day 3 == 
+
+ * No specific ontology team discussions convened but theme specific discussions underway (e.g. with Glycoinformatics team).
+
+== Summary of Day 4 == 
+
+ * GCP domain model and !BioMoby data types:
+   * Mark Wilkinson, Martin Senger and Richard Bruskiewich jointly reviewed [http://pantheon.generationcp.org/demeter Generation Challenge Program domain model] and corresponding [http://pantheon.generationcp.org/moby GCP model driven !BioMoby data types]. GCP Moby data types generally passed muster and are generally compliant with the !BioMoby philosophy and usable "as is". A few key technical issues highlighted (again) for future resolution, perhaps as part of the Moby 2.0 release. These are:
+     * ''Martin and Mark, please add''
+   * The need for "shim services" to expand connectivity of GCP services with outside (non-GCP) services and data types was identified.
+ * Harmonization of !BioMoby and myGrid service ontology underway by myGrid community (with the collusion of Mark W.). See [http://www.mygrid.org.uk/mygrid-moby-service/ joint myGrid-Moby service ontology].
+ 
+== Summary of Day 5 == 
+
+ * Included links to [BioPerlDomainModel BioPerl models]
+
+== Conclusions ==
+
+ * Community level domain models appear to be necessary for full interoperability
+ * One model to fit all seems unreasonable
+ * But smaller, specific community efforts (i.e. glycoinformatics, phyloinformatics) seem trackable to create a shared "platform independent" semantic
+ * Recommending such model building as a strategy for specific communities is a way forward. Perhaps OpenBio* can provide a central community mechanism to share information(?) perhaps based on a UML formalism with narratives (e.g. BioUML) with some code mappings onto various languages, in a standard manner.
+ * This open space work group made a first baby step forward in bringing some related information (BioJava models, links for others) for future consideration
+
+
+
+

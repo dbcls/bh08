@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+  
+
+
+
+  <head>
+    <title>
+      Preferences: Date &amp; Time – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/prefs.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last active"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <hr />
+      </div>
+    <div id="content" class="prefs">
+      <h1>Preferences</h1>
+      <p>This page lets you customize your personal settings for this site.
+      These settings are stored on the server and are identified by a session
+      key stored in a browser cookie. That cookie allows your settings to be
+      restored on subsequent visits.</p>
+      <ul id="tabs">
+        <li>
+          <a href="../prefs.html">General</a>
+        </li><li id="tab_advanced">
+          <a href="advanced.html">Advanced</a>
+        </li><li class="active" id="tab_datetime">
+          Date &amp; Time
+        </li><li id="tab_keybindings">
+          <a href="keybindings.html">Keyboard Shortcuts</a>
+        </li>
+      </ul>
+      <div id="tabcontent">
+        <form id="userprefs" action="datetime.html" method="post"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+    <div class="field">
+      <label>Time zone:
+      <select name="tz">
+        <option>Default time zone</option>
+        <option>UTC</option><option>GMT -12:00</option><option>GMT -11:00</option><option>GMT -10:00</option><option>GMT -9:00</option><option>GMT -8:00</option><option>GMT -7:00</option><option>GMT -6:00</option><option>GMT -5:00</option><option>GMT -4:00</option><option>GMT -3:00</option><option>GMT -2:00</option><option>GMT -1:00</option><option>GMT</option><option>GMT +1:00</option><option>GMT +2:00</option><option>GMT +3:00</option><option>GMT +4:00</option><option>GMT +5:00</option><option>GMT +6:00</option><option>GMT +7:00</option><option>GMT +8:00</option><option>GMT +9:00</option><option>GMT +10:00</option><option>GMT +11:00</option><option>GMT +12:00</option><option>GMT +13:00</option>
+      </select></label>
+      <p class="hint">Configuring your time zone will result in all
+      dates and times displayed on this site to use your time zone
+      instead of that of the server.</p>
+      <p class="hint">
+        Example: The current time is <strong>03:10:21Z</strong> (UTC).
+        <br />
+        In the Default time zone , this would be displayed as
+        <strong>12:10:21+0900</strong>.
+      </p>
+      <p class="hint">
+        Note: Universal Co-ordinated Time (UTC) is also known as Greenwich Mean Time (GMT). <br />
+        A positive offset is used to indicate a timezone at the east of Greenwhich, i.e. ahead of Universal Time.
+      </p>
+    </div>
+          <div class="buttons">
+            <input type="hidden" name="action" value="save" />
+            <input type="submit" value="Save changes" />
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

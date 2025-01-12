@@ -1,0 +1,19 @@
+= Matthew Async Interview =
+
+InstantSOAP is a system like SoapLab for exposing command-line applications as services. The applications are potentially long-running. To avoid HTTP time-outs, it provides an asynchronous SOAP API for the services, consisting of an invoke() and poll() method pair. The synchronous invocation resembles:
+
+Input -(method)-> Output
+
+The corresponding asynchronous invocations would resemble:
+
+Input -(method-async)-> (Output | (jobID, delay))
+
+jobID -(method-poll)-> (Output | delay)
+
+The jobID type is an opaque identifier for a job. This uniquely identifies the job, scoped to this service. The delay type is a time delta. It indicates a minimum time that the client SHOULD wait before calling the poll method.
+
+In the case where the method-async invocation triggers the underlying computation to complete very quickly, the server may chose to return the output directly as the result of this call. If not, it will return the ID of the submitted job, and a delay indicating how long the client SHOULD wait before contacting the server about this job. 
+
+Once a client has a jobID, it can call the poll method. If the underlying computation has been completed, then this will return the output. If not, it will return a delay indicating how long the client should wait fro before contacting the server about the job again.
+
+This approach allows a generic client wrapper to be written that performs the polling until a response is retrieved. In Java, this can be parameterised over the type of Input and Output, to provide a single generic synchronous interface for the programmer to asynchronous invocation. Alternatively, the asynchronosity can be exposed directly to the user, by implementing the interfaces specified by jax-ws section 2.3.4.

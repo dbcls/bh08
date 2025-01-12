@@ -1,0 +1,64 @@
+== Aynchronous Communications (Pjotr) ==
+
+AC has many possible implementations and the main danger is to overcomplicate a solution (trying to facilitate all wishes and real user requirements).
+
+=== Typical use case ===
+
+Typically a user creates a webservice (HTTP) and needs a way of executing a job that may take longer than the time a browser times out (think of BLAST). Potentially the job can take a month to run and both the client, server and network may be occasionaly down. Finally the user gets the output from the job - with output on success, error on failure.
+
+The webservice author will want a clean API which allows job submission and passing the feedback mechanism in the simplest way possible.
+
+=== Minimal Specification ===
+
+A only job of the AC is to provide the messaging service between client and job. 
+
+What it should do:
+
+  * Receive info from web-service (jobreceiver)
+  * Start remote job on cluster (jobmonitor)
+  * Pipe input data to job (jobmonitor)
+  * Monitor job status (on failure perhaps restart) 
+  * Get output (jobmonitor)
+  * Push output to client (jobsender)
+
+What it should *not* do:
+
+  * Authentication/authorisation (is responsibility of the webservice)
+  * Filtering of data (modifying the stream) is responsibility of webservice)
+  * Job control (handled by cluster tools)
+
+In its minimalistic fashion it does not even handle status reports (i.e. percentage of job executed).
+
+=== API ===
+
+  * jobreceiver may be able to receive jobs through SOAP, a pipe, or mail
+  * jobmonitor may be able to give updates on percentage executed (SOAP, RPC)
+  * jobsender may be able to return results through SOAP, pipe or mail
+
+=== Amazon Cluster Cloud (EC2) ===
+
+We should take a cue from Amazon's example - as their services for cluster computing and storage prove extremely useful and popular. Any design choices they made are bound to be qualified. E.g. have a look at the EC2 architecture and interfaces. A demonstration of an API is given [http://amazon-ec2.rubyforge.org/ here].
+
+=== Notes ===
+
+  * The jobmonitor has to be stateful as the server or node running the job may go down
+  * The jobmonitor is a little complicated as it has to allow for multiple types of (cluster) management tools
+  * Piping is an incredibly useful mechanism. The complication with webservices is the asynchronous nature (while the web protocol tends to by synchronous) - inspiration could be [http://www.aei.mpg.de/~peekas/modglue/ modglue] (a Plan9-inspired extension of the Unix pipe concept). What I would like to do is:
+
+  acjob -t pipe "dbfetch URI:gb -t fasta|clustalw"|phyloanalyse > tree.ph
+
+where dbfetch and clustalw run on the cluster and phyloanalyse locally - just as an example. Obviously with pipes you expect the client to keep running uninterrupted. The AC version could be (simplistically):
+
+  acjob -t email me@waste.com "dbfetch URI:gb -t fasta|clustalw"
+
+  cat email|phyloanalyse > tree.ph
+
+or:
+
+  acjob -t poll "dbfetch URI:gb -t fasta|clustalw"|acpoll -i 180|phyloanalyse > tree.ph
+
+where acpoll polls the jobmonitor every 3 minutes for results (SOAP is one option). acpoll would also allow a later 'progress monitor' implementation.
+
+The nice thing about these piping mechanisms is that it shows clearly the minimal requirement for an implementation. What one is really doing is putting a job on a cluster - which is a one-off - rather than interacting with some service. Things like distributed services (multiple pipes) get resolved by the tools that are called by acmonitor. I.e. it is not a functionality for the jobmonitor itself.
+
+Pjotr Prins

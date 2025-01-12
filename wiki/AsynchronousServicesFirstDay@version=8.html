@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      AsynchronousServicesFirstDay – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/AsynchronousServicesFirstDay?version=8&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="AsynchronousServicesFirstDay.html" title="View latest version" />
+        <link rel="next" href="AsynchronousServicesFirstDay@version=9.html" title="Version 9" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="AsynchronousServicesFirstDay@version=7.html" title="Version 7" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="AsynchronousServicesFirstDay@version=7.html" title="Version 7">Previous Version</a></span></li><li><a href="AsynchronousServicesFirstDay.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="AsynchronousServicesFirstDay@version=9.html" title="Version 9">Next Version</a> &rarr;</span></li><li class="last"><a href="AsynchronousServicesFirstDay@action=diff&amp;version=8.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 8 (modified by jmfernandez, <a class="timeline" href="../timeline@from=2008-02-13T16%253A37%253A11+0900&amp;precision=second.html" title="2008-02-13T16:37:11+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="Asynchronousservices">Asynchronous services</h1>
+<p>
+<i>(<a class="wiki" href="AsyncGroup.html">go to async page</a>) (<a class="wiki" href="AsynchronousServicesSeccondDay.html">go to day 2</a>)</i>
+</p>
+<h2 id="AsynchronousservicesfirstdayFeb11th">Asynchronous services, first day (Feb 11th)</h2>
+<p>
+(NB jmfernandez: although I remember the faces, I do not remember some names of the participants in the initial discussion. Sorry! In those cases I have used three questions '???' as placeholders).
+</p>
+<p>
+Initial topics, in their original order, were:
+</p>
+<ul><li>Is it worth <a class="ext-link" href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsrf"><span class="icon"> </span>WSRF</a>?
+</li><li>Is it worth for short (aka fast), easy services, to become an asynchronous service?
+</li><li>Is it easy from the service developer's point of view to create/develop the needed infrastructure for an asynchronous web service?
+</li><li>Is it easy from the client developer's point of view to deal with an asynchronous web service?
+</li></ul><p>
+We were taking into account the different web services paradigms used in bioinformatics, and also projects and major service providers we knew with some asynchronous capability. So, the additional topic was introduced by Matthew Pocock:
+</p>
+<ul><li>How are asynchronous services being implemented in our projects just now?
+</li></ul><p>
+We agreed that main web services paradigms used in bioinformatics are <a class="ext-link" href="http://en.wikipedia.org/wiki/REST"><span class="icon"> </span>REST</a>, <a class="ext-link" href="http://en.wikipedia.org/wiki/SOAP"><span class="icon"> </span>SOAP</a>+<a class="ext-link" href="http://en.wikipedia.org/wiki/WSDL"><span class="icon"> </span>WSDL</a>, <a class="ext-link" href="http://soaplab.sourceforge.net/soaplab1/"><span class="icon"> </span>SoapLab 1</a> &amp; <a class="ext-link" href="http://soaplab.sourceforge.net/soaplab2/"><span class="icon"> </span>SoapLab 2</a>, and <a class="ext-link" href="http://www.biomoby.org/"><span class="icon"> </span>BioMOBY</a>. Meanwhile we were discussing we identified some major service providers which have implemented or want to implement asynchronous services: <a class="ext-link" href="http://www.xml.nig.ac.jp/index.html"><span class="icon"> </span>DDBJ WABI</a>, <a class="ext-link" href="http://www.pdbj.org/"><span class="icon"> </span>PDBj</a>, <a class="ext-link" href="http://www.ebi.ac.uk/Tools/webservices/services/emboss"><span class="icon"> </span>EBI-EMBOSS</a> (which uses <a class="missing wiki">SoapLab?</a>), <a class="ext-link" href="http://www.embracegrid.info/page.php?page=home"><span class="icon"> </span>EMBRACE NoE</a> and <a class="ext-link" href="http://bioinf.ncl.ac.uk/instantsoap/"><span class="icon"> </span>InstantSOAP</a>. We were quite sure that NCBI provides such services, but we did not have any attending people who came from NCBI which could confirm it. <a class="ext-link" href="http://www.inab.org/"><span class="icon"> </span>INB</a> has also some <a class="ext-link" href="http://www.biomoby.org/"><span class="icon"> </span>BioMOBY</a> asynchronous services, but they were not mentioned in that moment.
+</p>
+<p>
+Then, we were talking about WSRF implementation in BioMOBY, WSRF support in the different languages used in bioinformatics, and in general asynchronous models. José María Fernández explained that <a class="ext-link" href="http://www.rcs.manchester.ac.uk/research/wsrflite"><span class="icon"> </span>WSRF::Lite</a> (the Perl WSRF library) is being maintained, and its maintainers are quite responsive to suggestions and changes. He also told that he was looking six months ago for a Java library implementing last WSRF specifications, but he only found the old, outdated ones, from <a class="ext-link" href="http://www.globus.org/toolkit/"><span class="icon"> </span>Globus Toolkit</a>. Just ??? pointed out that Apache Foundation has <a class="ext-link" href="http://ws.apache.org/muse/"><span class="icon"> </span>Apache Muse</a> a project about implementing WSRF in Java, which was developed taking into account last WSRF specifications.
+</p>
+<p>
+At last, these topics drove us to the next one (pointed by Matthew):
+</p>
+<ul><li>Which asynchronous model is better, a polling mechanism or a callback model?
+</li></ul><p>
+José María Fernández showed some slides about asynchronous model and HTTP:
+</p>
+<ul><li><a class="attachment" href="../attachment/ticket/1/Asynchronous-Roles-from-Gent.png.html" title="Attachment 'Asynchronous-Roles-from-Gent.png' in Ticket #1">The roles inside asynchronous models applied to HTTP</a><span class="noprint"> <a class="trac-rawlink" href="../raw-attachment/ticket/1/Asynchronous-Roles-from-Gent.png" title="Download"><img src="../chrome/common/download.png" alt="Download"/></a></span>.
+</li><li><a class="attachment" href="../attachment/ticket/1/True-Asynchronous-Model-from-Gent.png.html" title="Attachment 'True-Asynchronous-Model-from-Gent.png' in Ticket #1">The flow of a true asynchronous, callback model</a><span class="noprint"> <a class="trac-rawlink" href="../raw-attachment/ticket/1/True-Asynchronous-Model-from-Gent.png" title="Download"><img src="../chrome/common/download.png" alt="Download"/></a></span>, where the asynchronous client can be actively notified by the service when this last one has finished.
+</li><li>And <a class="attachment" href="../attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png.html" title="Attachment 'Polling-Asynchronous-Model-from-Gent.png' in Ticket #1">a polling mechanism</a><span class="noprint"> <a class="trac-rawlink" href="../raw-attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png" title="Download"><img src="../chrome/common/download.png" alt="Download"/></a></span>, where the asynchronous client sends status update queries to the server, until the result is prepared or the service has failed.
+</li></ul><p>
+<a style="padding:0; border:none" href="../attachment/ticket/1/Asynchronous-Roles-from-Gent.png.html"><img width="25%" alt="Roles in asynchronous models applied to HTTP context" title="Roles in asynchronous models applied to HTTP context" src="../raw-attachment/ticket/1/Asynchronous-Roles-from-Gent.png" /></a> <a style="padding:0; border:none" href="../attachment/ticket/1/True-Asynchronous-Model-from-Gent.png.html"><img width="25%" alt="True asynchronous model" title="True asynchronous model" src="../raw-attachment/ticket/1/True-Asynchronous-Model-from-Gent.png" /></a> <a style="padding:0; border:none" href="../attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png.html"><img width="25%" alt="Polling asynchronous model" title="Polling asynchronous model" src="../raw-attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png" /></a>
+</p>
+<p>
+??? asked if it would be worth the model followed by some AJAX applications using asynchronous services to be able to have an active service notification. Although it was not identified then, this model is <a class="ext-link" href="http://ajaxian.com/archives/comet-a-new-approach-to-ajax-applications"><span class="icon"> </span>Comet</a>. The information has been provided by José Manuel Rodríguez (INB) by e-mail, and he suggested us also to read <i><a class="ext-link" href="http://www.webtide.com/downloads/whitePaperWhyAjax.html"><span class="icon"> </span>Why Comet?</a></i> and <i><a class="ext-link" href="http://www.adaptivepath.com/ideas/essays/archives/000385."><span class="icon"> </span>Ajax, a new approach to web applications</a></i>.
+</p>
+<p>
+<a style="padding:0; border:none" href="http://ajaxian.com/wp-content/images/comet.png"><img src="http://ajaxian.com/wp-content/images/comet.png" alt="http://ajaxian.com/wp-content/images/comet.png" title="http://ajaxian.com/wp-content/images/comet.png" /></a>
+</p>
+<p>
+This model maintains an open socket sending echo messages to avoid HTTP timeouts, but it was discarded because it was not reliable (once the connection is lost, the client should reconnect to the service, sending the job identifier. Then ??? told us about <a class="ext-link" href="http://publib.boulder.ibm.com/infocenter/tivihelp/v2r1/index.jsp?topic=/com.ibm.itame.doc/am60_webseal_admin119.htm"><span class="icon"> </span>a way to send/set job identifier as an HTTP header</a>, so it is an out-of-band parameter (it does not need to be set as an explicit call parameter to the web service). 
+</p>
+<p>
+In this point, ??? complained about problems like service overloading when polling mechanism is in usage: a client hits too fast the asynchronous service. José María Fernández told that the service could/should optionally provide the polling frequency it likes just when the job identifier is returned.
+</p>
+<p>
+We came back to WSRF and BioMOBY. Some of the participants asked about the implementation, its stability in the protocol for future versions, why there is no support for Asynchronous MOBY in Taverna and if there is any service already implemented and working. José María Fernández could explain its experience in this field, because he polished (with the help of José Manuel Rodríguez, INB) the implementation of Asynchronous MOBY previously done by INB. Also, ??? asked about how difficult could be implementing WSRF in Ruby, and ??? complained about BioMOBY services. This last complain was focused on the fact that BioMOBY uses WSRF, which is a <a class="ext-link" href="http://www.ws-i.org/"><span class="icon"> </span>WS-I</a> standard, but it does not follow other standards like WS Management or WS Addressing. Also, some attenders complained about the fact that BioMOBY does not define an XML Schema for their messages and that any MOBY message itself is packaged as an string, many times encoded with Base64. Eddie Kawas incorporated to the discussion, explaining some of these points to the attenders. Matthew Pocock pointed out that it is easier to develop a client program using SOAP when the XML schema of the messages is available, because messages can be validated and also some toolkits can auto-generate glue code to ease the development steps both in client and service sides.
+</p>
+<p>
+We started also talking about throwing away WSRF from our discussion, due it is not so widespread as it was expected a couple of years ago, and replacing it with a custom solution.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/AsynchronousServicesFirstDay?version=8&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

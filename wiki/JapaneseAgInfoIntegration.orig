@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      JapaneseAgInfoIntegration – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/JapaneseAgInfoIntegration?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li><a href="/wiki/JapaneseAgInfoIntegration?action=history">History</a></li><li class="last"><a href="/wiki/JapaneseAgInfoIntegration?action=diff&amp;version=11">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <h1 id="Overview">Overview</h1>
+<p>
+This is just a brief summary of ontology and web service integration discussions in Tsukuba, Japan in the afternoon of Wednesday, 13 February 2008, between R. Bruskiewich (<a class="ext-link" href="http://www.irri.org"><span class="icon"> </span>International Rice Research Institute (IRRI), Philippines</a>), <a class="ext-link" href="http://www.nias.affrc.go.jp/index_e.html"><span class="icon"> </span>National Institute for Agrobiological Sciences (NIAS)</a>, <a class="ext-link" href="http://www.maffin.ad.jp/"><span class="icon"> </span>Ministry of Agriculture, Forestry and Fisheries (MAFF) Information Network (MAFFIN)</a>, the Agriculture, Forestry and Fisheries Research Information Center (AFFRIC) and National Agricultural Research Center (NARC). Note that NIAS is a partner of the <a class="ext-link" href="http://www.generationcp.org"><span class="icon"> </span>Generation Challenge Programme (GCP)</a> which is developing semantic and web service integration standards for crop science (see the <a class="ext-link" href="http://pantheon.generationcp.org"><span class="icon"> </span>GCP Pantheon Platform</a>.
+</p>
+<h2 id="Participants">Participants</h2>
+<ul><li>Hostess for visit: Akane F. Takezaki, Research Coordinator for International Information, AFFRIC (email <strong>akane at affrc dot go dot jp</strong>)
+</li><li>Koichi Ohashi, Director, MAFFIN
+</li><li>Katsuya Okubo, Networking Manager, MAFFIN
+</li><li>Takuji Kiura, Research, Data Mining and GRID Research Team, National Agricultural Research Center
+</li><li>Takashi Itoh, NIAS &amp; Rice Annotation Project (RAP)
+</li><li>Tsuyoshi Tanaka, NIAS &amp; Rice Annotation Project (RAP)
+</li><li>Shoshi Kikuchi, NIAS and Generation Challenge Programme
+</li><li>Masaru Takeya, NIAS (Genetic Resources)
+</li><li>Koji Doi, NIAS and Generation Challenge Programme
+</li><li>Richard Bruskiewich, IRRI
+</li></ul><h2 id="OntologyCollaboration">Ontology Collaboration</h2>
+<ul><li>Japanese contributions to <a class="ext-link" href="http://www.fao.org"><span class="icon"> </span>Food and Agricultural Organiation (FAO)</a> <a class="ext-link" href="http://www.fao.org/aims/ag_intro.htm"><span class="icon"> </span>Agrovoc Agricultural Thesaurus</a> (controlled vocabulary) with Japanese language bindings.
+<ul><li>How to facilitate usage of ontology?
+</li><li>Share <a class="ext-link" href="http://ontology.generationcp.org"><span class="icon"> </span>GCP platform support for ontology</a> + multilingual support with Japanese researchers in this area (could be a collaboration through NIAS)? 
+</li></ul></li></ul><h2 id="WebservicesWrappingofJapaneseAgriculturemostlyRiceDatabases">Web services Wrapping of Japanese Agriculture (mostly Rice) Databases</h2>
+<ul><li>For connection to the <a class="ext-link" href="http://irfgc.irri.org"><span class="icon"> </span>International Rice Functional Genomics Consortium (IRFGC)</a> rice web services network.
+</li><li>Answers will be required to the following technical issues:
+<ul><li>what data (types) will be shared from which databases? 
+</li><li>what some of the research "use cases" will be (i.e. services to be implemented)?
+</li><li>who will specifically be able to contribute technically to the implementation?
+</li><li>what preferred languages (Perl, Java) will be used to create the web service providers? 
+</li><li>what preferred database access technologies might be used (e.g. for Java (JDBC, Hibernate, or ????)?
+</li><li>practical issues relating to web service architecture: will there be dedicated server? proxies, firewalls?
+</li></ul></li></ul><ul><li>Action: Martin Senger to return to Japan for web services “implementation” visit based on web service use cases to be documented over coming month.
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/JapaneseAgInfoIntegration?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Attachment – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.taxa.class.violet" title="Original Format" />
+        <link rel="up" href="/wiki/BioJavaDomainModel" title="BioJavaDomainModel" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/code.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="/wiki/BioJavaDomainModel">Back to BioJavaDomainModel</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="attachment">
+        <h1><a href="/wiki/BioJavaDomainModel">BioJavaDomainModel</a>: org.biojavax.bio.taxa.class.violet</h1>
+        <table id="info" summary="Description">
+          <tbody>
+            <tr>
+              <th scope="col">
+                File org.biojavax.bio.taxa.class.violet, <span title="1440 bytes">1.4 KB</span>
+                (added by r.bruskiewich,  <a class="timeline" href="/timeline?from=2008-02-14T11%3A36%3A39%2B0900&amp;precision=second" title="2008-02-14T11:36:39+0900 in Timeline">17 years</a> ago)
+              </th>
+            </tr>
+            <tr>
+              <td class="message searchable">
+                <p>
+org.biojavax.bio.taxa Violet UML file
+</p>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="preview" class="searchable">
+    <table class="code"><thead><tr><th class="lineno" title="Line numbers">Line</th><th class="content"> </th></tr></thead><tbody><tr><th id="L1"><a href="#L1">1</a></th><td>&lt;?xml version="1.0" encoding="UTF-8"?&gt; </td></tr><tr><th id="L2"><a href="#L2">2</a></th><td>&lt;java version="1.6.0_04" class="java.beans.XMLDecoder"&gt; </td></tr><tr><th id="L3"><a href="#L3">3</a></th><td> &lt;object class="com.horstmann.violet.ClassDiagramGraph"&gt; </td></tr><tr><th id="L4"><a href="#L4">4</a></th><td>  &lt;void method="addNode"&gt; </td></tr><tr><th id="L5"><a href="#L5">5</a></th><td>   &lt;object class="com.horstmann.violet.InterfaceNode"&gt; </td></tr><tr><th id="L6"><a href="#L6">6</a></th><td>    &lt;void property="bounds"&gt; </td></tr><tr><th id="L7"><a href="#L7">7</a></th><td>     &lt;object class="java.awt.geom.Rectangle2D$Double"&gt; </td></tr><tr><th id="L8"><a href="#L8">8</a></th><td>      &lt;void method="setRect"&gt; </td></tr><tr><th id="L9"><a href="#L9">9</a></th><td>       &lt;double&gt;50.0&lt;/double&gt; </td></tr><tr><th id="L10"><a href="#L10">10</a></th><td>       &lt;double&gt;40.0&lt;/double&gt; </td></tr><tr><th id="L11"><a href="#L11">11</a></th><td>       &lt;double&gt;220.0&lt;/double&gt; </td></tr><tr><th id="L12"><a href="#L12">12</a></th><td>       &lt;double&gt;340.0&lt;/double&gt; </td></tr><tr><th id="L13"><a href="#L13">13</a></th><td>      &lt;/void&gt; </td></tr><tr><th id="L14"><a href="#L14">14</a></th><td>     &lt;/object&gt; </td></tr><tr><th id="L15"><a href="#L15">15</a></th><td>    &lt;/void&gt; </td></tr><tr><th id="L16"><a href="#L16">16</a></th><td>    &lt;void property="methods"&gt; </td></tr><tr><th id="L17"><a href="#L17">17</a></th><td>     &lt;void property="text"&gt; </td></tr><tr><th id="L18"><a href="#L18">18</a></th><td>      &lt;string&gt;getNameClasses():Set&amp;lt;String&amp;gt;</td></tr><tr><th id="L19"><a href="#L19">19</a></th><td>getNames(String class):Set&amp;lt;String&amp;gt;</td></tr><tr><th id="L20"><a href="#L20">20</a></th><td>getParentNCBITaxID():int</td></tr><tr><th id="L21"><a href="#L21">21</a></th><td>setParentNCBITaxID(int taxID)</td></tr><tr><th id="L22"><a href="#L22">22</a></th><td>getNCBITaxID():int</td></tr><tr><th id="L23"><a href="#L23">23</a></th><td>setNCBITaxID(int taxID)</td></tr><tr><th id="L24"><a href="#L24">24</a></th><td>getNodeRank():String</td></tr><tr><th id="L25"><a href="#L25">25</a></th><td>setNodeRank(String rank)</td></tr><tr><th id="L26"><a href="#L26">26</a></th><td>getGeneticCode():int</td></tr><tr><th id="L27"><a href="#L27">27</a></th><td>setGeneticCode(int code)</td></tr><tr><th id="L28"><a href="#L28">28</a></th><td>getMitoGeneticCode():int</td></tr><tr><th id="L29"><a href="#L29">29</a></th><td>setMitoGeneticCode(int code)</td></tr><tr><th id="L30"><a href="#L30">30</a></th><td>getLeftValue():int</td></tr><tr><th id="L31"><a href="#L31">31</a></th><td>setLeftValue(int value)</td></tr><tr><th id="L32"><a href="#L32">32</a></th><td>getRightValue():int</td></tr><tr><th id="L33"><a href="#L33">33</a></th><td>setRightValue(int value)</td></tr><tr><th id="L34"><a href="#L34">34</a></th><td>isTaxonHidden():boolean</td></tr><tr><th id="L35"><a href="#L35">35</a></th><td>setTaxonHiddent(boolean hidden)&lt;/string&gt; </td></tr><tr><th id="L36"><a href="#L36">36</a></th><td>     &lt;/void&gt; </td></tr><tr><th id="L37"><a href="#L37">37</a></th><td>    &lt;/void&gt; </td></tr><tr><th id="L38"><a href="#L38">38</a></th><td>    &lt;void property="name"&gt; </td></tr><tr><th id="L39"><a href="#L39">39</a></th><td>     &lt;void property="text"&gt; </td></tr><tr><th id="L40"><a href="#L40">40</a></th><td>      &lt;string&gt;Â«interfaceÂ»</td></tr><tr><th id="L41"><a href="#L41">41</a></th><td>NCBITaxon&lt;/string&gt; </td></tr><tr><th id="L42"><a href="#L42">42</a></th><td>     &lt;/void&gt; </td></tr><tr><th id="L43"><a href="#L43">43</a></th><td>    &lt;/void&gt; </td></tr><tr><th id="L44"><a href="#L44">44</a></th><td>   &lt;/object&gt; </td></tr><tr><th id="L45"><a href="#L45">45</a></th><td>   &lt;object class="java.awt.geom.Point2D$Double"&gt; </td></tr><tr><th id="L46"><a href="#L46">46</a></th><td>    &lt;void method="setLocation"&gt; </td></tr><tr><th id="L47"><a href="#L47">47</a></th><td>     &lt;double&gt;50.0&lt;/double&gt; </td></tr><tr><th id="L48"><a href="#L48">48</a></th><td>     &lt;double&gt;40.0&lt;/double&gt; </td></tr><tr><th id="L49"><a href="#L49">49</a></th><td>    &lt;/void&gt; </td></tr><tr><th id="L50"><a href="#L50">50</a></th><td>   &lt;/object&gt; </td></tr><tr><th id="L51"><a href="#L51">51</a></th><td>  &lt;/void&gt; </td></tr><tr><th id="L52"><a href="#L52">52</a></th><td> &lt;/object&gt; </td></tr><tr><th id="L53"><a href="#L53">53</a></th><td>&lt;/java&gt; </td></tr></tbody></table>
+        </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/raw-attachment/wiki/BioJavaDomainModel/org.biojavax.bio.taxa.class.violet">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

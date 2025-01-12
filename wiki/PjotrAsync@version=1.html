@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      PjotrAsync – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/PjotrAsync?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="PjotrAsync.html" title="View latest version" />
+        <link rel="next" href="PjotrAsync@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="PjotrAsync.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="PjotrAsync@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon.dbcls.jp/wiki/PjotrAsync?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by pjotr2007, <a class="timeline" href="../timeline@from=2008-02-12T14%253A32%253A06+0900&amp;precision=second.html" title="2008-02-12T14:32:06+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="AynchronousCommunications">Aynchronous Communications</h2>
+<p>
+AC has many possible implementations and the main danger is to overcomplicate a solution (trying to facilitate all wishes and real user requirements).
+</p>
+<h3 id="Typicalusecase">Typical use case</h3>
+<p>
+Typically, now, a user creates a webservice (HTTP) and needs a way of executing a job that may take longer than the time a browser times out (think of BLAST). Potentially the job can take a month to run and both the client, server and network may be occasionaly down. Finally the user gets the output from the job - with output on success, error on failure.
+</p>
+<p>
+The webservice author will want a clean API which allows job submission and passing the feedback mechanism.
+</p>
+<h3 id="MinimalSpecification">Minimal Specification</h3>
+<p>
+A only job of the AC is to provide the messaging service between client and job. 
+</p>
+<p>
+What it should do:
+</p>
+<p>
+* Receive info from web-service (jobreceiver)
+* Start remote job on cluster (jobmonitor)
+* Pipe input data to job (jobmonitor)
+* Monitor job status (on failure perhaps restart) 
+* Get output (jobmonitor)
+* Push output to client (jobsender)
+</p>
+<p>
+What it should *not* do:
+</p>
+<p>
+* Authentication/authorisation (is responsibility of the webservice)
+* Filtering of data (modifying the stream) is responsibility of webservice)
+* Job control (handled by cluster tools)
+</p>
+<p>
+In its minimalistic fashio it does not even handle status reports (i.e. percentage of job executed).
+</p>
+<h3 id="API">API</h3>
+<p>
+* jobreceiver may be able to receive jobs through SOAP, a pipe, or mail
+* jobmonitor may be able to give updates on percentage executed (SOAP, RPC)
+* jobsender may be able to return results through SOAP, pipe or mail
+</p>
+<h3 id="Notes">Notes</h3>
+<p>
+* The jobmonitor has to be stateful as the server or node running the job may go down
+* Piping is an incredible useful mechanism. The complication with webservices is the asynchronous nature (while the web protocol tends to by synchronous) - inspiration could be modglue (a Plan9-inspired extension of the Unix pipe concept).
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/PjotrAsync?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

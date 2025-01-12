@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  
+
+  <channel>
+    <title>Hackathon: {6} All Tickets By Milestone  (Including closed)</title>
+    <link>http://bl22-02.dbcls.jp:31081/report/6</link>
+    <description>Trac Report -
+A more complex example to show how to make advanced reports.
+</description>
+    <language>en-us</language>
+    <image>
+      <title>Hackathon</title>
+      <url>http://bl22-02.dbcls.jp:31081/chrome/site/BioHackathon.png</url>
+      <link>http://bl22-02.dbcls.jp:31081/report/6</link>
+    </image>
+    <generator>Trac v0.11.6</generator>
+      <item>
+                  <title>#1: Asynchronous models slides</title>
+                  <!-- FIXME: we end up with multiple pubDate -->
+                  <pubDate>Mon, 11 Feb 2008 17:06:57 GMT</pubDate>
+                  <!-- FIXME: we end up with multiple pubDate -->
+                  <pubDate>Mon, 11 Feb 2008 17:06:57 GMT</pubDate>
+        <link>http://bl22-02.dbcls.jp:31081/ticket/1</link>
+        <guid isPermaLink="false">http://bl22-02.dbcls.jp:31081/ticket/1</guid>
+        <category>Report</category>
+      </item>
+  </channel>
+</rss>

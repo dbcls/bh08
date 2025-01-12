@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      OpenBioSemantics (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/OpenBioSemantics?action=history" title="Page history" />
+        <link rel="next" href="/wiki/OpenBioSemantics?action=diff&amp;version=33" title="Version 33" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/OpenBioSemantics?action=diff&amp;version=31" title="Version 31" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/OpenBioSemantics?action=diff&amp;version=31" title="Version 31">Previous Change</a></span></li><li><a href="/wiki/OpenBioSemantics?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/OpenBioSemantics?action=diff&amp;version=33" title="Version 33">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/OpenBioSemantics?version=31">Version 31</a> and
+        <a href="/wiki/OpenBioSemantics?version=32">Version 32</a> of
+        <a href="/wiki/OpenBioSemantics?version=32">OpenBioSemantics</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/OpenBioSemantics?version=32"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="32" />
+          <input type="hidden" name="old_version" value="31" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2008/02/15 11:56:26 (<a class="timeline" href="/timeline?from=2008-02-15T11%3A56%3A26%2B0900&amp;precision=second" title="2008-02-15T11:56:26+0900 in Timeline">17 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          r.bruskiewich
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/OpenBioSemantics?version=32">OpenBioSemantics</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 31">
+                    <a href="/wiki/OpenBioSemantics?version=31#L1">
+                      v31</a>
+                  </th>
+                  <th title="Version 32">
+                    <a href="/wiki/OpenBioSemantics?version=32#L1">
+                      v32</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1</th><td class="r"><ins>= Semantics and Ontology for OpenBio* and Web Services =</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>2</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>3</th><td class="l"><span>Back to [ListOfTopics Hackathon List of Topics]</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>4</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>=<del>&nbsp;Overview </del>=</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span>=<ins>= Overview =</ins>=</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>6</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>5</th><th>7</th><td class="l"><span>Most of the discussions at this hackathon deal with technology issues relating to interoperability. A few of the discussions are discuss [http://www.open-bio.org/wiki/Main_Page OpenBio*] "platform specific implementations" - language APIs (!BioRuby, !BioJava, !BioPerl, etc.), web service protocols (!BioMoby ''et. al.'') and database implementations (i.e. !BioSQL).&nbsp; A general issue relating to harmonization of community semantics or, at least, establishing a community process for semantics management, is recognized. This !OpenSpace discussion is targeting this issue for further progress.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/OpenBioSemantics?version=31#L20">…</a></th>
+                  <th><a href="/wiki/OpenBioSemantics?version=32#L22">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>22</th><td class="l"><span>&nbsp;* ''please add your name if you were there! I apologize if I missed recording you....''</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>23</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>22</th><th> </th><td class="l"><span>=<del>&nbsp;Quick Links to Workshop Outputs </del>=</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>24</th><td class="r"><span>=<ins>= Quick Links to Workshop Outputs =</ins>=</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>25</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>24</th><th> </th><td class="l"><span>==<del>&nbsp;!OpenBio* Domain Models for Comparison </del>==</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>26</th><td class="r"><span>==<ins>= !OpenBio* Domain Models for Comparison =</ins>==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>27</th><td class="l"><span>&nbsp;</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>28</th><td class="l"><span>&nbsp;* [BioJavaDomainModel (Simplified) Model of BioJava semantics] (new: constructed at workshop)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/OpenBioSemantics?version=31#L28">…</a></th>
+                  <th><a href="/wiki/OpenBioSemantics?version=32#L30">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>30</th><td class="l"><span>&nbsp;* [http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biosql-ERD.pdf (Simplified) Model of BioSQL semantics] (not a new piece of work - just identified for inclusion in this page, from the BioSQL team)</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>31</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>==<del>&nbsp;Other Ontology Work </del>==</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>32</th><td class="r"><span>==<ins>= Other Ontology Work =</ins>==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>33</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>34</th><td class="l"><span>&nbsp;* [http://www.mygrid.org.uk/mygrid-moby-service/ joint myGrid-Moby service ontology]</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>35</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>34</th><th> </th><td class="l"><span>=<del>&nbsp;Proceedings </del>=</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>36</th><td class="r"><span>=<ins>= Proceedings =</ins>=</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>37</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span>=<del>&nbsp;Summary of Day 1 Discussions (11th Feb. Afternoon !AcademyHills) </del>= </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>38</th><td class="r"><span>=<ins>= Summary of Day 1 Discussions (11th Feb. Afternoon !AcademyHills) =</ins>= </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>39</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>38</th><th> </th><td class="l"><span>==<del>&nbsp;Observations: Framing the Problem </del>==</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>40</th><td class="r"><span>==<ins>= Observations: Framing the Problem =</ins>==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>41</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>40</th><th>42</th><td class="l"><span>Cathedral versus the Bazaar: the global community of bioinformatics are struggling with the issue of semantics, and various formalisms are currently being used to capture such semantics, i.e.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/OpenBioSemantics?version=31#L56">…</a></th>
+                  <th><a href="/wiki/OpenBioSemantics?version=32#L58">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>58</th><td class="l"><span>It is generally agreed that semantics is a hard community problem ("herding the cats") but can be made tractable by "divide and conquer" (witness the relative success of GO and other similar ontology development communities).&nbsp; Efforts should and generally are, driven by a specific set of practical tasks in the community, on an "as needed" basis. The expectation to create a consensual "mother-of-all-biological-data-models" is most likely unrealistic, but can some agreement on the general principles, process and tools of semantic collaboration be achieved?</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>59</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>58</th><th> </th><td class="l"><span>==<del>&nbsp;Preliminary Questions </del>==</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>60</th><td class="r"><span>==<ins>= Preliminary Questions =</ins>==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>61</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>60</th><th>62</th><td class="l"><span>&nbsp;1. Can a formal community strategy (akin to that in successful ontology consortia) for the specification and evolution of open bio semantics be specified and endorsed?</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/OpenBioSemantics?version=31#L64">…</a></th>
+                  <th><a href="/wiki/OpenBioSemantics?version=32#L66">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>66</th><td class="l"><span>&nbsp; &nbsp;* Can the task be partitioned down to size to make it tractable, yet large enough to be useful (achieve "buy-in")? Can guidelines for modular (community specific) code/data type modules be stipulated? e.g. glycoinformatics</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>67</th><td class="l"><span>&nbsp; </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>66</th><th> </th><td class="l"><span>=<del>&nbsp;Summary of Day 2 (12th Feb. AIST/CBRC) </del>= </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>68</th><td class="r"><span>=<ins>= Summary of Day 2 (12th Feb. AIST/CBRC) =</ins>= </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>69</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>68</th><th>70</th><td class="l"><span>&nbsp;* Group facilitator caught up with capturing day 1 proceedings (above) from poster notes.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/OpenBioSemantics?version=31#L70">…</a></th>
+                  <th><a href="/wiki/OpenBioSemantics?version=32#L72">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>72</th><td class="l"><span>&nbsp;* Moving forward this idea that a shared domain model might facilitate interoperability in !OpenBio* projects and web services, Richard Holland and Richard Bruskiewich spent part of the afternoon of day 2 drawing [BioJavaDomainModel UML diagrams reflecting the BioJava object data types], and started tracking down (over email) a !BioPerl UML model that is rumoured to be available.</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>73</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>72</th><th> </th><td class="l"><span>=<del>&nbsp;Summary of Day 3 </del>= </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>74</th><td class="r"><span>=<ins>= Summary of Day 3 =</ins>= </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>75</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>74</th><th>76</th><td class="l"><span>&nbsp;* No specific ontology team discussions convened but theme specific discussions underway (e.g. with Glycoinformatics team).</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>77</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>76</th><th> </th><td class="l"><span>=<del>&nbsp;Summary of Day 4 </del>= </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>78</th><td class="r"><span>=<ins>= Summary of Day 4 =</ins>= </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>77</th><th>79</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>78</th><th>80</th><td class="l"><span>&nbsp;* GCP domain model and !BioMoby data types:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/OpenBioSemantics?version=31#L82">…</a></th>
+                  <th><a href="/wiki/OpenBioSemantics?version=32#L84">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>82</th><th>84</th><td class="l"><span>&nbsp;* Harmonization of !BioMoby and myGrid service ontology underway by myGrid community (with the collusion of Mark W.). See [http://www.mygrid.org.uk/mygrid-moby-service/ joint myGrid-Moby service ontology].</span> </td>
+                  </tr><tr>
+                          <th>83</th><th>85</th><td class="l"><span>&nbsp;</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>84</th><th> </th><td class="l"><span>=<del>&nbsp;Summary of Day 5 </del>= </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>86</th><td class="r"><span>=<ins>= Summary of Day 5 =</ins>= </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>85</th><th>87</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>86</th><th>88</th><td class="l"><span>&nbsp;* Link to !BioPerl model</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+This code does '''not''' work! Please help! Is XMLRPC or SOAP4R better for the initial talking to MOBY.
+
+{{{
+require 'rubygems'
+require 'soap/rpc/driver'
+require 'xmlrpc/client'                      
+
+class Foo
+end
+
+module Bio
+  module Moby
+    module Client
+      class Central
+        
+        URI = 'http://biomoby.org/MOBY/Central'
+
+        def initialize
+          mobycentral,ontologyser = getDefaultCentral   
+          p mobycentral
+          p ontologyser
+          @driver = SOAP::RPC::Driver.new(mobycentral,URI)
+          @driver.wiredump_dev = STDOUT
+          @driver2 = XMLRPC::Client.new2(URI) 
+
+          begin
+            p @driver2.call('retrieveServiceNames')
+          rescue RuntimeError => e
+            puts "error #{e.inspect}"
+          end
+
+          @driver.add_method_with_soapaction(
+            "findService",
+            "http://biomoby.org/MOBY/Central#findService",
+            "args"
+          )
+
+        end
+
+        def getDefaultCentral
+           
+          require 'httpclient'
+
+          client = HTTPClient.new
+          mobycentral = client.head('http://biomoby.org/mobycentral').header['location']
+          ontologyser = client.head('http://biomoby.org/ontologyserver').header['location']
+          return mobycentral,ontologyser
+        end
+        
+        def findService(keyword)
+           message = "<findservice>\n"
+           message += "<authoritative></authoritative>"
+           message += "<serviceName>#{keyword}</serviceName>"
+           message += "<expandObjects>0</expandObjects>"
+           message += "<expandServices>0</expandServices>"
+           message += "</findservice>"
+           #@driver.findService(message)
+           p @driver2.call('findService',message)
+        end
+
+      end
+    end
+  end
+end
+                   
+Bio::Moby::Client::Central.new.findService('getGoTerm')
+
+}}}

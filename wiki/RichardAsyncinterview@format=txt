@@ -1,0 +1,13 @@
+= Richard Async usecase =
+
+Richard has applications that take a long time to process their data. They are compute-intensive. This includes building phylogenetic trees, microarray statistical analysis　[http://www.jax.org/staff/churchill/labsite/software/Rmaanova/ R/Maanova]  and analyzing genotype information to build population structure for crop germplasm [http://pritch.bsd.uchicago.edu/software/structure2_1.html Structure] and [http://cbsuapps.tc.cornell.edu/InStruct.aspx !InStruct].
+
+Currently, these applications are run as command-line jobs. It would be ideal if they could be exposed as services, so that they can be used within pipelines, or launched from off-site. Some preliminary efforts underway with SoapLab, but the long run-time of these applications prevents naive synchronous methods for exposing them.
+
+ * server: http:hpc.irri.cgiar.org for web portal, 3rd party command-line apps, R scripts
+ * client: custom visualisation clients, probably in Java
+ * orchestration: taverna, in-house middleware
+ * licensing restrictions: all their sw is open, would strongly prefer os/free license for code dependencies
+
+Should see: [http://pantheon.generationcp.org/ generation challenge program platform]
+ 

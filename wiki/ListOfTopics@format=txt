@@ -1,0 +1,58 @@
+= !BioHackathon 2008 meeting topics =
+
+
+== New version ==
+
+ * [wiki:OpenBioSemantics OpenBio* & Web Service Semantics] - Richard Bruskiewich
+  * domain models & ontology: data types, service types and model API
+ * standardization
+  * [wiki:Glycoinformatics]  - Will York
+  * [wiki:"Interaction networks"], DAS - Bruno Aranda
+  * [wiki:"Text Mining"], Text mining - Kano
+  * [wiki:PhyloWS_workgroup Phyloinformatics] - Hilmar Lapp
+ * [wiki:AsyncGroup  Async services] - José Mª Fernández
+  * WSRF?
+ * [wiki:LargeData Large data] - Tom Oinn
+  * SOAP attachements
+  * [wiki:BioShare]
+ * [wiki:SecurityIssuesFirstDay Security - Oswaldo Trelles]
+ * [wiki:DescriptionDiscovery Description & Discovery] - Mark Wilkinson
+ * [wiki:OpenBio*]
+  * BioSQL - Mark Schreiber
+  * BioProjects comparison - Pjotr Prins
+
+ * Writing (creating) interoperable workflows - Tom Oinn, Stuart Owen
+ * Writing the manifesto
+
+ * [wiki:BioRuby]
+  * [wiki:BiorubyFormats]
+
+ * [wiki:PDBj-DDBJ-KEGG]
+
+ * [wiki:TestingBioMoby Testing BioMoby with Perl] - Kazuharu Arakawa & Hiroyuki Nakamura
+
+ * [JapaneseAgInfoIntegration AdHoc Report on Japanese Agricultural/Rice Information Resource Integration] - Richard Bruskiewich
+
+== Old version : Proposed by the organizers ==
+
+List of tentative meeting topics for the web service providers, the Open Bio* developers, the workflow client developers, and the BioMOBY project:
+
+ * [wiki:ServiceProvider_workgroup]
+ * [wiki:OpenBio_workgroup]
+ * [wiki:Workflow_workgroup]
+ * [wiki:BioMOBY_workgroup]
+
+You can freely add your proposals here.
+
+ * Exchangeformat_workgroup
+  * Bio* clients <-> WSDL or BioMOBY objects <-> BioSQL/OBO
+   * Sequences, Phyloinformatics, Glycoinformatics, Interaction network, DAS annotations, ...
+ * Semanticweb_workgroup
+  * SSWAP, OWL-DL, ...
+ * [wiki:PhyloWS_workgroup]
+  * Web-Services API for querying taxonomic databases and databases of phylogenetic trees
+  * Using SOAP, REST, and/or BioMOBY
+ * Distributed storage - initiative ([wiki:LargeData BIO.SLURP])
+ * Distributed services - initiative (BIO.ORG.ANISM)
+
+

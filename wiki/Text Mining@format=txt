@@ -1,0 +1,46 @@
+
+== Text Mining ==
+'''Objective'''
+Increasing usability of Text Mining(TM) tools using UIMA.
+
+Please refer this article.
+
+''Filling the gaps between tools and users: a tool comparator, using protein-protein interaction as an example.''
+Kano Y at el. 2008.
+
+'''Abstract'''
+Recently, several text mining programs have reached a near-practical level of performance. Some systems are already being used by biologists and database curators. However, it has also been recognized that current Natural Language Processing (NLP) and Text Mining (TM) technology is not easy to deploy, since research groups tend to develop systems that cater specifically to their own requirements. One of the major reasons for the difficulty of deployment of NLP/TM technology is that re-usability and interoperability of software tools are typically not considered during development. While some effort has been invested in making interoperable NLP/TM toolkits, the developers of end-to-end systems still often struggle to reuse NLP/TM tools, and often opt to develop similar programs from scratch instead. This is particularly the case in BioNLP, since the requirements of biologists are so diverse that NLP tools have to be adapted and re-organized in a much more extensive manner than was originally expected. Although generic frameworks like UIMA (Unstructured Information Management Architecture) provide promising ways to solve this problem, the solution that they provide is only partial. In order for truly interoperable toolkits to become a reality, we also need sharable type systems and a developer-friendly environment for software integration that includes functionality for systematic comparisons of available tools, a simple I/O interface, and visualization tools. In this paper, we describe such an environment that was developed based on UIMA, and we show its feasibility through our experience in developing a protein-protein interaction (PPI) extraction system.
+
+(PMID: 18229720)
+
+[http://psb.stanford.edu/psb-online/proceedings/psb08/abstracts/2008_p616.html Full Paper (OA)]
+
+== NLP Web services for Bioinformatics ==
+
+Interoperability Frameworks related to NLP/TM
+ * UIMA (Unstructured Information Management Architecture)
+  * [http://incubator.apache.org/uima/ Apache UIMA] (open source reference implementation)
+  * [http://www.oasis-open.org/committees/uima/ OASIS UIMA committee] (open specification)
+ * [http://gate.ac.uk/ GATE], an NLP platform by Shefield University
+
+Common Issues
+ * How to relate with UIMA 
+ * How to set the granularity of services
+ * Provide each/some of NLP modules as web service
+ * Typical module pipeline at NLP, e.g.:
+{{{
+     [Document] -> [Sentence Detection] -> [Tokenize] -> [POS Tagging] -> 
+[Protein name detection] -> [Protei-protein interaction detection]
+}}}
+ * Provide integrated service 
+
+Examples of Available Integrated Services and/or NLP Modules
+
+ * [http://u-compare.org/ U-Compare initiative]
+   * UIMA compliant, web distributed integrated system
+   * a large collection of interoperable web/local services
+   * a joint project between the University of Tokyo, UK National Centre for Text Mining (NaCTeM), the University of Colorado Health Science Center.
+    
+ * [http://www.nactem.ac.uk/services.php NaCTeM services]
+
+ * Related existing TM WS is [http://www.ihop-net.org/ iHOP], which is in the BioMOBY directory.

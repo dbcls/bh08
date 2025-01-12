@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      ListOfAttendies (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/ListOfAttendies?action=history" title="Page history" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/ListOfAttendies?action=diff&amp;version=17" title="Version 17" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/ListOfAttendies?action=diff&amp;version=17" title="Version 17">Previous Change</a></span></li><li><a href="/wiki/ListOfAttendies?action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/ListOfAttendies?version=17">Version 17</a> and
+        <a href="/wiki/ListOfAttendies?version=18">Version 18</a> of
+        <a href="/wiki/ListOfAttendies?version=18">ListOfAttendies</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/ListOfAttendies?version=18"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="18" />
+          <input type="hidden" name="old_version" value="17" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2007/12/11 03:57:15 (<a class="timeline" href="/timeline?from=2007-12-11T03%3A57%3A15%2B0900&amp;precision=second" title="2007-12-11T03:57:15+0900 in Timeline">17 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          anonymous
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/ListOfAttendies?version=18">ListOfAttendies</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 17">
+                    <a href="/wiki/ListOfAttendies?version=17#L1">
+                      v17</a>
+                  </th>
+                  <th title="Version 18">
+                    <a href="/wiki/ListOfAttendies?version=18#L1">
+                      v18</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="rem">
+                  <tr class="first">
+                          <th>1</th><th> </th><td class="l"><del>= List of Web Service Hackathon attendies =</del> </td>
+                  </tr><tr>
+                          <th>2</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>3</th><th> </th><td class="l"><del>== Confirmed ==</del> </td>
+                  </tr><tr>
+                          <th>4</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>5</th><th> </th><td class="l"><del>&nbsp;* Organizers</del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del>&nbsp; * Toshiaki Katayama ([http://www.hgc.jp/ Univ of Tokyo], Japan; [http://bioruby.org/ BioRuby], [http://www.genome.jp/kegg/soap/ KEGG API], [http://das.hgc.jp/ KEGG DAS])</del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del>&nbsp; * Yasunori Yamamoto ([http://dbcls.jp/en/ DBCLS], Japan; Text mining)</del> </td>
+                  </tr><tr>
+                          <th>8</th><th> </th><td class="l"><del>&nbsp; * Atsuko Yamaguchi (DBCLS, Japan)</del> </td>
+                  </tr><tr>
+                          <th>9</th><th> </th><td class="l"><del>&nbsp; * Tamotsu Noguchi (CBRC, Japan)</del> </td>
+                  </tr><tr>
+                          <th>10</th><th> </th><td class="l"><del>&nbsp; * Kiyoshi Asai ([http://cbrc.jp/ CBRC], Japan)</del> </td>
+                  </tr><tr>
+                          <th>11</th><th> </th><td class="l"><del>&nbsp; * Toshihisa Takagi (DBCLS, Japan)</del> </td>
+                  </tr><tr>
+                          <th>12</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>13</th><th> </th><td class="l"><del>&nbsp;* Web service providers</del> </td>
+                  </tr><tr>
+                          <th>14</th><th> </th><td class="l"><del>&nbsp; * Hideaki Sugawara ([http://www.ddbj.nig.ac.jp/ DDBJ], Japan; [http://www.xml.nig.ac.jp/ DDBJ XML])</del> </td>
+                  </tr><tr>
+                          <th>15</th><th> </th><td class="l"><del>&nbsp; * Yasumasa Shigemoto (DDBJ, Japan; DDBJ XML)</del> </td>
+                  </tr><tr>
+                          <th>16</th><th> </th><td class="l"><del>&nbsp; * Alberto Labarga (Integromics, Spain; ex-EBI)</del> </td>
+                  </tr><tr>
+                          <th>17</th><th> </th><td class="l"><del>&nbsp; * Matthew Pocock (Newcastle, UK; Taverna, !BioJava)</del> </td>
+                  </tr><tr>
+                          <th>18</th><th> </th><td class="l"><del>&nbsp; * Sophia Ananiadou (Manchester, UK; Text mining)</del> </td>
+                  </tr><tr>
+                          <th>19</th><th> </th><td class="l"><del>&nbsp; * Shuichi Kawashima (Univ of Tokyo, Japan; KEGG API)</del> </td>
+                  </tr><tr>
+                          <th>20</th><th> </th><td class="l"><del>&nbsp; * Tatsuya Nishizawa (IMS/DBCLS/CBRC, Japan; PDBj)</del> </td>
+                  </tr><tr>
+                          <th>21</th><th> </th><td class="l"><del>&nbsp; * Hiroyuki Sato (IMS/DBCLS/CBRC, Japan)</del> </td>
+                  </tr><tr>
+                          <th>22</th><th> </th><td class="l"><del>&nbsp; * Oto Maekawa (IMS/DBCLS/CBRC, Japan)</del> </td>
+                  </tr><tr>
+                          <th>23</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>24</th><th> </th><td class="l"><del>&nbsp;* Open Bio* developers</del> </td>
+                  </tr><tr>
+                          <th>25</th><th> </th><td class="l"><del>&nbsp; * !BioRuby</del> </td>
+                  </tr><tr>
+                          <th>26</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Mitsuteru Nakao (Kazusa DNA Res, Japan; !BioRuby)</del> </td>
+                  </tr><tr>
+                          <th>27</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Naohisa Goto (Osaka Univ, Japan; !BioRuby)</del> </td>
+                  </tr><tr>
+                          <th>28</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>29</th><th> </th><td class="l"><del>&nbsp;* Workflow client developers</del> </td>
+                  </tr><tr>
+                          <th>30</th><th> </th><td class="l"><del>&nbsp; * Tom Oinn (EBI, UK; Taverna/myGrid)</del> </td>
+                  </tr><tr>
+                          <th>31</th><th> </th><td class="l"><del>&nbsp; * Kazuharu Arakawa (Keio Univ, Japan; E-Cell, G-language)</del> </td>
+                  </tr><tr>
+                          <th>32</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>33</th><th> </th><td class="l"><del>&nbsp;* BioMOBY project</del> </td>
+                  </tr><tr>
+                          <th>34</th><th> </th><td class="l"><del>&nbsp; * Mark Wilkinson ([http://bioinfo.icapture.ubc.ca/ Univ of British Columbia], Canada; BioMOBY)</del> </td>
+                  </tr><tr>
+                          <th>35</th><th> </th><td class="l"><del>&nbsp; * Martin Senger (!BioPerl, BioMOBY - CGIAR Generation Challenge Project)</del> </td>
+                  </tr><tr>
+                          <th>36</th><th> </th><td class="l"><del>&nbsp; * Edward Kawas (the lead BioMOBY developer in Mark's lab)</del> </td>
+                  </tr><tr>
+                          <th>37</th><th> </th><td class="l"><del>&nbsp; * Paul Gordon (the lead BioMOBY developer in the SUN Centre of Excellence for the Genome Canada Bioinformatics Platform)</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del>&nbsp; * Andreas Groscurth (the lead BioMOBY developer at the Max Planck Institute in Germany for the European Tomato Project)</del> </td>
+                  </tr><tr>
+                          <th>39</th><th> </th><td class="l"><del>&nbsp; * Romina Royo (one of the lead BioMOBY developers for the Genome Espania Bioinformatics Platform)</del> </td>
+                  </tr><tr>
+                          <th>40</th><th> </th><td class="l"><del>&nbsp; * Pieter Neerincx (the lead BioMOBY developer in the Netherlands)</del> </td>
+                  </tr><tr>
+                          <th>41</th><th> </th><td class="l"><del>&nbsp;</del> </td>
+                  </tr><tr>
+                          <th>42</th><th> </th><td class="l"><del>== To be confirmed ==</del> </td>
+                  </tr><tr>
+                          <th>43</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>44</th><th> </th><td class="l"><del>&nbsp;* Web service providers</del> </td>
+                  </tr><tr>
+                          <th>45</th><th> </th><td class="l"><del>&nbsp; * Keiichiro Ohno (UCSD, US; Cytoscape)</del> </td>
+                  </tr><tr>
+                          <th>46</th><th> </th><td class="l"><del>&nbsp; * Masayuki Kawashima (FQS, Japan; KEGG)</del> </td>
+                  </tr><tr>
+                          <th>47</th><th> </th><td class="l"><del>&nbsp; * Osvaldo Trelles (INB, Spain; MOWServ)</del> </td>
+                  </tr><tr>
+                          <th>48</th><th> </th><td class="l"><del>&nbsp; * Richard Cote (EBI, UK; PICR and OLS web services)</del> </td>
+                  </tr><tr>
+                          <th>49</th><th> </th><td class="l"><del>&nbsp; * Teresa Miyar (EBI, UK; EBI web services - Blast, InterproScan, Dbfetch, EB-Eye, IPRservice, ELM/CS, etc.)</del> </td>
+                  </tr><tr>
+                          <th>50</th><th> </th><td class="l"><del>&nbsp; * Arnaud Kerhornou (EBI, UK; ex-INB, IMIM)</del> </td>
+                  </tr><tr>
+                          <th>51</th><th> </th><td class="l"><del>&nbsp; * Jan Christian Bryne (Computational Biology Unit, Bergen; EMBRACE)</del> </td>
+                  </tr><tr>
+                          <th>52</th><th> </th><td class="l"><del>&nbsp; * Robert D. Finn (Sanger Institute; PFAM)</del> </td>
+                  </tr><tr>
+                          <th>53</th><th> </th><td class="l"><del>&nbsp; * Evangelos Pafilis (European Molecular Biology Laboratory; SRS web services)</del> </td>
+                  </tr><tr>
+                          <th>54</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>55</th><th> </th><td class="l"><del>&nbsp;* Open Bio* developers</del> </td>
+                  </tr><tr>
+                          <th>56</th><th> </th><td class="l"><del>&nbsp; * !BioPerl</del> </td>
+                  </tr><tr>
+                          <th>57</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Lincoln Stein (!BioPerl, BioMOBY, BioDAS)</del> </td>
+                  </tr><tr>
+                          <th>58</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Jason Stajich (!BioPerl)</del> </td>
+                  </tr><tr>
+                          <th>59</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Heikki Lehvaslaiho (!BioPerl)</del> </td>
+                  </tr><tr>
+                          <th>60</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Hilmar Lapp (!BioPerl)</del> </td>
+                  </tr><tr>
+                          <th>61</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Aaron J Mackey (!BioPerl)</del> </td>
+                  </tr><tr>
+                          <th>62</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Ewan Birney (!BioPerl, Ensembl)</del> </td>
+                  </tr><tr>
+                          <th>63</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Chiris Dagdigian (O|B|F)</del> </td>
+                  </tr><tr>
+                          <th>64</th><th> </th><td class="l"><del>&nbsp; * !BioPython</del> </td>
+                  </tr><tr>
+                          <th>65</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Jeffrey Chang (!BioPython)</del> </td>
+                  </tr><tr>
+                          <th>66</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Brad Chapman (!BioPython)</del> </td>
+                  </tr><tr>
+                          <th>67</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Andrew Dalke (!BioPython)</del> </td>
+                  </tr><tr>
+                          <th>68</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Michael de Hoon (!BioPython)</del> </td>
+                  </tr><tr>
+                          <th>69</th><th> </th><td class="l"><del>&nbsp; * !BioRuby</del> </td>
+                  </tr><tr>
+                          <th>70</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Jan Aerts (!BioRuby)</del> </td>
+                  </tr><tr>
+                          <th>71</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Christian Zmasek (!BioRuby)</del> </td>
+                  </tr><tr>
+                          <th>72</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Alex Gutteridge (!BioRuby)</del> </td>
+                  </tr><tr>
+                          <th>73</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Pjotr Prins (!BioRuby)</del> </td>
+                  </tr><tr>
+                          <th>74</th><th> </th><td class="l"><del>&nbsp; &nbsp;* Andreas Biegert (Max-Planck-Institute; MPI toolkit)</del> </td>
+                  </tr><tr>
+                          <th>75</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>76</th><th> </th><td class="l"><del>&nbsp;* BioMOBY developers</del> </td>
+                  </tr><tr>
+                          <th>77</th><th> </th><td class="l"><del>&nbsp; * Nagamura-san? (BioMOBY) www.nias.affrc.go.jp</del> </td>
+                  </tr><tr>
+                          <th>78</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>79</th><th> </th><td class="l"><del>{{{</del> </td>
+                  </tr><tr>
+                          <th>80</th><th> </th><td class="l"><del>#!html</del> </td>
+                  </tr><tr>
+                          <th>81</th><th> </th><td class="l"><del>&lt;!--</del> </td>
+                  </tr><tr>
+                          <th>82</th><th> </th><td class="l"><del># * Akira Funahashi (SBML)</del> </td>
+                  </tr><tr>
+                          <th>83</th><th> </th><td class="l"><del># * Win Hide</del> </td>
+                  </tr><tr>
+                          <th>84</th><th> </th><td class="l"><del># * Suzanna Lewis</del> </td>
+                  </tr><tr>
+                          <th>85</th><th> </th><td class="l"><del># * Darin London (O|B|F)</del> </td>
+                  </tr><tr>
+                          <th>86</th><th> </th><td class="l"><del># * Elia Stupka (BioPerl)</del> </td>
+                  </tr><tr>
+                          <th>87</th><th> </th><td class="l"><del># * Protein DAS の人</del> </td>
+                  </tr><tr>
+                          <th>88</th><th> </th><td class="l"><del># * SOAP::Lite の開発者</del> </td>
+                  </tr><tr>
+                          <th>89</th><th> </th><td class="l"><del># * Hiroshi Nakamura さん</del> </td>
+                  </tr><tr>
+                          <th>90</th><th> </th><td class="l"><del>--&gt;</del> </td>
+                  </tr><tr>
+                          <th>91</th><th> </th><td class="l"><del>}}}</del> </td>
+                  </tr><tr>
+                          <th>92</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>93</th><th> </th><td class="l"><del>and more...</del> </td>
+                  </tr><tr class="last">
+                          <th>94</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

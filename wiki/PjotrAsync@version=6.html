@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      PjotrAsync – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/PjotrAsync?version=6&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="PjotrAsync.html" title="View latest version" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="PjotrAsync@version=5.html" title="Version 5" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="PjotrAsync@version=5.html" title="Version 5">Previous Version</a></span></li><li><a href="PjotrAsync.html" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="PjotrAsync@action=diff&amp;version=6.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 6 (modified by pjotr2007, <a class="timeline" href="../timeline@from=2008-02-14T18%253A27%253A50+0900&amp;precision=second.html" title="2008-02-14T18:27:50+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="AynchronousCommunicationsPjotr">Aynchronous Communications (Pjotr)</h2>
+<p>
+AC has many possible implementations and the main danger is to overcomplicate a solution (trying to facilitate all wishes and real user requirements).
+</p>
+<h3 id="Typicalusecase">Typical use case</h3>
+<p>
+Typically a user creates a webservice (HTTP) and needs a way of executing a job that may take longer than the time a browser times out (think of BLAST). Potentially the job can take a month to run and both the client, server and network may be occasionaly down. Finally the user gets the output from the job - with output on success, error on failure.
+</p>
+<p>
+The webservice author will want a clean API which allows job submission and passing the feedback mechanism in the simplest way possible.
+</p>
+<h3 id="MinimalSpecification">Minimal Specification</h3>
+<p>
+A only job of the AC is to provide the messaging service between client and job. 
+</p>
+<p>
+What it should do:
+</p>
+<ul><li>Receive info from web-service (jobreceiver)
+</li><li>Start remote job on cluster (jobmonitor)
+</li><li>Pipe input data to job (jobmonitor)
+</li><li>Monitor job status (on failure perhaps restart) 
+</li><li>Get output (jobmonitor)
+</li><li>Push output to client (jobsender)
+</li></ul><p>
+What it should *not* do:
+</p>
+<ul><li>Authentication/authorisation (is responsibility of the webservice)
+</li><li>Filtering of data (modifying the stream) is responsibility of webservice)
+</li><li>Job control (handled by cluster tools)
+</li></ul><p>
+In its minimalistic fashion it does not even handle status reports (i.e. percentage of job executed).
+</p>
+<h3 id="API">API</h3>
+<ul><li>jobreceiver may be able to receive jobs through SOAP, a pipe, or mail
+</li><li>jobmonitor may be able to give updates on percentage executed (SOAP, RPC)
+</li><li>jobsender may be able to return results through SOAP, pipe or mail
+</li></ul><h3 id="AmazonClusterCloudEC2">Amazon Cluster Cloud (EC2)</h3>
+<p>
+We should take a cue from Amazon's example - as their services for cluster computing and storage prove extremely useful and popular. Any design choices they made are bound to be qualified. E.g. have a look at the EC2 architecture and interfaces. A demonstration of an API is given <a class="ext-link" href="http://amazon-ec2.rubyforge.org/"><span class="icon"> </span>here</a>.
+</p>
+<h3 id="Notes">Notes</h3>
+<ul><li>The jobmonitor has to be stateful as the server or node running the job may go down
+</li><li>The jobmonitor is a little complicated as it has to allow for multiple types of (cluster) management tools
+</li><li>Piping is an incredibly useful mechanism. The complication with webservices is the asynchronous nature (while the web protocol tends to by synchronous) - inspiration could be <a class="ext-link" href="http://www.aei.mpg.de/~peekas/modglue/"><span class="icon"> </span>modglue</a> (a Plan9-inspired extension of the Unix pipe concept). What I would like to do is:
+</li></ul><blockquote>
+<p>
+acjob -t pipe "dbfetch URI:gb -t fasta|clustalw"|phyloanalyse &gt; tree.ph
+</p>
+</blockquote>
+<p>
+where dbfetch and clustalw run on the cluster and phyloanalyse locally - just as an example. Obviously with pipes you expect the client to keep running uninterrupted. The AC version could be (simplistically):
+</p>
+<blockquote>
+<p>
+acjob -t email me@… "dbfetch URI:gb -t fasta|clustalw"
+</p>
+</blockquote>
+<blockquote>
+<p>
+cat email|phyloanalyse &gt; tree.ph
+</p>
+</blockquote>
+<p>
+or:
+</p>
+<blockquote>
+<p>
+acjob -t poll "dbfetch URI:gb -t fasta|clustalw"|acpoll -i 180|phyloanalyse &gt; tree.ph
+</p>
+</blockquote>
+<p>
+where acpoll polls the jobmonitor every 3 minutes for results (SOAP is one option). acpoll would also allow a later 'progress monitor' implementation.
+</p>
+<p>
+The nice thing about these piping mechanisms is that it shows clearly the minimal requirement for an implementation. What one is really doing is putting a job on a cluster - which is a one-off - rather than interacting with some service. Things like distributed services (multiple pipes) get resolved by the tools that are called by acmonitor. I.e. it is not a functionality for the jobmonitor itself.
+</p>
+<p>
+Pjotr Prins
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/PjotrAsync?version=6&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

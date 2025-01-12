@@ -1,0 +1,134 @@
+= The Problem =
+
+One of the goals of BioSQL was to provide an interchange platform for the Bio* objects. This has not yet succeeded due to differences in the way the Bio* projects interpret an individual sequence record and how they persist it to the database.
+
+Common sequence semantics and object/ format handling would probably be of great benefit to many other WS providers and consumers. If Bio* can agree on semantics it would be a good reference for many other projects.
+
+
+= Possible Tasks =
+ * Choose some 'reference' sequences to see how the Bio* projects 'round-trip' them. 
+   * Where are the differences and why are there differences?
+ * Find out where each Bio* project persists it's data into BioSQL during ORM. 
+   * Why are there differences?
+ * Establish guidelines for where things should go in BioSQL, eg given a Genbank file, what bits should go where.
+   * [OpenBioSemantics UML diagrams]?
+ * Define an interchange format for the Bio* projects. Probably XML, probably borrow something already existing (XEMBL etc).
+ * Decide on a restricted vocab for annotations and feature types. Probably use SO.
+ * Define a middleware API for uniform I/O access to sequence database.
+   * Intially backed by BioSQL.
+   * Could be backed by any DB.
+ * Derby version of the BioSQL schema (Derby is the Java reference database).
+ * A BioSQL release.
+
+
+
+= Participants =
+ * Mark Schreiber
+ * Jan Aerts
+ * Richard Holland
+ * Hilmar Lapp
+ * Heikki Lehvaslaiho
+ * Richard Bruskiewich
+ * Jan Byrne
+ * Raoul J.P. Bonnal
+
+
+
+= References =
+
+== Formats -> where goes what? ==
+ * [http://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html GenBank sample ]
+
+There are a few pictures attached to this page that show how a EMBL or GenBank file (others will hopefully follow) are stored in a ruby Bio::Sequence object. All attributes are simple strings or integers, unless mentioned otherwise. The 'classification', for example, is stored in an array; the reference part is stored in an array (called 'references') of Bio::Reference objects.
+
+
+= Random ideas from Jan Aerts =
+Mind that this is *very* incomplete. Just to help my really bad memory.
+As the issue is interoperability of the Bio* toolkits, we don't have to synchronize the toolkits at the object level, but rather at the interface level.
+
+First thing to check: what types of objects do we want to synchronize? Of course sequence objects; but what else? The results of a BLAST parsing?
+
+== For sequences ==
+Check if each toolkit reads and writes a !GenBank/Fasta/... serialization in the same way. Input can either be an original !GenBank/Fasta/... file or a dbfetch from any database.
+
+ * What should be conserved:
+  * Tags
+  * for a sequence: lower/uppercase
+    * Within a project it is desirable to mask an alphabet, for transfer between bio* projects this is not a good idea.
+
+ * What not necessarily should be conserved:
+  * for a sequence over multiple lines: length of each line
+   * Proposal for a common default value, 60bp ?
+
+= Task achieved =
+== Tuesday ==
+ * Initial planning.
+ * Approved a BioSQL logo.
+ * Hilmar initiated BioSQL release discussion
+ * Selected sequence files to roundtrip
+ * !BioRuby has no way of exporting Bio::Sequence objects to !GenBank, EMBL, ...
+ * Began roundtrips
+   * BioPerlRoundTripFirstPass
+   * BioJavaRoundTripFirstPass
+ * Started UML diagram to describe object model with Richard Bruskiewich.
+
+== Wednesday ==
+ * Continue roundtrips
+   * BioPerlRoundTripSecondPass
+   * BioJavaRoundTripSecondPass
+ * !BioRuby: started work on creating export filters to GenBank and EMBL
+ * !BioJava: Fixing issues with UniprotXML format and updating EMBLxml to new xsd.
+ * Adding BioSQL schema documentation to BioSQL wiki page.
+
+== Thursday ==
+ * Continue roundtrips
+   * BioJavaRoundTripThirdPass
+ * Translation of BioSQL to Derby RDBMS.
+ * -- Would like to know why BioSQL can't add multi dbxrefs to one docref.
+ * -- Would like to work out how best to store EMBL AS lines (EMBLxml 'assemblyElement') in BioSQL beyond simply storing as unparsed qualifier values. Hard also because in some records some columns are missing meaning that XML representation is not possible as XML does not allow for missing values (e.g. primary begin/end).
+ * -- Would like to work out how best to represent EMBL CO (EMBLxml 'contig') lines in BioSQL. These are extra hard as they are in place of actual sequence data - sequences that have CO lines have NO SQ lines - meaning that sequence length has to be computed as a function of the CO lines rather than being provided. CO lines look like GenBank locations but have a simpler syntax plus one extra keyword for gaps, which is either numeric or a string 'unk100' indicating unknown gap size.
+ * Generation of EJB entity beans for BioSQL schema.
+   * EJB's must be manually generated for BIOENTRY_PATH (done), BIOENTRY_QUALIFIER_VALUE (done), SEQFEATURE_PATH (done) and TAXON_NAME
+ * Discussion about consistent use of Unique Keys rather than Primary Keys for compound but mutable instances.
+== Friday ==
+ * Manually generate TAXON_NAME entity bean.
+ * Began generation of session facades to entities.
+ * Definition of initial WS operations.
+   * What would we like to do?
+     * Get basic information about a database by name.
+     * Get a Bioentry by accession.
+     * Get a Bioentry(s) by name.
+     * Get Bioentry(s) by keyword.
+ * Discussion on lazy loading and appropriate proxy/ call back implementations for clients (WS versus RPC clients).
+
+== Outcomes ==
+ * Lots of fixes to !BioJava parsers.
+   * Now fully round trip.
+ * Fixes and round trips for !BioPerl parsers.
+ * Identified problems with BioSQL.
+ * Generated Apache Derby Schema for BioSQL.
+ * Initiated BioSQL wiki.
+ * Firm date for release of BioSQL version 1 (before 22nd Feb).
+ * UML for core of !BioJava, parts of !BioPerl and BioSQL.
+ * EJB entity beans for all of BioSQL.
+ * Proof of concept of a Webservice interface to Enterprise (EJB) BioSQL server.
+   * The reference server uses JAX-WS to talk to a webservice on a !GlassFish server. The Webservice is backed by a Toplink ORM between entity beans that map to a BioSQL database (running in Apache Derby RDBMs).
+     * Where can the reference server run? O|B|F?
+     * What about a server validator to validate other implementations of the webservice API?
+   * What would we like to do?
+     * Get basic information about a database by name.
+     * Get a Bioentry by accession.
+     * Get a Bioentry(s) by name.
+     * Use cases would be nice.
+ 
+= Post Hackathon work =
+
+== !BioPerl ==
+
+* Bioperl roundtrip for fasta, Genbank, EMBL and Swiss-Prot formats is ready (25 Feb 2008)
+  * converter file bioperl_convert.pl uploaded
+  * converted files aj224122-bioperl.fa, aj224122-bioperl.gb, aj224122-bioperl.embl, aj224122-bioperl.swiss uploaded
+  * LogOfChanges
+  * OutstandingMinorDifferences
+
+Back to [wiki:ListOfTopics]

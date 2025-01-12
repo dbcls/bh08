@@ -1,0 +1,20 @@
+Evangelos has a workflow.
+
+entry id -(get xrefs [one target DB name])-> list of IDs in the target DB
+ -(describe ID)-> description for the ID
+
+Processing this a single ID at a time was very slow. So, the services where modified to accept lists of IDs and return a result for each of these (a list of lists). This fixed the performance issues, but added others.
+
+  * no indication of progress through the list - either not run or run
+  * now it is a long-running transaction so it potentially times-out if you ask to process too many IDs
+  * the whole set of IDs must be processed before the next step can be started - partial results would support pipelining through this workflow
+
+Language:
+
+  * client: Java + jaxws toolkit
+  * server: Java + jaxws toolkit
+  * platform: mac or unix
+
+Evangelos would prefer an open-source solution, the product is possibly going to be licensed under creative commons.
+
+He would like to expose the individual services to other people. Would like to be able to use other people's services in his workflow. Would be happy to use a workflow engine ratehr than the custom workflow java scripting application he is using now.

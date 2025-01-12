@@ -1,0 +1,96 @@
+= List of Web Service Hackathon attendees =
+
+== Fulltime participants ==
+
+ * Organizers
+  * Toshiaki Katayama ([http://www.hgc.jp/ Univ of Tokyo], Japan; [http://bioruby.org/ BioRuby], [http://www.genome.jp/kegg/soap/ KEGG API], [http://das.hgc.jp/ KEGG DAS])
+  * Shuichi Kawashima (Univ of Tokyo, Japan; KEGG API)
+  * Yasunori Yamamoto ([http://dbcls.jp/en/ DBCLS], Japan; Text mining)
+  * Hong-Woo Chun (DBCLS, Japan)
+  * Atsuko Yamaguchi (DBCLS, Japan)
+  * Tamotsu Noguchi ([http://cbrc.jp/ CBRC], Japan)
+  * Kiyoshi Asai (CBRC, Japan)
+  * Toshihisa Takagi (DBCLS, Japan)
+
+ * Web service providers
+  * DDBJ
+   * Hideaki Sugawara ([http://www.ddbj.nig.ac.jp/ DDBJ], Japan; [http://www.xml.nig.ac.jp/ DDBJ XML])
+   * Yasumasa Shigemoto (DDBJ, Japan; DDBJ XML)
+   * Yoshikazu Kuwana (DDBJ, Japan; DDBJ XML)
+  * KEGG
+   * Shuichi Kawashima (Univ of Tokyo, Japan; KEGG API)
+  * PDBj
+   * Akira Kinjo (Osaka Univ, Japan; [http://www.pdbj.org PDBj]; [http://doc.pdbj.org/help?REST%20API PDBj REST API])
+   * Daron Standley (Osaka Univ, Japan; [http://www.pdbj.org PDBj])
+  * CBRC
+   * Toshiyuki Tashiro (CBRC, Japan)
+   * Tatsuya Nishizawa (IMS/DBCLS/CBRC, Japan; PDBj)
+   * Hiroyuki Sato (IMS/DBCLS/CBRC, Japan)
+   * Oto Maekawa (IMS/DBCLS/CBRC, Japan)
+  * EBI
+   * Richard Cote (EBI, UK; PICR and OLS web services)
+   * Florian Reisinger (EBI, UK; ENVISION/ECORE, Ensembl, !UniProt-DAS, !ArrayExpress, PRIDE , !IntAct, and Reactome)
+   * Arnaud Kerhornou (EBI, UK; ex-INB, IMIM)
+  * Other web service providers and standard exchange format developers
+   * Evangelos Pafilis (European Molecular Biology Laboratory; SRS web services)
+   * Jan Christian Bryne (Computational Biology Unit, Bergen; EMBRACE)
+   * Matthew Pocock (Newcastle, UK; Taverna, !BioJava)
+   * Oswaldo Trelles (INB, Spain; MOWServ)
+   * José M. Fernández (INB, Spain; IWWE&M, BioMOBY, MOWServ)
+   * Keiichiro Ono ([http://www-bioeng.ucsd.edu/ UCSD], US; [http://www.cytoscape.org/ Cytoscape])
+   * Bruno Aranda (EBI, UK; [http://www.ebi.ac.uk/intact IntAct])
+   * Lukasz Salwinski (UCLA, US; [http://dip.doe-mbi.ucla.edu/dip/Main.cgi DIP])
+   * Michael Kuhn (EMBL, Germany; STRING)
+   * Ken Fukuda (CBRC, Japan; BioPAX, INOH)
+   * Akira Funahashi (Keio Univ, Japan; SBML)
+   * Rene Ranzinger (German Cancer Research Center, Germany; Glycoinformatics, EUROCarbDB, GlycomeDB)
+   * Will York (Georgia Univ, US; Glycoinformatics, GLYDE)
+   * Kiyoko Kinoshita (Soka Univ, Japan; Glycoinformatics, RINGS)
+   * Chikashi Nobata (Manchester Univ, UK; Text mining)
+   * Yoshinobu Kano (Tokyo Univ, Japan; Text mining)
+   * Rutger Vos (University of British Columbia, Canada; [http://www.phylo.org CIPRES], [http://www.nexml.org Nexml], [https://www.nescent.org/wg_evoinfo/Main_Page EvoInfo])
+
+ * Open Bio* developers
+  * !BioRuby
+   * Mitsuteru Nakao (Kazusa DNA Res, Japan; !BioRuby)
+   * Naohisa Goto (Osaka Univ, Japan; !BioRuby)
+   * Jan Aerts (Roslin Institute, UK; !BioRuby)
+   * Pjotr Prins (Netherlands; !BioRuby; [http://www.nem.wur.nl/UK/ Wageningen University]; [http://www.rug.nl/staff/r.c.jansen/research RUG Bioinformatics])
+   * Alex Gutteridge (UK; !BioRuby)
+   * Christian Zmasek (Burnham Inst, US; !BioRuby)
+   * Raoul Jean Pierre Bonnal (CNR-ITB, Italy; !BioRuby, BioSQL)
+  * !BioJava
+   * Mark Schreiber (Novartis Institute of Tropical Diseases, Singapore; !BioJava)
+   * Richard Holland (EBI, UK; !BioJava, !BioMart)
+  * !BioPerl
+   * Heikki Lehvaslaiho (Sanbi Univ, South Africa; !BioPerl)
+   * Hilmar Lapp ([http://www.nescent.org NESCent], Duke Univ, US; !BioPerl)
+   * Rutger Vos (University of British Columbia, Canada; !BioPerl/[http://search.cpan.org/~rvosa/Bio-Phylo/ Bio::Phylo])
+
+ * Workflow client developers
+  * Tom Oinn (EBI, UK; Taverna/myGrid)
+  * Stuart Owen (EBI, UK; Taverna)
+  * Kazuharu Arakawa (Keio Univ, Japan; E-Cell, G-language)
+  * Hiroyuki Nakamura (Keio Univ, Japan; eXpanda)
+
+ * BioMOBY project
+  * Mark Wilkinson ([http://bioinfo.icapture.ubc.ca/ Univ of British Columbia], Canada; BioMOBY)
+  * Martin Senger (UK; !BioPerl, BioMOBY - CGIAR Generation Challenge Project)
+  * Edward Kawas (Canada; BioMOBY)
+  * Andreas Groscurth (Max Planck Institute, Germany; BioMOBY, European Tomato Project)
+  * Paul Gordon (SUN Centre of Excellence, Canada; BioMOBY, Genome Canada Bioinformatics Platform)
+  * Masaru Takeya (AFFRC, Japan; BioMOBY)
+  * Lord Hendrix Barboza (IRRI, Philippines; BioMOBY)
+  * Richard Bruskiewich (IRRI, Philippines; BioMOBY)
+
+== Discussion members ==
+
+ * Takeshi Itoh (NIAS, Japan)
+ * Akane Takezaki (AFFRC, Japan)
+ * Yasukazu Nakamura (Kazusa DNA Res, Japan)
+ * Shinobu Okamoto (Kazusa DNA Res, Japan; O|B|J)
+ * Tetsuro Toyoda (Riken, Japan)
+ * Eri Kibukawa (STS, Japan; O|B|J)
+ * Soichi Ogishima (Tokyo Medical and Dental Univ, Japan; O|B|J)
+ * Jun Sese (Ochanomizu Univ, Japan; O|B|J)
+

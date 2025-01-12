@@ -1,0 +1,78 @@
+= Workflow Workgroup =
+
+Here I hope to learn from Taverna, Remora, MOWServ etc. other existing workflow frameworks which utilize various webservices.
+
+== Existing Workflow Engines ==
+Desktop/Rich Client Applications:
+ * [http://taverna.sourceforge.net/ Taverna]
+ * [http://jeti.cs.uni-dortmund.de/biojeti/ Bio-jETI]
+ * [http://www.kepler-project.org/Wiki.jsp?page=KeplerProject Kepler]
+
+Web Applications:
+ * [http://lipm-bioinfo.toulouse.inra.fr/remora/cgi/remora.cgi Remora]
+ * [http://www.inab.org/MOWServ/ MOWServ]
+ * [http://ubio.bioinfo.cnio.es/biotools/IWWEM/workflowmanager.html IWWE&M (INB Web Workflow Enactor and Manager)]
+
+== Discussion Items ==
+ * What is the current bottleneck to create bioinformatics workflows?
+
+  * What kind of workflows have been created?  (see examples below)
+  * What kind of services are missing yet? (see wishlist below)
+  * Reusing existing workflows as virtual services.
+  * The naïve end-user problem
+    * How are you giving a end-user GUI for your workflows?
+  * ID mapping problem
+    * Some usufl services are already there:
+      * [http://www.biomart.org/ BioMart]
+      * [http://www.ebi.ac.uk/Tools/picr/ PICR]
+    * Need standard API!
+    * One-to-many/many-to-one mapping problem
+  * Data format conversion
+  * Job management
+  * Remote and local execution
+  * Grid integration
+    * One possible solution to provide grid access from simple web service API: [http://nbcr.net/software/opal/ NBCR Opal Toolkit]
+
+== Example Workflows and Current Isuues ==
+ * Network/Pathway Analysis (suppose client is [http://www.cytoscape.org/ Cytoscape])
+  1. Load Networks from various kinds of data sources:
+    * local files
+    * web services ([http://www.ebi.ac.uk/intact/site/index.jsf IntAct], etc.)
+    * manually download from web applications ([http://string.embl.de/ STRING], [http://www.thebiogrid.org/ BioGRID], etc.)
+    * NLP(Natual Language Processiong)-based data miner ([http://www.agilent.com/labs/research/litsearch.html Agilent Litelature Search])
+  1. Load annotations:
+    * Local files (XML docs/text file/Excel worksheet)
+    * Web services (BioMart, NCBI Gene, PICR, KEGG)
+    * Gene Ontology
+    * Gene Expression data
+  1. Analyze the networks by plugins
+    * [http://baderlab.org/Software/MCODE MCODE]
+    * jActiveModules
+  1. Visualize the result
+  1. Generate publishable quality images
+
+    * Questions:
+      * How can we (at least partially) automate this by connecting to other workflow engins?
+      * Scripting vs Visual Programming
+
+  * (Please add your typical workflows here...)
+    * Sample workflows in Web API for Bioinformatics (WABI)
+    * http://www.xml.nig.ac.jp/workflow/index.html
+    * http://www.myexperiment.org
+    * http://ubio.bioinfo.cnio.es/biotools/IWWEM/workflowmanager.html
+
+== Workflow Wishlist ==
+ * Obtaining a sequence family and/or profile associated with a PDB entry 
+   * This would involve:
+     1. Get FASTA file for PDB chain (from RCSB-PDB, MSD-EBI, or PDBj)
+     2. Get family and/or profile (from NCBI, UNIPROT or DDBJ)
+
+ * Build phylogenetic tree from set of sequence and structure alignments
+   * This is trickier then the above example, but one approach would be:
+     1. Cluster sequences using clustalw (from NCBI,EBI, DDBJ)
+     2. Collect the PDB IDs for each sequence that has a structure (from RCSB-PDB, MSD-EBI, or PDBj:Sequence Navigator)
+     3. Compute all-on-all structure alignments for those sequences with structures (from MSD-EBI:SSM or PDBj:ASH)
+     4. Now, combine all the sequence scores and structure scores (if available) into a single distance matrix
+     5. Compute tree from distance matrix
+ 
+  

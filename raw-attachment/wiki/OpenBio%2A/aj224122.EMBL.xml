@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EMBL_Services
+    xmlns:ebi="http://www.ebi.ac.uk/embl/schema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/embl/schema/EMBL_Services_V1.1.xsd"
+>
+    <entry accession="AJ224122" version="6" dataClass="STD" taxonomicDivision="PLN" created="1998-02-27" lastUpdated="2006-11-14" releaseCreated="54" releaseLastUpdated="89">
+        <description>Arabidopsis thaliana DAG1 gene</description>
+        <keyword>BBFa gene</keyword>
+        <keyword>transcription factor</keyword>
+        <reference>
+            <citation id="1" type="submission" date="1998-02-24">
+                <author>Vittorioso P.</author>
+                <locator>Vittorioso P., Dip. Genetica e Biologia Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5; , 00185 Rome, ITALY.</locator>
+            <comment>revised by [3]</comment>
+            </citation>
+        </reference>
+        <reference>
+            <citation id="2" type="journal article" name="Plant J." volume="10" issue="2" first="215" last="223" year="1996">
+                <dbreference db="PUBMED" primary="8771779" />
+                <title>A rolB regulatory factor belongs to a new class of single zinc finger
+                plant proteins</title>
+                <author>De Paolis A.</author>
+                <author>Sabatini S.</author>
+                <author>De Pascalis L.</author>
+                <author>Costantino P.</author>
+                <author>Capone I.</author>
+            </citation>
+        </reference>
+        <reference>
+            <citation id="3" type="submission" date="1999-02-25">
+                <author>Vittorioso P.</author>
+                <locator>Vittorioso P., Dip. Genetica e Biologia Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5; , 00185 Rome, ITALY.</locator>
+            <comment>revised by [4]</comment>
+            </citation>
+        </reference>
+        <reference>
+            <citation id="4" type="submission" date="2001-04-12">
+                <author>Vittorioso P.</author>
+                <locator>Vittorioso P., Dip. Genetica e Biologia Molecolare, Universita di Roma La Sapienza, P.le Aldo Moro, 5; , 00185 Rome, ITALY.</locator>
+            </citation>
+            <citationLocation begin="1" end="3827" />
+        </reference>
+        <reference>
+            <citation id="5" type="journal article" name="Genes Dev." volume="14" issue="1" first="28" last="33" year="2000">
+                <dbreference db="PUBMED" primary="10640273" />
+                <title>Identification and disruption of an Arabidopsis zinc finger gene
+                controlling seed germination</title>
+                <author>Papi M.</author>
+                <author>Sabatini S.</author>
+                <author>Bouchez D.</author>
+                <author>Camilleri C.</author>
+                <author>Costantino P.</author>
+                <author>Vittorioso P.</author>
+            </citation>
+        </reference>
+        <feature name="source">
+            <organism>
+                <scientificName>Arabidopsis thaliana</scientificName>
+                <preferredCommonName>thale cress</preferredCommonName>
+                <taxId>3702</taxId>
+                <lineage>
+                    <taxon>Eukaryota</taxon>
+                    <taxon>Viridiplantae</taxon>
+                    <taxon>Streptophyta</taxon>
+                    <taxon>Embryophyta</taxon>
+                    <taxon>Tracheophyta</taxon>
+                    <taxon>Spermatophyta</taxon>
+                    <taxon>Magnoliophyta</taxon>
+                    <taxon>eudicotyledons</taxon>
+                    <taxon>core eudicotyledons</taxon>
+                    <taxon>rosids</taxon>
+                    <taxon>eurosids II</taxon>
+                    <taxon>Brassicales</taxon>
+                    <taxon>Brassicaceae</taxon>
+                    <taxon>Arabidopsis</taxon>
+                </lineage>
+            </organism>
+            <qualifier name="chromosome">
+                <value>3</value>
+            </qualifier>
+            <qualifier name="cultivar">
+                <value>Wassilewskija</value>
+            </qualifier>
+            <qualifier name="mol_type">
+                <value>genomic DNA</value>
+            </qualifier>
+            <location type="single" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">1</basePosition>
+                    <basePosition type="simple">3827</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <feature name="mRNA">
+            <qualifier name="gene">
+                <value>DAG1</value>
+            </qualifier>
+            <qualifier name="product">
+                <value>DNA-binding protein</value>
+            </qualifier>
+            <qualifier name="function">
+                <value>transcription factor</value>
+            </qualifier>
+            <qualifier name="experiment">
+                <value>experimental evidence, no additional details recorded</value>
+            </qualifier>
+            <location type="join" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">1726</basePosition>
+                    <basePosition type="simple">1863</basePosition>
+                </locationElement>
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">2548</basePosition>
+                    <basePosition type="simple">3052</basePosition>
+                </locationElement>
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">3137</basePosition>
+                    <basePosition type="simple">3827</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <feature name="CDS">
+            <dbreference db="GOA" primary="Q43385" />
+            <dbreference db="InterPro" primary="IPR003851" />
+            <dbreference db="UniProtKB/Swiss-Prot" primary="Q43385" />
+            <qualifier name="gene">
+                <value>DAG1</value>
+            </qualifier>
+            <qualifier name="standard_name">
+                <value>BBFa</value>
+            </qualifier>
+            <qualifier name="product">
+                <value>DNA-binding protein</value>
+            </qualifier>
+            <qualifier name="function">
+                <value>transcription factor</value>
+            </qualifier>
+            <qualifier name="experiment">
+                <value>experimental evidence, no additional details recorded</value>
+            </qualifier>
+            <qualifier name="protein_id">
+                <value>CAB40190.1</value>
+            </qualifier>
+            <qualifier name="translation">
+                <value>MDATKWTQGFQEMINVKPMEQMISSTNNNTPQQQPTFIATNTRPNATASNGGSGGNTNNTATMETRKARPQEKVNCPRCNSTNTKFCYYNNYSLTQPRYFCKGCRRYWTEGGSLRNVPVGGSSRKNKRSSTPLASPSNPKLPDLNPPILFSSQIPNKSNKDLNLLSFPVMQDHHHHALELLRSNGVSSRGMNTFLPGQMMDSNSVLYSSLGFPTMPDYKQSNNNLSFSIDHHQGIGHNTINSNQRAQDNNDDMNGASRVLFPFSDMKELSSTTQEKSHGNNTYWNGMFSNTGGSSW</value>
+            </qualifier>
+            <location type="join" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">1840</basePosition>
+                    <basePosition type="simple">1863</basePosition>
+                </locationElement>
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">2548</basePosition>
+                    <basePosition type="simple">3052</basePosition>
+                </locationElement>
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">3137</basePosition>
+                    <basePosition type="simple">3498</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <feature name="exon">
+            <qualifier name="gene">
+                <value>DAG1</value>
+            </qualifier>
+            <qualifier name="number">
+                <value>1</value>
+            </qualifier>
+            <location type="single" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">1726</basePosition>
+                    <basePosition type="simple">1863</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <feature name="intron">
+            <qualifier name="gene">
+                <value>DAG1</value>
+            </qualifier>
+            <qualifier name="number">
+                <value>1</value>
+            </qualifier>
+            <location type="single" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">1864</basePosition>
+                    <basePosition type="simple">2547</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <feature name="exon">
+            <qualifier name="gene">
+                <value>DAG1</value>
+            </qualifier>
+            <qualifier name="number">
+                <value>2</value>
+            </qualifier>
+            <location type="single" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">2548</basePosition>
+                    <basePosition type="simple">3052</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <feature name="intron">
+            <qualifier name="gene">
+                <value>DAG1</value>
+            </qualifier>
+            <qualifier name="number">
+                <value>2</value>
+            </qualifier>
+            <location type="single" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">3053</basePosition>
+                    <basePosition type="simple">3136</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <feature name="exon">
+            <qualifier name="gene">
+                <value>DAG1</value>
+            </qualifier>
+            <qualifier name="number">
+                <value>3</value>
+            </qualifier>
+            <location type="single" complement="false">
+                <locationElement type="range" accession="AJ224122" version="3" complement="false">
+                    <basePosition type="simple">3137</basePosition>
+                    <basePosition type="simple">3495</basePosition>
+                </locationElement>
+            </location>
+        </feature>
+        <sequence type="genomic DNA" length="3827" topology="linear" version="3">aattaaaacgccacgcaaggcgattctaggaaatcaaaacgacacgaaatgtggggtgggtgtttgggtaggaaagacagttgtcaacatcagggatttggattgaatcaaaaaaaaagtccttagatttcataaaagctaatcacgcctcaaaactggggcctatctcttcttttttgtcgcttcctgtcggtccttctctatttcttctccaacccctcatttttgaatatttacataacaaaccgttttactttctttggtcaaaattagacccaaaattctatattagtttaagatatgtggtctgtaatttattgttgtattgatataaaaattagttataagcgattatatttttatgctcaagtaactggtgttagttaactatattccaccacgataacctgattacataaaatatgattttaatcattttagtaaaccatatcgcacgttggatgattaattttaacggtttaataacacgtgattaaattatttttagaatgattatttacaaacggaaaagctatatgtgacacaataactcgtgcagtattgttagtttgaaaagtgtatttggtttcttatatttggcctcgattttcagtttatgtgctttttacaaagttttattttcgttatctgtttaacgcgacatttgttgtatggctttaccgatttgagaataaaatcatattacctttatgtagccatgtgtggtgtaatatataataatggtccttctacgaaaaaagcagatcacaattgaaataaagggtgaaatttggtgtcccttttcttcgtcgaaataacagaactaaataaaagaaagtgttatagtatattacgtccgaagaataatccatattcctgaaatacagtcaacatattatatatttagtactttatataaagttaggaattaaatcatatgttttatcgaccatattaagtcacaactttatcataaattaatctgtaattagaattccaagttcgccaccgaatttcgtaacctaatctacatataatagataaaatatatatatgtagagtaattatgatatctatgtatgtagtcatggtatatgaattttgaaattggcaaggtaacattgacggatcgtaacccaacaaataatattaattacaaaatgggtgggcgggaatagtatacaactcataattccactcactttttgtattattaggatatgaaataagagtaatcaacatgcataataaagatgtataatttcttcatcttaaaaaacataactacatggtttaatacacaattttaccttttatcaaaaaagtatttcacaattcactcgcaaattacgaaatgatggctagtgcttcaactccaaatttcgaatattttaaatcacgatgtgtagaaccttttatttactggatactaatcactagtttattgagccaaccaattagttaaatagaacaatcaatattatagccagatattttttcctttaaaaatatttaaaagaggggccagaaaagaaccagagagggaggccatgagacattattatcactagtcaaaaacaacaaaccctccttttgctttttcatataaattattatattttattttgcaggtttcttctcttcttcttcttcttcttcttcttcttcctcttggctgctttctttcatcatccataaagtgaaagctaacgcatagagagagccatatcgtcccaaaaaaagcaaaagtccaaaaaaaaacaactccaaaacattctctcttagctctttactctttagtttctctctctctctctgcctttctctttgttgaagttcatggatgctacgaagtggactcaggtacgtaaaaagatatctctctgctatatctgtttgtttgtagcttctccccgactctcacgctctctctctctctctctctctctttgtgtatctctctactcacataaatatatacatgtgtgtgtatgcatgtttatatgtatgtatgaaaccagtagtggttatacagatagtctatatagagatatcaatatgatgtgttttaatttagactttttatatatccgtttgaaacttccgaagttctcgaatggagttaaggaagttttgttctctacaagttcaatttttcttgtcattaattataaaactctgataactaatggataaaaaaggtatgctttgttagttaccttttgttcttggtgctcaggtcttaccatttttttcctaaattttaattagtctcctttctttaattaattttatgttaacgcactgacgatttaacgttaacaaaaaaacctagattctttttcttttcaatagagcataattattacttcaatttcatttatctcacactaaaccctaatcttggcgaaattccttttatatatataaatttaattaatttttccacaatcttggcggaattcaggactcggttttgcttgttattgttctctcttttaatttgacatggttagggaatacttaaagtatgtcttaattttatagggttttcaagaaatgataaacgtaaagccaatggagcaaatgatttctagcaccaacaacaacacaccgcaacaacaaccaacattcatcgccaccaacacaaggccaaacgccaccgcatccaatggtggctccggaggaaataccaacaacacggctacgatggaaactagaaaggcgaggccacaagagaaagtaaattgtccaagatgcaactcaacaaacacaaagttctgttattacaacaactacagtctcacgcaaccaagatacttctgcaaaggttgtcgaaggtattggaccgaaggtggctctcttcgtaacgtcccagtcggaggtagctcaagaaagaacaagagatcctctacacctttagcttcaccttctaatcccaaacttccagatctaaacccaccgattcttttctcaagccaaatccctaataagtcaaataaagatctcaacttgctatctttcccggtcatgcaagatcatcatcatcatggtatgtctcatttttttcatatgcccaagatagagaacaacaatacttcatcctcaatctatgcttcatcatctcctgtctcagctcttgagcttctaagatccaatggagtctcttcaagaggcatgaacacgttcttgcctggtcaaatgatggattcaaactcagtcctgtactcatctttagggtttccaacaatgcctgattacaaacagagtaataacaacctttcattctccattgatcatcatcaagggattggacataacaccatcaacagtaaccaaagagctcaagataacaatgatgacatgaatggagcaagtagggttttgttccctttttcagacatgaaagagctttcaagcacaacccaagagaagagtcatggtaataatacatattggaatgggatgttcagtaatacaggaggatcttcatggtgaaaaaaggttaaaaagagctcatgaactatcagctttcttctctttttctgtttttttctcctattttattatagtttttactttgatgatcttttgttttttctcacatggggaactttacttaaagttgtcagaacttagtttacagattgtctttttattccttctttctggttttccttttttcctttttttatcagtctttttaaaatatgtatttcataattgggtttgatcattcatatttattagtatcaaaatagagtctatgttcatgagggagtgttaaggggtgtgagggtagaagaataagtgaatacgggggcccg</sequence>
+    </entry>
+</EMBL_Services>
+

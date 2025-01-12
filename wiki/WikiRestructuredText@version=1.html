@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      WikiRestructuredText – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/WikiRestructuredText?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="WikiRestructuredText.html" title="View latest version" />
+        <link rel="next" href="WikiRestructuredText@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="WikiRestructuredText.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="WikiRestructuredText@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon.dbcls.jp/wiki/WikiRestructuredText?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by trac, <a class="timeline" href="../timeline@from=2007-11-13T12%253A11%253A40+0900&amp;precision=second.html" title="2007-11-13T12:11:40+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="reStructuredTextSupportinTrac">reStructuredText Support in Trac</h1>
+<p>
+Trac supports using <i>reStructuredText</i> (RST) as an alternative to wiki markup in any context <a class="wiki" href="WikiFormatting.html">WikiFormatting</a> is used.
+</p>
+<p>
+From the reStucturedText webpage:
+</p>
+<blockquote>
+<p>
+"<i>reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser   system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating  simple web pages, and for standalone documents. reStructuredText is designed for extensibility for  specific application domains. </i>"
+</p>
+</blockquote>
+<h3 id="Requirements">Requirements</h3>
+<p>
+Note that to activate RST support in Trac, the python docutils package must be installed. 
+If not already available on your operating system, you can download it at the <a class="ext-link" href="http://docutils.sourceforge.net/rst.html"><span class="icon"> </span>RST Website</a>.
+</p>
+<h3 id="MoreinformationonRST">More information on RST</h3>
+<ul><li>reStructuredText Website -- <a class="ext-link" href="http://docutils.sourceforge.net/rst.html"><span class="icon"> </span>http://docutils.sourceforge.net/rst.html</a>
+</li><li>RST Quick Reference -- <a class="ext-link" href="http://docutils.sourceforge.net/docs/rst/quickref.html"><span class="icon"> </span>http://docutils.sourceforge.net/docs/rst/quickref.html</a>
+</li></ul><hr />
+<h2 id="UsingRSTinTrac">Using RST in Trac</h2>
+<p>
+To specify that a block of text should be parsed using RST, use the <i>rst</i> processor. 
+</p>
+<h3 id="TracLinksinreStructuredText"><a class="wiki" href="TracLinks.html">TracLinks</a> in reStructuredText</h3>
+<ul><li>Trac provides a custom RST reference-directive 'trac' to allow <a class="wiki" href="TracLinks.html">TracLinks</a> from within RST text.
+</li></ul><blockquote>
+<p>
+Example:
+</p>
+<pre class="wiki"> {{{
+ #!rst
+ This is a reference to |a ticket|
+
+ .. |a ticket| trac:: #42
+ }}}
+</pre></blockquote>
+<blockquote>
+<p>
+For a complete example of all uses of the <i>trac</i>-directive, please see <a class="wiki" href="WikiRestructuredTextLinks.html">WikiRestructuredTextLinks</a>. 
+</p>
+</blockquote>
+<ul><li>Trac allows an even easier way of creating <a class="wiki" href="TracLinks.html">TracLinks</a> in RST, using the custom <i>:trac:</i> link naming scheme.
+</li></ul><blockquote>
+<p>
+Example:
+</p>
+<pre class="wiki"> {{{
+ #!rst
+ This is a reference to ticket `#12`:trac:
+
+ To learn how to use Trac, see `TracGuide`:trac:
+ }}}
+</pre></blockquote>
+<h3 id="SyntaxhighlightinginreStructuredText">Syntax highlighting in reStructuredText</h3>
+<p>
+There is a directive for doing <a class="wiki" href="TracSyntaxColoring.html">TracSyntaxColoring</a> in ReST as well. The directive is called
+code-block
+</p>
+<p>
+Example
+</p>
+<pre class="wiki">{{{
+#!rst
+
+.. code-block:: python
+
+ class Test:
+
+    def TestFunction(self):
+        pass
+
+}}}
+</pre><p>
+Will result in the below.
+</p>
+<div class="code"><pre>
+.. code-block:: python
+
+ class Test:
+
+    def TestFunction(self):
+        pass
+
+</pre></div><h3 id="WikiMacrosinreStructuredText"><a class="wiki" href="WikiMacros.html">WikiMacros</a> in reStructuredText</h3>
+<p>
+For doing <a class="wiki" href="WikiMacros.html">WikiMacros</a> in ReST you use the same directive as for syntax highlightning i.e
+code-block. To work you must use a version of trac that has <a class="missing ticket">#801</a> applied. 
+</p>
+<h3 id="WikiMacroExample"><a class="missing wiki">WikiMacro?</a> Example</h3>
+<pre class="wiki">{{{
+#!rst
+
+.. code-block:: HelloWorld
+ 
+   Something I wanted to say
+
+
+}}}
+</pre><p>
+Will result in the below.
+</p>
+<p>
+</p><div class="system-message"><strong>Error: Failed to load processor <code>HelloWorld</code></strong><pre>No macro or processor named 'HelloWorld' found</pre></div><p>
+</p>
+<h3 id="BiggerReSTExample">Bigger ReST Example</h3>
+<p>
+The example below should be mostly self-explanatory:
+</p>
+<pre class="wiki">{{{
+#!rst
+FooBar Header
+=============
+reStructuredText is **nice**. It has its own webpage_.
+
+A table:
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+
+RST TracLinks
+-------------
+
+See also ticket `#42`:trac:.
+
+.. _webpage: http://docutils.sourceforge.net/rst.html
+}}}</pre>
+<p>
+Results in:
+</p>
+<div class="code"><pre>FooBar Header
+=============
+reStructuredText is **nice**. It has its own webpage_.
+
+A table:
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+
+RST TracLinks
+-------------
+
+See also ticket `#42`:trac:.
+
+.. _webpage: http://docutils.sourceforge.net/rst.html
+</pre></div><hr />
+<p>
+See also: <a class="wiki" href="WikiRestructuredTextLinks.html">WikiRestructuredTextLinks</a>, <a class="wiki" href="WikiProcessors.html">WikiProcessors</a>, <a class="wiki" href="WikiFormatting.html">WikiFormatting</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/WikiRestructuredText?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

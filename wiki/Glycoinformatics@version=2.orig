@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Glycoinformatics – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/Glycoinformatics?version=2&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/Glycoinformatics" title="View latest version" />
+        <link rel="next" href="/wiki/Glycoinformatics?version=3" title="Version 3" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/Glycoinformatics?version=1" title="Version 1" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Glycoinformatics?version=1" title="Version 1">Previous Version</a></span></li><li><a href="/wiki/Glycoinformatics" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/Glycoinformatics?version=3" title="Version 3">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/Glycoinformatics?action=diff&amp;version=2">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 2 (modified by will, <a class="timeline" href="/timeline?from=2008-02-13T11%3A27%3A05%2B0900&amp;precision=second" title="2008-02-13T11:27:05+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+Each Day's progress is described below.
+</p>
+<p>
+Day 2 Progress.
+</p>
+<p>
+The long-term goal of the Glycomics standards and interoperability group is to integrate the emerging bioinformatics tools for glycobiology into the larger bioinformatics world.  Bioinformatics for glycobiology is in its infancy, and the tools for identifying glycan structures, their biosynthetic mechanisms, and their biological function are just being developed.  The three participants in this group have taken active roles in developing these tools.  
+</p>
+<p>
+A major obstacle in this endeavor is the difficulty in the nonambiguous digital represention of complex glycans.  This is due, in part, to the branched nature of glycans and the fact that individual glycosyl residues can be linked to each other in several different ways.  Several different successful representation protocols have been developed, including LINUCS (developed by DKFZ in Heidelberg, where Rene Ranzinger works), and KCF (developed by KEGG, where Kiyoko Aoki-Kinoshita has worked and remains a valued collaborator).  Recently, it has become clear that interoperability of the various databases and web services for glycobiology depend on an robust data exchange standard, leading to the development of GLYDE-II as a collaborative effort by York (at the Complex Carbohydrate Research Center[CCRC] at the University of Georgia) Ranzinger, Aoki-Kinoshita, and others.  GLYDE-II is now almost completely functional, providing a key element for interoperability of informatics for glycobiology.  
+</p>
+<p>
+Advancement in this area demands robust protocols for web service discovery and composition of web processes.  The <a class="missing wiki">BioHackathon?</a> is a unique opportunity to get developers of glycoinformatics together to explore possibilities for this purpose.  Thus, the immediate goal of the group is to develop a prototype workflow that integrates web services provided by the groups of the three glycoinformatics participants.  This will serve as a test-bed and model for future integration efforts.  
+</p>
+<p>
+On Tuesday (Day two of the Hackathon) the following progress was made:
+</p>
+<p>
+1.  The overall goal was agreed upon and a very simple prototype workflow was designed.  The workflow involves three WSs, linked together as follows.
+</p>
+<p>
+[microarray data] --&gt; RINGS (Aoki-Kinoshita) --&gt; [KEGG Glycan IDs] --&gt; GlycomeDB (Ranzinger) --&gt; [GLYDE-II ] --&gt; GLYDE2SVG (York)
+</p>
+<p>
+2.  BioMOBY was chosen as the development platform for workflow development, with transfer to Taverna upon generation of a functional workflow.
+</p>
+<p>
+3.  BioMOBY Dashboard was successfully installed on two laptops to faclitate exploration and definition of data type objects for inclusion into the BioMOBY framework.  This was much more difficult than anticipated, as it took some time to satisfy all of the dependencies of the software, which were not clearly stated in the installation instructions.
+</p>
+<p>
+4.  The BioMOBY object ontology (Object-OWLDL2.owl) was downloaded and explored using the Protege ontology editor.
+</p>
+<p>
+5.  The preliminary design of data objects for glycoinformatics, including different structural representation data objects, was completed.  This involved looking at the BioMOBY object ontology and BioMOBY Dashboard (<a class="missing ticket">#2</a> and <a class="missing ticket">#3</a>, above).  
+</p>
+<p>
+The group members were enthusiastic about the simple and elegant way that BioMOBY can locate and evaluate WSs acting as a WS client to generate functional Web Processes.   However, all were concerned with the ad hoc nature of the data object definition process, and the apparent lack of error checking for this process.  By design, the BioMOBY object ontology contains little else other than syntactic information.  While this is a strength in terms of ease of use and flexibility, it may lead to major difficulties in scaling the BioMOBY platform.  For example, a web service provider could have a service (call it SQRT) that takes as input an integer and returns a float, which is the square root of the integer.  Without any problem the developer could then define a BioMOBY data object called "myNumber" and register the web service, specifying that input and output are both instances of "myNumber".  While this would go against the spirit of BioMOBY, there is nothing to prevent this from happening.  Then, clients could find the service if they somehow know what kind of object "myNumber" is.  Clients attempting to find WSs that take integers as input would fail to find the WS. That is, the process of defining data objects is so flexible that it is possible to create all sorts of different data objects that may be identical to other data objects that have already been defined, or to specify that a WS takes a data object that it really cannot handle.  It is totally up to the WS to check for errors of this type. This lack of rigorous vocabulary control may become a major problem as BioMOBY is scaled up.
+</p>
+<p>
+Despite these concerns of the group members, it was decided to continue with BioMOBY to generate a prototype web process.  It is expected that the BioMOBY developers are keenly aware of these issues and are actively attempting to resolve them, and that failure of BioMOBY to scale well will be averted.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Glycoinformatics?version=2&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

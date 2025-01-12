@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TracTicketsCustomFields – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/TracTicketsCustomFields?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="TracTicketsCustomFields.html" title="View latest version" />
+        <link rel="next" href="TracTicketsCustomFields@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="TracTicketsCustomFields.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="TracTicketsCustomFields@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon.dbcls.jp/wiki/TracTicketsCustomFields?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by trac, <a class="timeline" href="../timeline@from=2007-11-13T12%253A11%253A40+0900&amp;precision=second.html" title="2007-11-13T12:11:40+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="CustomTicketFields">Custom Ticket Fields</h1>
+<p>
+Trac supports adding custom, user-defined fields to the ticket module. Using custom fields, you can add typed, site-specific properties to tickets.
+</p>
+<h2 id="Configuration">Configuration</h2>
+<p>
+Configuring custom ticket fields is done in the <a class="wiki" href="TracIni.html">trac.ini</a> file. All field definitions should be under a section named <tt>[ticket-custom]</tt>.
+</p>
+<p>
+The syntax of each field definition is:
+</p>
+<pre class="wiki"> FIELD_NAME = TYPE
+ (FIELD_NAME.OPTION = VALUE)
+ ...
+</pre><p>
+The example below should help to explain the syntax.
+</p>
+<h3 id="AvailableFieldTypesandOptions">Available Field Types and Options</h3>
+<ul><li><strong>text</strong>: A simple (one line) text field.
+<ul><li>label: Descriptive label.
+</li><li>value: Default value.
+</li><li>order: Sort order placement. (Determines relative placement in forms.)
+</li></ul></li><li><strong>checkbox</strong>: A boolean value check box.
+<ul><li>label: Descriptive label.
+</li><li>value: Default value (0 or 1).
+</li><li>order: Sort order placement.
+</li></ul></li><li><strong>select</strong>: Drop-down select box. Uses a list of values.
+<ul><li>label: Descriptive label.
+</li><li>options: List of values, separated by <strong>|</strong> (vertical pipe).
+</li><li>value: Default value (Item #, starting at 0).
+</li><li>order: Sort order placement.
+</li></ul></li><li><strong>radio</strong>: Radio buttons. Essentially the same as <strong>select</strong>.
+<ul><li>label: Descriptive label.
+</li><li>options: List of values, separated by <strong>|</strong> (vertical pipe).
+</li><li>value: Default value (Item #, starting at 0).
+</li><li>order: Sort order placement.
+</li></ul></li><li><strong>textarea</strong>: Multi-line text area.
+<ul><li>label: Descriptive label.
+</li><li>value: Default text.
+</li><li>cols: Width in columns.
+</li><li>rows: Height in lines.
+</li><li>order: Sort order placement.
+</li></ul></li></ul><h3 id="SampleConfig">Sample Config</h3>
+<pre class="wiki">[ticket-custom]
+
+test_one = text
+test_one.label = Just a text box
+
+test_two = text
+test_two.label = Another text-box
+test_two.value = Just a default value
+
+test_three = checkbox
+test_three.label = Some checkbox
+test_three.value = 1
+
+test_four = select
+test_four.label = My selectbox
+test_four.options = one|two|third option|four
+test_four.value = 2
+
+test_five = radio
+test_five.label = Radio buttons are fun
+test_five.options = uno|dos|tres|cuatro|cinco
+test_five.value = 1
+
+test_six = textarea
+test_six.label = This is a large textarea
+test_six.value = Default text
+test_six.cols = 60
+test_six.rows = 30
+</pre><p>
+<i>Note: To make entering an option for a <tt>select</tt> type field optional, specify a leading <tt>|</tt> in the <tt>fieldname.options</tt> option.</i>
+</p>
+<h3 id="ReportsInvolvingCustomFields">Reports Involving Custom Fields</h3>
+<p>
+The SQL required for <a class="wiki" href="TracReports.html">TracReports</a> to include custom ticket fields is relatively hard to get right. You need a <tt>JOIN</tt> with the <tt>ticket_custom</tt> field for every custom field that should be involved.
+</p>
+<p>
+The following example includes a custom ticket field named <tt>progress</tt> in the report:
+</p>
+<div class="code"><pre>SELECT p.value AS __color__,
+   id AS ticket, summary, component, version, milestone, severity,
+   (CASE status WHEN 'assigned' THEN owner||' *' ELSE owner END) AS owner,
+   time AS created,
+   changetime AS _changetime, description AS _description,
+   reporter AS _reporter,
+  (CASE WHEN c.value = '0' THEN 'None' ELSE c.value END) AS progress
+  FROM ticket t
+     LEFT OUTER JOIN ticket_custom c ON (t.id = c.ticket AND c.name = 'progress')
+     JOIN enum p ON p.name = t.priority AND p.type='priority'
+  WHERE status IN ('new', 'assigned', 'reopened')
+  ORDER BY p.value, milestone, severity, time
+</pre></div><p>
+Note in particular the <tt>LEFT OUTER JOIN</tt> statement here.
+</p>
+<hr />
+<p>
+See also: <a class="wiki" href="TracTickets.html">TracTickets</a>, <a class="wiki" href="TracIni.html">TracIni</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/TracTicketsCustomFields?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TracInterfaceCustomization – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/TracInterfaceCustomization?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="TracInterfaceCustomization.html" title="View latest version" />
+        <link rel="next" href="TracInterfaceCustomization@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="TracInterfaceCustomization.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="TracInterfaceCustomization@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon.dbcls.jp/wiki/TracInterfaceCustomization?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by trac, <a class="timeline" href="../timeline@from=2007-11-13T12%253A11%253A40+0900&amp;precision=second.html" title="2007-11-13T12:11:40+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="CustomizingtheTracInterface">Customizing the Trac Interface</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="False"><a class="False" href="TracGuide.html">Index</a></li><li class="False"><a class="False" href="TracInstall.html">Installation</a></li><li class="active"><a class="False" href="TracInterfaceCustomization.html">Customization</a></li><li class="False"><a class="False" href="TracPlugins.html">Plugins</a></li><li class="False"><a class="False" href="TracUpgrade.html">Upgrading</a></li><li class="False"><a class="False" href="TracIni.html">Configuration</a></li><li class="False"><a class="False" href="TracAdmin.html">Administration</a></li><li class="False"><a class="False" href="TracBackup.html">Backup</a></li><li class="False"><a class="False" href="TracLogging.html">Logging</a></li><li class="False"><a class="False" href="TracPermissions.html">Permissions</a></li><li class="False"><a class="False" href="TracWiki.html">The Wiki</a></li><li class="False"><a class="False" href="WikiFormatting.html">Wiki Formatting</a></li><li class="False"><a class="False" href="TracTimeline.html">Timeline</a></li><li class="False"><a class="False" href="TracBrowser.html">Repository Browser</a></li><li class="False"><a class="False" href="TracRevisionLog.html">Revision Log</a></li><li class="False"><a class="False" href="TracChangeset.html">Changesets</a></li><li class="False"><a class="False" href="TracTickets.html">Tickets</a></li><li class="False"><a class="False" href="TracWorkflow.html">Workflow</a></li><li class="False"><a class="False" href="TracRoadmap.html">Roadmap</a></li><li class="False"><a class="False" href="TracQuery.html">Ticket Queries</a></li><li class="False"><a class="False" href="TracReports.html">Reports</a></li><li class="False"><a class="False" href="TracRss.html">RSS Support</a></li><li class="False"><a class="False" href="TracNotification.html">Notification</a></li></ul></div><p>
+</p>
+<h2 id="Introduction">Introduction</h2>
+<p>
+This page is meant to give users suggestions on how they can customize the look of Trac.  Topics on this page cover editing the HTML templates and CSS files, but not the program code itself.  The topics are intended to show users how they can modify the look of Trac to meet their specific needs.  Suggestions for changes to Trac's interface applicable to all users should be filed as tickets, not listed on this page.
+</p>
+<h2 id="ProjectLogoandIcon">Project Logo and Icon</h2>
+<p>
+The easiest parts of the Trac interface to customize are the logo and the site icon.  Both of these can be configured with settings in <a class="wiki" href="TracIni.html">trac.ini</a>.
+</p>
+<p>
+The logo or icon image should be put in a folder named "htdocs" in your project's environment folder.  (<i>Note: in projects created with a Trac version prior to 0.9 you will need to create this folder</i>)
+</p>
+<blockquote>
+<p>
+<i>Note: you can actually put the logo and icon anywhere on your server (as long as it's accessible through the web server), and use their absolute or server-relative URLs in the configuration.</i>
+</p>
+</blockquote>
+<p>
+Now configure the appropriate section of your <a class="wiki" href="TracIni.html">trac.ini</a>:
+</p>
+<h3 id="Logo">Logo</h3>
+<p>
+Change the <tt>src</tt> setting to <tt>site/</tt> followed by the name of your image file.  The <tt>width</tt> and <tt>height</tt> settings should be modified to match your image's dimensions (the Trac chrome handler uses "<tt>site/</tt>" for files within the project directory <tt>htdocs</tt> and "<tt>common/</tt>" for the common ones).
+</p>
+<pre class="wiki">[header_logo]
+src = site/my_logo.gif
+alt = My Project
+width = 300
+height = 100
+</pre><h3 id="Icon">Icon</h3>
+<p>
+Icons should be a 16x16 image in <tt>.gif</tt> or <tt>.ico</tt> format.  Change the <tt>icon</tt> setting to <tt>site/</tt> followed by the name of your icon file.  Icons will typically be displayed by your web browser next to the site's URL and in the <tt>Bookmarks</tt> menu.
+</p>
+<pre class="wiki">[project]
+icon = site/my_icon.ico
+</pre><p>
+Note though that this icon is ignored by Internet Explorer, which only accepts a file named <tt></tt>favicon.ico<tt></tt> at the root of the host. To make the project icon work in both IE and other browsers, you can store the icon in the document root of the host, and reference it from <tt></tt>trac.ini<tt></tt> as follows:
+</p>
+<pre class="wiki">[project]
+icon = /favicon.ico
+</pre><h2 id="SiteHeaderFooter">Site Header &amp; Footer</h2>
+<p>
+In the environment folder for each Trac project there should be a directory called <tt>templates</tt>.  This folder contains files <tt>site_header.cs</tt> and <tt>site_footer.cs</tt>.  Users can customize their Trac site by adding the required HTML markup to these files.  The content of these two files will be placed immediately following the opening <tt>&lt;body&gt;</tt> tag and immediately preceding the closing <tt>&lt;/body&gt;</tt> tag of each page in the site, respectively.
+</p>
+<p>
+These files may contain static HTML, though if users desire to have dynamically generated content they can make use of the <a class="ext-link" href="http://www.clearsilver.net/"><span class="icon"> </span>ClearSilver</a> templating language from within the pages as well. When you need to see what variables are available to the template, append the query string <tt>?hdfdump=1</tt> to the URL of your Trac site. This will display a structured view of the template data.
+</p>
+<h2 id="SiteCSS">Site CSS</h2>
+<p>
+The primary means to adjust the layout of a Trac site is to add <a class="ext-link" href="http://www.w3.org/TR/REC-CSS2/"><span class="icon"> </span>CSS</a> style rules that overlay the default rules. This is best done by editing the <tt>site_css.cs</tt> file in the enviroment's <tt>templates</tt> directory. The content of that template gets inserted into a <tt>&lt;style type="text/css"&gt;&lt;/style&gt;</tt> element on every HTML page generated by Trac.
+</p>
+<p>
+While you can add your custom style rules directly to the <tt>site_css.cs</tt> file, it is recommended that you simply reference an external style sheet, thereby enabling browsers to cache the CSS file instead of transmitting the rules with every response.
+</p>
+<p>
+The following example would import a style sheet located in the <tt>style</tt> root directory of your host:
+</p>
+<pre class="wiki">@import url(/style/mytrac.css);
+</pre><p>
+You can use a ClearSilver variable to reference a style sheet stored in the project environment's <tt>htdocs</tt> directory:
+</p>
+<pre class="wiki">@import url(&lt;?cs var:chrome.href ?&gt;/site/style.css);
+</pre><h2 id="ProjectList">Project List</h2>
+<p>
+You can use a custom <a class="missing wiki">ClearSilver?</a> template to display the list of projects if you are using Trac with multiple projects.  
+</p>
+<p>
+The following is the basic template used by Trac to display a list of links to the projects.  For projects that could not be loaded it displays an error message. You can use this as a starting point for your own index template.
+</p>
+<div class="code"><pre>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;Available Projects&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+ &lt;h1&gt;Available Projects&lt;/h1&gt;
+ &lt;ul&gt;&lt;?cs
+ each:project = projects ?&gt;&lt;li&gt;&lt;?cs
+  if:project.href ?&gt;
+   &lt;a href="&lt;?cs var:project.href ?&gt;" title="&lt;?cs var:project.description ?&gt;"&gt;
+    &lt;?cs var:project.name ?&gt;&lt;/a&gt;&lt;?cs
+  else ?&gt;
+   &lt;small&gt;&lt;?cs var:project.name ?&gt;: &lt;em&gt;Error&lt;/em&gt; &lt;br /&gt;
+   (&lt;?cs var:project.description ?&gt;)&lt;/small&gt;&lt;?cs
+  /if ?&gt;
+  &lt;/li&gt;&lt;?cs
+ /each ?&gt;
+ &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div><p>
+Once you've created your custom template you will need to configure the webserver to tell Trac where the template is located:
+</p>
+<p>
+For <a class="wiki" href="TracFastCgi.html">FastCGI</a>:
+</p>
+<pre class="wiki">FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \
+              -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template
+</pre><p>
+For <a class="wiki" href="TracModPython.html">mod_python</a>:
+</p>
+<pre class="wiki">PythonOption TracEnvIndexTemplate /path/to/template
+</pre><p>
+For <a class="wiki" href="TracCgi.html">CGI</a>:
+</p>
+<pre class="wiki">SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template
+</pre><h2 id="MainTemplates">Main Templates</h2>
+<p>
+It is also possible to use your own modified versions of the Trac <a class="ext-link" href="http://www.clearsilver.net/"><span class="icon"> </span>ClearSilver</a> templates. Note though that this technique is not recommended because it makes upgrading Trac rather problematic: there are unfortunately several dependencies between the templates and the application code, such as the name of form fields and the structure of the template data, and these are likely to change between different versions of Trac.
+</p>
+<p>
+If you absolutely need to use modified templates, copy the template files from the default templates directory (usually in found in <tt>$prefix/share/trac/templates</tt>) into the <tt>templates</tt> directory of the project environment. Then modify those copies to get the desired results.
+</p>
+<hr />
+<p>
+See also <a class="wiki" href="TracGuide.html">TracGuide</a>, <a class="wiki" href="TracIni.html">TracIni</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/TracInterfaceCustomization?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

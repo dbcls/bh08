@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+          #1 (Asynchronous models slides)
+     – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="1@format=csv" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="1@format=tab" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" /><link rel="alternate" href="1@format=rss" type="application/rss+xml" class="rss" title="RSS Feed" />
+        <link rel="up" href="../report/8@USER=anonymous&amp;page=1.html" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/ticket.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../chrome/common/js/wikitoolbar.js"></script><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("div.description").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+        $("#changelog h3.change").addAnchor("Link to this change");
+        /* only enable control elements for the currently selected action */
+        var actions = $("#action input[name='action']");
+        function updateActionFields() {
+          actions.each(function () {
+            $(this).siblings().find("*[id]").enable($(this).checked());
+            $(this).siblings().filter("*[id]").enable($(this).checked());
+          });
+        }
+        actions.click(updateActionFields);
+        updateActionFields();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li class="active"><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Ticket</span></li><li><a href="../report/8@USER=anonymous&amp;page=1.html">Back to Query</a></li><li class="last"><span class="missing">Next Ticket &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="ticket">
+      <h1>
+              Ticket #1
+          <span class="status">(new enhancement)</span>
+      </h1>
+      <!-- Do not show the ticket (pre)view when the user first comes to the "New Ticket" page.
+           Wait until they hit preview. -->
+        <!-- Ticket Box (ticket fields along with description) -->
+        <div id="ticket">
+          <div class="date">
+            <p>Opened <a class="timeline" href="../timeline@from=2008-02-12T02%253A06%253A57+0900&amp;precision=second.html" title="2008-02-12T02:06:57+0900 in Timeline">17 years</a> ago</p>
+          </div>
+          <!-- use a placeholder if it's a new ticket -->
+          <h2 class="summary searchable">Asynchronous models slides</h2>
+          <table class="properties">
+            <tr>
+              <th id="h_reporter">Reported by:</th>
+              <td headers="h_reporter" class="searchable">jmfernandez</td>
+              <th id="h_owner">Owned by:</th>
+              <td headers="h_owner">somebody
+              </td>
+            </tr>
+            <tr>
+                <th id="h_priority">
+                  Priority:
+                </th>
+                <td headers="h_priority">
+                      major
+                </td>
+                <th id="h_milestone">
+                  Milestone:
+                </th>
+                <td headers="h_milestone">
+                      <a class="missing milestone"></a>
+                </td>
+            </tr><tr>
+                <th id="h_component">
+                  Component:
+                </th>
+                <td headers="h_component">
+                      component1
+                </td>
+                <th id="h_version">
+                  Version:
+                </th>
+                <td headers="h_version">
+                </td>
+            </tr><tr>
+                <th id="h_keywords">
+                  Keywords:
+                </th>
+                <td headers="h_keywords" class="searchable">
+                </td>
+                <th id="h_cc">
+                  Cc:
+                </th>
+                <td headers="h_cc" class="searchable">
+                </td>
+            </tr><tr>
+                <th id="h_include_gantt">
+                  Include in GanttChart:
+                </th>
+                <td headers="h_include_gantt">
+                      no
+                </td>
+                <th id="h_dependencies">
+                  Dependencies:
+                </th>
+                <td headers="h_dependencies">
+                </td>
+            </tr><tr>
+                <th id="h_due_assign">
+                  Due to assign:
+                </th>
+                <td headers="h_due_assign">
+                      MM/DD/YYYY
+                </td>
+                <th id="h_due_close">
+                  Due to close:
+                </th>
+                <td headers="h_due_close">
+                      MM/DD/YYYY
+                </td>
+            </tr>
+          </table>
+            <div class="description">
+              <h3 id="comment:description">
+                Description
+              </h3>
+              <div class="searchable">
+                <p>
+These slides are from a meeting talk at Gent from <a class="ext-link" href="http://mips.gsf.de/projects/plants/PlaNetPortal/index_html"><span class="icon"> </span>PlaNet</a> project at the end of 2004, and they show the a true asynchronous model and a polling one, applied to HTTP context. They were used during the first day for some explanations about asynchronous services.
+</p>
+
+              </div>
+            </div>
+        </div>
+          <h2>Attachments</h2>
+          <div id="attachments">
+            <dl class="attachments">
+                <dt>
+      <a href="../attachment/ticket/1/Asynchronous-Roles-from-Gent.png.html" title="View attachment">Asynchronous-Roles-from-Gent.png</a>
+      <a href="../raw-attachment/ticket/1/Asynchronous-Roles-from-Gent.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="86543 bytes">84.5 KB</span>) - added by <em>jmfernandez</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T02%253A07%253A51+0900&amp;precision=second.html" title="2008-02-12T02:07:51+0900 in Timeline">17 years</a> ago.
+    </dt>
+                <dd>
+                  Roles in asynchronous models applied to HTTP context
+                </dd>
+                <dt>
+      <a href="../attachment/ticket/1/True-Asynchronous-Model-from-Gent.png.html" title="View attachment">True-Asynchronous-Model-from-Gent.png</a>
+      <a href="../raw-attachment/ticket/1/True-Asynchronous-Model-from-Gent.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="60074 bytes">58.7 KB</span>) - added by <em>jmfernandez</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T02%253A09%253A15+0900&amp;precision=second.html" title="2008-02-12T02:09:15+0900 in Timeline">17 years</a> ago.
+    </dt>
+                <dd>
+                  True asynchronous model
+                </dd>
+                <dt>
+      <a href="../attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png.html" title="View attachment">Polling-Asynchronous-Model-from-Gent.png</a>
+      <a href="../raw-attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="74030 bytes">72.3 KB</span>) - added by <em>jmfernandez</em>
+      <a class="timeline" href="../timeline@from=2008-02-12T02%253A09%253A46+0900&amp;precision=second.html" title="2008-02-12T02:09:46+0900 in Timeline">17 years</a> ago.
+    </dt>
+                <dd>
+                  Polling asynchronous model
+                </dd>
+            </dl>
+          </div>
+          <h2>Change History</h2>
+          <div id="changelog">
+            <form method="get" action="1.html#comment" class="printableform">
+              <div class="change">
+                <h3 class="change">
+                  Changed <a class="timeline" href="../timeline@from=2008-02-12T02%253A07%253A51+0900&amp;precision=second.html" title="2008-02-12T02:07:51+0900 in Timeline">17 years</a> ago by jmfernandez
+                </h3>
+      <ul class="changes">
+        <li>
+          <strong>attachment</strong>
+              <a href="../attachment/ticket/1/Asynchronous-Roles-from-Gent.png.html"><em>Asynchronous-Roles-from-Gent.png</em></a>
+              <a href="../raw-attachment/ticket/1/Asynchronous-Roles-from-Gent.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+              added
+        </li>
+      </ul>
+      <div class="comment searchable">
+        <p>
+Roles in asynchronous models applied to HTTP context
+</p>
+
+      </div>
+              </div>
+            </form><form method="get" action="1.html#comment" class="printableform">
+              <div class="change">
+                <h3 class="change">
+                  Changed <a class="timeline" href="../timeline@from=2008-02-12T02%253A09%253A15+0900&amp;precision=second.html" title="2008-02-12T02:09:15+0900 in Timeline">17 years</a> ago by jmfernandez
+                </h3>
+      <ul class="changes">
+        <li>
+          <strong>attachment</strong>
+              <a href="../attachment/ticket/1/True-Asynchronous-Model-from-Gent.png.html"><em>True-Asynchronous-Model-from-Gent.png</em></a>
+              <a href="../raw-attachment/ticket/1/True-Asynchronous-Model-from-Gent.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+              added
+        </li>
+      </ul>
+      <div class="comment searchable">
+        <p>
+True asynchronous model
+</p>
+
+      </div>
+              </div>
+            </form><form method="get" action="1.html#comment" class="printableform">
+              <div class="change">
+                <h3 class="change">
+                  Changed <a class="timeline" href="../timeline@from=2008-02-12T02%253A09%253A46+0900&amp;precision=second.html" title="2008-02-12T02:09:46+0900 in Timeline">17 years</a> ago by jmfernandez
+                </h3>
+      <ul class="changes">
+        <li>
+          <strong>attachment</strong>
+              <a href="../attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png.html"><em>Polling-Asynchronous-Model-from-Gent.png</em></a>
+              <a href="../raw-attachment/ticket/1/Polling-Asynchronous-Model-from-Gent.png" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+              added
+        </li>
+      </ul>
+      <div class="comment searchable">
+        <p>
+Polling asynchronous model
+</p>
+
+      </div>
+              </div>
+            </form>
+          </div>
+      <div id="help">
+        <strong>Note:</strong> See
+        <a href="../wiki/TracTickets.html">TracTickets</a> for help on using
+        tickets.
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="1@format=csv" class="csv">Comma-delimited Text</a>
+        </li><li>
+          <a rel="nofollow" href="1@format=tab" class="tab">Tab-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="1@format=rss" class="rss">RSS Feed</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

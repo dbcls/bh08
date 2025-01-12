@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TracUpgrade – Hackathon
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon.dbcls.jp/wiki/TracUpgrade?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="TracUpgrade.html" title="View latest version" />
+        <link rel="next" href="TracUpgrade@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="../chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../milestone/index.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="TracUpgrade.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="TracUpgrade@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon.dbcls.jp/wiki/TracUpgrade?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by trac, <a class="timeline" href="../timeline@from=2007-11-13T12%253A11%253A40+0900&amp;precision=second.html" title="2007-11-13T12:11:40+0900 in Timeline">17 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="UpgradeInstructions">Upgrade Instructions</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="False"><a class="False" href="TracGuide.html">Index</a></li><li class="False"><a class="False" href="TracInstall.html">Installation</a></li><li class="False"><a class="False" href="TracInterfaceCustomization.html">Customization</a></li><li class="False"><a class="False" href="TracPlugins.html">Plugins</a></li><li class="active"><a class="False" href="TracUpgrade.html">Upgrading</a></li><li class="False"><a class="False" href="TracIni.html">Configuration</a></li><li class="False"><a class="False" href="TracAdmin.html">Administration</a></li><li class="False"><a class="False" href="TracBackup.html">Backup</a></li><li class="False"><a class="False" href="TracLogging.html">Logging</a></li><li class="False"><a class="False" href="TracPermissions.html">Permissions</a></li><li class="False"><a class="False" href="TracWiki.html">The Wiki</a></li><li class="False"><a class="False" href="WikiFormatting.html">Wiki Formatting</a></li><li class="False"><a class="False" href="TracTimeline.html">Timeline</a></li><li class="False"><a class="False" href="TracBrowser.html">Repository Browser</a></li><li class="False"><a class="False" href="TracRevisionLog.html">Revision Log</a></li><li class="False"><a class="False" href="TracChangeset.html">Changesets</a></li><li class="False"><a class="False" href="TracTickets.html">Tickets</a></li><li class="False"><a class="False" href="TracWorkflow.html">Workflow</a></li><li class="False"><a class="False" href="TracRoadmap.html">Roadmap</a></li><li class="False"><a class="False" href="TracQuery.html">Ticket Queries</a></li><li class="False"><a class="False" href="TracReports.html">Reports</a></li><li class="False"><a class="False" href="TracRss.html">RSS Support</a></li><li class="False"><a class="False" href="TracNotification.html">Notification</a></li></ul></div><p>
+</p>
+<p>
+A Trac environment sometimes needs to be upgraded before it can be used with a new version of Trac. This document describes the steps necessary to upgrade an environment.
+</p>
+<blockquote>
+<p>
+<strong>Note</strong>: <i>Environment upgrades are not necessary for minor version releases unless otherwise noted. For example, there's no need to upgrade a Trac environment created with (or upgraded) 0.8.0 when installing 0.8.4 (or any other 0.8.x release).</i>
+</p>
+</blockquote>
+<h2 id="GeneralInstructions">General Instructions</h2>
+<p>
+Typically, there are four steps involved in upgrading to a newer version of Trac:
+</p>
+<h3 id="UpdatetheTracCode">Update the Trac Code</h3>
+<p>
+Get the new version of Trac, either by downloading an offical release package or by checking it out from the <a class="ext-link" href="http://projects.edgewall.com/trac/wiki/SubversionRepository"><span class="icon"> </span>Subversion repository</a>.
+</p>
+<p>
+If you're doing a major version upgrade (such as from 0.8 to 0.9), it is <i>highly</i> recommended that you first remove the existing Trac code. To do this, you need to delete the <tt>trac</tt> directory from the Python <tt>lib/site-packages</tt> directory. You may also want to remove the Trac <tt>cgi-bin</tt>, <tt>htdocs</tt>, <tt>templates</tt> and <tt>wiki-default</tt> directories that are commonly found in a directory called <tt>share/trac</tt> (the exact location depends on your platform).
+</p>
+<p>
+If you have a source distribution, you need to run
+</p>
+<pre class="wiki">python setup.py install
+</pre><p>
+to install the new version. If you've downloaded the Windows installer, you execute it, and so on.
+</p>
+<h3 id="UpgradetheTracEnvironment">Upgrade the Trac Environment</h3>
+<p>
+Unless noted otherwise, upgrading between major versions (such as 0.8 and 0.9) involves changes to the database schema, and possibly the layout of the <a class="wiki" href="TracEnvironment.html">environment directory</a>. Fortunately, Trac provides automated upgrade scripts to ease the pain. These scripts are run via <a class="wiki" href="TracAdmin.html">trac-admin</a>:
+</p>
+<pre class="wiki">trac-admin /path/to/projenv upgrade
+</pre><p>
+This command will do nothing if the environment is already up-to-date.
+</p>
+<p>
+Note that if you are using a PostgreSQL database, this command will fail with the message that the environment can only be backed up when you use an SQLite database. This means that you will have to backup the repository and the database manually. Then, to perform the actual upgrade, run:
+</p>
+<pre class="wiki">trac-admin /path/to/projenv upgrade --no-backup
+</pre><h3 id="UpdatetheTracDocumentation">Update the Trac Documentation</h3>
+<p>
+Every <a class="wiki" href="TracEnvironment.html">Trac environment</a> includes a copy of the Trac documentation for the installed version. As you probably want to keep the included documentation in sync with the installed version of Trac, <a class="wiki" href="TracAdmin.html">trac-admin</a> provides a command to upgrade the documentation:
+</p>
+<pre class="wiki">trac-admin /path/to/projenv wiki upgrade
+</pre><p>
+Note that this procedure will of course leave your <tt>WikiStart</tt> page intact.
+</p>
+<h3 id="RestarttheWebServer">Restart the Web Server</h3>
+<p>
+In order to reload the new Trac code you will need to restart your web server (note this is not necessary for <a class="wiki" href="TracCgi.html">CGI</a>).
+</p>
+<h2 id="SpecificVersions">Specific Versions</h2>
+<p>
+The following sections discuss any extra actions that may need to be taken to upgrade to specific versions of Trac.
+</p>
+<h2 id="From0.9.xto0.10.x">From 0.9.x to 0.10.x</h2>
+<p>
+Due to some changes in the Wiki syntax, you may notice that certain parts of your pages no longer work as expected:
+</p>
+<ul><li>Previously, links to images would result in that image being embedded into the page. Since 0.10, links to images remain plain links. If you want to embed an image in the page, use the <tt>[[Image]]</tt> macro.
+</li><li>You can no longer use <tt>%20</tt> in wiki links to encode spaces. Instead, you should quote the name containing spaces (for example, use <tt>wiki:"My page"</tt> instead of <tt>wiki:My%20page</tt>.)
+</li></ul><p>
+Several enhancements have been made to the version control subsystem, in particular for the support of scoped repositories has been improved. 
+It is recommended that you perform a <a class="wiki" href="TracAdmin.html#InteractiveMode">trac-admin</a> <strong><tt>resync</tt></strong> operation to take advantage of these improvements.
+</p>
+<p>
+Also note that the argument list of the <a class="wiki" href="TracAdmin.html">trac-admin</a> <strong><tt>initenv</tt></strong> command has changed: there's a new argument for determining the type of version control system. The old usage was:
+</p>
+<pre class="wiki">   initenv &lt;projectname&gt; &lt;db&gt; &lt;repospath&gt; &lt;templatepath&gt;
+</pre><p>
+The new usage is:
+</p>
+<pre class="wiki">   initenv &lt;projectname&gt; &lt;db&gt; &lt;repostype&gt; &lt;repospath&gt; &lt;templatepath&gt;
+</pre><p>
+If you're using any scripts that automate the creation of Trac environments, you will need to update them. If you're using Subversion, specify <tt>svn</tt> for the <tt>&lt;repostype&gt;</tt> argument.
+</p>
+<h2 id="From0.9.3to0.9.4">From 0.9.3 to 0.9.4</h2>
+<p>
+There is a bug in Pysqlite 1.x that causes reports using the "%" character for <tt>LIKE</tt> clauses or date formatting to fail.  You will need to use escape the percent characters with another: "%%".
+</p>
+<h2 id="From0.9.xto0.9.3orlater">From 0.9.x to 0.9.3 or later</h2>
+<p>
+If you are using plugins you might need to upgrade them. See <a class="ext-link" href="http://projects.edgewall.com/trac/milestone/0.9.3"><span class="icon"> </span>http://projects.edgewall.com/trac/milestone/0.9.3</a> for further details.
+</p>
+<h2 id="From0.9-betato0.9">From 0.9-beta to 0.9</h2>
+<p>
+If inclusion of the static resources (style sheets, javascript, images) is not working, check the value of the <tt>htdocs_location</tt> in trac.ini. For <a class="wiki" href="TracModPython.html">mod_python</a>, <a class="wiki" href="TracStandalone.html">Tracd</a> and <a class="wiki" href="TracFastCgi.html">FastCGI</a>, you can simply remove the option altogether. For <a class="wiki" href="TracCgi.html">CGI</a>, you should fix it to point to the URL you mapped the Trac <tt>htdocs</tt> directory to (although you can also remove it and then <a class="wiki" href="TracCgi.html#MappingStaticResources">map the static resources</a>). If you're still having problems after removing the option, check the paths in the <tt>trac/siteconfig.py</tt> file and fix them if they're incorrect.
+</p>
+<p>
+If you've been using plugins with a beta release of Trac 0.9, or have disabled some of the built-in components, you might have to update the rules for disabling/enabling components in <a class="wiki" href="TracIni.html">trac.ini</a>. In particular, globally installed plugins now need to be enabled explicitly. See <a class="wiki" href="TracPlugins.html">TracPlugins</a> and <a class="wiki" href="TracIni.html">TracIni</a> for more information.
+</p>
+<p>
+If you want to enable the display of all ticket changes in the timeline (the “Ticket Details” option), you now have to explicitly enable that in <a class="wiki" href="TracIni.html">trac.ini</a>, too:
+</p>
+<pre class="wiki">[timeline]
+ticket_show_details = true
+</pre><h2 id="From0.8.xto0.9">From 0.8.x to 0.9</h2>
+<p>
+<a class="wiki" href="TracModPython.html">mod_python</a> users will also need to change the name of the mod_python handler in the Apache HTTPD configuration:
+</p>
+<pre class="wiki">   from: PythonHandler trac.ModPythonHandler
+   to:   PythonHandler trac.web.modpython_frontend
+</pre><p>
+If you have <a class="ext-link" href="http://initd.org/tracker/pysqlite"><span class="icon"> </span>PySQLite</a> 2.x installed, Trac will now try to open your SQLite database using the SQLite 3.x file format. The database formats used by SQLite 2.8.x and SQLite 3.x are incompatible. If you get an error like <i>“file is encrypted or is not a database”</i> after upgrading, then you must convert your database file.
+</p>
+<p>
+To do this, you need to have both SQLite 2.8.x and SQLite 3.x installed (they have different filenames so can coexist on the same system). Then use the following commands:
+</p>
+<pre class="wiki"> $ mv trac.db trac2.db
+ $ sqlite trac2.db .dump | sqlite3 trac.db
+</pre><p>
+To update multiple database files at once on linux you may use the following command (replace <tt>/var/trac</tt> withe the location where your trac installtions reside):
+</p>
+<pre class="wiki"> $ find /var/trac/ -iname "trac.db" | xargs -i bash -c "mv {} {}.2; sqlite {}.2 .dump | sqlite3 {};"
+</pre><p>
+Remember the give the webserver write permission to trac.db.
+</p>
+<p>
+After testing that the conversion was successful, the <tt>trac2.db</tt> file can be deleted. For more information on the SQLite upgrade see <a class="ext-link" href="http://www.sqlite.org/version3.html"><span class="icon"> </span>http://www.sqlite.org/version3.html</a>.
+</p>
+<h2 id="From0.7.xto0.8">From 0.7.x to 0.8</h2>
+<p>
+0.8 adds a new roadmap feature which requires additional permissions. While a
+fresh installation will by default grant ROADMAP_VIEW and MILESTONE_VIEW
+permissions to anonymous, these permissions have to be granted manually when
+upgrading:
+</p>
+<pre class="wiki"> $ trac-admin /path/to/projectenv permission add anonymous MILESTONE_VIEW
+ $ trac-admin /path/to/projectenv permission add anonymous ROADMAP_VIEW
+</pre><hr />
+<p>
+See also: <a class="wiki" href="TracGuide.html">TracGuide</a>, <a class="wiki" href="TracInstall.html">TracInstall</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon.dbcls.jp/wiki/TracUpgrade?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

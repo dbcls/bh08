@@ -1,0 +1,154 @@
+ID   DOF37_ARATH             Reviewed;         296 AA.
+AC   Q43385; Q8GYW3; Q9SAF9;
+DT   19-OCT-2002, integrated into UniProtKB/Swiss-Prot.
+DT   01-JUN-2001, sequence version 2.
+DT   04-DEC-2007, entry version 60.
+DE   Dof zinc finger protein DOF3.7 (AtDOF3.7) (Dof affecting germination
+DE   1) (Transcription factor BBFa) (AtBBFa) (RolB domain B factor a).
+GN   Name=DOF3.7; Synonyms=BBFA, DAG1; OrderedLocusNames=At3g61850;
+GN   ORFNames=F21F14.20;
+OS   Arabidopsis thaliana (Mouse-ear cress).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliophyta; eudicotyledons; core eudicotyledons;
+OC   rosids; eurosids II; Brassicales; Brassicaceae; Arabidopsis.
+OX   NCBI_TaxID=3702;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA / MRNA] (ISOFORM 1).
+RC   STRAIN=cv. Columbia, and cv. Wassilewskija;
+RX   MEDLINE=96367665; PubMed=8771779;
+RA   de Paolis A., Sabatini S., de Pascalis L., Costantino P., Capone I.;
+RT   "A rolB regulatory factor belongs to a new class of single zinc finger
+RT   plant proteins.";
+RL   Plant J. 10:215-223(1996).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] (ISOFORM 1).
+RC   STRAIN=cv. Wassilewskija;
+RX   MEDLINE=20107030; PubMed=10640273;
+RA   Papi M., Sabatini S., Bouchez D., Camilleri C., Costantino P.,
+RA   Vittorioso P.;
+RT   "Identification and disruption of an Arabidopsis zinc finger gene
+RT   controlling seed germination.";
+RL   Genes Dev. 14:28-33(2000).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   MEDLINE=21016720; PubMed=11130713; DOI=10.1038/35048706;
+RA   Salanoubat M., Lemcke K., Rieger M., Ansorge W., Unseld M.,
+RA   Fartmann B., Valle G., Bloecker H., Perez-Alonso M., Obermaier B.,
+RA   Delseny M., Boutry M., Grivell L.A., Mache R., Puigdomenech P.,
+RA   De Simone V., Choisne N., Artiguenave F., Robert C., Brottier P.,
+RA   Wincker P., Cattolico L., Weissenbach J., Saurin W., Quetier F.,
+RA   Schaefer M., Mueller-Auer S., Gabel C., Fuchs M., Benes V.,
+RA   Wurmbach E., Drzonek H., Erfle H., Jordan N., Bangert S.,
+RA   Wiedelmann R., Kranz H., Voss H., Holland R., Brandt P., Nyakatura G.,
+RA   Vezzi A., D'Angelo M., Pallavicini A., Toppo S., Simionati B.,
+RA   Conrad A., Hornischer K., Kauer G., Loehnert T.-H., Nordsiek G.,
+RA   Reichelt J., Scharfe M., Schoen O., Bargues M., Terol J., Climent J.,
+RA   Navarro P., Collado C., Perez-Perez A., Ottenwaelder B., Duchemin D.,
+RA   Cooke R., Laudie M., Berger-Llauro C., Purnelle B., Masuy D.,
+RA   de Haan M., Maarse A.C., Alcaraz J.-P., Cottet A., Casacuberta E.,
+RA   Monfort A., Argiriou A., Flores M., Liguori R., Vitale D.,
+RA   Mannhaupt G., Haase D., Schoof H., Rudd S., Zaccaria P., Mewes H.-W.,
+RA   Mayer K.F.X., Kaul S., Town C.D., Koo H.L., Tallon L.J., Jenkins J.,
+RA   Rooney T., Rizzo M., Walts A., Utterback T., Fujii C.Y., Shea T.P.,
+RA   Creasy T.H., Haas B., Maiti R., Wu D., Peterson J., Van Aken S.,
+RA   Pai G., Militscher J., Sellers P., Gill J.E., Feldblyum T.V.,
+RA   Preuss D., Lin X., Nierman W.C., Salzberg S.L., White O., Venter J.C.,
+RA   Fraser C.M., Kaneko T., Nakamura Y., Sato S., Kato T., Asamizu E.,
+RA   Sasamoto S., Kimura T., Idesawa K., Kawashima K., Kishida Y.,
+RA   Kiyokawa C., Kohara M., Matsumoto M., Matsuno A., Muraki A.,
+RA   Nakayama S., Nakazaki N., Shinpo S., Takeuchi C., Wada T.,
+RA   Watanabe A., Yamada M., Yasuda M., Tabata S.;
+RT   "Sequence and analysis of chromosome 3 of the plant Arabidopsis
+RT   thaliana.";
+RL   Nature 408:820-822(2000).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 2).
+RC   STRAIN=cv. Columbia;
+RX   MEDLINE=21932900; PubMed=11910074; DOI=10.1126/science.1071006;
+RA   Seki M., Narusaka M., Kamiya A., Ishida J., Satou M., Sakurai T.,
+RA   Nakajima M., Enju A., Akiyama K., Oono Y., Muramatsu M.,
+RA   Hayashizaki Y., Kawai J., Carninci P., Itoh M., Ishii Y., Arakawa T.,
+RA   Shibata K., Shinagawa A., Shinozaki K.;
+RT   "Functional annotation of a full-length Arabidopsis cDNA collection.";
+RL   Science 296:141-145(2002).
+RN   [5]
+RP   CHARACTERIZATION.
+RX   MEDLINE=21831160; PubMed=11842145; DOI=10.1104/pp.010488;
+RA   Papi M., Sabatini S., Altamura M.M., Hennig L., Schaefer E.,
+RA   Costantino P., Vittorioso P.;
+RT   "Inactivation of the phloem-specific Dof zinc finger gene DAG1 affects
+RT   response to light and integrity of the testa of Arabidopsis seeds.";
+RL   Plant Physiol. 128:411-417(2002).
+RN   [6]
+RP   GENE FAMILY, AND NOMENCLATURE.
+RX   MEDLINE=22364319; PubMed=12475498; DOI=10.1016/S1360-1385(02)02362-2;
+RA   Yanagisawa S.;
+RT   "The Dof family of plant transcription factors.";
+RL   Trends Plant Sci. 7:555-560(2002).
+CC   -!- FUNCTION: Transcription factor specifically involved in the
+CC       maternal control of seed germination. Regulates transcription by
+CC       binding to a 5'-AA[AG]G-3' consensus core sequence. May ensure the
+CC       inactivity of a component that would be activated to trigger
+CC       germination as a consequence of red light perception.
+CC   -!- SUBCELLULAR LOCATION: Nucleus (Probable).
+CC   -!- ALTERNATIVE PRODUCTS:
+CC       Event=Alternative splicing; Named isoforms=2;
+CC       Name=1;
+CC         IsoId=Q43385-1; Sequence=Displayed;
+CC       Name=2;
+CC         IsoId=Q43385-2; Sequence=VSP_008898;
+CC         Note=No experimental confirmation available;
+CC   -!- TISSUE SPECIFICITY: Expressed in the phloem of the mother plant,
+CC       including in roots, stem, leaves and flowers, but not present in
+CC       the seed and embryo. In maturing siliques, found all through the
+CC       funiculus connecting the placenta to the ovule, but not in the
+CC       ovule.
+CC   -!- DEVELOPMENTAL STAGE: Turned off in siliques when they reached full
+CC       maturation. Not expressed in developing or mature embryos.
+CC   -!- MISCELLANEOUS: The regulatory role of DOF3.7/DAG1 appears to be
+CC       opposite to that of DOF2.5/DAG2. Both zinc finger proteins may act
+CC       on a maternal switch that controls seed germination, possibly by
+CC       regulating the same gene(s).
+CC   -!- SIMILARITY: Contains 1 Dof-type zinc finger.
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; X97941; CAA66600.2; -; mRNA.
+DR   EMBL; AJ224122; CAB40190.1; -; Genomic_DNA.
+DR   EMBL; AL138642; CAB71892.1; -; Genomic_DNA.
+DR   EMBL; AK117352; BAC42022.1; -; mRNA.
+DR   PIR; T47977; T47977.
+DR   RefSeq; NP_191744.1; -.
+DR   UniGene; At.989; -.
+DR   TRANSFAC; T02699; -.
+DR   GeneID; 825358; -.
+DR   GenomeReviews; BA000014_GR; AT3G61850.
+DR   KEGG; ath:AT3G61850; -.
+DR   GeneFarm; 4410; 446.
+DR   TAIR; At3g61850; -.
+DR   ArrayExpress; Q43385; -.
+DR   GermOnline; AT3G61850; Arabidopsis thaliana.
+DR   InterPro; IPR003851; Znf_Dof.
+DR   Pfam; PF02701; zf-Dof; 1.
+DR   PROSITE; PS01361; ZF_DOF_1; 1.
+DR   PROSITE; PS50884; ZF_DOF_2; 1.
+PE   1: Evidence at protein level;
+KW   Alternative splicing; Complete proteome; DNA-binding; Germination;
+KW   Metal-binding; Nucleus; Transcription; Transcription regulation; Zinc;
+KW   Zinc-finger.
+FT   CHAIN         1    296       Dof zinc finger protein DOF3.7.
+FT                                /FTId=PRO_0000074283.
+FT   ZN_FING      74    128       Dof-type.
+FT   COMPBIAS    173    176       Poly-His.
+FT   VAR_SEQ       1     12       Missing (in isoform 2).
+FT                                /FTId=VSP_008898.
+SQ   SEQUENCE   296 AA;  32966 MW;  0D733352776272EB CRC64;
+     MDATKWTQGF QEMINVKPME QMISSTNNNT PQQQPTFIAT NTRPNATASN GGSGGNTNNT
+     ATMETRKARP QEKVNCPRCN STNTKFCYYN NYSLTQPRYF CKGCRRYWTE GGSLRNVPVG
+     GSSRKNKRSS TPLASPSNPK LPDLNPPILF SSQIPNKSNK DLNLLSFPVM QDHHHHALEL
+     LRSNGVSSRG MNTFLPGQMM DSNSVLYSSL GFPTMPDYKQ SNNNLSFSID HHQGIGHNTI
+     NSNQRAQDNN DDMNGASRVL FPFSDMKELS STTQEKSHGN NTYWNGMFSN TGGSSW
+//
+

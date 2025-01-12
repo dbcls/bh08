@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      WikiMacros (diff) – Hackathon
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/WikiMacros?action=history" title="Page history" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/WikiMacros?action=diff&amp;version=1" title="Version 1" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Hackathon" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon.dbcls.jp/"><img src="/chrome/site/BioHackathon.png" alt="" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/WikiMacros?action=diff&amp;version=1" title="Version 1">Previous Change</a></span></li><li><a href="/wiki/WikiMacros?action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/WikiMacros?version=1">Version 1</a> and
+        <a href="/wiki/WikiMacros?version=2">Version 2</a> of
+        <a href="/wiki/WikiMacros?version=2">WikiMacros</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/WikiMacros?version=2"><div><input type="hidden" name="__FORM_TOKEN" value="a95c9f905160fbf18dadd01b" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="2" />
+          <input type="hidden" name="old_version" value="1" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2009/12/27 07:40:50 (<a class="timeline" href="/timeline?from=2009-12-27T07%3A40%3A50%2B0900&amp;precision=second" title="2009-12-27T07:40:50+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          trac
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/WikiMacros?version=2">WikiMacros</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 1">
+                    <a href="/wiki/WikiMacros?version=1#L1">
+                      v1</a>
+                  </th>
+                  <th title="Version 2">
+                    <a href="/wiki/WikiMacros?version=2#L1">
+                      v2</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="mod">
+                      <tr class="first">
+                        <th>1</th><th> </th><td class="l"><span>=&nbsp; Wiki Macros =</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>1</th><td class="r"><span>= Trac Macros =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>2</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>3</th><td class="r"><span>[[PageOutline]]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>4</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>5</th><td class="l"><span>Trac macros are plugins to extend the Trac engine with custom 'functions' written in Python. A macro inserts dynamic HTML data in any context supporting WikiFormatting.</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>6</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/WikiMacros?version=1#L5">…</a></th>
+                  <th><a href="/wiki/WikiMacros?version=2#L8">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>8</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>6</th><th>9</th><td class="l"><span>== Using Macros ==</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>7</th><th> </th><td class="l"><span>Macro calls are enclosed in two ''square brackets''. Like Python functions, macros can also have arguments, a comma separated list within parentheses.<del>&nbsp;</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>10</th><td class="r"><span>Macro calls are enclosed in two ''square brackets''. Like Python functions, macros can also have arguments, a comma separated list within parentheses.<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>11</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>9</th><th> </th><td class="l"><span>=== Examples ===</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>12</th><td class="r"><span>Trac macros can also be written as TracPlugins. This gives them some capabilities that macros do not have, such as being able to directly access the HTTP request.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>=== Example ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>A list of 3 most recently changed wiki pages starting with 'Trac':</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>17</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>18</th><td class="l"><span>{{{</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span>&nbsp;[[<del>Timestamp</del>]]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>19</th><td class="r"><span>&nbsp;[[<ins>RecentChanges(Trac,3)</ins>]]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>20</th><td class="l"><span>}}}</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>21</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>22</th><td class="l"><span>Display:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>15</th><th> </th><td class="l"><span>&nbsp;[[Timestamp]]</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp;[[HelloWorld(Testing)]]</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>}}}</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>Display:</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp;[[HelloWorld(Testing)]]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>&nbsp;[[RecentChanges(Trac,3)]]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>24</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>25</th><td class="l"><span>== Available Macros ==</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/WikiMacros?version=1#L32">…</a></th>
+                  <th><a href="/wiki/WikiMacros?version=2#L34">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>34</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>33</th><th>35</th><td class="l"><span>== Developing Custom Macros ==</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>34</th><th> </th><td class="l"><span>Macros, like Trac itself, are written in the [http://<del>www.python.org/ Python programming language]. They are very simple modules, identified by the filename and should contain a single `execute()` function. Trac will display the returned data inserted into the HTML representation of the Wiki page where the macro is called</del>.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>36</th><td class="r"><span>Macros, like Trac itself, are written in the [http://<ins>python.org/ Python programming language]</ins>.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>37</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span>It's easiest to learn from an example:</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>38</th><td class="r"><span>For more information about developing macros, see the [trac:TracDev development resources] on the main project site.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span>== Implementation ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span>Here are 2 simple examples showing how to create a Macro with Trac 0.11. </span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>Also, have a look at [trac:source:tags/trac-0.11/sample-plugins/Timestamp.py Timestamp.py] for an example that shows the difference between old style and new style macros and at the [trac:source:tags/trac-0.11/wiki-macros/README macros/README] which provides a little more insight about the transition.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>=== Macro without arguments ===</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>48</th><td class="r"><span>It should be saved as `TimeStamp.py` (in the TracEnvironment's `plugins/` directory) as Trac will use the module name as the Macro name.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>49</th><td class="l"><span>{{{</span> </td>
+                  </tr><tr>
+                          <th>38</th><th>50</th><td class="l"><span>#!python</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>39</th><th> </th><td class="l"><span># MyMacro.py -- The world's simplest macro</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>51</th><td class="r"><span>from datetime import datetime</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>52</th><td class="r"><span># Note: since Trac 0.11, datetime objects are used internally</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>53</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>41</th><th> </th><td class="l"><span>def execute(hdf, args, env):</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; return "Hello World called with args: %s" % args</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>54</th><td class="r"><span>from genshi.builder import tag</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>from trac.util.datefmt import format_datetime, utc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>from trac.wiki.macros import WikiMacroBase</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>class TimeStampMacro(WikiMacroBase):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp; """Inserts the current time (in seconds) into the wiki page."""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; &nbsp; revision = "$Rev$"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; &nbsp; url = "$URL$"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>&nbsp; &nbsp; def expand_macro(self, formatter, name, args):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; t = datetime.now(utc)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>67</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return tag.b(format_datetime(t, '%c'))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>68</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>69</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>45</th><th> </th><td class="l"><span>You can also use the environment (`env`) object, for example to access configuration data and the database, for example:</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>70</th><td class="r"><span>=== Macro with arguments ===</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>71</th><td class="r"><span>It should be saved as `HelloWorld.py` (in the TracEnvironment's `plugins/` directory) as Trac will use the module name as the Macro name.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>72</th><td class="l"><span>{{{</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>73</th><td class="l"><span>#!python</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>48</th><th> </th><td class="l"><span>def execute(hdf, txt, env):</span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; &nbsp; return env.config.get('trac', 'repository_dir')</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>74</th><td class="r"><span>from trac.wiki.macros import WikiMacroBase</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span>class HelloWorldMacro(WikiMacroBase):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; """Simple HelloWorld macro.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span>&nbsp; &nbsp; Note that the name of the class is meaningful:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>&nbsp; &nbsp; &nbsp;- it must end with "Macro"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; &nbsp; &nbsp;- what comes before "Macro" ends up being the macro name</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; &nbsp; The documentation of the class (i.e. what you're reading)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span>&nbsp; &nbsp; will become the documentation of the macro, as shown by</span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>&nbsp; &nbsp; the !MacroList macro (usually used in the WikiMacros page).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; revision = "$Rev$"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; url = "$URL$"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>&nbsp; &nbsp; def expand_macro(self, formatter, name, args):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Return some output that will be displayed in the Wiki content.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; `name` is the actual name of the macro (no surprise, here it'll be</span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; `'HelloWorld'`),</span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; `args` is the text enclosed in parenthesis at the call of the macro.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Note that if there are ''no'' parenthesis (like in, e.g.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [[HelloWorld]]), then `args` is `None`.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return 'Hello World, args = ' + unicode(args)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; # Note that there's no need to HTML escape the returned data,</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; # as the template engine (Genshi) will do it for us.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>104</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>51</th><th>105</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>52</th><th> </th><td class="l"><del>Note that since version 0.9, wiki macros can also be written as TracPlugins. This gives them some capabilities that “classic” macros do not have, such as being able to directly access the HTTP request.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>106</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>For more information about developing macros, see the [http://projects.edgewall.com/trac/wiki/TracDev development resources] on the main project site.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>107</th><td class="r"><span>=== {{{expand_macro}}} details ===</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>108</th><td class="r"><span>{{{expand_macro}}} should return either a simple Python string which will be interpreted as HTML, or preferably a Markup object (use {{{from trac.util.html import Markup}}}).&nbsp; {{{Markup(string)}}} just annotates the string so the renderer will render the HTML string as-is with no escaping. You will also need to import Formatter using {{{from trac.wiki import Formatter}}}.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>109</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>56</th><th> </th><td class="l"><span>----</span> </td>
+                      </tr><tr>
+                        <th>57</th><th> </th><td class="l"><span>See also:&nbsp; WikiProcessors, WikiFormatting, TracGuide</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>110</th><td class="r"><span>If your macro creates wiki markup instead of HTML, you can convert it to HTML like this:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>111</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>112</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>113</th><td class="r"><span>#!python</span> </td>
+                      </tr><tr>
+                        <th> </th><th>114</th><td class="r"><span>&nbsp; text = "whatever wiki markup you want, even containing other macros"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>115</th><td class="r"><span>&nbsp; # Convert Wiki markup to HTML, new style</span> </td>
+                      </tr><tr>
+                        <th> </th><th>116</th><td class="r"><span>&nbsp; out = StringIO()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>117</th><td class="r"><span>&nbsp; Formatter(self.env, formatter.context).format(text, out)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>118</th><td class="r"><span>&nbsp; return Markup(out.getvalue())</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>119</th><td class="r"><span>}}}</span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>
